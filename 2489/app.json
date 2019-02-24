@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.greenfrvr.rubberloader.sample",
+    "label" : "RubberLoader demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.0",
+    "versionCode" : 4,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABa1BMVEUAAABCRUxCRUtCREpBREpBQ0pAQ0pAQko/Qkk/Qkg+QUg+QUc+QEc9QEc9P0c9P0ZCREs/QUg8P0Y8P0U7PkU8PkU6PkU6PUU6PUQ6PUM5UFMsjYYls6cjvbImrqUug4A5R005PEM0ZmEom4MkrJAnoYksiXsuhHkqlIYivKcX8tUV/+MW/+gW/+sc49MxcnI7SU0jtJQS/cUR/8YS/8cS/8oT/84T/9MU/9cU/9sV/98Y+OUveHg5PEI9Qkggv5wa7t02U1c4PEI4O0IugHIoopsgwJwe1cc5PUMa2q4a69o3OkIa2KwR/8ca6dghuJYfzsExcGYplI43OkElpIoc4dE2R0w3O0I6P0Yok34V8LwxYmQ3S04tem0pjHksgHIxaGMyY2Avc20nnI0c28IX/uogxrozWVw3OkA2OkA4P0Uwa2opkYoom5UqjIgxYWM2OUA1OT81OD81Nz80Nz80Nz4zNz4zNj0yNj39DNtNAAAAeXRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////owJrZgAAAghJREFUSMfNlllb01AQhikgAkUiTSWpCxARQSGoFAQX1gAim0BxARV3BRQJLaH+fHuSmckccprmkrn+3rczcybP07q6C1mpVKpeVENjpS41Vepys6iWSrWm0+m2K6LaNU0jQMSvNkTjHZRvF/kMALH6NOm1DAOU+jDu6zO6TgDpg3izohuRzwJQoxvU61kERDyBPsuAWsPq+jWR7wRANWzb+W4qZRgASPkO+alCvWEYJgGxu0S9YSJQdVgNhw3iBNTYpZ83TRloidkl6s1cjgDVLq/fuHmrq7uHxS0LAHnY2713+u72D9y7Pzhk2/bwA5ZnAHXz8NFIfnTs8fjEk6c+YD97TvHJSQTCbqam83kZsGdmMT/nAMCGnc9HAHsB9I6DABt2UQG8WAr0DAh3+VIBLIPecVYAYLtcFcCaDKxbEF9hAL7sK8UvbFCegPBwNkeiwBbGCwUA+OFsR4DXbxznrR8ngN/lu51dGVh+j3oO0F12GsaHj3ufPn/5+u27AH78/EX6wv4BAKq7tKzD33+O/h4z/YHrIoDfOJ69eNlwl6h3CVDo4amoG6F33RMAovHz+iBeLDJA1s9J+n3Mh4Cim6ieATRsrsqwQb5UAiChvkRA9WF9PcVLpwyI2SXmTz2PgATdiDwB8btEveedAZBA7/n5MgDVdlmU9eUyAQn0ZyL/72L+MfkPNEQrisnY/c8AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1912,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"1.1.0\" package=\"com.greenfrvr.rubberloader.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<compatible-screens>\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"120\" />\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"160\" />\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"240\" />\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"320\" />\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"480\" />\n\t\t<screen android:screenSize=\"200\" android:screenDensity=\"640\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"120\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"160\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"240\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"320\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"480\" />\n\t\t<screen android:screenSize=\"300\" android:screenDensity=\"640\" />\n\t</compatible-screens>\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f090081\" android:label=\"RubberLoader demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.greenfrvr.rubberloader.sample.App\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"RubberLoader demo\" android:name=\"com.greenfrvr.rubberloader.sample.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"5e8b77244046ef5934ca07b565b2199e94077641\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1352927,
+  "crc32" : 320619110,
+  "sha256" : "9eaa2c515d9e55d35fa03c8760bf3259c4d17aac53fec10d8ebfcbbd66bb9685",
+  "buildTime" : 1522638542000
+}

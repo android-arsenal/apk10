@@ -1,0 +1,556 @@
+2018-04-02 13:59:23,986 INFO  DownloadService - Downloading "https://github.com/amphiaraus/PictureChooseLib/archive/master.zip", attempt 3
+2018-04-02 14:00:24,594 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:00:25,577 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:00:25,577 INFO  DownloadService - Downloading "https://github.com/amphiaraus/PictureChooseLib/archive/master.zip", attempt 3
+2018-04-02 14:01:26,955 DEBUG FullProcessService - Repository https://github.com/amphiaraus/PictureChooseLib available: true
+2018-04-02 14:01:26,955 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:01:26,956 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/amphiaraus/PictureChooseLib, /tmp/rdisk/2275/src]
+2018-04-02 14:01:29,223 INFO  SysUtils - 
+2018-04-02 14:01:29,231 INFO  GitService - Deleted "/tmp/rdisk/2275/src/.git": true
+2018-04-02 14:01:29,236 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 14:01:29,236 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2275/src]
+2018-04-02 14:01:29,241 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2275/src/.git/
+
+2018-04-02 14:01:29,245 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2275/src/gradlew
+2018-04-02 14:01:29,249 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2275/src/library/build.gradle /tmp/rdisk/2275/src/sample/build.gradle /tmp/rdisk/2275/src/build.gradle
+2018-04-02 14:01:29,253 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2275/src/settings.gradle /tmp/rdisk/2275/src/sample/build.gradle /tmp/rdisk/2275/src/library/build.gradle /tmp/rdisk/2275/src/gradle-mvn-push.gradle /tmp/rdisk/2275/src/build.gradle
+2018-04-02 14:01:29,253 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:01:29,253 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:01:29,263 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2275/src/library/local.properties
+2018-04-02 14:01:29,263 INFO  ProjectFixService - Build info for "/tmp/rdisk/2275/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 14:01:29,264 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2275/src/sample/local.properties
+2018-04-02 14:01:29,264 INFO  ProjectFixService - Build info for "/tmp/rdisk/2275/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=11,targetSdkVersion=21]
+2018-04-02 14:01:29,264 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2275/src/local.properties
+2018-04-02 14:01:29,265 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 14:01:29,265 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 14:01:29,266 INFO  ProjectFixService - Build info for "/tmp/rdisk/2275/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=21,minSdkVersion=11,targetSdkVersion=21]
+2018-04-02 14:01:29,266 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:01:29,266 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:01:29,266 INFO  SysUtils - Execute command: [/tmp/rdisk/2275/src/gradlew, -b, /tmp/rdisk/2275/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:01:41,376 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 14:01:41,376 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 14:01:41,376 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 14:01:41,376 INFO  SysUtils - Execute command: [/tmp/rdisk/2275/src/gradlew, -b, /tmp/rdisk/2275/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 14:01:56,520 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 14:01:56,520 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration(s) specified but the install task does not exist in project :library.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library
+:library:prepareComAndroidSupportSupportV42220Library
+:library:prepareComToakerCommonTlog100Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:28: error: package android.support.v4.app does not exist
+import android.support.v4.app.Fragment;
+                             ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:30: error: package com.toaker.common.tlog does not exist
+import com.toaker.common.tlog.TLog;
+                             ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:68: error: cannot find symbol
+    protected Fragment mFragment;
+              ^
+  symbol:   class Fragment
+  location: class PictureProcess
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:96: error: cannot find symbol
+    public PictureProcess(Fragment fragment,File cacheDir){
+                          ^
+  symbol:   class Fragment
+  location: class PictureProcess
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:100: error: cannot find symbol
+    public PictureProcess(Fragment fragment){
+                          ^
+  symbol:   class Fragment
+  location: class PictureProcess
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/PictureProcess.java:104: error: cannot find symbol
+    PictureProcess(Fragment fragment,Context context,File cacheDir){
+                   ^
+  symbol:   class Fragment
+  location: class PictureProcess
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/CropImageView.java:33: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/PictureChooseActivity.java:12: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/BaseActivity.java:24: error: package android.support.v7.app does not exist
+import android.support.v7.app.AppCompatActivity;
+                             ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/BaseActivity.java:30: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/BaseActivity.java:36: error: cannot find symbol
+public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
+                                  ^
+  symbol: class AppCompatActivity
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/adapter/PictureChooseAdapter.java:29: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/GalleryChooseActivity.java:12: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/adapter/GalleryChooseAdapter.java:29: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/ui/CropPictureActivity.java:29: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/task/PictureTask.java:25: error: package com.toaker.common.tlog does not exist
+import com.toaker.common.tlog.TLog;
+                             ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/task/DefaultImageLoadHandler.java:30: error: cannot find symbol
+import net.soulwolf.image.picturelib.R;
+                                    ^
+  symbol:   class R
+  location: package net.soulwolf.image.picturelib
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:26: warning: no @param for left
+    public static float calculateAspectRatio(float left, float top, float right, float bottom) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:26: warning: no @param for top
+    public static float calculateAspectRatio(float left, float top, float right, float bottom) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:26: warning: no @param for right
+    public static float calculateAspectRatio(float left, float top, float right, float bottom) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:26: warning: no @param for bottom
+    public static float calculateAspectRatio(float left, float top, float right, float bottom) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:26: warning: no @return
+    public static float calculateAspectRatio(float left, float top, float right, float bottom) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:38: warning: no @param for rect
+    public static float calculateAspectRatio(Rect rect) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:38: warning: no @return
+    public static float calculateAspectRatio(Rect rect) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:49: warning: no @param for top
+    public static float calculateLeft(float top, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:49: warning: no @param for right
+    public static float calculateLeft(float top, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:49: warning: no @param for bottom
+    public static float calculateLeft(float top, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:49: warning: no @param for targetAspectRatio
+    public static float calculateLeft(float top, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:49: warning: no @return
+    public static float calculateLeft(float top, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:64: warning: no @param for left
+    public static float calculateTop(float left, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:64: warning: no @param for right
+    public static float calculateTop(float left, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:64: warning: no @param for bottom
+    public static float calculateTop(float left, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:64: warning: no @param for targetAspectRatio
+    public static float calculateTop(float left, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:64: warning: no @return
+    public static float calculateTop(float left, float right, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:80: warning: no @param for left
+    public static float calculateRight(float left, float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:80: warning: no @param for top
+    public static float calculateRight(float left, float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:80: warning: no @param for bottom
+    public static float calculateRight(float left, float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:80: warning: no @param for targetAspectRatio
+    public static float calculateRight(float left, float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:80: warning: no @return
+    public static float calculateRight(float left, float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:95: warning: no @param for left
+    public static float calculateBottom(float left, float top, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:95: warning: no @param for top
+    public static float calculateBottom(float left, float top, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:95: warning: no @param for right
+    public static float calculateBottom(float left, float top, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:95: warning: no @param for targetAspectRatio
+    public static float calculateBottom(float left, float top, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:95: warning: no @return
+    public static float calculateBottom(float left, float top, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:111: warning: no @param for top
+    public static float calculateWidth(float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:111: warning: no @param for bottom
+    public static float calculateWidth(float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:111: warning: no @param for targetAspectRatio
+    public static float calculateWidth(float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:111: warning: no @return
+    public static float calculateWidth(float top, float bottom, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:123: warning: no @param for left
+    public static float calculateHeight(float left, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:123: warning: no @param for right
+    public static float calculateHeight(float left, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:123: warning: no @param for targetAspectRatio
+    public static float calculateHeight(float left, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/AspectRatioUtil.java:123: warning: no @return
+    public static float calculateHeight(float left, float right, float targetAspectRatio) {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for handle
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for x
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for y
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for left
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for top
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for right
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/HandleUtil.java:111: warning: no @param for bottom
+    public static Pair<Float, Float> getOffset(Handle handle,
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/ImageViewUtil.java:28: error: reference not found
+     * with scale type set to {@link ImageView#ScaleType #CENTER_INSIDE}.
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/ImageViewUtil.java:46: error: reference not found
+     * with scale type set to {@link ImageView#ScaleType #CENTER_INSIDE}.
+                                     ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/ImageViewUtil.java:34: warning - Tag @link: can't find ScaleType in android.widget.ImageView
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/utils/ImageViewUtil.java:54: warning - Tag @link: can't find ScaleType in android.widget.ImageView
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/CropImageView.java:444: warning: no @param for aspectRatioY
+    public void setAspectRatio(int aspectRatioX, int aspectRatioY) {
+                ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:86: warning: no @param for aspectRatio
+    public void adjustCoordinate(float x, float y, Rect imageRect, float imageSnapRadius, float aspectRatio) {
+                ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:336: warning: no @return
+    public static float getWidth() {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:343: warning: no @return
+    public static float getHeight() {
+                        ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:353: warning: no @param for rect
+    public boolean isOutsideMargin(Rect rect, float margin) {
+                   ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:353: warning: no @param for margin
+    public boolean isOutsideMargin(Rect rect, float margin) {
+                   ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:353: warning: no @return
+    public boolean isOutsideMargin(Rect rect, float margin) {
+                   ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:378: warning: no @param for rect
+    public boolean isOutsideFrame(Rect rect) {
+                   ^
+/tmp/rdisk/2275/src/library/src/main/java/net/soulwolf/image/picturelib/view/cropwindow/edge/Edge.java:378: warning: no @return
+    public boolean isOutsideFrame(Rect rect) {
+                   ^
+
+2 errors
+70 warnings
+:library:javadoc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:javadoc'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2275/src/library/build/tmp/javadoc/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:javadoc'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2275/src/library/build/tmp/javadoc/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 14.709 secs
+
+2018-04-02 14:01:56,561 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:01:56,561 INFO  SysUtils - Execute command: [/tmp/rdisk/2275/src/gradlew, -b, /tmp/rdisk/2275/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:02:03,174 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 14:02:03,174 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 14:02:03,174 INFO  SysUtils - Execute command: [/tmp/rdisk/2275/src/gradlew, -b, /tmp/rdisk/2275/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 14:02:31,844 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration(s) specified but the install task does not exist in project :library.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:library:prepareComToakerCommonTlog100Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72220Library
+:sample:prepareComAndroidSupportSupportV42220Library
+:sample:prepareComToakerCommonTlog100Library
+:sample:prepareNetSoulwolfImageLibrary109Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+AAPT: /tmp/rdisk/2275/src/sample/build/intermediates/exploded-aar/net.soulwolf.image/library/1.0.9/res/drawable-xhdpi/pd_selector.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJava
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+AAPT: /tmp/rdisk/2275/src/sample/build/intermediates/exploded-aar/net.soulwolf.image/library/1.0.9/res/drawable-xhdpi/pd_selector.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJava
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.228 secs
+
+2018-04-02 14:02:31,914 INFO  FullProcessService - Found APK file: /tmp/rdisk/2275/src/sample/build/outputs/apk/sample-release-unsigned.apk

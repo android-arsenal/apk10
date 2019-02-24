@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.example.windowviewdebug",
+    "label" : "WV Debug",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAApVBMVEUAAACAAP+AAP+AAP9/AP+AAP+AAP+AAP+AAP+OAP+AAP9/AP+AAP+GAP9/AP9/AP+AAP+JAP+AAP9/AP+AAP+CAP+CAP9/AP+AAP+BAP+CAP9/AP+AAP+BAP+AAP+AAP+AAP+SAP+BAP+AAP+BAP+BAP+AAP+DAP+AAP9/AP9/AP9/AP+AAP+AAP+AAP+AAP9/AP+AAP9/AP//AP+qAP+AAP+AAP+KLiiEAAAANnRSTlMA4vD97OQCdKcJHLzDE1TWIA2d/uUxN9rxRTn6+V0Gx3gHTRJ3Q5MnkvKmGnAE0KFK9JoBA/ww4u12AAAAtUlEQVRIx+3VyQ6CMBSFYWip84wiDgjOI87c9380JRiEGMnpxhDTf9XQfElZ9FbTcpnOwPQXYATGYsANIJ4AAjm5UEABBbJBoVgqy4BKlahWx0HDCK96swWCdseMhkO3BwGrH48TewCA4SgxgMZOtDNxXG/6BcxSI4t7z+/zhQh/aYkAotV6s41W5m6PAOLvpX3wAZDqaEkCOv0lOF8yu36Am5/Z/ddXNBBAQQJIPrvSD3vOegB8InGjHrfW7gAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1652,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.example.windowviewdebug\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"24\" />\n\t<application android:theme=\"resourceId:0x7f07008e\" android:label=\"WV Debug\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"WV Debug\" android:name=\"com.example.windowviewdebug.DebugActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1795977,
+  "crc32" : 680119352,
+  "sha256" : "0c719eb0f3af0b8f7c2e6768acd9e91cce08bcbf2aa26a4f78f7b82d3187661e",
+  "buildTime" : 1522674277000
+}

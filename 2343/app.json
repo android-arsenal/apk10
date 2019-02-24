@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.onepf.opfiab.trivialdrive",
+    "label" : "Trivial Drive",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.4.0",
+    "versionCode" : 31,
+    "installLocation" : "auto",
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "com.android.vending.BILLING", "android.permission.ACCESS_NETWORK_STATE", "com.sec.android.iap.permission.BILLING", "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1772,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"31\" android:versionName=\"0.4.0\" android:installLocation=\"auto\" package=\"org.onepf.opfiab.trivialdrive\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"com.android.vending.BILLING\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"com.sec.android.iap.permission.BILLING\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f080077\" android:label=\"Trivial Drive\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"org.onepf.trivialdrive.TrivialApplication\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"org.onepf.trivialdrive.ui.activity.LauncherActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"org.onepf.trivialdrive.ui.activity.AdvancedHelperActivity\" />\n\t\t<activity android:name=\"org.onepf.trivialdrive.ui.activity.ActivityHelperActivity\" />\n\t\t<activity android:name=\"org.onepf.trivialdrive.ui.activity.FragmentHelperActivity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" android:name=\"org.onepf.opfiab.android.OPFIabActivity\" android:configChanges=\"0x40002fff\" />\n\t\t<receiver android:name=\"com.amazon.device.iap.ResponseReceiver\" android:exported=\"true\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"com.amazon.inapp.purchasing.NOTIFY\" android:permission=\"com.amazon.inapp.purchasing.Permission.NOTIFY\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1338175,
+  "crc32" : 1136912726,
+  "sha256" : "c48d553cac3ad70b80a5379b3737b9ba8689aa62aa6d95e3bc3afbfd2e6c0090",
+  "buildTime" : 1522663531000
+}

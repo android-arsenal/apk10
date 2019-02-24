@@ -1,0 +1,126 @@
+2018-04-02 05:24:46,294 INFO  DownloadService - Downloading "https://github.com/fdoyle/EasyDatastore/archive/master.zip", attempt 3
+2018-04-02 05:25:46,755 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 05:25:47,398 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 05:25:47,398 INFO  DownloadService - Downloading "https://github.com/fdoyle/EasyDatastore/archive/master.zip", attempt 3
+2018-04-02 05:26:48,637 DEBUG FullProcessService - Repository https://github.com/fdoyle/EasyDatastore available: true
+2018-04-02 05:26:48,637 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 05:26:48,638 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/fdoyle/EasyDatastore, /tmp/rdisk/2415/src]
+2018-04-02 05:26:50,138 INFO  SysUtils - 
+2018-04-02 05:26:50,152 INFO  GitService - Deleted "/tmp/rdisk/2415/src/.git": true
+2018-04-02 05:26:50,155 INFO  FullProcessService - Size of directory with sources: 115 KB
+2018-04-02 05:26:50,155 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2415/src]
+2018-04-02 05:26:50,159 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2415/src/.git/
+
+2018-04-02 05:26:50,162 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2415/src/gradlew
+2018-04-02 05:26:50,164 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2415/src/app/build.gradle /tmp/rdisk/2415/src/easydatastorelib/build.gradle /tmp/rdisk/2415/src/build.gradle
+2018-04-02 05:26:50,167 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2415/src/settings.gradle /tmp/rdisk/2415/src/easydatastorelib/build.gradle /tmp/rdisk/2415/src/build.gradle /tmp/rdisk/2415/src/app/build.gradle
+2018-04-02 05:26:50,167 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 05:26:50,167 INFO  ProjectFixService - Fixing project...
+2018-04-02 05:26:50,173 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2415/src/app/local.properties
+2018-04-02 05:26:50,173 INFO  ProjectFixService - Build info for "/tmp/rdisk/2415/src/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 05:26:50,173 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2415/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 05:26:50,173 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2415/src/easydatastorelib/local.properties
+2018-04-02 05:26:50,174 INFO  ProjectFixService - Build info for "/tmp/rdisk/2415/src/easydatastorelib/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 05:26:50,174 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2415/src/easydatastorelib/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 05:26:50,174 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2415/src/local.properties
+2018-04-02 05:26:50,175 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 05:26:50,175 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 05:26:50,176 INFO  ProjectFixService - Build info for "/tmp/rdisk/2415/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 05:26:50,176 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 05:26:50,176 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 05:26:50,176 INFO  SysUtils - Execute command: [/tmp/rdisk/2415/src/gradlew, -b, /tmp/rdisk/2415/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 05:26:59,226 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 05:26:59,227 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 05:26:59,227 INFO  SysUtils - Execute command: [/tmp/rdisk/2415/src/gradlew, -b, /tmp/rdisk/2415/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 05:27:22,812 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:easydatastorelib:compileLint
+:easydatastorelib:copyReleaseLint UP-TO-DATE
+:easydatastorelib:mergeReleaseProguardFiles
+:easydatastorelib:preBuild UP-TO-DATE
+:easydatastorelib:preReleaseBuild UP-TO-DATE
+:easydatastorelib:checkReleaseManifest
+:easydatastorelib:prepareReleaseDependencies
+:easydatastorelib:compileReleaseAidl
+:easydatastorelib:compileReleaseRenderscript
+:easydatastorelib:generateReleaseBuildConfig
+:easydatastorelib:generateReleaseAssets UP-TO-DATE
+:easydatastorelib:mergeReleaseAssets
+:easydatastorelib:generateReleaseResValues
+:easydatastorelib:generateReleaseResources
+:easydatastorelib:packageReleaseResources
+:easydatastorelib:processReleaseManifest
+:easydatastorelib:processReleaseResources
+:easydatastorelib:generateReleaseSources
+:easydatastorelib:processReleaseJavaRes UP-TO-DATE
+:easydatastorelib:compileReleaseJavaNote: /tmp/rdisk/2415/src/easydatastorelib/src/main/java/com/lacronicus/easydatastorelib/DatastoreBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:easydatastorelib:packageReleaseJar
+:easydatastorelib:compileReleaseNdk UP-TO-DATE
+:easydatastorelib:packageReleaseJniLibs UP-TO-DATE
+:easydatastorelib:packageReleaseLocalJar UP-TO-DATE
+:easydatastorelib:packageReleaseRenderscript UP-TO-DATE
+:easydatastorelib:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComLacronicusEasydatastorelib104Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2415/src/app/src/main/java/com/lacronicus/easydatastore/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2415/src/app/src/main/java/com/lacronicus/easydatastore/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.148 secs
+
+2018-04-02 05:27:22,847 INFO  FullProcessService - Found APK file: /tmp/rdisk/2415/src/app/build/outputs/apk/app-debug.apk

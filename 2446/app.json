@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.tumblr.backboard.example",
+    "label" : "Backboard",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 132,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.tumblr.backboard.example\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f080000\" android:label=\"Backboard\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Backboard\" android:name=\"com.tumblr.backboard.example.BackboardActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 78473,
+  "crc32" : 3207434471,
+  "sha256" : "1e03e40f9458228baba7b4f634f51f23f044d3fc7aced66c069e4d4d9921c184",
+  "buildTime" : 1508117743000
+}

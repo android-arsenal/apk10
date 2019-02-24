@@ -1,0 +1,4 @@
+{
+  "android.support.annotation" : [ "Keep" ],
+  "net.vrallev.android.demo.cat" : [ "App", "FileActivity", "MainActivity", "MainActivity$a" ]
+}

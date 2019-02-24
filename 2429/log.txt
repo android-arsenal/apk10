@@ -1,0 +1,15 @@
+2018-04-02 04:46:50,613 INFO  DownloadService - Downloading "https://github.com/zyq8709/DexHunter/archive/master.zip", attempt 3
+2018-04-02 04:47:51,222 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 04:47:51,899 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 04:47:51,899 INFO  DownloadService - Downloading "https://github.com/zyq8709/DexHunter/archive/master.zip", attempt 3
+2018-04-02 04:48:53,126 DEBUG FullProcessService - Repository https://github.com/zyq8709/DexHunter available: true
+2018-04-02 04:48:53,126 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 04:48:53,126 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/zyq8709/DexHunter, /tmp/rdisk/2429/src]
+2018-04-02 04:49:05,025 INFO  SysUtils - 
+2018-04-02 04:49:05,122 INFO  GitService - Deleted "/tmp/rdisk/2429/src/.git": true
+2018-04-02 04:49:05,271 INFO  FullProcessService - Size of directory with sources: 235 MB
+2018-04-02 04:49:05,271 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-02 04:49:05,271 ERROR FullProcessService - Project will not be processed
+2018-04-02 04:49:05,271 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 04:49:05,363 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/2429/src/test.apk
+2018-04-02 04:49:05,363 INFO  FullProcessService - Found APK file: /tmp/rdisk/2429/src/test.apk

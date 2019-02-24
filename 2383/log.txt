@@ -1,0 +1,173 @@
+2018-04-02 06:50:18,999 INFO  DownloadService - Downloading "https://github.com/gabrielittner/auto-value-cursor/archive/master.zip", attempt 3
+2018-04-02 06:51:19,441 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 06:51:20,181 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 06:51:20,181 INFO  DownloadService - Downloading "https://github.com/gabrielittner/auto-value-cursor/archive/master.zip", attempt 3
+2018-04-02 06:52:21,526 DEBUG FullProcessService - Repository https://github.com/gabrielittner/auto-value-cursor available: true
+2018-04-02 06:52:21,526 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 06:52:21,526 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gabrielittner/auto-value-cursor, /tmp/rdisk/2383/src]
+2018-04-02 06:52:23,117 INFO  SysUtils - 
+2018-04-02 06:52:23,132 INFO  GitService - Deleted "/tmp/rdisk/2383/src/.git": true
+2018-04-02 06:52:23,134 INFO  FullProcessService - Size of directory with sources: 160 KB
+2018-04-02 06:52:23,134 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2383/src]
+2018-04-02 06:52:23,144 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2383/src/.git/
+
+2018-04-02 06:52:23,146 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2383/src/gradlew
+2018-04-02 06:52:23,149 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2383/src/build.gradle /tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle /tmp/rdisk/2383/src/auto-value-cursor/build.gradle
+2018-04-02 06:52:23,150 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2383/src/settings.gradle /tmp/rdisk/2383/src/gradle/mvn-push.gradle /tmp/rdisk/2383/src/build.gradle /tmp/rdisk/2383/src/auto-value-cursor/build.gradle /tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle
+2018-04-02 06:52:23,151 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 06:52:23,151 INFO  ProjectFixService - Fixing project...
+2018-04-02 06:52:23,157 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2383/src/local.properties
+2018-04-02 06:52:23,158 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.3.1-all.zip
+2018-04-02 06:52:23,158 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.3.1-bin.zip)
+2018-04-02 06:52:23,162 INFO  ProjectFixService - Build info for "/tmp/rdisk/2383/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 06:52:23,162 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2383/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 06:52:23,162 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2383/src/auto-value-cursor-annotations/local.properties
+2018-04-02 06:52:23,167 INFO  ProjectFixService - Build info for "/tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 06:52:23,167 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 06:52:23,167 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2383/src/auto-value-cursor/local.properties
+2018-04-02 06:52:23,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/2383/src/auto-value-cursor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 06:52:23,172 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2383/src/auto-value-cursor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 06:52:23,172 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 06:52:23,172 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:52:23,172 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:52:31,325 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-02 06:52:31,325 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 06:52:31,325 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 06:52:43,198 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-cursor-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:auto-value-cursor-annotations:processResources NO-SOURCE
+:auto-value-cursor-annotations:classes
+:auto-value-cursor-annotations:jar
+:auto-value-cursor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:auto-value-cursor:processResources NO-SOURCE
+:auto-value-cursor:classes
+:auto-value-cursor:jar SKIPPED
+:auto-value-cursor:javadocJar
+:auto-value-cursor:shadowJar
+The SimpleWorkResult type has been deprecated and is scheduled to be removed in Gradle 5.0. Please use WorkResults.didWork() instead.
+	at org.gradle.api.internal.tasks.SimpleWorkResult.<init>(SimpleWorkResult.java:34)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.github.jengelman.gradle.plugins.shadow.tasks.ShadowCopyAction.execute(ShadowCopyAction.groovy:99)
+	at org.gradle.api.internal.file.copy.NormalizingCopyActionDecorator.execute(NormalizingCopyActionDecorator.java:53)
+	at org.gradle.api.internal.file.copy.DuplicateHandlingCopyActionDecorator.execute(DuplicateHandlingCopyActionDecorator.java:42)
+	at org.gradle.api.internal.file.copy.CopyActionExecuter.execute(CopyActionExecuter.java:40)
+	at org.gradle.api.tasks.AbstractCopyTask.copy(AbstractCopyTask.java:174)
+	at com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar.copy(ShadowJar.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:784)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:751)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+:auto-value-cursor:sourcesJar
+:auto-value-cursor:signArchives SKIPPED
+:auto-value-cursor:assemble
+:auto-value-cursor:build
+:auto-value-cursor-annotations:javadocJar
+:auto-value-cursor-annotations:sourcesJar
+:auto-value-cursor-annotations:signArchives SKIPPED
+:auto-value-cursor-annotations:assemble
+:auto-value-cursor-annotations:build
+
+BUILD SUCCESSFUL in 11s
+8 actionable tasks: 8 executed
+
+2018-04-02 06:52:43,202 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:52:43,203 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:52:47,942 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-04-02 06:52:47,942 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 06:52:47,942 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/auto-value-cursor-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 06:52:52,859 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-cursor-annotations:compileJava UP-TO-DATE
+:auto-value-cursor-annotations:processResources NO-SOURCE
+:auto-value-cursor-annotations:classes UP-TO-DATE
+:auto-value-cursor-annotations:jar UP-TO-DATE
+:auto-value-cursor-annotations:javadocJar UP-TO-DATE
+:auto-value-cursor-annotations:sourcesJar UP-TO-DATE
+:auto-value-cursor-annotations:signArchives SKIPPED
+:auto-value-cursor-annotations:assemble UP-TO-DATE
+:auto-value-cursor-annotations:build
+
+BUILD SUCCESSFUL in 4s
+4 actionable tasks: 4 up-to-date
+
+2018-04-02 06:52:52,863 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:52:52,863 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/auto-value-cursor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:52:58,042 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-02 06:52:58,042 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 06:52:58,042 INFO  SysUtils - Execute command: [/tmp/rdisk/2383/src/gradlew, -b, /tmp/rdisk/2383/src/auto-value-cursor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 06:53:03,242 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-cursor-annotations:compileJava UP-TO-DATE
+:auto-value-cursor-annotations:processResources NO-SOURCE
+:auto-value-cursor-annotations:classes UP-TO-DATE
+:auto-value-cursor-annotations:jar UP-TO-DATE
+:auto-value-cursor:compileJava UP-TO-DATE
+:auto-value-cursor:processResources NO-SOURCE
+:auto-value-cursor:classes UP-TO-DATE
+:auto-value-cursor:jar SKIPPED
+:auto-value-cursor:javadocJar UP-TO-DATE
+:auto-value-cursor:shadowJar UP-TO-DATE
+:auto-value-cursor:sourcesJar UP-TO-DATE
+:auto-value-cursor:signArchives SKIPPED
+:auto-value-cursor:assemble UP-TO-DATE
+:auto-value-cursor:build
+
+BUILD SUCCESSFUL in 5s
+6 actionable tasks: 6 up-to-date
+
+2018-04-02 06:53:03,246 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 06:53:03,250 ERROR FullProcessService - Could not find generated or existed APK file

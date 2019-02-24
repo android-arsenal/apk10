@@ -1,0 +1,577 @@
+2018-04-02 07:43:29,628 INFO  DownloadService - Downloading "https://github.com/satorufujiwara/recyclerview-binder/archive/master.zip", attempt 3
+2018-04-02 07:44:30,239 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 07:44:31,090 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 07:44:31,090 INFO  DownloadService - Downloading "https://github.com/satorufujiwara/recyclerview-binder/archive/master.zip", attempt 3
+2018-04-02 07:45:32,338 DEBUG FullProcessService - Repository https://github.com/satorufujiwara/recyclerview-binder available: true
+2018-04-02 07:45:32,338 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 07:45:32,338 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/satorufujiwara/recyclerview-binder, /tmp/rdisk/2368/src]
+2018-04-02 07:45:35,612 INFO  SysUtils - 
+2018-04-02 07:45:35,616 INFO  GitService - Deleted "/tmp/rdisk/2368/src/.git": true
+2018-04-02 07:45:35,619 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 07:45:35,620 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2368/src]
+2018-04-02 07:45:35,624 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2368/src/.git/
+
+2018-04-02 07:45:35,627 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2368/src/gradlew
+2018-04-02 07:45:35,630 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2368/src/binder-rx/build.gradle /tmp/rdisk/2368/src/binder-sample/build.gradle /tmp/rdisk/2368/src/binder/build.gradle /tmp/rdisk/2368/src/build.gradle
+2018-04-02 07:45:35,632 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2368/src/settings.gradle /tmp/rdisk/2368/src/build.gradle /tmp/rdisk/2368/src/binder/build.gradle /tmp/rdisk/2368/src/binder/bintray-publish.gradle /tmp/rdisk/2368/src/binder/android-artifacts.gradle /tmp/rdisk/2368/src/binder-sample/build.gradle /tmp/rdisk/2368/src/binder-rx/build.gradle /tmp/rdisk/2368/src/binder-rx/bintray-publish.gradle /tmp/rdisk/2368/src/binder-rx/android-artifacts.gradle
+2018-04-02 07:45:35,633 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 07:45:35,633 INFO  ProjectFixService - Fixing project...
+2018-04-02 07:45:35,640 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2368/src/binder-rx/local.properties
+2018-04-02 07:45:35,645 INFO  ProjectFixService - Build info for "/tmp/rdisk/2368/src/binder-rx/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 07:45:35,645 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2368/src/binder-rx/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 07:45:35,645 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2368/src/binder-sample/local.properties
+2018-04-02 07:45:35,650 INFO  ProjectFixService - Build info for "/tmp/rdisk/2368/src/binder-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 07:45:35,650 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2368/src/binder-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 07:45:35,650 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2368/src/binder/local.properties
+2018-04-02 07:45:35,654 INFO  ProjectFixService - Build info for "/tmp/rdisk/2368/src/binder/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 07:45:35,654 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2368/src/binder/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 07:45:35,655 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2368/src/local.properties
+2018-04-02 07:45:35,655 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-02 07:45:35,655 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-02 07:45:35,659 INFO  ProjectFixService - Build info for "/tmp/rdisk/2368/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 07:45:35,659 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2368/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 07:45:35,660 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 07:45:35,660 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:45:35,660 INFO  SysUtils - Execute command: [/tmp/rdisk/2368/src/gradlew, -b, /tmp/rdisk/2368/src/binder-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:45:43,680 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-04-02 07:45:43,680 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 07:45:43,680 INFO  SysUtils - Execute command: [/tmp/rdisk/2368/src/gradlew, -b, /tmp/rdisk/2368/src/binder-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 07:46:00,837 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:binder-rx:androidJar
+:binder-rx:androidJavadocs/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:5: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:7: error: package io.reactivex.subjects does not exist
+import io.reactivex.subjects.PublishSubject;
+                            ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:8: error: cannot find symbol
+import jp.satorufujiwara.binder.ViewType;
+                               ^
+  symbol:   class ViewType
+  location: package jp.satorufujiwara.binder
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:9: error: package jp.satorufujiwara.binder.recycler does not exist
+import jp.satorufujiwara.binder.recycler.RecyclerBinder;
+                                        ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:11: error: cannot find symbol
+public abstract class RxRecyclerBinder<V extends ViewType> extends RecyclerBinder<V> {
+                                                                   ^
+  symbol: class RecyclerBinder
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:11: error: cannot find symbol
+public abstract class RxRecyclerBinder<V extends ViewType> extends RecyclerBinder<V> {
+                                                 ^
+  symbol: class ViewType
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:14: error: cannot find symbol
+    private PublishSubject<Object> lifecycleSubject = PublishSubject.create();
+            ^
+  symbol:   class PublishSubject
+  location: class RxRecyclerBinder<V>
+  where V is a type-variable:
+    V declared in class RxRecyclerBinder
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/RxRecyclerBinder.java:27: error: package RecyclerView does not exist
+    public void onViewRecycled(RecyclerView.ViewHolder holder) {
+                                           ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:3: error: package org.reactivestreams does not exist
+import org.reactivestreams.Publisher;
+                          ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:7: error: package io.reactivex does not exist
+import io.reactivex.BackpressureStrategy;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:8: error: package io.reactivex does not exist
+import io.reactivex.Completable;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:9: error: package io.reactivex does not exist
+import io.reactivex.CompletableSource;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:10: error: package io.reactivex does not exist
+import io.reactivex.CompletableTransformer;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:11: error: package io.reactivex does not exist
+import io.reactivex.Flowable;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:12: error: package io.reactivex does not exist
+import io.reactivex.FlowableTransformer;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:13: error: package io.reactivex does not exist
+import io.reactivex.Maybe;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:14: error: package io.reactivex does not exist
+import io.reactivex.MaybeSource;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:15: error: package io.reactivex does not exist
+import io.reactivex.MaybeTransformer;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:16: error: package io.reactivex does not exist
+import io.reactivex.Observable;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:17: error: package io.reactivex does not exist
+import io.reactivex.ObservableSource;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:18: error: package io.reactivex does not exist
+import io.reactivex.ObservableTransformer;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:19: error: package io.reactivex does not exist
+import io.reactivex.Single;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:20: error: package io.reactivex does not exist
+import io.reactivex.SingleSource;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:21: error: package io.reactivex does not exist
+import io.reactivex.SingleTransformer;
+                   ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:22: error: package io.reactivex.annotations does not exist
+import io.reactivex.annotations.NonNull;
+                               ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:23: error: package io.reactivex.functions does not exist
+import io.reactivex.functions.Function;
+                             ^
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:30: error: cannot find symbol
+final class LifecycleTransformer<T> implements ObservableTransformer<T, T>,
+                                               ^
+  symbol: class ObservableTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:31: error: cannot find symbol
+        FlowableTransformer<T, T>,
+        ^
+  symbol: class FlowableTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:32: error: cannot find symbol
+        SingleTransformer<T, T>,
+        ^
+  symbol: class SingleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:33: error: cannot find symbol
+        MaybeTransformer<T, T>,
+        ^
+  symbol: class MaybeTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:34: error: cannot find symbol
+        CompletableTransformer {
+        ^
+  symbol: class CompletableTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:35: error: cannot find symbol
+    final Observable<?> observable;
+          ^
+  symbol:   class Observable
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:37: error: cannot find symbol
+    LifecycleTransformer(@NonNull Observable<?> observable) {
+                                  ^
+  symbol:   class Observable
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:42: error: cannot find symbol
+    public ObservableSource<T> apply(Observable<T> upstream) {
+                                     ^
+  symbol:   class Observable
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:42: error: cannot find symbol
+    public ObservableSource<T> apply(Observable<T> upstream) {
+           ^
+  symbol:   class ObservableSource
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:47: error: cannot find symbol
+    public Publisher<T> apply(Flowable<T> upstream) {
+                              ^
+  symbol:   class Flowable
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:47: error: cannot find symbol
+    public Publisher<T> apply(Flowable<T> upstream) {
+           ^
+  symbol:   class Publisher
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:52: error: cannot find symbol
+    public SingleSource<T> apply(Single<T> upstream) {
+                                 ^
+  symbol:   class Single
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:52: error: cannot find symbol
+    public SingleSource<T> apply(Single<T> upstream) {
+           ^
+  symbol:   class SingleSource
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:57: error: cannot find symbol
+    public MaybeSource<T> apply(Maybe<T> upstream) {
+                                ^
+  symbol:   class Maybe
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:57: error: cannot find symbol
+    public MaybeSource<T> apply(Maybe<T> upstream) {
+           ^
+  symbol:   class MaybeSource
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:62: error: cannot find symbol
+    public CompletableSource apply(Completable upstream) {
+                                   ^
+  symbol:   class Completable
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:62: error: cannot find symbol
+    public CompletableSource apply(Completable upstream) {
+           ^
+  symbol:   class CompletableSource
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+/tmp/rdisk/2368/src/binder-rx/src/main/java/jp/satorufujiwara/binder/rx/LifecycleTransformer.java:37: error: cannot find symbol
+    LifecycleTransformer(@NonNull Observable<?> observable) {
+                          ^
+  symbol:   class NonNull
+  location: class LifecycleTransformer<T>
+  where T is a type-variable:
+    T extends Object declared in class LifecycleTransformer
+
+44 warnings
+:binder-rx:androidJavadocsJar
+:binder-rx:androidSourcesJar
+:binder:preBuild UP-TO-DATE
+:binder:preReleaseBuild UP-TO-DATE
+:binder:checkReleaseManifest
+:binder:preDebugAndroidTestBuild UP-TO-DATE
+:binder:preDebugBuild UP-TO-DATE
+:binder:preDebugUnitTestBuild UP-TO-DATE
+:binder:preReleaseUnitTestBuild UP-TO-DATE
+:binder:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:binder:prepareComAndroidSupportAppcompatV72531Library
+:binder:prepareComAndroidSupportRecyclerviewV72531Library
+:binder:prepareComAndroidSupportSupportCompat2531Library
+:binder:prepareComAndroidSupportSupportCoreUi2531Library
+:binder:prepareComAndroidSupportSupportCoreUtils2531Library
+:binder:prepareComAndroidSupportSupportFragment2531Library
+:binder:prepareComAndroidSupportSupportMediaCompat2531Library
+:binder:prepareComAndroidSupportSupportV42531Library
+:binder:prepareComAndroidSupportSupportVectorDrawable2531Library
+:binder:prepareReleaseDependencies
+:binder:compileReleaseAidl
+:binder:compileReleaseNdk UP-TO-DATE
+:binder:compileLint
+:binder:copyReleaseLint UP-TO-DATE
+:binder:compileReleaseRenderscript
+:binder:generateReleaseBuildConfig
+:binder:generateReleaseResValues
+:binder:generateReleaseResources
+:binder:mergeReleaseResources
+:binder:processReleaseManifest
+:binder:processReleaseResources
+:binder:generateReleaseSources
+:binder:incrementalReleaseJavaCompilationSafeguard
+:binder:javaPreCompileRelease
+:binder:compileReleaseJavaWithJavac
+:binder:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:binder:extractReleaseAnnotations
+:binder:mergeReleaseShaders
+:binder:compileReleaseShaders
+:binder:generateReleaseAssets
+:binder:mergeReleaseAssets
+:binder:mergeReleaseProguardFiles
+:binder:packageReleaseRenderscript UP-TO-DATE
+:binder:packageReleaseResources
+:binder:processReleaseJavaRes UP-TO-DATE
+:binder:transformResourcesWithMergeJavaResForRelease
+:binder:transformClassesAndResourcesWithSyncLibJarsForRelease
+:binder:mergeReleaseJniLibFolders
+:binder:transformNativeLibsWithMergeJniLibsForRelease
+:binder:transformNativeLibsWithStripDebugSymbolForRelease
+:binder:transformNativeLibsWithSyncJniLibsForRelease
+:binder:bundleRelease
+:binder-rx:preBuild UP-TO-DATE
+:binder-rx:preDebugBuild UP-TO-DATE
+:binder-rx:checkDebugManifest
+:binder-rx:preDebugAndroidTestBuild UP-TO-DATE
+:binder-rx:preDebugUnitTestBuild UP-TO-DATE
+:binder-rx:preReleaseBuild UP-TO-DATE
+:binder-rx:preReleaseUnitTestBuild UP-TO-DATE
+:binder-rx:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:binder-rx:prepareComAndroidSupportAppcompatV72531Library
+:binder-rx:prepareComAndroidSupportRecyclerviewV72531Library
+:binder-rx:prepareComAndroidSupportSupportCompat2531Library
+:binder-rx:prepareComAndroidSupportSupportCoreUi2531Library
+:binder-rx:prepareComAndroidSupportSupportCoreUtils2531Library
+:binder-rx:prepareComAndroidSupportSupportFragment2531Library
+:binder-rx:prepareComAndroidSupportSupportMediaCompat2531Library
+:binder-rx:prepareComAndroidSupportSupportV42531Library
+:binder-rx:prepareComAndroidSupportSupportVectorDrawable2531Library
+:binder-rx:prepareDebugDependencies
+:binder-rx:compileDebugAidl
+:binder-rx:compileDebugNdk UP-TO-DATE
+:binder-rx:compileLint
+:binder-rx:copyDebugLint UP-TO-DATE
+:binder-rx:compileDebugRenderscript
+:binder-rx:generateDebugBuildConfig
+:binder-rx:generateDebugResValues
+:binder-rx:generateDebugResources
+:binder-rx:mergeDebugResources
+:binder-rx:processDebugManifest
+:binder-rx:processDebugResources
+:binder-rx:generateDebugSources
+:binder-rx:incrementalDebugJavaCompilationSafeguard
+:binder-rx:javaPreCompileDebug
+:binder-rx:compileDebugJavaWithJavac
+:binder-rx:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:binder-rx:extractDebugAnnotations
+:binder-rx:mergeDebugShaders
+:binder-rx:compileDebugShaders
+:binder-rx:generateDebugAssets
+:binder-rx:mergeDebugAssets
+:binder-rx:mergeDebugProguardFiles
+:binder-rx:packageDebugRenderscript UP-TO-DATE
+:binder-rx:packageDebugResources
+:binder-rx:processDebugJavaRes UP-TO-DATE
+:binder-rx:transformResourcesWithMergeJavaResForDebug
+:binder-rx:transformClassesAndResourcesWithSyncLibJarsForDebug
+:binder-rx:mergeDebugJniLibFolders
+:binder-rx:transformNativeLibsWithMergeJniLibsForDebug
+:binder-rx:transformNativeLibsWithStripDebugSymbolForDebug
+:binder-rx:transformNativeLibsWithSyncJniLibsForDebug
+:binder-rx:bundleDebug
+:binder-rx:compileDebugSources
+:binder-rx:assembleDebug
+:binder-rx:checkReleaseManifest
+:binder-rx:prepareReleaseDependencies
+:binder-rx:compileReleaseAidl
+:binder-rx:compileReleaseNdk UP-TO-DATE
+:binder-rx:copyReleaseLint UP-TO-DATE
+:binder-rx:compileReleaseRenderscript
+:binder-rx:generateReleaseBuildConfig
+:binder-rx:generateReleaseResValues
+:binder-rx:generateReleaseResources
+:binder-rx:mergeReleaseResources
+:binder-rx:processReleaseManifest
+:binder-rx:processReleaseResources
+:binder-rx:generateReleaseSources
+:binder-rx:incrementalReleaseJavaCompilationSafeguard
+:binder-rx:javaPreCompileRelease
+:binder-rx:compileReleaseJavaWithJavac
+:binder-rx:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:binder-rx:extractReleaseAnnotations
+:binder-rx:mergeReleaseShaders
+:binder-rx:compileReleaseShaders
+:binder-rx:generateReleaseAssets
+:binder-rx:mergeReleaseAssets
+:binder-rx:mergeReleaseProguardFiles
+:binder-rx:packageReleaseRenderscript UP-TO-DATE
+:binder-rx:packageReleaseResources
+:binder-rx:processReleaseJavaRes UP-TO-DATE
+:binder-rx:transformResourcesWithMergeJavaResForRelease
+:binder-rx:transformClassesAndResourcesWithSyncLibJarsForRelease
+:binder-rx:mergeReleaseJniLibFolders
+:binder-rx:transformNativeLibsWithMergeJniLibsForRelease
+:binder-rx:transformNativeLibsWithStripDebugSymbolForRelease
+:binder-rx:transformNativeLibsWithSyncJniLibsForRelease
+:binder-rx:bundleRelease
+:binder-rx:compileReleaseSources
+:binder-rx:assembleRelease
+:binder-rx:assemble
+:binder-rx:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.843 secs
+
+2018-04-02 07:46:00,903 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:46:00,904 INFO  SysUtils - Execute command: [/tmp/rdisk/2368/src/gradlew, -b, /tmp/rdisk/2368/src/binder-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:46:08,909 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 07:46:08,909 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 07:46:08,909 INFO  SysUtils - Execute command: [/tmp/rdisk/2368/src/gradlew, -b, /tmp/rdisk/2368/src/binder-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 07:46:36,513 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:binder:preBuild UP-TO-DATE
+:binder:preReleaseBuild UP-TO-DATE
+:binder:checkReleaseManifest
+:binder:preDebugAndroidTestBuild UP-TO-DATE
+:binder:preDebugBuild UP-TO-DATE
+:binder:preDebugUnitTestBuild UP-TO-DATE
+:binder:preReleaseUnitTestBuild UP-TO-DATE
+:binder:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:binder:prepareComAndroidSupportAppcompatV72531Library
+:binder:prepareComAndroidSupportRecyclerviewV72531Library
+:binder:prepareComAndroidSupportSupportCompat2531Library
+:binder:prepareComAndroidSupportSupportCoreUi2531Library
+:binder:prepareComAndroidSupportSupportCoreUtils2531Library
+:binder:prepareComAndroidSupportSupportFragment2531Library
+:binder:prepareComAndroidSupportSupportMediaCompat2531Library
+:binder:prepareComAndroidSupportSupportV42531Library
+:binder:prepareComAndroidSupportSupportVectorDrawable2531Library
+:binder:prepareReleaseDependencies
+:binder:compileReleaseAidl UP-TO-DATE
+:binder:compileReleaseNdk UP-TO-DATE
+:binder:compileLint UP-TO-DATE
+:binder:copyReleaseLint UP-TO-DATE
+:binder:compileReleaseRenderscript UP-TO-DATE
+:binder:generateReleaseBuildConfig UP-TO-DATE
+:binder:generateReleaseResValues UP-TO-DATE
+:binder:generateReleaseResources UP-TO-DATE
+:binder:mergeReleaseResources UP-TO-DATE
+:binder:processReleaseManifest UP-TO-DATE
+:binder:processReleaseResources UP-TO-DATE
+:binder:generateReleaseSources UP-TO-DATE
+:binder:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:binder:javaPreCompileRelease
+:binder:compileReleaseJavaWithJavac UP-TO-DATE
+:binder:extractReleaseAnnotations UP-TO-DATE
+:binder:mergeReleaseShaders UP-TO-DATE
+:binder:compileReleaseShaders UP-TO-DATE
+:binder:generateReleaseAssets UP-TO-DATE
+:binder:mergeReleaseAssets UP-TO-DATE
+:binder:mergeReleaseProguardFiles UP-TO-DATE
+:binder:packageReleaseRenderscript UP-TO-DATE
+:binder:packageReleaseResources UP-TO-DATE
+:binder:processReleaseJavaRes UP-TO-DATE
+:binder:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:binder:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:binder:mergeReleaseJniLibFolders UP-TO-DATE
+:binder:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:binder:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:binder:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:binder:bundleRelease UP-TO-DATE
+:binder-rx:preBuild UP-TO-DATE
+:binder-rx:preReleaseBuild UP-TO-DATE
+:binder-rx:checkReleaseManifest
+:binder-rx:preDebugAndroidTestBuild UP-TO-DATE
+:binder-rx:preDebugBuild UP-TO-DATE
+:binder-rx:preDebugUnitTestBuild UP-TO-DATE
+:binder-rx:preReleaseUnitTestBuild UP-TO-DATE
+:binder-rx:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:binder-rx:prepareComAndroidSupportAppcompatV72531Library
+:binder-rx:prepareComAndroidSupportRecyclerviewV72531Library
+:binder-rx:prepareComAndroidSupportSupportCompat2531Library
+:binder-rx:prepareComAndroidSupportSupportCoreUi2531Library
+:binder-rx:prepareComAndroidSupportSupportCoreUtils2531Library
+:binder-rx:prepareComAndroidSupportSupportFragment2531Library
+:binder-rx:prepareComAndroidSupportSupportMediaCompat2531Library
+:binder-rx:prepareComAndroidSupportSupportV42531Library
+:binder-rx:prepareComAndroidSupportSupportVectorDrawable2531Library
+:binder-rx:prepareReleaseDependencies
+:binder-rx:compileReleaseAidl UP-TO-DATE
+:binder-rx:compileReleaseNdk UP-TO-DATE
+:binder-rx:compileLint UP-TO-DATE
+:binder-rx:copyReleaseLint UP-TO-DATE
+:binder-rx:compileReleaseRenderscript UP-TO-DATE
+:binder-rx:generateReleaseBuildConfig UP-TO-DATE
+:binder-rx:generateReleaseResValues UP-TO-DATE
+:binder-rx:generateReleaseResources UP-TO-DATE
+:binder-rx:mergeReleaseResources UP-TO-DATE
+:binder-rx:processReleaseManifest UP-TO-DATE
+:binder-rx:processReleaseResources UP-TO-DATE
+:binder-rx:generateReleaseSources UP-TO-DATE
+:binder-rx:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:binder-rx:javaPreCompileRelease
+:binder-rx:compileReleaseJavaWithJavac UP-TO-DATE
+:binder-rx:extractReleaseAnnotations UP-TO-DATE
+:binder-rx:mergeReleaseShaders UP-TO-DATE
+:binder-rx:compileReleaseShaders UP-TO-DATE
+:binder-rx:generateReleaseAssets UP-TO-DATE
+:binder-rx:mergeReleaseAssets UP-TO-DATE
+:binder-rx:mergeReleaseProguardFiles UP-TO-DATE
+:binder-rx:packageReleaseRenderscript UP-TO-DATE
+:binder-rx:packageReleaseResources UP-TO-DATE
+:binder-rx:processReleaseJavaRes UP-TO-DATE
+:binder-rx:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:binder-rx:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:binder-rx:mergeReleaseJniLibFolders UP-TO-DATE
+:binder-rx:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:binder-rx:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:binder-rx:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:binder-rx:bundleRelease UP-TO-DATE
+:binder-sample:preBuild UP-TO-DATE
+:binder-sample:preDebugBuild UP-TO-DATE
+:binder-sample:checkDebugManifest
+:binder-sample:preReleaseBuild UP-TO-DATE
+:binder-sample:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:binder-sample:prepareComAndroidSupportAppcompatV72531Library
+:binder-sample:prepareComAndroidSupportCardviewV72531Library
+:binder-sample:prepareComAndroidSupportRecyclerviewV72531Library
+:binder-sample:prepareComAndroidSupportSupportCompat2531Library
+:binder-sample:prepareComAndroidSupportSupportCoreUi2531Library
+:binder-sample:prepareComAndroidSupportSupportCoreUtils2531Library
+:binder-sample:prepareComAndroidSupportSupportFragment2531Library
+:binder-sample:prepareComAndroidSupportSupportMediaCompat2531Library
+:binder-sample:prepareComAndroidSupportSupportV42531Library
+:binder-sample:prepareComAndroidSupportSupportVectorDrawable2531Library
+:binder-sample:prepareDebugDependencies
+:binder-sample:compileDebugAidl
+:binder-sample:compileDebugRenderscript
+:binder-sample:generateDebugBuildConfig
+:binder-sample:generateDebugResValues
+:binder-sample:generateDebugResources
+:binder-sample:mergeDebugResources
+:binder-sample:processDebugManifest
+:binder-sample:processDebugResources
+:binder-sample:generateDebugSources
+:binder-sample:incrementalDebugJavaCompilationSafeguard
+:binder-sample:javaPreCompileDebug
+:binder-sample:compileDebugJavaWithJavac
+:binder-sample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:binder-sample:compileDebugNdk UP-TO-DATE
+:binder-sample:compileDebugSources
+:binder-sample:mergeDebugShaders
+:binder-sample:compileDebugShaders
+:binder-sample:generateDebugAssets
+:binder-sample:mergeDebugAssets
+:binder-sample:transformClassesWithDexForDebug
+:binder-sample:mergeDebugJniLibFolders
+:binder-sample:transformNativeLibsWithMergeJniLibsForDebug
+:binder-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:binder-sample:processDebugJavaRes UP-TO-DATE
+:binder-sample:transformResourcesWithMergeJavaResForDebug
+:binder-sample:validateSigningDebug
+:binder-sample:packageDebug
+:binder-sample:assembleDebug
+:binder-sample:checkReleaseManifest
+:binder-sample:prepareReleaseDependencies
+:binder-sample:compileReleaseAidl
+:binder-sample:compileReleaseRenderscript
+:binder-sample:generateReleaseBuildConfig
+:binder-sample:generateReleaseResValues
+:binder-sample:generateReleaseResources
+:binder-sample:mergeReleaseResources
+:binder-sample:processReleaseManifest
+:binder-sample:processReleaseResources
+:binder-sample:generateReleaseSources
+:binder-sample:incrementalReleaseJavaCompilationSafeguard
+:binder-sample:javaPreCompileRelease
+:binder-sample:compileReleaseJavaWithJavac
+:binder-sample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:binder-sample:compileReleaseNdk UP-TO-DATE
+:binder-sample:compileReleaseSources
+:binder-sample:lintVitalRelease
+:binder-sample:mergeReleaseShaders
+:binder-sample:compileReleaseShaders
+:binder-sample:generateReleaseAssets
+:binder-sample:mergeReleaseAssets
+:binder-sample:transformClassesWithDexForRelease
+:binder-sample:mergeReleaseJniLibFolders
+:binder-sample:transformNativeLibsWithMergeJniLibsForRelease
+:binder-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:binder-sample:processReleaseJavaRes UP-TO-DATE
+:binder-sample:transformResourcesWithMergeJavaResForRelease
+:binder-sample:packageRelease
+:binder-sample:assembleRelease
+:binder-sample:assemble
+:binder-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.365 secs
+
+2018-04-02 07:46:36,629 INFO  FullProcessService - Found APK file: /tmp/rdisk/2368/src/binder-sample/build/outputs/apk/binder-sample-release-unsigned.apk

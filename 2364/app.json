@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.etiennelawlor.imagegallery",
+    "label" : "ImageGallery",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1.0",
+    "versionCode" : 16,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAABR1BMVEUAAAD///+fn5+goKCfn5+fn5+fn5+enp6enp6hoaGenp6fn5+fn5+lpaWfn5+fn5+fn5+fn5+fn5+enp6fn5+enp6hoaGjo6OioqK4uLjQ0NDPz8/Dw8Ofn5/S0tL////9/f3p6emgoKDm5ub+/v739/f7+/vz8/PCwsLa2tqpqamnp6ekpKT4+PjNzc2vr6/u7u6wsLDs7Ozn5+fo6OjBwcHf39/AwMD6+vqzs7O0tLSrq6usrKzU1NT8/Pz5+fnZ2dn19fXExMSmpqaxsbHt7e3Ly8vk5OTl5eXx8fHV1dWurq729va1tbXv7++2trb09PTe3t68vLzY2NjX19fKysq6urq7u7vMzMy5ubny8vKoqKiysrLb29vw8PC3t7fFxcXR0dHq6urT09Pr6+vd3d3Ozs69vb2lpaXc3Ny/v7/j4+PW1tZU28h5AAAAFXRSTlMAATiDpb/Z8/JEmefCIq3ubfyQw5o3f4D2AAACKElEQVQ4y5WVWVfaUBCAL0nYRUS4CaBgggRECdBSTKKtgVpRC1RF2xK6Wbsv//+5xGaZawicfE/JOV/umZk7mUGIJEDRTDAUjoSCDE0F0CKisTgGxGNRT5VawS5WqLlqYhXPZTUxJ4Ik9iDpimUthT1JrZHuOl7IOnEuXgI4O5paJqfsuBNJvJSkVROrZixHkCUraN6F5ebykI3NAmH/v520+cYVtyC8UCLk9H121huXJ+VtUsZGjhmXXBYr8+TYrCfjLrm6U+MNmdvdq8MeDNjpmTIv8VKj0GwZ8qPH7WKWSJEmZP5JR9jnMCsrM1lV+DYLZBoxUC63DkqHT2fP9WdHM1mrdGHQDApCuff82OTFiSFrfa7upBlEIShLpxZn54Ysyv2XA1sIoTD2rLOq9HLCcGQLYRRZIGuvLi5Pjm0hAsPYqECUM1U7zSlXGIThJMiOu9eAm9eq1JWVPgYJMrA43Ju3DuO+OJmIOiwdDdzSqDUUtSPeCluUa9NdeCkUPLn07n2n8aH9cSgpxieXenubhdcdIAZWodnofFJV/fbzvjAd3l1MvxCNhGJQZjeHmtL7+u17J3cwGv/QRZloUaf57/mp3l4LPUnh+d7dr3ytOiCbH7nGYbb5u/jnfJZpmRc4Z0QSPyxB6VCfXLWqfx/+sMhjfOLCnjp4OAr8DRlf48vfYPQ3cv0Nc39rwt8CMm4n7VbTlPfSzJBLMxNduGPNdRyeu47/AYeRqe86nus7AAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2270,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"16\" android:versionName=\"0.1.0\" package=\"com.etiennelawlor.imagegallery\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"25\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f08011f\" android:label=\"ImageGallery\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f08011f\" android:label=\"\" android:name=\"com.etiennelawlor.imagegallery.library.activities.ImageGalleryActivity\" android:configChanges=\"0x4a0\" />\n\t\t<activity android:theme=\"resourceId:0x7f08011f\" android:label=\"\" android:name=\"com.etiennelawlor.imagegallery.activities.HostImageGalleryActivity\" android:configChanges=\"0x4a0\" />\n\t\t<activity android:label=\"ImageGallery\" android:name=\"com.etiennelawlor.imagegallery.activities.MainActivity\" android:configChanges=\"0x4a0\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f08011f\" android:label=\"\" android:name=\"com.etiennelawlor.imagegallery.library.activities.FullScreenImageGalleryActivity\" android:configChanges=\"0x4a0\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1754111,
+  "crc32" : 535105454,
+  "sha256" : "86cfdc642967d227bdc403e77c8fd5666c1b919e34119dbbd5809797a5606212",
+  "buildTime" : 1526450494000
+}

@@ -1,0 +1,218 @@
+2018-04-02 03:24:32,233 INFO  DownloadService - Downloading "https://github.com/a11n/sharp/archive/master.zip", attempt 3
+2018-04-02 03:25:32,678 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:25:33,351 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:25:33,351 INFO  DownloadService - Downloading "https://github.com/a11n/sharp/archive/master.zip", attempt 3
+2018-04-02 03:26:34,636 DEBUG FullProcessService - Repository https://github.com/a11n/sharp available: true
+2018-04-02 03:26:34,637 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:26:34,637 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/a11n/sharp, /tmp/rdisk/2483/src]
+2018-04-02 03:26:36,180 INFO  SysUtils - 
+2018-04-02 03:26:36,184 INFO  GitService - Deleted "/tmp/rdisk/2483/src/.git": true
+2018-04-02 03:26:36,188 INFO  FullProcessService - Size of directory with sources: 230 KB
+2018-04-02 03:26:36,188 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2483/src]
+2018-04-02 03:26:36,194 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2483/src/.git/
+
+2018-04-02 03:26:36,197 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2483/src/gradlew
+2018-04-02 03:26:36,200 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2483/src/sharp-sample/build.gradle /tmp/rdisk/2483/src/build.gradle /tmp/rdisk/2483/src/sharp-api/build.gradle /tmp/rdisk/2483/src/sharp-processor/build.gradle
+2018-04-02 03:26:36,203 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2483/src/sharp-sample/build.gradle /tmp/rdisk/2483/src/sharp-processor/build.gradle /tmp/rdisk/2483/src/sharp-api/build.gradle /tmp/rdisk/2483/src/settings.gradle /tmp/rdisk/2483/src/build.gradle
+2018-04-02 03:26:36,204 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:26:36,204 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:26:36,211 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2483/src/sharp-sample/local.properties
+2018-04-02 03:26:36,211 INFO  ProjectFixService - Build info for "/tmp/rdisk/2483/src/sharp-sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 03:26:36,212 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2483/src/local.properties
+2018-04-02 03:26:36,212 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 03:26:36,212 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 03:26:36,213 INFO  ProjectFixService - Build info for "/tmp/rdisk/2483/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 03:26:36,213 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2483/src/sharp-api/local.properties
+2018-04-02 03:26:36,214 INFO  ProjectFixService - Build info for "/tmp/rdisk/2483/src/sharp-api/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 03:26:36,214 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2483/src/sharp-processor/local.properties
+2018-04-02 03:26:36,215 INFO  ProjectFixService - Build info for "/tmp/rdisk/2483/src/sharp-processor/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 03:26:36,215 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:26:36,215 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:26:36,215 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:26:42,974 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 03:26:42,974 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 03:26:42,974 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 03:26:42,974 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 03:26:47,254 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 03:26:47,254 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/2483/src/sharp-sample/build.gradle' line: 36
+
+* What went wrong:
+A problem occurred evaluating root project 'sharp-sample'.
+> Project with path ':sharp-api' could not be found in root project 'sharp-sample'.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'sharp-sample'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:76)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$1.run(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:156)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:55)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:487)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:85)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.UnknownProjectException: Project with path ':sharp-api' could not be found in root project 'sharp-sample'.
+	at org.gradle.api.internal.project.AbstractProject.project(AbstractProject.java:433)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:232)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:127)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:150)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_2p8er2v3en2tvfvt24cquptca$_run_closure2.doCall(/tmp/rdisk/2483/src/sharp-sample/build.gradle:36)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:67)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.project.AbstractProject.dependencies(AbstractProject.java:838)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:232)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:127)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:150)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_2p8er2v3en2tvfvt24cquptca.run(/tmp/rdisk/2483/src/sharp-sample/build.gradle:33)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:74)
+	... 38 more
+
+
+BUILD FAILED
+
+Total time: 3.819 secs
+
+2018-04-02 03:26:47,257 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:26:47,257 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:26:53,963 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-02 03:26:53,963 INFO  ProjectTaskService - Excluded tasks (4): coveralls javadoc test check
+2018-04-02 03:26:53,963 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 03:26:59,598 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sharp-api:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/2483/src/sharp-api/src/main/java/de/ad/sharp/api/SharP.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:sharp-api:processResources UP-TO-DATE
+:sharp-api:classes
+:sharp-api:jar
+:sharp-api:javadocJar
+:sharp-api:sourcesJar
+:sharp-api:assemble
+:sharp-api:build
+:sharp-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:sharp-processor:processResources
+:sharp-processor:classes
+:sharp-processor:jar
+:sharp-processor:javadocJar
+:sharp-processor:sourcesJar
+:sharp-processor:assemble
+:sharp-processor:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.221 secs
+
+2018-04-02 03:26:59,603 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:26:59,603 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-api/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:27:05,013 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-02 03:27:05,013 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 03:27:05,013 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-api/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 03:27:09,061 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sharp-api:compileJava UP-TO-DATE
+:sharp-api:processResources UP-TO-DATE
+:sharp-api:classes UP-TO-DATE
+:sharp-api:jar UP-TO-DATE
+:sharp-api:javadocJar UP-TO-DATE
+:sharp-api:sourcesJar UP-TO-DATE
+:sharp-api:assemble UP-TO-DATE
+:sharp-api:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.618 secs
+
+2018-04-02 03:27:09,065 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:27:09,065 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-processor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:27:13,553 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-02 03:27:13,553 INFO  ProjectTaskService - Excluded tasks (4): coveralls javadoc test check
+2018-04-02 03:27:13,554 INFO  SysUtils - Execute command: [/tmp/rdisk/2483/src/gradlew, -b, /tmp/rdisk/2483/src/sharp-processor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 03:27:17,859 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sharp-api:compileJava UP-TO-DATE
+:sharp-api:processResources UP-TO-DATE
+:sharp-api:classes UP-TO-DATE
+:sharp-api:jar UP-TO-DATE
+:sharp-processor:compileJava UP-TO-DATE
+:sharp-processor:processResources UP-TO-DATE
+:sharp-processor:classes UP-TO-DATE
+:sharp-processor:jar UP-TO-DATE
+:sharp-processor:javadocJar UP-TO-DATE
+:sharp-processor:sourcesJar UP-TO-DATE
+:sharp-processor:assemble UP-TO-DATE
+:sharp-processor:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.886 secs
+
+2018-04-02 03:27:17,864 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 03:27:17,868 ERROR FullProcessService - Could not find generated or existed APK file

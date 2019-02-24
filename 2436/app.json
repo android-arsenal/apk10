@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.dpizarro.libraries.autolabelui",
+    "label" : "AutolabelUI",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.1",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABLFBMVEUAAAAAAAB2q8OBtMyDts52qcNWdoVxq8deoL9Znb1wq8ZTcX0AAABejaJZhZoAAABUi6ZQfZZLaX5NdY1MbYNQgZtOg54AAABMgZtNb4VFUmJHYnVHWGlMc4pJeZNLf5hIeJFLb4VBUWFEYXVDWGlKc4pXmbhVlrRWl7ZVj6xThqFVjqpUiqVVjapWka9JaH1IXnBJaHxMc4tSi6dMfZdQh6JPg55RiKRSjKhTiKNQepNTiKRWkrBTi6dKboRTjqtOg55SjapWlrVTj6wAAABFdYxCb4UAAAAsTFxXmbkpR1MAAAARGx41XXBJgJtMh6M1XG8PGBsAAAAJCQkIEBIbMDkfNkEfNkMIDxIAAAAAAAAICAgDAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAA5dn/AAAAZHRSTlMAAYDn/4B9/v///n4G1NYO5///////5xXn///////n5+f//////////////////////////////////////////////xbo6Bjb/9wTl/z///yXCDyd3ObmnQIQPVpiZREDCxcdOB9iLwAAARxJREFUSMdjYBicgJGJmYUgYGZlhKtnY+fgJAg4uLhhOnh4OYkCfDxQDfwCnIJCqECYk1METUiUU4wfqkFcglNSChVIc3LKoAnJcsqJwzTIE6dBYZhpUFRCBcqcnCpoQqooGtTUUYEGJ6cGmpAaigZNLQjQ5tTRQgLanLpwth5WP+hzGiC725BTCM42GtVAsgZjEwgw5TQzQQKmnOZwtgWKBqIAsgZLKxiwtrHCDmxxpFY7LSnswGhUA8ka7B1gwNHJATtwpiymh7wGF1fiNLi5QDW4e3gSo97Tyx2qwdvH18+fIPALCPSGaggKDgkNCycAwkIjgoOgGiKjomNi4wiA2Jjo+EhYRZ2QmJRMECQlJiA1BRKIAIx0apcAAOI03ganKjENAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1845,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.0.1\" package=\"com.dpizarro.libraries.autolabelui\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f090083\" android:label=\"AutolabelUI\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f090030\" android:label=\"AutolabelUI\" android:name=\"com.dpizarro.libraries.autolabelui.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2096962,
+  "crc32" : 2012313236,
+  "sha256" : "aa4c8101d49a9a037d84bb14935fa29a7d104c9681ebd2162cafaf462d73d911",
+  "buildTime" : 1508118063000
+}

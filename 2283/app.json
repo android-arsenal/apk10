@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.github.mmin18.safelooper",
+    "label" : "SafeLooper",
+    "icon" : null,
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "16",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 12,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.github.mmin18.safelooper\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"16\" />\n\t<application android:label=\"SafeLooper\">\n\t\t<activity android:label=\"SafeLooper\" android:name=\".MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 8457,
+  "crc32" : 4170656612,
+  "sha256" : "8cb019ac8c9d90da68b6d077c09d0cfd54a1bc1c669ffc246014dc4f97243b35",
+  "buildTime" : 1522676638000
+}

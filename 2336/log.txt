@@ -1,0 +1,169 @@
+2018-04-02 10:08:18,673 INFO  DownloadService - Downloading "https://github.com/tslamic/AndroidDeviceNames/archive/master.zip", attempt 3
+2018-04-02 10:08:19,622 INFO  DownloadService - Downloaded https://github.com/tslamic/AndroidDeviceNames/archive/master.zip, attempt 3
+2018-04-02 10:08:19,623 INFO  DownloadService - Size of file "/tmp/rdisk/2336/master.zip": 433 KB
+2018-04-02 10:08:19,623 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 10:08:19,623 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2336/master.zip: true
+2018-04-02 10:08:19,623 DEBUG ZipUtil - Extracting '/tmp/rdisk/2336/master.zip' into '/tmp/rdisk/2336/src'.
+2018-04-02 10:08:19,635 INFO  FullProcessService - Size of directory with sources: 447 KB
+2018-04-02 10:08:19,635 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2336/src]
+2018-04-02 10:08:19,646 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2336/src/.git/
+
+2018-04-02 10:08:19,648 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2336/src/AndroidDeviceNames-master/gradlew
+2018-04-02 10:08:19,651 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/dn/build.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/build.gradle
+2018-04-02 10:08:19,653 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2336/src/AndroidDeviceNames-master/settings.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/dn/build.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/build.gradle /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build.gradle
+2018-04-02 10:08:19,653 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 10:08:19,653 INFO  ProjectFixService - Fixing project...
+2018-04-02 10:08:19,660 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/local.properties
+2018-04-02 10:08:19,660 INFO  ProjectFixService - Build info for "/tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 10:08:19,661 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2336/src/AndroidDeviceNames-master/dn/local.properties
+2018-04-02 10:08:19,661 INFO  ProjectFixService - Build info for "/tmp/rdisk/2336/src/AndroidDeviceNames-master/dn/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 10:08:19,661 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2336/src/AndroidDeviceNames-master/local.properties
+2018-04-02 10:08:19,661 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-02 10:08:19,661 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-02 10:08:19,663 INFO  ProjectFixService - Build info for "/tmp/rdisk/2336/src/AndroidDeviceNames-master/build.gradle": [buildToolsVersion=26.0.1,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-04-02 10:08:19,663 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 10:08:19,663 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 10:08:19,664 INFO  SysUtils - Execute command: [/tmp/rdisk/2336/src/AndroidDeviceNames-master/gradlew, -b, /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 10:08:29,241 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 10:08:29,241 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 10:08:29,241 INFO  SysUtils - Execute command: [/tmp/rdisk/2336/src/AndroidDeviceNames-master/gradlew, -b, /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 10:09:26,267 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:app:preBuild UP-TO-DATE
+:dn:preBuild UP-TO-DATE
+:dn:preDebugBuild UP-TO-DATE
+:dn:checkDebugManifest
+:dn:processDebugManifest
+:app:preDebugBuild
+:dn:compileDebugAidl
+:app:compileDebugAidl
+:dn:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:dn:compileDebugRenderscript
+:dn:generateDebugResValues
+:dn:generateDebugResources
+:dn:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:dn:platformAttrExtractor
+:dn:generateDebugBuildConfig
+:dn:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:dn:mergeDebugShaders
+:dn:compileDebugShaders
+:dn:generateDebugAssets
+:dn:mergeDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:dn:compileDebugNdk NO-SOURCE
+:dn:mergeDebugJniLibFolders
+:dn:transformNativeLibsWithMergeJniLibsForDebug
+:dn:transformNativeLibsWithStripDebugSymbolForDebug
+:dn:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:dn:preReleaseBuild UP-TO-DATE
+:dn:checkReleaseManifest
+:dn:processReleaseManifest
+:app:preReleaseBuild
+:dn:compileReleaseAidl
+:app:compileReleaseAidl
+:dn:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:dn:compileDebugKotlin
+Using kotlin incremental compilation
+:dn:generateDebugSources
+:dn:javaPreCompileDebug
+:dn:compileDebugJavaWithJavac
+:dn:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:dn:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:dn:compileReleaseRenderscript
+:dn:generateReleaseResValues
+:dn:generateReleaseResources
+:dn:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:dn:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:dn:generateReleaseBuildConfig
+:dn:compileReleaseKotlin
+Using kotlin incremental compilation
+:dn:generateReleaseSources
+:dn:javaPreCompileRelease
+:dn:compileReleaseJavaWithJavac
+:dn:processReleaseJavaRes NO-SOURCE
+:dn:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:dn:mergeReleaseShaders
+:dn:compileReleaseShaders
+:dn:generateReleaseAssets
+:dn:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithPreDexForRelease
+:app:transformDexWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:dn:compileReleaseNdk NO-SOURCE
+:dn:mergeReleaseJniLibFolders
+:dn:transformNativeLibsWithMergeJniLibsForRelease
+:dn:transformNativeLibsWithStripDebugSymbolForRelease
+:dn:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:prepareLintJar
+:dn:prepareLintJar
+:app:lintVitalRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 56s
+90 actionable tasks: 90 executed
+Exception in thread "Thread-15" java.lang.NoClassDefFoundError: com/android/builder/internal/aapt/v2/AaptV2Jni$TempDirCache$RecursiveDelete
+	at com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache.lambda$getCachedDirectory$0(AaptV2Jni.java:251)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.builder.internal.aapt.v2.AaptV2Jni$TempDirCache$RecursiveDelete
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 2 more
+
+2018-04-02 10:09:26,321 INFO  FullProcessService - Found APK file: /tmp/rdisk/2336/src/AndroidDeviceNames-master/app/build/outputs/apk/debug/app-debug.apk

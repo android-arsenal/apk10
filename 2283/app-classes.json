@@ -1,0 +1,4 @@
+{
+  "android.annotation" : [ "SuppressLint", "TargetApi" ],
+  "com.github.mmin18.safelooper" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$id", "R$layout", "R$string", "SafeLooper" ]
+}

@@ -1,0 +1,589 @@
+2018-04-02 14:24:45,026 INFO  DownloadService - Downloading "https://github.com/gfx/gradle-android-ribbonizer-plugin/archive/master.zip", attempt 3
+2018-04-02 14:25:45,793 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:25:46,934 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:25:46,935 INFO  DownloadService - Downloading "https://github.com/gfx/gradle-android-ribbonizer-plugin/archive/master.zip", attempt 3
+2018-04-02 14:26:48,946 DEBUG FullProcessService - Repository https://github.com/gfx/gradle-android-ribbonizer-plugin available: true
+2018-04-02 14:26:48,946 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:26:48,946 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gfx/gradle-android-ribbonizer-plugin, /tmp/rdisk/2266/src]
+2018-04-02 14:26:50,557 INFO  SysUtils - 
+2018-04-02 14:26:50,562 INFO  GitService - Deleted "/tmp/rdisk/2266/src/.git": true
+2018-04-02 14:26:50,566 INFO  FullProcessService - Size of directory with sources: 305 KB
+2018-04-02 14:26:50,566 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2266/src]
+2018-04-02 14:26:50,570 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2266/src/.git/
+
+2018-04-02 14:26:50,574 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2266/src/gradlew
+2018-04-02 14:26:50,578 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2266/src/example-custom/build.gradle /tmp/rdisk/2266/src/example-simple/build.gradle /tmp/rdisk/2266/src/build.gradle /tmp/rdisk/2266/src/buildSrc/build.gradle /tmp/rdisk/2266/src/plugin/build.gradle
+2018-04-02 14:26:50,581 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2266/src/versioning.gradle /tmp/rdisk/2266/src/settings.gradle /tmp/rdisk/2266/src/plugin/build.gradle /tmp/rdisk/2266/src/metadata.gradle /tmp/rdisk/2266/src/example-simple/build.gradle /tmp/rdisk/2266/src/example-custom/build.gradle /tmp/rdisk/2266/src/buildSrc/settings.gradle /tmp/rdisk/2266/src/buildSrc/build.gradle /tmp/rdisk/2266/src/build.gradle
+2018-04-02 14:26:50,582 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:26:50,582 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:26:50,591 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2266/src/example-custom/local.properties
+2018-04-02 14:26:50,591 INFO  ProjectFixService - Build info for "/tmp/rdisk/2266/src/example-custom/build.gradle": [buildToolsVersion=26.0.0,compileSdkVersion=26,minSdkVersion=15,targetSdkVersion=26]
+2018-04-02 14:26:50,592 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2266/src/example-simple/local.properties
+2018-04-02 14:26:50,592 INFO  ProjectFixService - Build info for "/tmp/rdisk/2266/src/example-simple/build.gradle": [buildToolsVersion=25,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:26:50,592 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2266/src/example-simple/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:26:50,593 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2266/src/local.properties
+2018-04-02 14:26:50,593 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.5-all.zip
+2018-04-02 14:26:50,595 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.5-bin.zip)
+2018-04-02 14:26:50,598 INFO  ProjectFixService - Build info for "/tmp/rdisk/2266/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:26:50,598 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2266/src/buildSrc/local.properties
+2018-04-02 14:26:50,601 INFO  ProjectFixService - Build info for "/tmp/rdisk/2266/src/buildSrc/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:26:50,601 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2266/src/plugin/local.properties
+2018-04-02 14:26:50,604 INFO  ProjectFixService - Build info for "/tmp/rdisk/2266/src/plugin/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:26:50,604 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:26:50,604 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:26:50,604 INFO  SysUtils - Execute command: [/tmp/rdisk/2266/src/gradlew, -b, /tmp/rdisk/2266/src/example-custom/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:27:13,697 INFO  ProjectTaskService - Detected possible tasks: 185
+2018-04-02 14:27:13,698 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck test check uninstallAll connectedAndroidTest
+2018-04-02 14:27:13,698 INFO  SysUtils - Execute command: [/tmp/rdisk/2266/src/gradlew, -b, /tmp/rdisk/2266/src/example-custom/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, test, -x, check, -x, uninstallAll, -x, connectedAndroidTest, build]
+2018-04-02 14:28:14,376 INFO  SysUtils - Configuration on demand is an incubating feature.
+:buildSrc:plugin:compileJava NO-SOURCE
+:buildSrc:plugin:compileGroovy UP-TO-DATE
+:buildSrc:plugin:processResources UP-TO-DATE
+:buildSrc:plugin:classes UP-TO-DATE
+:buildSrc:plugin:jar UP-TO-DATE
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy NO-SOURCE
+:buildSrc:processResources NO-SOURCE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+:buildSrc:plugin:assemble UP-TO-DATE
+:buildSrc:plugin:compileTestJava NO-SOURCE
+:buildSrc:plugin:compileTestGroovy UP-TO-DATE
+:buildSrc:plugin:processTestResources NO-SOURCE
+:buildSrc:plugin:testClasses UP-TO-DATE
+:buildSrc:plugin:test UP-TO-DATE
+:buildSrc:plugin:check UP-TO-DATE
+:buildSrc:plugin:build UP-TO-DATE
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:example-custom:preBuild UP-TO-DATE
+:example-custom:preLocalBetaBuild UP-TO-DATE
+:example-custom:checkLocalBetaManifest
+:example-custom:preLocalCanaryBuild UP-TO-DATE
+:example-custom:preLocalDebugBuild UP-TO-DATE
+:example-custom:preLocalReleaseBuild UP-TO-DATE
+:example-custom:preProductionBetaBuild UP-TO-DATE
+:example-custom:preProductionCanaryBuild UP-TO-DATE
+:example-custom:preProductionDebugBuild UP-TO-DATE
+:example-custom:preProductionReleaseBuild UP-TO-DATE
+:example-custom:preQaBetaBuild UP-TO-DATE
+:example-custom:preQaCanaryBuild UP-TO-DATE
+:example-custom:preQaDebugBuild UP-TO-DATE
+:example-custom:preQaReleaseBuild UP-TO-DATE
+:example-custom:preStagingBetaBuild UP-TO-DATE
+:example-custom:preStagingCanaryBuild UP-TO-DATE
+:example-custom:preStagingDebugBuild UP-TO-DATE
+:example-custom:preStagingReleaseBuild UP-TO-DATE
+:example-custom:prepareComAndroidSupportAnimatedVectorDrawable2500Library
+:example-custom:prepareComAndroidSupportAppcompatV72500Library
+:example-custom:prepareComAndroidSupportSupportCompat2500Library
+:example-custom:prepareComAndroidSupportSupportCoreUi2500Library
+:example-custom:prepareComAndroidSupportSupportCoreUtils2500Library
+:example-custom:prepareComAndroidSupportSupportFragment2500Library
+:example-custom:prepareComAndroidSupportSupportMediaCompat2500Library
+:example-custom:prepareComAndroidSupportSupportV42500Library
+:example-custom:prepareComAndroidSupportSupportVectorDrawable2500Library
+:example-custom:prepareLocalBetaDependencies
+:example-custom:compileLocalBetaAidl
+:example-custom:compileLocalBetaRenderscript
+:example-custom:generateLocalBetaBuildConfig
+:example-custom:generateLocalBetaResValues
+:example-custom:ribbonizeLocalBeta
+:example-custom:generateLocalBetaResources
+:example-custom:mergeLocalBetaResources
+:example-custom:processLocalBetaManifest
+:example-custom:processLocalBetaResources
+:example-custom:generateLocalBetaSources
+:example-custom:incrementalLocalBetaJavaCompilationSafeguard
+:example-custom:javaPreCompileLocalBeta
+:example-custom:compileLocalBetaJavaWithJavac
+:example-custom:compileLocalBetaJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileLocalBetaNdk NO-SOURCE
+:example-custom:compileLocalBetaSources
+:example-custom:mergeLocalBetaShaders
+:example-custom:compileLocalBetaShaders
+:example-custom:generateLocalBetaAssets
+:example-custom:mergeLocalBetaAssets
+:example-custom:transformClassesWithDexForLocalBeta
+:example-custom:mergeLocalBetaJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForLocalBeta
+:example-custom:transformNativeLibsWithStripDebugSymbolForLocalBeta
+:example-custom:processLocalBetaJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForLocalBeta
+:example-custom:packageLocalBeta
+:example-custom:assembleLocalBeta
+:example-custom:checkProductionBetaManifest
+:example-custom:prepareProductionBetaDependencies
+:example-custom:compileProductionBetaAidl
+:example-custom:compileProductionBetaRenderscript
+:example-custom:generateProductionBetaBuildConfig
+:example-custom:generateProductionBetaResValues
+:example-custom:ribbonizeProductionBeta
+:example-custom:generateProductionBetaResources
+:example-custom:mergeProductionBetaResources
+:example-custom:processProductionBetaManifest
+:example-custom:processProductionBetaResources
+:example-custom:generateProductionBetaSources
+:example-custom:incrementalProductionBetaJavaCompilationSafeguard
+:example-custom:javaPreCompileProductionBeta
+:example-custom:compileProductionBetaJavaWithJavac
+:example-custom:compileProductionBetaJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileProductionBetaNdk NO-SOURCE
+:example-custom:compileProductionBetaSources
+:example-custom:mergeProductionBetaShaders
+:example-custom:compileProductionBetaShaders
+:example-custom:generateProductionBetaAssets
+:example-custom:mergeProductionBetaAssets
+:example-custom:transformClassesWithDexForProductionBeta
+:example-custom:mergeProductionBetaJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForProductionBeta
+:example-custom:transformNativeLibsWithStripDebugSymbolForProductionBeta
+:example-custom:processProductionBetaJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForProductionBeta
+:example-custom:packageProductionBeta
+:example-custom:assembleProductionBeta
+:example-custom:checkQaBetaManifest
+:example-custom:prepareQaBetaDependencies
+:example-custom:compileQaBetaAidl
+:example-custom:compileQaBetaRenderscript
+:example-custom:generateQaBetaBuildConfig
+:example-custom:generateQaBetaResValues
+:example-custom:ribbonizeQaBeta
+:example-custom:generateQaBetaResources
+:example-custom:mergeQaBetaResources
+:example-custom:processQaBetaManifest
+:example-custom:processQaBetaResources
+:example-custom:generateQaBetaSources
+:example-custom:incrementalQaBetaJavaCompilationSafeguard
+:example-custom:javaPreCompileQaBeta
+:example-custom:compileQaBetaJavaWithJavac
+:example-custom:compileQaBetaJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileQaBetaNdk NO-SOURCE
+:example-custom:compileQaBetaSources
+:example-custom:mergeQaBetaShaders
+:example-custom:compileQaBetaShaders
+:example-custom:generateQaBetaAssets
+:example-custom:mergeQaBetaAssets
+:example-custom:transformClassesWithDexForQaBeta
+:example-custom:mergeQaBetaJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForQaBeta
+:example-custom:transformNativeLibsWithStripDebugSymbolForQaBeta
+:example-custom:processQaBetaJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForQaBeta
+:example-custom:packageQaBeta
+:example-custom:assembleQaBeta
+:example-custom:checkStagingBetaManifest
+:example-custom:prepareStagingBetaDependencies
+:example-custom:compileStagingBetaAidl
+:example-custom:compileStagingBetaRenderscript
+:example-custom:generateStagingBetaBuildConfig
+:example-custom:generateStagingBetaResValues
+:example-custom:ribbonizeStagingBeta
+:example-custom:generateStagingBetaResources
+:example-custom:mergeStagingBetaResources
+:example-custom:processStagingBetaManifest
+:example-custom:processStagingBetaResources
+:example-custom:generateStagingBetaSources
+:example-custom:incrementalStagingBetaJavaCompilationSafeguard
+:example-custom:javaPreCompileStagingBeta
+:example-custom:compileStagingBetaJavaWithJavac
+:example-custom:compileStagingBetaJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileStagingBetaNdk NO-SOURCE
+:example-custom:compileStagingBetaSources
+:example-custom:mergeStagingBetaShaders
+:example-custom:compileStagingBetaShaders
+:example-custom:generateStagingBetaAssets
+:example-custom:mergeStagingBetaAssets
+:example-custom:transformClassesWithDexForStagingBeta
+:example-custom:mergeStagingBetaJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForStagingBeta
+:example-custom:transformNativeLibsWithStripDebugSymbolForStagingBeta
+:example-custom:processStagingBetaJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForStagingBeta
+:example-custom:packageStagingBeta
+:example-custom:assembleStagingBeta
+:example-custom:assembleBeta
+:example-custom:checkLocalCanaryManifest
+:example-custom:prepareLocalCanaryDependencies
+:example-custom:compileLocalCanaryAidl
+:example-custom:compileLocalCanaryRenderscript
+:example-custom:generateLocalCanaryBuildConfig
+:example-custom:generateLocalCanaryResValues
+:example-custom:ribbonizeLocalCanary
+:example-custom:generateLocalCanaryResources
+:example-custom:mergeLocalCanaryResources
+:example-custom:processLocalCanaryManifest
+:example-custom:processLocalCanaryResources
+:example-custom:generateLocalCanarySources
+:example-custom:incrementalLocalCanaryJavaCompilationSafeguard
+:example-custom:javaPreCompileLocalCanary
+:example-custom:compileLocalCanaryJavaWithJavac
+:example-custom:compileLocalCanaryJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileLocalCanaryNdk NO-SOURCE
+:example-custom:compileLocalCanarySources
+:example-custom:lintVitalLocalCanary
+:example-custom:mergeLocalCanaryShaders
+:example-custom:compileLocalCanaryShaders
+:example-custom:generateLocalCanaryAssets
+:example-custom:mergeLocalCanaryAssets
+:example-custom:transformClassesWithDexForLocalCanary
+:example-custom:mergeLocalCanaryJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForLocalCanary
+:example-custom:transformNativeLibsWithStripDebugSymbolForLocalCanary
+:example-custom:processLocalCanaryJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForLocalCanary
+:example-custom:packageLocalCanary
+:example-custom:assembleLocalCanary
+:example-custom:checkProductionCanaryManifest
+:example-custom:prepareProductionCanaryDependencies
+:example-custom:compileProductionCanaryAidl
+:example-custom:compileProductionCanaryRenderscript
+:example-custom:generateProductionCanaryBuildConfig
+:example-custom:generateProductionCanaryResValues
+:example-custom:generateProductionCanaryResources
+:example-custom:mergeProductionCanaryResources
+:example-custom:processProductionCanaryManifest
+:example-custom:processProductionCanaryResources
+:example-custom:generateProductionCanarySources
+:example-custom:incrementalProductionCanaryJavaCompilationSafeguard
+:example-custom:javaPreCompileProductionCanary
+:example-custom:compileProductionCanaryJavaWithJavac
+:example-custom:compileProductionCanaryJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileProductionCanaryNdk NO-SOURCE
+:example-custom:compileProductionCanarySources
+:example-custom:lintVitalProductionCanary
+:example-custom:mergeProductionCanaryShaders
+:example-custom:compileProductionCanaryShaders
+:example-custom:generateProductionCanaryAssets
+:example-custom:mergeProductionCanaryAssets
+:example-custom:transformClassesWithDexForProductionCanary
+:example-custom:mergeProductionCanaryJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForProductionCanary
+:example-custom:transformNativeLibsWithStripDebugSymbolForProductionCanary
+:example-custom:processProductionCanaryJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForProductionCanary
+:example-custom:packageProductionCanary
+:example-custom:assembleProductionCanary
+:example-custom:checkQaCanaryManifest
+:example-custom:prepareQaCanaryDependencies
+:example-custom:compileQaCanaryAidl
+:example-custom:compileQaCanaryRenderscript
+:example-custom:generateQaCanaryBuildConfig
+:example-custom:generateQaCanaryResValues
+:example-custom:generateQaCanaryResources
+:example-custom:mergeQaCanaryResources
+:example-custom:processQaCanaryManifest
+:example-custom:processQaCanaryResources
+:example-custom:generateQaCanarySources
+:example-custom:incrementalQaCanaryJavaCompilationSafeguard
+:example-custom:javaPreCompileQaCanary
+:example-custom:compileQaCanaryJavaWithJavac
+:example-custom:compileQaCanaryJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileQaCanaryNdk NO-SOURCE
+:example-custom:compileQaCanarySources
+:example-custom:lintVitalQaCanary
+:example-custom:mergeQaCanaryShaders
+:example-custom:compileQaCanaryShaders
+:example-custom:generateQaCanaryAssets
+:example-custom:mergeQaCanaryAssets
+:example-custom:transformClassesWithDexForQaCanary
+:example-custom:mergeQaCanaryJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForQaCanary
+:example-custom:transformNativeLibsWithStripDebugSymbolForQaCanary
+:example-custom:processQaCanaryJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForQaCanary
+:example-custom:packageQaCanary
+:example-custom:assembleQaCanary
+:example-custom:checkStagingCanaryManifest
+:example-custom:prepareStagingCanaryDependencies
+:example-custom:compileStagingCanaryAidl
+:example-custom:compileStagingCanaryRenderscript
+:example-custom:generateStagingCanaryBuildConfig
+:example-custom:generateStagingCanaryResValues
+:example-custom:generateStagingCanaryResources
+:example-custom:mergeStagingCanaryResources
+:example-custom:processStagingCanaryManifest
+:example-custom:processStagingCanaryResources
+:example-custom:generateStagingCanarySources
+:example-custom:incrementalStagingCanaryJavaCompilationSafeguard
+:example-custom:javaPreCompileStagingCanary
+:example-custom:compileStagingCanaryJavaWithJavac
+:example-custom:compileStagingCanaryJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileStagingCanaryNdk NO-SOURCE
+:example-custom:compileStagingCanarySources
+:example-custom:lintVitalStagingCanary
+:example-custom:mergeStagingCanaryShaders
+:example-custom:compileStagingCanaryShaders
+:example-custom:generateStagingCanaryAssets
+:example-custom:mergeStagingCanaryAssets
+:example-custom:transformClassesWithDexForStagingCanary
+:example-custom:mergeStagingCanaryJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForStagingCanary
+:example-custom:transformNativeLibsWithStripDebugSymbolForStagingCanary
+:example-custom:processStagingCanaryJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForStagingCanary
+:example-custom:packageStagingCanary
+:example-custom:assembleStagingCanary
+:example-custom:assembleCanary
+:example-custom:checkLocalDebugManifest
+:example-custom:prepareLocalDebugDependencies
+:example-custom:compileLocalDebugAidl
+:example-custom:compileLocalDebugRenderscript
+:example-custom:generateLocalDebugBuildConfig
+:example-custom:generateLocalDebugResValues
+:example-custom:ribbonizeLocalDebug
+:example-custom:generateLocalDebugResources
+:example-custom:mergeLocalDebugResources
+:example-custom:processLocalDebugManifest
+:example-custom:processLocalDebugResources
+:example-custom:generateLocalDebugSources
+:example-custom:incrementalLocalDebugJavaCompilationSafeguard
+:example-custom:javaPreCompileLocalDebug
+:example-custom:compileLocalDebugJavaWithJavac
+:example-custom:compileLocalDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileLocalDebugNdk NO-SOURCE
+:example-custom:compileLocalDebugSources
+:example-custom:mergeLocalDebugShaders
+:example-custom:compileLocalDebugShaders
+:example-custom:generateLocalDebugAssets
+:example-custom:mergeLocalDebugAssets
+:example-custom:transformClassesWithDexForLocalDebug
+:example-custom:mergeLocalDebugJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForLocalDebug
+:example-custom:transformNativeLibsWithStripDebugSymbolForLocalDebug
+:example-custom:processLocalDebugJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForLocalDebug
+:example-custom:validateSigningLocalDebug
+:example-custom:packageLocalDebug
+:example-custom:assembleLocalDebug
+:example-custom:checkProductionDebugManifest
+:example-custom:prepareProductionDebugDependencies
+:example-custom:compileProductionDebugAidl
+:example-custom:compileProductionDebugRenderscript
+:example-custom:generateProductionDebugBuildConfig
+:example-custom:generateProductionDebugResValues
+:example-custom:ribbonizeProductionDebug
+:example-custom:generateProductionDebugResources
+:example-custom:mergeProductionDebugResources
+:example-custom:processProductionDebugManifest
+:example-custom:processProductionDebugResources
+:example-custom:generateProductionDebugSources
+:example-custom:incrementalProductionDebugJavaCompilationSafeguard
+:example-custom:javaPreCompileProductionDebug
+:example-custom:compileProductionDebugJavaWithJavac
+:example-custom:compileProductionDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileProductionDebugNdk NO-SOURCE
+:example-custom:compileProductionDebugSources
+:example-custom:mergeProductionDebugShaders
+:example-custom:compileProductionDebugShaders
+:example-custom:generateProductionDebugAssets
+:example-custom:mergeProductionDebugAssets
+:example-custom:transformClassesWithDexForProductionDebug
+:example-custom:mergeProductionDebugJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForProductionDebug
+:example-custom:transformNativeLibsWithStripDebugSymbolForProductionDebug
+:example-custom:processProductionDebugJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForProductionDebug
+:example-custom:validateSigningProductionDebug
+:example-custom:packageProductionDebug
+:example-custom:assembleProductionDebug
+:example-custom:checkQaDebugManifest
+:example-custom:prepareQaDebugDependencies
+:example-custom:compileQaDebugAidl
+:example-custom:compileQaDebugRenderscript
+:example-custom:generateQaDebugBuildConfig
+:example-custom:generateQaDebugResValues
+:example-custom:ribbonizeQaDebug
+:example-custom:generateQaDebugResources
+:example-custom:mergeQaDebugResources
+:example-custom:processQaDebugManifest
+:example-custom:processQaDebugResources
+:example-custom:generateQaDebugSources
+:example-custom:incrementalQaDebugJavaCompilationSafeguard
+:example-custom:javaPreCompileQaDebug
+:example-custom:compileQaDebugJavaWithJavac
+:example-custom:compileQaDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileQaDebugNdk NO-SOURCE
+:example-custom:compileQaDebugSources
+:example-custom:mergeQaDebugShaders
+:example-custom:compileQaDebugShaders
+:example-custom:generateQaDebugAssets
+:example-custom:mergeQaDebugAssets
+:example-custom:transformClassesWithDexForQaDebug
+:example-custom:mergeQaDebugJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForQaDebug
+:example-custom:transformNativeLibsWithStripDebugSymbolForQaDebug
+:example-custom:processQaDebugJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForQaDebug
+:example-custom:validateSigningQaDebug
+:example-custom:packageQaDebug
+:example-custom:assembleQaDebug
+:example-custom:checkStagingDebugManifest
+:example-custom:prepareStagingDebugDependencies
+:example-custom:compileStagingDebugAidl
+:example-custom:compileStagingDebugRenderscript
+:example-custom:generateStagingDebugBuildConfig
+:example-custom:generateStagingDebugResValues
+:example-custom:ribbonizeStagingDebug
+:example-custom:generateStagingDebugResources
+:example-custom:mergeStagingDebugResources
+:example-custom:processStagingDebugManifest
+:example-custom:processStagingDebugResources
+:example-custom:generateStagingDebugSources
+:example-custom:incrementalStagingDebugJavaCompilationSafeguard
+:example-custom:javaPreCompileStagingDebug
+:example-custom:compileStagingDebugJavaWithJavac
+:example-custom:compileStagingDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileStagingDebugNdk NO-SOURCE
+:example-custom:compileStagingDebugSources
+:example-custom:mergeStagingDebugShaders
+:example-custom:compileStagingDebugShaders
+:example-custom:generateStagingDebugAssets
+:example-custom:mergeStagingDebugAssets
+:example-custom:transformClassesWithDexForStagingDebug
+:example-custom:mergeStagingDebugJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForStagingDebug
+:example-custom:transformNativeLibsWithStripDebugSymbolForStagingDebug
+:example-custom:processStagingDebugJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForStagingDebug
+:example-custom:validateSigningStagingDebug
+:example-custom:packageStagingDebug
+:example-custom:assembleStagingDebug
+:example-custom:assembleDebug
+:example-custom:checkLocalReleaseManifest
+:example-custom:prepareLocalReleaseDependencies
+:example-custom:compileLocalReleaseAidl
+:example-custom:compileLocalReleaseRenderscript
+:example-custom:generateLocalReleaseBuildConfig
+:example-custom:generateLocalReleaseResValues
+:example-custom:generateLocalReleaseResources
+:example-custom:mergeLocalReleaseResources
+:example-custom:processLocalReleaseManifest
+:example-custom:processLocalReleaseResources
+:example-custom:generateLocalReleaseSources
+:example-custom:incrementalLocalReleaseJavaCompilationSafeguard
+:example-custom:javaPreCompileLocalRelease
+:example-custom:compileLocalReleaseJavaWithJavac
+:example-custom:compileLocalReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileLocalReleaseNdk NO-SOURCE
+:example-custom:compileLocalReleaseSources
+:example-custom:lintVitalLocalRelease
+:example-custom:mergeLocalReleaseShaders
+:example-custom:compileLocalReleaseShaders
+:example-custom:generateLocalReleaseAssets
+:example-custom:mergeLocalReleaseAssets
+:example-custom:transformClassesWithDexForLocalRelease
+:example-custom:mergeLocalReleaseJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForLocalRelease
+:example-custom:transformNativeLibsWithStripDebugSymbolForLocalRelease
+:example-custom:processLocalReleaseJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForLocalRelease
+:example-custom:packageLocalRelease
+:example-custom:assembleLocalRelease
+:example-custom:checkProductionReleaseManifest
+:example-custom:prepareProductionReleaseDependencies
+:example-custom:compileProductionReleaseAidl
+:example-custom:compileProductionReleaseRenderscript
+:example-custom:generateProductionReleaseBuildConfig
+:example-custom:generateProductionReleaseResValues
+:example-custom:generateProductionReleaseResources
+:example-custom:mergeProductionReleaseResources
+:example-custom:processProductionReleaseManifest
+:example-custom:processProductionReleaseResources
+:example-custom:generateProductionReleaseSources
+:example-custom:incrementalProductionReleaseJavaCompilationSafeguard
+:example-custom:javaPreCompileProductionRelease
+:example-custom:compileProductionReleaseJavaWithJavac
+:example-custom:compileProductionReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileProductionReleaseNdk NO-SOURCE
+:example-custom:compileProductionReleaseSources
+:example-custom:lintVitalProductionRelease
+:example-custom:mergeProductionReleaseShaders
+:example-custom:compileProductionReleaseShaders
+:example-custom:generateProductionReleaseAssets
+:example-custom:mergeProductionReleaseAssets
+:example-custom:transformClassesWithDexForProductionRelease
+:example-custom:mergeProductionReleaseJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForProductionRelease
+:example-custom:transformNativeLibsWithStripDebugSymbolForProductionRelease
+:example-custom:processProductionReleaseJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForProductionRelease
+:example-custom:packageProductionRelease
+:example-custom:assembleProductionRelease
+:example-custom:checkQaReleaseManifest
+:example-custom:prepareQaReleaseDependencies
+:example-custom:compileQaReleaseAidl
+:example-custom:compileQaReleaseRenderscript
+:example-custom:generateQaReleaseBuildConfig
+:example-custom:generateQaReleaseResValues
+:example-custom:generateQaReleaseResources
+:example-custom:mergeQaReleaseResources
+:example-custom:processQaReleaseManifest
+:example-custom:processQaReleaseResources
+:example-custom:generateQaReleaseSources
+:example-custom:incrementalQaReleaseJavaCompilationSafeguard
+:example-custom:javaPreCompileQaRelease
+:example-custom:compileQaReleaseJavaWithJavac
+:example-custom:compileQaReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileQaReleaseNdk NO-SOURCE
+:example-custom:compileQaReleaseSources
+:example-custom:lintVitalQaRelease
+:example-custom:mergeQaReleaseShaders
+:example-custom:compileQaReleaseShaders
+:example-custom:generateQaReleaseAssets
+:example-custom:mergeQaReleaseAssets
+:example-custom:transformClassesWithDexForQaRelease
+:example-custom:mergeQaReleaseJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForQaRelease
+:example-custom:transformNativeLibsWithStripDebugSymbolForQaRelease
+:example-custom:processQaReleaseJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForQaRelease
+:example-custom:packageQaRelease
+:example-custom:assembleQaRelease
+:example-custom:checkStagingReleaseManifest
+:example-custom:prepareStagingReleaseDependencies
+:example-custom:compileStagingReleaseAidl
+:example-custom:compileStagingReleaseRenderscript
+:example-custom:generateStagingReleaseBuildConfig
+:example-custom:generateStagingReleaseResValues
+:example-custom:generateStagingReleaseResources
+:example-custom:mergeStagingReleaseResources
+:example-custom:processStagingReleaseManifest
+:example-custom:processStagingReleaseResources
+:example-custom:generateStagingReleaseSources
+:example-custom:incrementalStagingReleaseJavaCompilationSafeguard
+:example-custom:javaPreCompileStagingRelease
+:example-custom:compileStagingReleaseJavaWithJavac
+:example-custom:compileStagingReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:example-custom:compileStagingReleaseNdk NO-SOURCE
+:example-custom:compileStagingReleaseSources
+:example-custom:lintVitalStagingRelease
+:example-custom:mergeStagingReleaseShaders
+:example-custom:compileStagingReleaseShaders
+:example-custom:generateStagingReleaseAssets
+:example-custom:mergeStagingReleaseAssets
+:example-custom:transformClassesWithDexForStagingRelease
+:example-custom:mergeStagingReleaseJniLibFolders
+:example-custom:transformNativeLibsWithMergeJniLibsForStagingRelease
+:example-custom:transformNativeLibsWithStripDebugSymbolForStagingRelease
+:example-custom:processStagingReleaseJavaRes NO-SOURCE
+:example-custom:transformResourcesWithMergeJavaResForStagingRelease
+:example-custom:packageStagingRelease
+:example-custom:assembleStagingRelease
+:example-custom:assembleRelease
+:example-custom:assemble
+:example-custom:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 0.42 secs
+
+2018-04-02 14:28:14,722 INFO  FullProcessService - Found APK file: /tmp/rdisk/2266/src/example-custom/build/outputs/apk/example-custom-staging-release-unsigned.apk

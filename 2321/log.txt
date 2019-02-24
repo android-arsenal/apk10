@@ -1,0 +1,18 @@
+2018-04-02 13:03:34,819 INFO  DownloadService - Downloading "https://github.com/mul0w/gradle-git-deploy/archive/master.zip", attempt 3
+2018-04-02 13:03:36,302 INFO  DownloadService - Downloaded https://github.com/mul0w/gradle-git-deploy/archive/master.zip, attempt 3
+2018-04-02 13:03:36,303 INFO  DownloadService - Size of file "/tmp/rdisk/2321/master.zip": 2 KB
+2018-04-02 13:03:36,303 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:03:36,303 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2321/master.zip: true
+2018-04-02 13:03:36,303 DEBUG ZipUtil - Extracting '/tmp/rdisk/2321/master.zip' into '/tmp/rdisk/2321/src'.
+2018-04-02 13:03:36,304 INFO  FullProcessService - Size of directory with sources: 3 KB
+2018-04-02 13:03:36,304 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2321/src]
+2018-04-02 13:03:36,310 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2321/src/.git/
+
+2018-04-02 13:03:36,311 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-02 13:03:36,311 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-02 13:03:36,312 INFO  ProjectBuildService - Build script(s): none
+2018-04-02 13:03:36,313 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2321/src/gradle-git-deploy-master/deploy.gradle
+2018-04-02 13:03:36,313 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:03:36,313 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-02 13:03:36,313 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:03:36,314 ERROR FullProcessService - Could not find generated or existed APK file

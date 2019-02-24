@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.taobao.android.dexposed",
+    "label" : "dexposed sample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 223,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABZVBMVEUAAAAztuoztuoztuoztuo0tuo0tuo0t+sztuo0tuozzP8wr+9Vqv8kttsztukxtu03tu0AgP8ztukztuoztukztuoztuk0t+o0tukztuoztuoztuoztuoztegytes0tes0tusztuoztekztuoytuo3tu0ytesztuoztuszt+k0uOwA//8zteoztuoztOsztukzteoytusyt+kytOs0tekzteoztuozuOszuew0tuoztus0tuoztekytukztuoztuk5uPEztuo0tuoyteo2tesztuouuegzt+k0tek0t+sztuorv+oytus1tOkzteoztuozu+4wt+czt+oztusyt+kztuozs+YxteYyt+kztuoytuoztuozs+4ztuo0tuoztuo0t+syt+oztesztukztuoztuk0tuoztuoyteoztuorqv8zteoztuoztuoyt+sytOwzt+oxteoyt+szteoytusztukytupsanFhAAAAd3RSTlMA9Ov/9VTGZ22FBRADByMqHAJGv/n3vUpexPrwqjdMirzHaP56Drv9fY02AbSrQYyRW0czXdfzGShJlqimsdOaEt8xYSb7FmpTWc4McCJvtQ8gVdQu/AofddHKrh7qe4hOxWRQ6O1sz1agBp/2238pXz6i0Imlp3J+0d4AAAFuSURBVEjH7ZRZT8JAFIUHR0DBDREXVEABccFdlIoIiLihICquqLjjhru/3zNtCQ1SG+KDMel9OWfOvV+m005KiFpq/WFpNJqqigBKabXCiFan0+krAWowU/trwGCsk87UNzQ2mX4Ams0t1NLaJkam9g4r4s6ubray2R1Y9NjtEqDXSfly8Ym7j4rl6cdyoLAqAh5rYWAQwZCXFktfFqB02DYyynYZQzDOBxOTUz7o9Azxc7MwAY6TAHPMBGCC0HloiAXhiHjYb4emC8xEYRyELEJiS3xrGdZXDogZmFmBMxOyClkTWn52rLjshxOBdYhXaLnZ7htKQAKSFFqbDEgpAVuQbaG1A5veVQJSeL2ePT7ZR3JAlAByCD1iFytzDHciAqfyQJY9+dn5hesSehVGcg1zk8vKAeS2eDOcWhbkSq9GCXB3X5h/iPKd+KMUyOfzwiV9gnsWspfXSJpa3t4z4owx8ZEMfqr/P7X+VX0B2AYsq3fqLooAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 43,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"223\" android:versionName=\"1.0\" package=\"com.taobao.android.dexposed\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f060001\" android:label=\"dexposed sample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.taobao.dexposed.DexposedSampleApplication\" android:debuggable=\"true\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"dexposed sample\" android:name=\"com.taobao.dexposed.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 134695,
+  "crc32" : 883693212,
+  "sha256" : "43c35138531e93665877880be4cc501c7435b6a41ff5da546fbf4f36fb4bfa16",
+  "buildTime" : 1522656120000
+}

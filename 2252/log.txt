@@ -1,0 +1,295 @@
+2018-04-02 15:03:39,279 INFO  DownloadService - Downloading "https://github.com/Workday/postman/archive/master.zip", attempt 3
+2018-04-02 15:04:39,764 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 15:04:40,460 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 15:04:40,460 INFO  DownloadService - Downloading "https://github.com/Workday/postman/archive/master.zip", attempt 3
+2018-04-02 15:05:41,661 DEBUG FullProcessService - Repository https://github.com/Workday/postman available: true
+2018-04-02 15:05:41,661 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:05:41,661 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Workday/postman, /tmp/rdisk/2252/src]
+2018-04-02 15:05:43,196 INFO  SysUtils - 
+2018-04-02 15:05:43,202 INFO  GitService - Deleted "/tmp/rdisk/2252/src/.git": true
+2018-04-02 15:05:43,205 INFO  FullProcessService - Size of directory with sources: 234 KB
+2018-04-02 15:05:43,205 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2252/src]
+2018-04-02 15:05:43,214 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2252/src/.git/
+
+2018-04-02 15:05:43,217 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2252/src/gradlew
+2018-04-02 15:05:43,221 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2252/src/demo/build.gradle /tmp/rdisk/2252/src/build.gradle /tmp/rdisk/2252/src/postman-processor/build.gradle /tmp/rdisk/2252/src/postman/build.gradle
+2018-04-02 15:05:43,224 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2252/src/settings.gradle /tmp/rdisk/2252/src/postman/build.gradle /tmp/rdisk/2252/src/postman-processor/build.gradle /tmp/rdisk/2252/src/gradle/provided-configuration.gradle /tmp/rdisk/2252/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2252/src/gradle/checkstyle.gradle /tmp/rdisk/2252/src/demo/build.gradle /tmp/rdisk/2252/src/build.gradle
+2018-04-02 15:05:43,225 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:05:43,225 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:05:43,237 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2252/src/demo/local.properties
+2018-04-02 15:05:43,238 INFO  ProjectFixService - Build info for "/tmp/rdisk/2252/src/demo/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 15:05:43,238 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2252/src/local.properties
+2018-04-02 15:05:43,238 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-02 15:05:43,238 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-02 15:05:43,242 INFO  ProjectFixService - Build info for "/tmp/rdisk/2252/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 15:05:43,242 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2252/src/postman-processor/local.properties
+2018-04-02 15:05:43,245 INFO  ProjectFixService - Build info for "/tmp/rdisk/2252/src/postman-processor/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 15:05:43,245 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2252/src/postman/local.properties
+2018-04-02 15:05:43,248 INFO  ProjectFixService - Build info for "/tmp/rdisk/2252/src/postman/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 15:05:43,249 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:05:43,249 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:05:43,249 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:05:59,283 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-02 15:05:59,283 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 15:05:59,283 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 15:06:09,266 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:compileLint
+:demo:copyDebugLint UP-TO-DATE
+:demo:mergeDebugProguardFiles
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:packageDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:processDebugJavaRes UP-TO-DATE
+:postman:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/util/CollectionUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:postman:processResources UP-TO-DATE
+:postman:classes
+:postman:jar
+:postman-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:postman-processor:processResources
+:postman-processor:classes
+:postman-processor:jar
+:demo:compileDebugJavaWithJavac
+:demo:packageDebugJar
+:demo:compileDebugNdk UP-TO-DATE
+:demo:packageDebugJniLibs UP-TO-DATE
+:demo:packageDebugLocalJar UP-TO-DATE
+:demo:packageDebugRenderscript UP-TO-DATE
+:demo:bundleDebug
+:demo:compileDebugSources
+:demo:assembleDebug
+:demo:copyReleaseLint UP-TO-DATE
+:demo:mergeReleaseProguardFiles
+:demo:preReleaseBuild UP-TO-DATE
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:packageReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:compileReleaseJavaWithJavac
+:demo:packageReleaseJar
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:packageReleaseJniLibs UP-TO-DATE
+:demo:packageReleaseLocalJar UP-TO-DATE
+:demo:packageReleaseRenderscript UP-TO-DATE
+:demo:bundleRelease
+:demo:compileReleaseSources
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.518 secs
+
+2018-04-02 15:06:09,275 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:06:09,275 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:06:17,159 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-04-02 15:06:17,159 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 15:06:17,160 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 15:06:24,673 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:compileLint
+:demo:copyDebugLint UP-TO-DATE
+:demo:mergeDebugProguardFiles UP-TO-DATE
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl UP-TO-DATE
+:demo:compileDebugRenderscript UP-TO-DATE
+:demo:generateDebugBuildConfig UP-TO-DATE
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets UP-TO-DATE
+:demo:generateDebugResValues UP-TO-DATE
+:demo:generateDebugResources UP-TO-DATE
+:demo:packageDebugResources UP-TO-DATE
+:demo:processDebugManifest UP-TO-DATE
+:demo:processDebugResources UP-TO-DATE
+:demo:generateDebugSources UP-TO-DATE
+:demo:processDebugJavaRes UP-TO-DATE
+:postman:compileJava UP-TO-DATE
+:postman:processResources UP-TO-DATE
+:postman:classes UP-TO-DATE
+:postman:jar UP-TO-DATE
+:postman-processor:compileJava UP-TO-DATE
+:postman-processor:processResources UP-TO-DATE
+:postman-processor:classes UP-TO-DATE
+:postman-processor:jar UP-TO-DATE
+:demo:compileDebugJavaWithJavac UP-TO-DATE
+:demo:packageDebugJar UP-TO-DATE
+:demo:compileDebugNdk UP-TO-DATE
+:demo:packageDebugJniLibs UP-TO-DATE
+:demo:packageDebugLocalJar UP-TO-DATE
+:demo:packageDebugRenderscript UP-TO-DATE
+:demo:bundleDebug UP-TO-DATE
+:demo:compileDebugSources UP-TO-DATE
+:demo:assembleDebug UP-TO-DATE
+:demo:copyReleaseLint UP-TO-DATE
+:demo:mergeReleaseProguardFiles UP-TO-DATE
+:demo:preReleaseBuild UP-TO-DATE
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl UP-TO-DATE
+:demo:compileReleaseRenderscript UP-TO-DATE
+:demo:generateReleaseBuildConfig UP-TO-DATE
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets UP-TO-DATE
+:demo:generateReleaseResValues UP-TO-DATE
+:demo:generateReleaseResources UP-TO-DATE
+:demo:packageReleaseResources UP-TO-DATE
+:demo:processReleaseManifest UP-TO-DATE
+:demo:processReleaseResources UP-TO-DATE
+:demo:generateReleaseSources UP-TO-DATE
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:compileReleaseJavaWithJavac UP-TO-DATE
+:demo:packageReleaseJar UP-TO-DATE
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:packageReleaseJniLibs UP-TO-DATE
+:demo:packageReleaseLocalJar UP-TO-DATE
+:demo:packageReleaseRenderscript UP-TO-DATE
+:demo:bundleRelease UP-TO-DATE
+:demo:compileReleaseSources UP-TO-DATE
+:demo:assembleRelease UP-TO-DATE
+:demo:assemble UP-TO-DATE
+:demo:build
+:postman:javadocJar
+:postman:sourcesJar
+:postman:signArchives SKIPPED
+:postman:assemble
+:postman:build
+:postman-processor:javadocJar
+:postman-processor:sourcesJar
+:postman-processor:signArchives SKIPPED
+:postman-processor:assemble
+:postman-processor:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.054 secs
+
+2018-04-02 15:06:24,682 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:06:24,682 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/postman-processor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:06:31,928 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 15:06:31,928 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 15:06:31,928 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 15:06:31,928 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/postman-processor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 15:06:47,048 INFO  SysUtils - Configuration on demand is an incubating feature.
+:postman:compileJava UP-TO-DATE
+:postman:processResources UP-TO-DATE
+:postman:classes UP-TO-DATE
+:postman:jar UP-TO-DATE
+:postman-processor:compileJava UP-TO-DATE
+:postman-processor:processResources UP-TO-DATE
+:postman-processor:classes UP-TO-DATE
+:postman-processor:jar UP-TO-DATE
+:postman:javadoc/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapter.java:18: warning: no @return
+    T getValue();
+      ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/AbstractCollectionParcelableAdapter.java:57: warning: no @return
+        protected abstract C newParcelableAdapterInstance(List<Object> items);
+                             ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/AbstractMapParcelableAdapter.java:69: warning: no @return
+        protected abstract M newMapInstance();
+                             ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/AbstractMapParcelableAdapter.java:78: warning: no @return
+        protected abstract A newParcelableAdapterInstance(M map);
+                             ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:41: warning: no @param for source
+    public static Parcelable[] toParcelableArray(Collection<?> source) {
+                               ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:41: warning: no @return
+    public static Parcelable[] toParcelableArray(Collection<?> source) {
+                               ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:53: warning: no @param for wrapped
+    public static Object[] unwrapParcelableArray(Parcelable[] wrapped) {
+                           ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:53: warning: no @return
+    public static Object[] unwrapParcelableArray(Parcelable[] wrapped) {
+                           ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:78: warning: no @param for p
+    public static Object unwrapParcelable(Parcelable p) {
+                         ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:78: warning: no @return
+    public static Object unwrapParcelable(Parcelable p) {
+                         ^
+/tmp/rdisk/2252/src/postman/src/main/java/com/workday/postman/adapter/ParcelableAdapters.java:91: warning: no @param for o
+    public static Parcelable asParcelable(Object o) {
+                             ^
+
+11 warnings
+:postman-processor:javadoc
+:postman-processor:javadocJar
+:postman-processor:sourcesJar UP-TO-DATE
+:postman-processor:signArchives SKIPPED
+:postman-processor:assemble
+:postman-processor:checkstyleMain
+:postman-processor:compileTestJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:postman-processor:processTestResources UP-TO-DATE
+:postman-processor:testClasses
+:postman-processor:checkstyleTest
+:postman-processor:test
+:postman-processor:check
+:postman-processor:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.099 secs
+
+2018-04-02 15:06:47,059 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:06:47,059 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/postman/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:06:54,329 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 15:06:54,329 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 15:06:54,329 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 15:06:54,329 INFO  SysUtils - Execute command: [/tmp/rdisk/2252/src/gradlew, -b, /tmp/rdisk/2252/src/postman/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 15:07:03,505 INFO  SysUtils - Configuration on demand is an incubating feature.
+:postman:compileJava UP-TO-DATE
+:postman:processResources UP-TO-DATE
+:postman:classes UP-TO-DATE
+:postman:jar UP-TO-DATE
+:postman:javadoc UP-TO-DATE
+:postman:javadocJar
+:postman:sourcesJar UP-TO-DATE
+:postman:signArchives SKIPPED
+:postman:assemble
+:postman:checkstyleMain
+:postman:compileTestJava UP-TO-DATE
+:postman:processTestResources UP-TO-DATE
+:postman:testClasses UP-TO-DATE
+:postman:checkstyleTest UP-TO-DATE
+:postman:test UP-TO-DATE
+:postman:check
+:postman:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.758 secs
+
+2018-04-02 15:07:03,517 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 15:07:03,528 ERROR FullProcessService - Could not find generated or existed APK file

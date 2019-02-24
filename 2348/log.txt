@@ -1,0 +1,45 @@
+2018-04-02 09:56:46,340 INFO  DownloadService - Downloading "https://github.com/shiraji/new-instance-inspection/archive/master.zip", attempt 3
+2018-04-02 09:56:46,737 INFO  DownloadService - Downloaded https://github.com/shiraji/new-instance-inspection/archive/master.zip, attempt 3
+2018-04-02 09:56:46,737 INFO  DownloadService - Size of file "/tmp/rdisk/2348/master.zip": 184 KB
+2018-04-02 09:56:46,737 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 09:56:46,738 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2348/master.zip: true
+2018-04-02 09:56:46,738 DEBUG ZipUtil - Extracting '/tmp/rdisk/2348/master.zip' into '/tmp/rdisk/2348/src'.
+2018-04-02 09:56:46,745 INFO  FullProcessService - Size of directory with sources: 224 KB
+2018-04-02 09:56:46,745 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2348/src]
+2018-04-02 09:56:46,751 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2348/src/.git/
+
+2018-04-02 09:56:46,752 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2348/src/new-instance-inspection-master/gradlew
+2018-04-02 09:56:46,754 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle
+2018-04-02 09:56:46,755 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2348/src/new-instance-inspection-master/settings.gradle /tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle
+2018-04-02 09:56:46,756 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 09:56:46,756 INFO  ProjectFixService - Fixing project...
+2018-04-02 09:56:46,759 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2348/src/new-instance-inspection-master/local.properties
+2018-04-02 09:56:46,760 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.9-bin.zip
+2018-04-02 09:56:46,760 INFO  ProjectFixService - Build info for "/tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 09:56:46,761 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 09:56:46,761 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 09:56:46,761 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 09:56:46,761 INFO  SysUtils - Execute command: [/tmp/rdisk/2348/src/new-instance-inspection-master/gradlew, -b, /tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 09:56:52,458 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-02 09:56:52,458 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 09:56:52,458 INFO  SysUtils - Execute command: [/tmp/rdisk/2348/src/new-instance-inspection-master/gradlew, -b, /tmp/rdisk/2348/src/new-instance-inspection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 09:56:59,513 INFO  SysUtils - Configuration on demand is an incubating feature.
+Cannot find alternate SDK path: /Applications/Android Studio.app/Contents. Default IDEA will be used : /root/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/141.713.2/28c8f29213fc1ad6cea3e96bfda6943f19c08ac9/ideaIC-141.713.2
+Cannot find alternate SDK path: /Applications/Android Studio.app/Contents. Default IDEA will be used : /root/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/141.713.2/28c8f29213fc1ad6cea3e96bfda6943f19c08ac9/ideaIC-141.713.2
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:processResources
+:classes
+:prepareSandbox
+:buildPlugin
+:jar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.652 secs
+
+2018-04-02 09:56:59,518 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 09:56:59,520 ERROR FullProcessService - Could not find generated or existed APK file

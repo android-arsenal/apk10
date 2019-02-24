@@ -1,0 +1,294 @@
+2018-04-02 13:56:07,486 INFO  DownloadService - Downloading "https://github.com/amphiaraus/android-dialog-builder/archive/master.zip", attempt 3
+2018-04-02 13:57:08,032 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 13:57:08,804 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 13:57:08,804 INFO  DownloadService - Downloading "https://github.com/amphiaraus/android-dialog-builder/archive/master.zip", attempt 3
+2018-04-02 13:58:10,093 DEBUG FullProcessService - Repository https://github.com/amphiaraus/android-dialog-builder available: true
+2018-04-02 13:58:10,093 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 13:58:10,093 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/amphiaraus/android-dialog-builder, /tmp/rdisk/2276/src]
+2018-04-02 13:58:14,311 INFO  SysUtils - 
+2018-04-02 13:58:14,320 INFO  GitService - Deleted "/tmp/rdisk/2276/src/.git": true
+2018-04-02 13:58:14,324 INFO  FullProcessService - Size of directory with sources: 39 MB
+2018-04-02 13:58:14,324 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2276/src]
+2018-04-02 13:58:14,328 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2276/src/.git/
+
+2018-04-02 13:58:14,332 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2276/src/gradlew
+2018-04-02 13:58:14,335 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2276/src/library/build.gradle /tmp/rdisk/2276/src/sample/build.gradle /tmp/rdisk/2276/src/build.gradle
+2018-04-02 13:58:14,339 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2276/src/settings.gradle /tmp/rdisk/2276/src/sample/build.gradle /tmp/rdisk/2276/src/library/build.gradle /tmp/rdisk/2276/src/gradle-mvn-push.gradle /tmp/rdisk/2276/src/build.gradle
+2018-04-02 13:58:14,339 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:58:14,339 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:58:14,349 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2276/src/library/local.properties
+2018-04-02 13:58:14,350 INFO  ProjectFixService - Build info for "/tmp/rdisk/2276/src/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 13:58:14,350 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2276/src/sample/local.properties
+2018-04-02 13:58:14,352 INFO  ProjectFixService - Build info for "/tmp/rdisk/2276/src/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 13:58:14,352 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2276/src/local.properties
+2018-04-02 13:58:14,353 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 13:58:14,354 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 13:58:14,355 INFO  ProjectFixService - Build info for "/tmp/rdisk/2276/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 13:58:14,355 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:58:14,355 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:58:14,355 INFO  SysUtils - Execute command: [/tmp/rdisk/2276/src/gradlew, -b, /tmp/rdisk/2276/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:58:25,126 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 13:58:25,126 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 13:58:25,126 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 13:58:25,126 INFO  SysUtils - Execute command: [/tmp/rdisk/2276/src/gradlew, -b, /tmp/rdisk/2276/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 13:58:47,472 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration(s) specified but the install task does not exist in project :library.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library
+:library:prepareComAndroidSupportSupportV42220Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/ViewHolder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/ViewHolder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/dialog/ListMasterDialog.java:25: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/dialog/AbsListMasterDialog.java:25: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/dialog/GridMasterDialog.java:25: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/dialog/AlertMasterDialog.java:27: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/TextDialogAdapter.java:22: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/GridDialogAdapter.java:22: error: cannot find symbol
+import net.soulwolf.widget.dialogbuilder.R;
+                                        ^
+  symbol:   class R
+  location: package net.soulwolf.widget.dialogbuilder
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/ViewHolder.java:60: warning: no @param for <T>
+    public <T extends View> T getView(int viewId) {
+                              ^
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/adapter/ViewHolder.java:209: warning: no @param for bm
+    public ViewHolder setImageBitmap(int viewId, Bitmap bm) {
+                      ^
+/tmp/rdisk/2276/src/library/src/main/java/net/soulwolf/widget/dialogbuilder/IDialogBuilder.java:92: warning: no description for @param
+     * @param isCancelable
+       ^
+
+9 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:lint
+Ran lint on variant release: 17 issues found
+Ran lint on variant debug: 17 issues found
+Wrote HTML report to file:/tmp/rdisk/2276/src/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2276/src/library/build/outputs/lint-results.xml
+:library:preCompileDebugUnitTestJava
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJava UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebug
+:library:preCompileReleaseUnitTestJava
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJava UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testRelease
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.937 secs
+
+2018-04-02 13:58:47,508 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:58:47,508 INFO  SysUtils - Execute command: [/tmp/rdisk/2276/src/gradlew, -b, /tmp/rdisk/2276/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:58:54,159 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 13:58:54,160 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 13:58:54,160 INFO  SysUtils - Execute command: [/tmp/rdisk/2276/src/gradlew, -b, /tmp/rdisk/2276/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 13:59:18,776 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration(s) specified but the install task does not exist in project :library.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72220Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42220Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72220Library
+:sample:prepareComAndroidSupportSupportV42220Library
+:sample:prepareNetSoulwolfWidgetLibrary102Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_wx_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_qq_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_friends_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_qzone_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJava
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_wx_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_qq_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_friends_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2276/src/sample/src/main/res/mipmap-xxhdpi/share_layout_qzone_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJava
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.2 secs
+
+2018-04-02 13:59:18,848 INFO  FullProcessService - Found APK file: /tmp/rdisk/2276/src/sample/build/outputs/apk/sample-release-unsigned.apk

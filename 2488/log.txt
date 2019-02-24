@@ -1,0 +1,137 @@
+2018-04-02 03:09:08,790 INFO  DownloadService - Downloading "https://github.com/android-cjj/BeautifulRefreshLayout/archive/master.zip", attempt 3
+2018-04-02 03:10:09,415 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:10:10,261 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:10:10,261 INFO  DownloadService - Downloading "https://github.com/android-cjj/BeautifulRefreshLayout/archive/master.zip", attempt 3
+2018-04-02 03:11:11,469 DEBUG FullProcessService - Repository https://github.com/android-cjj/BeautifulRefreshLayout available: true
+2018-04-02 03:11:11,469 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:11:11,469 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/android-cjj/BeautifulRefreshLayout, /tmp/rdisk/2488/src]
+2018-04-02 03:11:15,087 INFO  SysUtils - 
+2018-04-02 03:11:15,092 INFO  GitService - Deleted "/tmp/rdisk/2488/src/.git": true
+2018-04-02 03:11:15,095 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 03:11:15,095 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2488/src]
+2018-04-02 03:11:15,099 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2488/src/.git/
+
+2018-04-02 03:11:15,103 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2488/src/gradlew
+2018-04-02 03:11:15,106 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2488/src/app/build.gradle /tmp/rdisk/2488/src/beautifulrefreshlibrary/build.gradle /tmp/rdisk/2488/src/build.gradle
+2018-04-02 03:11:15,108 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2488/src/settings.gradle /tmp/rdisk/2488/src/build.gradle /tmp/rdisk/2488/src/beautifulrefreshlibrary/build.gradle /tmp/rdisk/2488/src/app/build.gradle
+2018-04-02 03:11:15,109 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:11:15,109 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:11:15,115 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2488/src/app/local.properties
+2018-04-02 03:11:15,116 INFO  ProjectFixService - Build info for "/tmp/rdisk/2488/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 03:11:15,116 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2488/src/beautifulrefreshlibrary/local.properties
+2018-04-02 03:11:15,116 INFO  ProjectFixService - Build info for "/tmp/rdisk/2488/src/beautifulrefreshlibrary/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 03:11:15,116 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2488/src/local.properties
+2018-04-02 03:11:15,117 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 03:11:15,117 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 03:11:15,118 INFO  ProjectFixService - Build info for "/tmp/rdisk/2488/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 03:11:15,118 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:11:15,118 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:11:15,118 INFO  SysUtils - Execute command: [/tmp/rdisk/2488/src/gradlew, -b, /tmp/rdisk/2488/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:11:23,715 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 03:11:23,715 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 03:11:23,715 INFO  SysUtils - Execute command: [/tmp/rdisk/2488/src/gradlew, -b, /tmp/rdisk/2488/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 03:12:01,399 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:beautifulrefreshlibrary:compileLint
+:beautifulrefreshlibrary:copyReleaseLint UP-TO-DATE
+:beautifulrefreshlibrary:preBuild UP-TO-DATE
+:beautifulrefreshlibrary:preReleaseBuild UP-TO-DATE
+:beautifulrefreshlibrary:checkReleaseManifest
+:beautifulrefreshlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:beautifulrefreshlibrary:preDebugBuild UP-TO-DATE
+:beautifulrefreshlibrary:preDebugUnitTestBuild UP-TO-DATE
+:beautifulrefreshlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:beautifulrefreshlibrary:prepareComAndroidSupportAppcompatV72220Library
+:beautifulrefreshlibrary:prepareComAndroidSupportSupportV42220Library
+:beautifulrefreshlibrary:prepareComFacebookFrescoDrawee060Library
+:beautifulrefreshlibrary:prepareComFacebookFrescoFbcore060Library
+:beautifulrefreshlibrary:prepareComFacebookFrescoFresco060Library
+:beautifulrefreshlibrary:prepareComFacebookFrescoImagepipeline060Library
+:beautifulrefreshlibrary:prepareReleaseDependencies
+:beautifulrefreshlibrary:compileReleaseAidl
+:beautifulrefreshlibrary:compileReleaseRenderscript
+:beautifulrefreshlibrary:generateReleaseBuildConfig
+:beautifulrefreshlibrary:generateReleaseAssets UP-TO-DATE
+:beautifulrefreshlibrary:mergeReleaseAssets
+:beautifulrefreshlibrary:generateReleaseResValues
+:beautifulrefreshlibrary:generateReleaseResources
+:beautifulrefreshlibrary:mergeReleaseResources
+:beautifulrefreshlibrary:processReleaseManifest
+:beautifulrefreshlibrary:processReleaseResources
+:beautifulrefreshlibrary:generateReleaseSources
+:beautifulrefreshlibrary:processReleaseJavaRes UP-TO-DATE
+:beautifulrefreshlibrary:compileReleaseJava
+:beautifulrefreshlibrary:extractReleaseAnnotations
+:beautifulrefreshlibrary:mergeReleaseProguardFiles
+:beautifulrefreshlibrary:packageReleaseJar
+:beautifulrefreshlibrary:compileReleaseNdk UP-TO-DATE
+:beautifulrefreshlibrary:packageReleaseJniLibs UP-TO-DATE
+:beautifulrefreshlibrary:packageReleaseLocalJar UP-TO-DATE
+:beautifulrefreshlibrary:packageReleaseRenderscript UP-TO-DATE
+:beautifulrefreshlibrary:packageReleaseResources
+:beautifulrefreshlibrary:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportCardviewV72220Library
+:app:prepareComAndroidSupportDesign2220Library
+:app:prepareComAndroidSupportRecyclerviewV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComFacebookFrescoDrawee060Library
+:app:prepareComFacebookFrescoFbcore060Library
+:app:prepareComFacebookFrescoFresco060Library
+:app:prepareComFacebookFrescoImagepipeline060Library
+:app:prepareSrcBeautifulrefreshlibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.24 secs
+
+2018-04-02 03:12:01,460 INFO  FullProcessService - Found APK file: /tmp/rdisk/2488/src/app/build/outputs/apk/app-debug.apk

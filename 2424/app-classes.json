@@ -1,0 +1,6 @@
+{
+  "android.support.annotation" : [ "AnimRes", "AnimatorRes", "AnyRes", "ArrayRes", "AttrRes", "BinderThread", "BoolRes", "CallSuper", "CheckResult", "ColorInt", "ColorRes", "DimenRes", "DrawableRes", "FloatRange", "FractionRes", "IdRes", "IntDef", "IntRange", "IntegerRes", "InterpolatorRes", "Keep", "LayoutRes", "MainThread", "MenuRes", "NonNull", "Nullable", "PluralsRes", "RawRes", "RequiresPermission", "RequiresPermission$Read", "RequiresPermission$Write", "Size", "StringDef", "StringRes", "StyleRes", "StyleableRes", "TransitionRes", "UiThread", "VisibleForTesting", "WorkerThread", "XmlRes" ],
+  "com.example.frenchtoast" : [ "BuildConfig", "ExampleApplication", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string" ],
+  "frenchtoast" : [ "ActivityLifecycleCallbacksAdapter", "FrenchToast", "FrenchToast$ActivityToaster", "FrenchToast$Holder", "FrenchToast$QueueHolder", "FrenchToast$QueueHolder$1", "LifecycleToastQueue", "LifecycleToastQueue$1", "LifecycleToastQueue$EnqueuedToast", "Mixture", "SmartToaster", "ToastInternals", "ToastQueue", "Toasted", "Toaster" ],
+  "info.piwai.frenchtoast" : [ "BuildConfig" ]
+}

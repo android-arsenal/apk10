@@ -1,0 +1,365 @@
+2018-04-02 03:37:42,522 INFO  DownloadService - Downloading "https://github.com/westlinkin/CacheUtilsLibrary/archive/master.zip", attempt 3
+2018-04-02 03:38:43,011 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:38:43,641 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:38:43,641 INFO  DownloadService - Downloading "https://github.com/westlinkin/CacheUtilsLibrary/archive/master.zip", attempt 3
+2018-04-02 03:39:44,854 DEBUG FullProcessService - Repository https://github.com/westlinkin/CacheUtilsLibrary available: true
+2018-04-02 03:39:44,854 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:39:44,854 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/westlinkin/CacheUtilsLibrary, /tmp/rdisk/2478/src]
+2018-04-02 03:39:46,279 INFO  SysUtils - 
+2018-04-02 03:39:46,293 INFO  GitService - Deleted "/tmp/rdisk/2478/src/.git": true
+2018-04-02 03:39:46,295 INFO  FullProcessService - Size of directory with sources: 148 KB
+2018-04-02 03:39:46,296 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2478/src]
+2018-04-02 03:39:46,300 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2478/src/.git/
+
+2018-04-02 03:39:46,303 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2478/src/gradlew
+2018-04-02 03:39:46,305 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2478/src/cacheutilslibrary/build.gradle /tmp/rdisk/2478/src/sample/build.gradle /tmp/rdisk/2478/src/build.gradle
+2018-04-02 03:39:46,308 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2478/src/settings.gradle /tmp/rdisk/2478/src/sample/build.gradle /tmp/rdisk/2478/src/cacheutilslibrary/build.gradle /tmp/rdisk/2478/src/build.gradle
+2018-04-02 03:39:46,308 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:39:46,308 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:39:46,315 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2478/src/cacheutilslibrary/local.properties
+2018-04-02 03:39:46,315 INFO  ProjectFixService - Build info for "/tmp/rdisk/2478/src/cacheutilslibrary/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 03:39:46,315 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2478/src/sample/local.properties
+2018-04-02 03:39:46,315 INFO  ProjectFixService - Build info for "/tmp/rdisk/2478/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 03:39:46,316 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2478/src/local.properties
+2018-04-02 03:39:46,316 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 03:39:46,316 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 03:39:46,317 INFO  ProjectFixService - Build info for "/tmp/rdisk/2478/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 03:39:46,321 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:39:46,321 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:39:46,321 INFO  SysUtils - Execute command: [/tmp/rdisk/2478/src/gradlew, -b, /tmp/rdisk/2478/src/cacheutilslibrary/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:39:55,573 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 03:39:55,573 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 03:39:55,573 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 03:39:55,573 INFO  SysUtils - Execute command: [/tmp/rdisk/2478/src/gradlew, -b, /tmp/rdisk/2478/src/cacheutilslibrary/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 03:40:08,311 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 03:40:08,311 INFO  SysUtils - Configuration on demand is an incubating feature.
+:cacheutilslibrary:compileLint
+:cacheutilslibrary:copyDebugLint UP-TO-DATE
+:cacheutilslibrary:mergeDebugProguardFiles
+:cacheutilslibrary:preBuild UP-TO-DATE
+:cacheutilslibrary:preDebugBuild UP-TO-DATE
+:cacheutilslibrary:checkDebugManifest
+:cacheutilslibrary:prepareDebugDependencies
+:cacheutilslibrary:compileDebugAidl
+:cacheutilslibrary:compileDebugRenderscript
+:cacheutilslibrary:generateDebugBuildConfig
+:cacheutilslibrary:generateDebugAssets UP-TO-DATE
+:cacheutilslibrary:mergeDebugAssets
+:cacheutilslibrary:generateDebugResValues
+:cacheutilslibrary:generateDebugResources
+:cacheutilslibrary:packageDebugResources
+:cacheutilslibrary:processDebugManifest
+:cacheutilslibrary:processDebugResources
+:cacheutilslibrary:generateDebugSources
+:cacheutilslibrary:processDebugJavaRes UP-TO-DATE
+:cacheutilslibrary:compileDebugJavaWithJavac
+:cacheutilslibrary:packageDebugJar
+:cacheutilslibrary:compileDebugNdk UP-TO-DATE
+:cacheutilslibrary:packageDebugJniLibs UP-TO-DATE
+:cacheutilslibrary:packageDebugLocalJar UP-TO-DATE
+:cacheutilslibrary:packageDebugRenderscript UP-TO-DATE
+:cacheutilslibrary:bundleDebug
+:cacheutilslibrary:compileDebugSources
+:cacheutilslibrary:assembleDebug
+:cacheutilslibrary:copyReleaseLint UP-TO-DATE
+:cacheutilslibrary:mergeReleaseProguardFiles
+:cacheutilslibrary:preReleaseBuild UP-TO-DATE
+:cacheutilslibrary:checkReleaseManifest
+:cacheutilslibrary:prepareReleaseDependencies
+:cacheutilslibrary:compileReleaseAidl
+:cacheutilslibrary:compileReleaseRenderscript
+:cacheutilslibrary:generateReleaseBuildConfig
+:cacheutilslibrary:generateReleaseAssets UP-TO-DATE
+:cacheutilslibrary:mergeReleaseAssets
+:cacheutilslibrary:generateReleaseResValues
+:cacheutilslibrary:generateReleaseResources
+:cacheutilslibrary:packageReleaseResources
+:cacheutilslibrary:processReleaseManifest
+:cacheutilslibrary:processReleaseResources
+:cacheutilslibrary:generateReleaseSources
+:cacheutilslibrary:processReleaseJavaRes UP-TO-DATE
+:cacheutilslibrary:compileReleaseJavaWithJavac
+:cacheutilslibrary:packageReleaseJar
+:cacheutilslibrary:compileReleaseNdk UP-TO-DATE
+:cacheutilslibrary:packageReleaseJniLibs UP-TO-DATE
+:cacheutilslibrary:packageReleaseLocalJar UP-TO-DATE
+:cacheutilslibrary:packageReleaseRenderscript UP-TO-DATE
+:cacheutilslibrary:bundleRelease
+:cacheutilslibrary:compileReleaseSources
+:cacheutilslibrary:assembleRelease
+:cacheutilslibrary:javadoc/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/GsonHelper.java:3: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/GsonHelper.java:4: error: package com.google.gson does not exist
+import com.google.gson.GsonBuilder;
+                      ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/GsonHelper.java:5: error: package com.google.gson does not exist
+import com.google.gson.TypeAdapter;
+                      ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/GsonHelper.java:6: error: package com.google.gson.stream does not exist
+import com.google.gson.stream.JsonToken;
+                             ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/GsonHelper.java:16: error: cannot find symbol
+    static Gson buildGson() {
+           ^
+  symbol:   class Gson
+  location: class GsonHelper
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:7: error: package com.google.gson.reflect does not exist
+import com.google.gson.reflect.TypeToken;
+                              ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:9: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.FileUtils;
+                            ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:10: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.IOUtils;
+                            ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:101: warning: no @param for <T>
+    public static <T> void writeDataMapsFile(String fileName, List<Map<String, T>> dataMaps) {
+                           ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:109: warning: no @param for <T>
+    public static <T> List<Map<String, T>> readDataMapsFile(String fileName) {
+                                           ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:147: warning: no @param for <T>
+    public static <T> T readObjectFile(String fileName, Type t) {
+                        ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:179: warning: no @param for <T>
+    public static <T> void writeDataMapFile(String fileName, Map<String, T> dataMap) {
+                           ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/main/java/com/lifeofcoding/cacheutlislibrary/CacheUtils.java:187: warning: no @param for <T>
+    public static <T> Map<String, T> readDataMapFile(String fileName) {
+                                     ^
+
+13 warnings
+:cacheutilslibrary:javadocJar
+:cacheutilslibrary:sourcesJar
+:cacheutilslibrary:assemble
+:cacheutilslibrary:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2478/src/cacheutilslibrary/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2478/src/cacheutilslibrary/build/outputs/lint-results.xml
+:cacheutilslibrary:preDebugUnitTestBuild UP-TO-DATE
+:cacheutilslibrary:prepareDebugUnitTestDependencies
+:cacheutilslibrary:processDebugUnitTestJavaRes UP-TO-DATE
+:cacheutilslibrary:compileDebugUnitTestJavaWithJavac/tmp/rdisk/2478/src/cacheutilslibrary/src/test/java/com/lifeofcoding/cacheutlislibrary/ExampleUnitTest.java:3: error: package org.junit does not exist
+import org.junit.Test;
+                ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/test/java/com/lifeofcoding/cacheutlislibrary/ExampleUnitTest.java:5: error: package org.junit does not exist
+import static org.junit.Assert.*;
+                       ^
+/tmp/rdisk/2478/src/cacheutilslibrary/src/test/java/com/lifeofcoding/cacheutlislibrary/ExampleUnitTest.java:11: error: cannot find symbol
+    @Test
+     ^
+  symbol:   class Test
+  location: class ExampleUnitTest
+/tmp/rdisk/2478/src/cacheutilslibrary/src/test/java/com/lifeofcoding/cacheutlislibrary/ExampleUnitTest.java:13: error: cannot find symbol
+        assertEquals(4, 2 + 2);
+        ^
+  symbol:   method assertEquals(int,int)
+  location: class ExampleUnitTest
+4 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':cacheutilslibrary:compileDebugUnitTestJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':cacheutilslibrary:compileDebugUnitTestJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:137)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:91)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 12.302 secs
+
+2018-04-02 03:40:08,318 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:40:08,318 INFO  SysUtils - Execute command: [/tmp/rdisk/2478/src/gradlew, -b, /tmp/rdisk/2478/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:40:15,125 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 03:40:15,126 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 03:40:15,126 INFO  SysUtils - Execute command: [/tmp/rdisk/2478/src/gradlew, -b, /tmp/rdisk/2478/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 03:40:41,067 INFO  SysUtils - Configuration on demand is an incubating feature.
+:cacheutilslibrary:compileLint
+:cacheutilslibrary:copyReleaseLint UP-TO-DATE
+:cacheutilslibrary:mergeReleaseProguardFiles UP-TO-DATE
+:cacheutilslibrary:preBuild UP-TO-DATE
+:cacheutilslibrary:preReleaseBuild UP-TO-DATE
+:cacheutilslibrary:checkReleaseManifest
+:cacheutilslibrary:prepareReleaseDependencies
+:cacheutilslibrary:compileReleaseAidl UP-TO-DATE
+:cacheutilslibrary:compileReleaseRenderscript UP-TO-DATE
+:cacheutilslibrary:generateReleaseBuildConfig UP-TO-DATE
+:cacheutilslibrary:generateReleaseAssets UP-TO-DATE
+:cacheutilslibrary:mergeReleaseAssets UP-TO-DATE
+:cacheutilslibrary:generateReleaseResValues UP-TO-DATE
+:cacheutilslibrary:generateReleaseResources UP-TO-DATE
+:cacheutilslibrary:packageReleaseResources UP-TO-DATE
+:cacheutilslibrary:processReleaseManifest UP-TO-DATE
+:cacheutilslibrary:processReleaseResources UP-TO-DATE
+:cacheutilslibrary:generateReleaseSources UP-TO-DATE
+:cacheutilslibrary:processReleaseJavaRes UP-TO-DATE
+:cacheutilslibrary:compileReleaseJavaWithJavac UP-TO-DATE
+:cacheutilslibrary:packageReleaseJar UP-TO-DATE
+:cacheutilslibrary:compileReleaseNdk UP-TO-DATE
+:cacheutilslibrary:packageReleaseJniLibs UP-TO-DATE
+:cacheutilslibrary:packageReleaseLocalJar UP-TO-DATE
+:cacheutilslibrary:packageReleaseRenderscript UP-TO-DATE
+:cacheutilslibrary:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72300Library
+:sample:prepareComAndroidSupportDesign2300Library
+:sample:prepareComAndroidSupportSupportV42300Library
+:sample:prepareComLifeofcodingCacheutilslibrary110Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.506 secs
+
+2018-04-02 03:40:41,108 INFO  FullProcessService - Found APK file: /tmp/rdisk/2478/src/sample/build/outputs/apk/sample-release-unsigned.apk

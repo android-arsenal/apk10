@@ -1,0 +1,157 @@
+2018-04-02 10:00:33,344 INFO  DownloadService - Downloading "https://github.com/HugoGresse/AndroidVuMeter/archive/master.zip", attempt 3
+2018-04-02 10:00:34,521 INFO  DownloadService - Downloaded https://github.com/HugoGresse/AndroidVuMeter/archive/master.zip, attempt 3
+2018-04-02 10:00:34,521 INFO  DownloadService - Size of file "/tmp/rdisk/2344/master.zip": 1 MB
+2018-04-02 10:00:34,521 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 10:00:34,521 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2344/master.zip: true
+2018-04-02 10:00:34,521 DEBUG ZipUtil - Extracting '/tmp/rdisk/2344/master.zip' into '/tmp/rdisk/2344/src'.
+2018-04-02 10:00:34,543 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 10:00:34,543 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2344/src]
+2018-04-02 10:00:34,550 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2344/src/.git/
+
+2018-04-02 10:00:34,552 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2344/src/AndroidVuMeter-master/gradlew
+2018-04-02 10:00:34,555 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2344/src/AndroidVuMeter-master/app/build.gradle /tmp/rdisk/2344/src/AndroidVuMeter-master/vumeterlibrary/build.gradle /tmp/rdisk/2344/src/AndroidVuMeter-master/build.gradle
+2018-04-02 10:00:34,557 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2344/src/AndroidVuMeter-master/vumeterlibrary/build.gradle /tmp/rdisk/2344/src/AndroidVuMeter-master/settings.gradle /tmp/rdisk/2344/src/AndroidVuMeter-master/build.gradle /tmp/rdisk/2344/src/AndroidVuMeter-master/app/build.gradle
+2018-04-02 10:00:34,557 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 10:00:34,557 INFO  ProjectFixService - Fixing project...
+2018-04-02 10:00:34,563 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2344/src/AndroidVuMeter-master/app/local.properties
+2018-04-02 10:00:34,563 INFO  ProjectFixService - Build info for "/tmp/rdisk/2344/src/AndroidVuMeter-master/app/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-02 10:00:34,563 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2344/src/AndroidVuMeter-master/vumeterlibrary/local.properties
+2018-04-02 10:00:34,564 INFO  ProjectFixService - Build info for "/tmp/rdisk/2344/src/AndroidVuMeter-master/vumeterlibrary/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-02 10:00:34,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2344/src/AndroidVuMeter-master/local.properties
+2018-04-02 10:00:34,564 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 10:00:34,564 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 10:00:34,566 INFO  ProjectFixService - Build info for "/tmp/rdisk/2344/src/AndroidVuMeter-master/build.gradle": [buildToolsVersion=24.0.3,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=24]
+2018-04-02 10:00:34,566 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 10:00:34,566 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 10:00:34,566 INFO  SysUtils - Execute command: [/tmp/rdisk/2344/src/AndroidVuMeter-master/gradlew, -b, /tmp/rdisk/2344/src/AndroidVuMeter-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 10:00:44,515 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 10:00:44,515 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 10:00:44,515 INFO  SysUtils - Execute command: [/tmp/rdisk/2344/src/AndroidVuMeter-master/gradlew, -b, /tmp/rdisk/2344/src/AndroidVuMeter-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 10:01:12,433 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:vumeterlibrary:preBuild UP-TO-DATE
+:vumeterlibrary:preReleaseBuild UP-TO-DATE
+:vumeterlibrary:checkReleaseManifest
+:vumeterlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:vumeterlibrary:preDebugBuild UP-TO-DATE
+:vumeterlibrary:preDebugUnitTestBuild UP-TO-DATE
+:vumeterlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:vumeterlibrary:prepareComAndroidSupportAnimatedVectorDrawable2421Library
+:vumeterlibrary:prepareComAndroidSupportAppcompatV72421Library
+:vumeterlibrary:prepareComAndroidSupportSupportCompat2421Library
+:vumeterlibrary:prepareComAndroidSupportSupportCoreUi2421Library
+:vumeterlibrary:prepareComAndroidSupportSupportCoreUtils2421Library
+:vumeterlibrary:prepareComAndroidSupportSupportFragment2421Library
+:vumeterlibrary:prepareComAndroidSupportSupportMediaCompat2421Library
+:vumeterlibrary:prepareComAndroidSupportSupportV42421Library
+:vumeterlibrary:prepareComAndroidSupportSupportVectorDrawable2421Library
+:vumeterlibrary:prepareReleaseDependencies
+:vumeterlibrary:compileReleaseAidl
+:vumeterlibrary:compileReleaseNdk UP-TO-DATE
+:vumeterlibrary:compileLint
+:vumeterlibrary:copyReleaseLint UP-TO-DATE
+:vumeterlibrary:compileReleaseRenderscript
+:vumeterlibrary:generateReleaseBuildConfig
+:vumeterlibrary:generateReleaseResValues
+:vumeterlibrary:generateReleaseResources
+:vumeterlibrary:mergeReleaseResources
+:vumeterlibrary:processReleaseManifest
+:vumeterlibrary:processReleaseResources
+:vumeterlibrary:generateReleaseSources
+:vumeterlibrary:incrementalReleaseJavaCompilationSafeguard
+:vumeterlibrary:compileReleaseJavaWithJavac
+:vumeterlibrary:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:vumeterlibrary:extractReleaseAnnotations
+:vumeterlibrary:mergeReleaseShaders
+:vumeterlibrary:compileReleaseShaders
+:vumeterlibrary:generateReleaseAssets
+:vumeterlibrary:mergeReleaseAssets
+:vumeterlibrary:mergeReleaseProguardFiles
+:vumeterlibrary:packageReleaseRenderscript UP-TO-DATE
+:vumeterlibrary:packageReleaseResources
+:vumeterlibrary:processReleaseJavaRes UP-TO-DATE
+:vumeterlibrary:transformResourcesWithMergeJavaResForRelease
+:vumeterlibrary:transformClassesAndResourcesWithSyncLibJarsForRelease
+:vumeterlibrary:mergeReleaseJniLibFolders
+:vumeterlibrary:transformNative_libsWithMergeJniLibsForRelease
+:vumeterlibrary:transformNative_libsWithSyncJniLibsForRelease
+:vumeterlibrary:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2421Library
+:app:prepareComAndroidSupportAppcompatV72421Library
+:app:prepareComAndroidSupportSupportCompat2421Library
+:app:prepareComAndroidSupportSupportCoreUi2421Library
+:app:prepareComAndroidSupportSupportCoreUtils2421Library
+:app:prepareComAndroidSupportSupportFragment2421Library
+:app:prepareComAndroidSupportSupportMediaCompat2421Library
+:app:prepareComAndroidSupportSupportV42421Library
+:app:prepareComAndroidSupportSupportVectorDrawable2421Library
+:app:prepareIoGresseHugoVumeterlibraryVumeterlibrary1015Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.322 secs
+
+2018-04-02 10:01:12,521 INFO  FullProcessService - Found APK file: /tmp/rdisk/2344/src/AndroidVuMeter-master/app/build/outputs/apk/VuMeterLibrary-demo-1.0.11-release-unsigned.apk

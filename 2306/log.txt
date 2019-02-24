@@ -1,0 +1,228 @@
+2018-04-02 13:13:49,787 INFO  DownloadService - Downloading "https://github.com/vRallev/cat/archive/master.zip", attempt 3
+2018-04-02 13:13:50,212 INFO  DownloadService - Downloaded https://github.com/vRallev/cat/archive/master.zip, attempt 3
+2018-04-02 13:13:50,212 INFO  DownloadService - Size of file "/tmp/rdisk/2306/master.zip": 103 KB
+2018-04-02 13:13:50,212 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:13:50,213 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2306/master.zip: true
+2018-04-02 13:13:50,213 DEBUG ZipUtil - Extracting '/tmp/rdisk/2306/master.zip' into '/tmp/rdisk/2306/src'.
+2018-04-02 13:13:50,223 INFO  FullProcessService - Size of directory with sources: 139 KB
+2018-04-02 13:13:50,223 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2306/src]
+2018-04-02 13:13:50,228 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2306/src/.git/
+
+2018-04-02 13:13:50,231 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2306/src/cat-master/gradlew
+2018-04-02 13:13:50,233 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2306/src/cat-master/demo/build.gradle /tmp/rdisk/2306/src/cat-master/library/build.gradle /tmp/rdisk/2306/src/cat-master/build.gradle
+2018-04-02 13:13:50,236 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2306/src/cat-master/settings.gradle /tmp/rdisk/2306/src/cat-master/library/build.gradle /tmp/rdisk/2306/src/cat-master/demo/build.gradle /tmp/rdisk/2306/src/cat-master/build.gradle /tmp/rdisk/2306/src/cat-master/build-config/gradle-quality.gradle /tmp/rdisk/2306/src/cat-master/build-config/gradle-push.gradle
+2018-04-02 13:13:50,236 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:13:50,236 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:13:50,244 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2306/src/cat-master/demo/local.properties
+2018-04-02 13:13:50,247 INFO  ProjectFixService - Build info for "/tmp/rdisk/2306/src/cat-master/demo/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-02 13:13:50,247 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2306/src/cat-master/demo/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 13:13:50,247 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2306/src/cat-master/library/local.properties
+2018-04-02 13:13:50,250 INFO  ProjectFixService - Build info for "/tmp/rdisk/2306/src/cat-master/library/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-02 13:13:50,250 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2306/src/cat-master/library/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 13:13:50,250 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2306/src/cat-master/local.properties
+2018-04-02 13:13:50,251 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.0-all.zip
+2018-04-02 13:13:50,251 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.0-bin.zip)
+2018-04-02 13:13:50,252 INFO  ProjectFixService - Build info for "/tmp/rdisk/2306/src/cat-master/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=<null>]
+2018-04-02 13:13:50,253 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2306/src/cat-master/build.gradle": [buildToolsVersion=24.0.2,compileSdkVersion=24,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 13:13:50,253 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:13:50,253 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:13:50,253 INFO  SysUtils - Execute command: [/tmp/rdisk/2306/src/cat-master/gradlew, -b, /tmp/rdisk/2306/src/cat-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:14:02,960 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-02 13:14:02,961 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 13:14:02,961 INFO  SysUtils - Execute command: [/tmp/rdisk/2306/src/cat-master/gradlew, -b, /tmp/rdisk/2306/src/cat-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 13:14:16,334 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:extractProguardFiles
+:demo:preReleaseBuild
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:demo:prepareCatMasterLibraryUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:incrementalDebugJavaCompilationSafeguard
+:demo:compileDebugJavaWithJavac
+:demo:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexForDebug
+:demo:mergeDebugJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:incrementalReleaseJavaCompilationSafeguard
+:demo:compileReleaseJavaWithJavac
+:demo:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:demo:mergeReleaseAssets
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2306/src/cat-master/demo/build/intermediates/exploded-aar/cat-master/library/unspecified/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2306/src/cat-master/demo/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-24/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-24/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4232
+  Final number of library classes:    298
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2306/src/cat-master/demo/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 82
+  Final number of program classes:    26
+Optimizing...
+  Number of finalized classes:                 8
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                4
+  Number of staticized methods:                9
+  Number of finalized methods:                 14
+  Number of removed method parameters:         0
+  Number of inlined constant parameters:       3
+  Number of inlined constant return values:    0
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       20
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   21
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     17
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           7
+  Number of removed instructions:              31
+  Number of removed local variables:           1
+  Number of removed exception blocks:          4
+  Number of optimized local variable frames:   8
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 26
+  Final number of program classes:    21
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2306/src/cat-master/demo/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/2306/src/cat-master/demo/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2306/src/cat-master/demo/build/intermediates/exploded-aar/cat-master/library/unspecified/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2306/src/cat-master/demo/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/2306/src/cat-master/demo/build/outputs/mapping/release/dump.txt]...
+:demo:transformClassesWithDexForReleasewarning: Ignoring InnerClasses attribute for an anonymous inner class
+(e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(k) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+
+:demo:mergeReleaseJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForRelease
+:demo:validateSigningRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.785 secs
+
+2018-04-02 13:14:16,350 INFO  FullProcessService - Found APK file: /tmp/rdisk/2306/src/cat-master/demo/build/outputs/apk/demo-release.apk

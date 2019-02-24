@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.greenfrvr.hashtagview.sample",
+    "label" : "HashtagView",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.3.1",
+    "versionCode" : 7,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 3289,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"7\" android:versionName=\"1.3.1\" package=\"com.greenfrvr.hashtagview.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"25\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0900a8\" android:label=\"HashtagView\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.greenfrvr.hashtagview.sample.App\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"HashtagView\" android:name=\"com.greenfrvr.hashtagview.sample.MainActivity\" android:screenOrientation=\"sensorPortrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"5e8b77244046ef5934ca07b565b2199e94077641\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2232923,
+  "crc32" : 3020532568,
+  "sha256" : "247062a54bef370a4ab24c951c7ed08908728e8cd76f9dc2e6536b507efcac0d",
+  "buildTime" : 1508117718000
+}

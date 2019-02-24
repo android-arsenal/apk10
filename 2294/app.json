@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "me.next.slidebottomviewdemo",
+    "label" : "SlideBottomViewDemo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACN1BMVEUAAAAAqv8Av/8AgP8AodcAmd0AldwAmeYDmd0CmdwCl9wCl9sDl9oCmNwCl9sCkNEAAAACl9oCl9oCl9sCl9sCktIAeqYAg7oCldoCkdIAZ5gAdawCltoAYZJzveCgzeJDrt4SndyAw+AFmNuQyOEqpt1su+BTs9+ExOCjzuLl5eXJ3OQMm9sZn9y51uNiuOCkzuIjot3g4+XW4OQWndyezeLB2ePC2eOIxeF6weALmttRst9kueA2qd671+M+rN6Xy+HH2+TR3+QopN0YntzD2eM8q97k5eW+1+MGmdtctt/i5OWr0eIan9yJxeFjuOAXntyq0eIcoNyazOEAg8ECpfACp/ICp/K05Pr9/f00uPSR2Ph2zvfM7PvX8PuK1viG1fi/6PpOwfUEqPLH6vtjyPYMqvLc8vwCqPMCoOkAbaQSrPPk9fzw+fzg8/z8/f235fo+vPXF6vv2+/3m9fwTrfNcxva15PpKwPUOq/NBvfXl9fz5/P0stvSN1/iQ2PgDp/K95/o3ufTy+f3N7Pvr9/zo9vyO1/iZ2/kWrvPt+PwutvRoyvYfsfMrtfQqtPSP2Piu4vootPQKqvKL1vgcsPNWxPZbxfYIqfJ/0vcCpvAAicQAcaYAdqQCpe8CpvECp/IDqfQCnuQAWoAAVaoAAAACj9ICpe8Cpe4BhsQAAAAAJDcBhcICm+ACnuYCnuQCnOEBg74AIzQAAAAAAAAALkIAQl0APVwAPFsAM2YAAAAAAAAAgL8DcBMxAAAAvXRSTlMAAwQCEx4dCpbo7JaY//+aAer5/fzqFyXv7yol7ir///////////////////////////////////////////////////////////////////////8l7//8///////////////////////vKv//////////////////////////////////////////////////////////////7icrHOz5/f/sIgMIqf//rQMqsO3w7+2xLAkgQk1LTAULDgR8kIBcAAAB2klEQVRIx2NgoBdgZCIAGFGUMzMTNhJZDZDJwsqGF7CygJXB1LNzcHIRAJzc7HAdzAw8vHyEAb8AVAMjA4sgn5CwCF4gLMQrKsYA8TkTg7gEnwgh80V4JaWASiEapGWI0iCL0CAxqmHIapCTV+DjU5RXgsorq8ir8vGpyatryIOBHIYGTS1tHT5dLT2YifpaBnyGRsYmpmbmWkZmZhZYNGhZQjRYWdvYAq2w07J30LIBarXScsTmJE0tJyNnkAYXVy2QXj43LUd3D098Gry8fXyBGvy0/AMCvYP4+IK1tOz5sGsICQ0Lj4iMio6MiYwNi4uMT0iMTApLTomMTA0DgrTIdCAZnpGZha4hOycXqCEvvwAICsNSI4uKS0rxaggriwRqKI+sCKusCsuurqmti6zHr6GhEaihqbmmpbUtrT2yI6yzq6Ybp4ae+t6wsL76mLCw/gkT2ydNnlI/NSxsWv30sLAZ9TOxaQgjAEY1DEYNs0jUMJs4G+ZANTAyzJ2XMX9BOF6wYP7CRYsZlkCrrKXLli/MWIgXZCxcsXIpvI5btXrN2nXr1+EB69dt2LhpFaIa3bxl67bt27fvwAGAUtu2btmMXFHv3LWbANi1E7XyX7KHAFhCt1YMALssuEu9tj8kAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1376,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"me.next.slidebottomviewdemo\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f080077\" android:label=\"SlideBottomViewDemo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"SelectActivity\" android:name=\"me.next.slidebottomviewdemo.SelectActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"InputActivity\" android:name=\"me.next.slidebottomviewdemo.InputActivity\" />\n\t\t<activity android:label=\"SlideBottomViewDemo\" android:name=\"me.next.slidebottomviewdemo.MainActivity\" />\n\t\t<activity android:label=\"ScrollViewActivity\" android:name=\"me.next.slidebottomviewdemo.ScrollViewActivity\" />\n\t\t<activity android:label=\"ListViewActivity\" android:name=\"me.next.slidebottomviewdemo.ListViewActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1107540,
+  "crc32" : 2295086318,
+  "sha256" : "bcb7d5e4ef62c42be8f62b5d9822db6b9aed98c5bf2708c250ea0d7af70c1039",
+  "buildTime" : 1522675181000
+}

@@ -1,0 +1,6 @@
+{
+  "com.veinhorn.tagview" : [ "BuildConfig", "R", "R$attr", "R$id", "R$string", "R$styleable", "TagView", "TagView$1", "TagView$TagDrawable", "TagView$TagViewData", "Tags", "Utils" ],
+  "com.veinhorn.tagview.drawers" : [ "ClassicTagDrawer", "ModernSharpTagDrawer", "ModernTagDrawer", "ReversedModernSharpTagDrawer", "ReversedModernTagDrawer", "ReversedSharpTagDrawer", "SharpTagDrawer", "TagDrawer" ],
+  "com.veinhorn.tagview.example" : [ "MainActivity" ],
+  "com.veinhorn.tagviewexample" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style", "R$styleable" ]
+}

@@ -1,0 +1,14 @@
+2018-05-20 23:10:38,613 INFO  DownloadService - Downloading "https://github.com/mapsforge/mapsforge/archive/master.zip", attempt 3
+2018-05-20 23:11:39,139 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:11:39,828 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:11:39,828 INFO  DownloadService - Downloading "https://github.com/mapsforge/mapsforge/archive/master.zip", attempt 3
+2018-05-20 23:12:41,296 DEBUG FullProcessService - Repository https://github.com/mapsforge/mapsforge available: true
+2018-05-20 23:12:41,296 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:12:41,296 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mapsforge/mapsforge, /tmp/rdisk/2288/src]
+2018-05-20 23:12:47,274 INFO  SysUtils - 
+2018-05-20 23:12:47,298 INFO  GitService - Deleted "/tmp/rdisk/2288/src/.git": true
+2018-05-20 23:12:47,336 INFO  FullProcessService - Size of directory with sources: 62 MB
+2018-05-20 23:12:47,336 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-05-20 23:12:47,336 ERROR FullProcessService - Project will not be processed
+2018-05-20 23:12:47,336 ERROR FullProcessService - Project build has not produced APK file
+2018-05-20 23:12:47,361 ERROR FullProcessService - Could not find generated or existed APK file

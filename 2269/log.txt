@@ -1,0 +1,110 @@
+2018-04-02 14:16:18,540 INFO  DownloadService - Downloading "https://github.com/vyshane/rex-weather/archive/master.zip", attempt 3
+2018-04-02 14:17:19,166 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:17:19,856 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:17:19,856 INFO  DownloadService - Downloading "https://github.com/vyshane/rex-weather/archive/master.zip", attempt 3
+2018-04-02 14:18:21,192 DEBUG FullProcessService - Repository https://github.com/vyshane/rex-weather available: true
+2018-04-02 14:18:21,192 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:18:21,192 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vyshane/rex-weather, /tmp/rdisk/2269/src]
+2018-04-02 14:18:23,116 INFO  SysUtils - 
+2018-04-02 14:18:23,127 INFO  GitService - Deleted "/tmp/rdisk/2269/src/.git": true
+2018-04-02 14:18:23,129 INFO  FullProcessService - Size of directory with sources: 251 KB
+2018-04-02 14:18:23,129 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2269/src]
+2018-04-02 14:18:23,134 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2269/src/.git/
+
+2018-04-02 14:18:23,136 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2269/src/gradlew
+2018-04-02 14:18:23,138 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2269/src/app/build.gradle /tmp/rdisk/2269/src/build.gradle
+2018-04-02 14:18:23,139 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2269/src/settings.gradle /tmp/rdisk/2269/src/build.gradle /tmp/rdisk/2269/src/app/build.gradle
+2018-04-02 14:18:23,139 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:18:23,139 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:18:23,144 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2269/src/app/local.properties
+2018-04-02 14:18:23,144 INFO  ProjectFixService - Build info for "/tmp/rdisk/2269/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-04-02 14:18:23,144 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2269/src/local.properties
+2018-04-02 14:18:23,144 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-02 14:18:23,145 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-02 14:18:23,145 INFO  ProjectFixService - Build info for "/tmp/rdisk/2269/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-04-02 14:18:23,146 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:18:23,146 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:18:23,146 INFO  SysUtils - Execute command: [/tmp/rdisk/2269/src/gradlew, -b, /tmp/rdisk/2269/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:18:32,070 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-02 14:18:32,070 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 14:18:32,070 INFO  SysUtils - Execute command: [/tmp/rdisk/2269/src/gradlew, -b, /tmp/rdisk/2269/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 14:18:59,826 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+Running dex in-process requires build tools 23.0.2.
+For faster builds update this project to use the latest build tools.
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.294 secs
+
+2018-04-02 14:18:59,838 INFO  FullProcessService - Found APK file: /tmp/rdisk/2269/src/app/build/outputs/apk/app-debug.apk

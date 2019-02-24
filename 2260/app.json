@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.android.dexmaker.mockito.inline.dispatcher",
+    "label" : null,
+    "icon" : null,
+    "versionName" : "2.16.1-SNAPSHOT",
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "27",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 3,
+  "locales" : [ ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionName=\"2.16.1-SNAPSHOT\" package=\"com.android.dexmaker.mockito.inline.dispatcher\">\n\t<uses-sdk android:minSdkVersion=\"27\" android:targetSdkVersion=\"27\" />\n\t<application />\n</manifest>\n",
+  "fileSize" : 3210,
+  "crc32" : 1862372371,
+  "sha256" : "2d97af8a999bac47620600ba5f078787977063a7d9c32695868f7ccb47769c32",
+  "buildTime" : 1526975479000
+}

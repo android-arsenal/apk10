@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.gfx.ribbonizer.example",
+    "label" : "App Icon Demo",
+    "icon" : "res/mipmap-anydpi-v26/ic_launcher.xml",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 160,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFH0lEQVR42u2ZW2wUVRjHP6EaaavUSxOIaCLxFmv1tSbGmKgYg4b44ItvvqCJ8cE3EdBKFUVQeqGXma3bSyxoKZcWSy8UFvbaQrEp2hYhokB677ZbeoGy3Xx+35md3emy25btdHYf9iT/nO2c2+//zTlzpnMAEimeU3X1SrBkJ8VUzHDXCbNXCMVLuisebcW2ikegXXoCzpofj4l4bGYIxzYvfLuUDG2lReAyDYBTdsdUzOAyFQmmBU2ohU65hBohOONIJ/NNRHZPZAPqYrFIj4LDNCQauUwzJB+45BiJxxYMCKcKh0H6Yu0c1jmJVzynqpynwS6PKQaok1hHXjFCd6DQA3s+en4Oa1gD8pZnwC6NxqWBHZ9kLNJAnN6B7I9fSBhIGEgYSBhQ9HBbBXZNujG/909MbjVHBfdAaxmWDvTgHxPDmOIyG2jAIWN6WyX23ZrEmdlZLOz7C1MJRltnhbMUHzpbiWvPVYmc/9aWr24tRzPB36b2/06PYyoboH6NMWCngWwl+FpHLV6bvoG3Zr3iTjxGsG91NWBu7wV0jQ/gpWkPXiG4S1MedNLfe+n6m13HcR3Vk/u7hfl/qCzr/CHRn+jXMANWGvDUPtxw/iheJcibZKJnahQnvDPo8/ki6gaVX5waE6YvT47hq+dqRD+iP8MM8K22SQiWQkyzSFg/dGVe6Eg6MnAZV1u4nyKlP4eRBihaqY6fcX//32IeR2OA21X1XxT9iOgbZoAXqcMk5r3XFx28Km6fR2uD+zP0KbSxuxFnNSD82zNzE6e9t+cF5nKuF9p2Iy1+w+5AMj3yOidG5oC1jfZheksxvtdeF3FK8XUu53pcX1vWOT6EyfZSAwxQlDZ1N90B1+EZxGet5fjhhWb0RjDA17mc63H90PJNnfXK02g5DSTRXC3r7wk7l0dpakwt8Bjlcq4Xbu2U9XZh0uliWtDSMhmg6Ke5KHq09S9l4UZSB02jNBtNozPFwT1BbwNrWivRTRFcDgPumWlcYy9TppG6selqgDpMd5ajdfA/tA+Q+v25qsGrd2qIdS2oYVXXgxpRZHVfx3SbOWiANzenpK8B4Dla+wNC+XaEsm1KXvElQiXpl69I2QhVXyPsJx3YgfBrDsJv3yAc/BahZifCoe8QDpOOfE/apfRVR/p9D0JTLn8+UaYQw7PsJcQg62jA/w4EdbsJVIUl0AM5Cmy1H/Ygw+4Mwh5VYandsd0K8PEfST8hNOxV4FvyxetJIPqqAQflJ/fpswYCJjhKPHDNIkDrCbSBQBv9oM15CCcItqWAwAqUgLD4nUgbffF+5DfQopeBUDHEsRBYbVRZAjZfA0tRPl2kSJ3v2nkfiL7eBiKJgQLgYSKtBbf44TnSkcBVeMMMsBiMwfWEDxiQDTDAYjgG1wteGJAMNMBiwBad4MX/CFEZWOLHXfVRu1R4rQF+jC7q46605Tldvgsx5FLhVQNOv4HtmzMjG1APDXZ9uo4WzojYvpd6wMGbkLXIB7bioPiaVo5QSRpxAGXlgKM51w2ffbBeMGaHMxA8YrqfdtFqEYnWUhSNOY9WYgdXF2TIHuIMVeidlJXxrXQHy7ceJrZVizkjWwkvPZUB5m210JA7SgtyHJoLPCKPVk1549AYoqaFlO+BE5Qzg+nzOshcnynYFnlSuYr0JLz84uvwzivvwttaZUWvDX7NW08zFo+dlfmGYFkw+qEm3s+4j36lkB6MsVIES1QH77xYpM33xlQRF2wixUf6HxY9+04lQmbfAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1680,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.github.gfx.ribbonizer.example\" platformBuildVersionCode=\"26\" platformBuildVersionName=\"8.0.0\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"26\" />\n\t<application android:theme=\"resourceId:0x7f08009c\" android:label=\"App Icon Demo\" android:icon=\"res/mipmap-anydpi-v26/ic_launcher.xml\" android:allowBackup=\"true\" android:roundIcon=\"res/mipmap-anydpi-v26/ic_launcher_round.xml\">\n\t\t<activity android:label=\"App Icon Demo\" android:name=\"com.github.gfx.ribbonizer.example.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1383152,
+  "crc32" : 3171624519,
+  "sha256" : "cb6c3e553ae48b26c679c3a9311a7a927341e9612c260f96ec5b21f704fbb6cd",
+  "buildTime" : 1522679294000
+}

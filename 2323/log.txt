@@ -1,0 +1,155 @@
+2018-04-02 13:01:57,017 INFO  DownloadService - Downloading "https://github.com/p-v/FlexibleCalendar/archive/master.zip", attempt 3
+2018-04-02 13:01:58,043 INFO  DownloadService - Downloaded https://github.com/p-v/FlexibleCalendar/archive/master.zip, attempt 3
+2018-04-02 13:01:58,043 INFO  DownloadService - Size of file "/tmp/rdisk/2323/master.zip": 1 MB
+2018-04-02 13:01:58,043 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:01:58,044 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2323/master.zip: true
+2018-04-02 13:01:58,044 DEBUG ZipUtil - Extracting '/tmp/rdisk/2323/master.zip' into '/tmp/rdisk/2323/src'.
+2018-04-02 13:01:58,076 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 13:01:58,076 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2323/src]
+2018-04-02 13:01:58,087 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2323/src/.git/
+
+2018-04-02 13:01:58,091 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2323/src/FlexibleCalendar-master/gradlew
+2018-04-02 13:01:58,095 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2323/src/FlexibleCalendar-master/app/build.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/library/build.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/build.gradle
+2018-04-02 13:01:58,099 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2323/src/FlexibleCalendar-master/settings.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/library/build.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/gradle-mvn-push.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/build.gradle /tmp/rdisk/2323/src/FlexibleCalendar-master/app/build.gradle
+2018-04-02 13:01:58,100 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:01:58,100 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:01:58,110 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2323/src/FlexibleCalendar-master/app/local.properties
+2018-04-02 13:01:58,111 INFO  ProjectFixService - Build info for "/tmp/rdisk/2323/src/FlexibleCalendar-master/app/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-02 13:01:58,111 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2323/src/FlexibleCalendar-master/library/local.properties
+2018-04-02 13:01:58,112 INFO  ProjectFixService - Build info for "/tmp/rdisk/2323/src/FlexibleCalendar-master/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 13:01:58,112 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2323/src/FlexibleCalendar-master/local.properties
+2018-04-02 13:01:58,113 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 13:01:58,113 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 13:01:58,114 INFO  ProjectFixService - Build info for "/tmp/rdisk/2323/src/FlexibleCalendar-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 13:01:58,115 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:01:58,115 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:01:58,115 INFO  SysUtils - Execute command: [/tmp/rdisk/2323/src/FlexibleCalendar-master/gradlew, -b, /tmp/rdisk/2323/src/FlexibleCalendar-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:02:06,567 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 13:02:06,567 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 13:02:06,568 INFO  SysUtils - Execute command: [/tmp/rdisk/2323/src/FlexibleCalendar-master/gradlew, -b, /tmp/rdisk/2323/src/FlexibleCalendar-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 13:02:32,539 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:library:prepareComAndroidSupportAppcompatV72321Library
+:library:prepareComAndroidSupportRecyclerviewV72321Library
+:library:prepareComAndroidSupportSupportV42321Library
+:library:prepareComAndroidSupportSupportVectorDrawable2321Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:app:prepareComAndroidSupportAppcompatV72321Library
+:app:prepareComAndroidSupportRecyclerviewV72321Library
+:app:prepareComAndroidSupportSupportV42321Library
+:app:prepareComAndroidSupportSupportVectorDrawable2321Library
+:app:prepareFlexibleCalendarMasterLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.415 secs
+
+2018-04-02 13:02:32,641 INFO  FullProcessService - Found APK file: /tmp/rdisk/2323/src/FlexibleCalendar-master/app/build/outputs/apk/app-debug.apk

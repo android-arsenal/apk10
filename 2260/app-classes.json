@@ -1,0 +1,4 @@
+{
+  "com.android.dexmaker.mockito.inline.dispatcher" : [ "BuildConfig", "R" ],
+  "com.android.dx.mockito.inline" : [ "MockMethodDispatcher" ]
+}

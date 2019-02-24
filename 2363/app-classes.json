@@ -1,0 +1,6 @@
+{
+  "android.support.multidex" : [ "BuildConfig", "MultiDex", "MultiDex$V14", "MultiDex$V19", "MultiDex$V4", "MultiDexApplication", "MultiDexExtractor", "MultiDexExtractor$1", "ZipUtil", "ZipUtil$CentralDirectory" ],
+  "com.github.promeg.xlog_android.lib" : [ "BuildConfig", "R", "R$string", "XLogConfig", "XLogConfig$1", "XLogConfig$ConfigBuilder", "XLogInitializer" ],
+  "com.promegu.xlog.base" : [ "XLog", "XLogMethod" ],
+  "com.promegu.xloggerexample" : [ "BaseCalculator", "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$Charmer", "MainActivity$Greeter", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "SampleApplication", "SampleCalculator" ]
+}

@@ -1,0 +1,93 @@
+2017-01-09 03:11:19,715 INFO  DownloadService - Downloading "https://github.com/DanielMartinus/Pixelate/archive/master.zip", attempt 3
+2017-01-09 03:11:26,494 INFO  DownloadService - Downloaded https://github.com/DanielMartinus/Pixelate/archive/master.zip, attempt 3
+2017-01-09 03:11:26,494 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2017-01-09 03:11:26,499 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/master.zip: true
+2017-01-09 03:11:26,499 DEBUG ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src'.
+2017-01-09 03:11:26,591 INFO  FullProcessService - Size of directory with sources: 4 MB
+2017-01-09 03:11:26,591 INFO  SysUtils - Execute command: [git, init, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src]
+2017-01-09 03:11:26,648 INFO  SysUtils - Initialized empty Git repository in /private/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/.git/
+
+2017-01-09 03:11:26,651 INFO  ProjectBuildService - Gradle wrapper(s): /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/gradlew
+2017-01-09 03:11:26,654 INFO  ProjectBuildService - Build script(s): /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/build.gradle
+2017-01-09 03:11:26,657 INFO  ProjectBuildService - All script(s): /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/build.gradle /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/settings.gradle
+2017-01-09 03:11:26,657 INFO  ProjectBuildService - Remote scripts: none
+2017-01-09 03:11:26,657 INFO  ProjectFixService - Fixing project...
+2017-01-09 03:11:26,664 INFO  LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/local.properties
+2017-01-09 03:11:26,664 INFO  ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2017-01-09 03:11:26,665 INFO  LocalPropertiesFixService - Created fake /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/local.properties
+2017-01-09 03:11:26,665 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2017-01-09 03:11:26,666 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2017-01-09 03:11:26,667 INFO  ProjectFixService - Build info for "/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2017-01-09 03:11:26,667 INFO  ProjectFixService - Project was maybe fixed
+2017-01-09 03:11:26,667 INFO  ProjectTaskService - Detecting possible tasks...
+2017-01-09 03:11:26,668 INFO  SysUtils - Execute command: [/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/gradlew, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build.gradle, tasks]
+2017-01-09 03:11:39,467 INFO  ProjectTaskService - Detected possible tasks: 68
+2017-01-09 03:11:39,468 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2017-01-09 03:11:39,468 INFO  SysUtils - Execute command: [/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/gradlew, -b, /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build.gradle, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2017-01-09 03:12:20,747 INFO  SysUtils - :app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72311Library
+:app:prepareComAndroidSupportDesign2311Library
+:app:prepareComAndroidSupportRecyclerviewV72311Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareNlDionsegijnPixelate102Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 40.594 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.8/userguide/gradle_daemon.html
+
+2017-01-09 03:12:20,796 INFO  FullProcessService - Found APK file: /var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1483909879712-0/src/Pixelate-master/example-project/app/build/outputs/apk/app-debug.apk

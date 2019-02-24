@@ -1,0 +1,129 @@
+2018-05-11 10:10:09,276 INFO  DownloadService - Downloading "https://github.com/fenjuly/ToggleExpandLayout/archive/master.zip", attempt 3
+2018-05-11 10:11:09,926 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 10:11:10,659 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 10:11:10,659 INFO  DownloadService - Downloading "https://github.com/fenjuly/ToggleExpandLayout/archive/master.zip", attempt 3
+2018-05-11 10:12:12,017 DEBUG FullProcessService - Repository https://github.com/fenjuly/ToggleExpandLayout available: true
+2018-05-11 10:12:12,017 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 10:12:12,017 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/fenjuly/ToggleExpandLayout, /tmp/rdisk/2412/src]
+2018-05-11 10:12:13,613 INFO  SysUtils - 
+2018-05-11 10:12:13,625 INFO  GitService - Deleted "/tmp/rdisk/2412/src/.git": true
+2018-05-11 10:12:13,628 INFO  FullProcessService - Size of directory with sources: 119 KB
+2018-05-11 10:12:13,628 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2412/src]
+2018-05-11 10:12:13,632 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2412/src/.git/
+
+2018-05-11 10:12:13,635 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2412/src/gradlew
+2018-05-11 10:12:13,637 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2412/src/demo/build.gradle /tmp/rdisk/2412/src/library/build.gradle /tmp/rdisk/2412/src/build.gradle
+2018-05-11 10:12:13,639 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2412/src/settings.gradle /tmp/rdisk/2412/src/library/build.gradle /tmp/rdisk/2412/src/demo/build.gradle /tmp/rdisk/2412/src/build.gradle
+2018-05-11 10:12:13,639 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 10:12:13,639 INFO  ProjectFixService - Fixing project...
+2018-05-11 10:12:13,645 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2412/src/demo/local.properties
+2018-05-11 10:12:13,645 INFO  ProjectFixService - Build info for "/tmp/rdisk/2412/src/demo/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-05-11 10:12:13,645 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2412/src/demo/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-05-11 10:12:13,646 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2412/src/library/local.properties
+2018-05-11 10:12:13,646 INFO  ProjectFixService - Build info for "/tmp/rdisk/2412/src/library/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-05-11 10:12:13,646 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2412/src/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-05-11 10:12:13,646 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2412/src/local.properties
+2018-05-11 10:12:13,647 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 10:12:13,647 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 10:12:13,648 INFO  ProjectFixService - Build info for "/tmp/rdisk/2412/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-05-11 10:12:13,648 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 10:12:13,648 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 10:12:13,648 INFO  SysUtils - Execute command: [/tmp/rdisk/2412/src/gradlew, -b, /tmp/rdisk/2412/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 10:12:19,876 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-05-11 10:12:19,876 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-05-11 10:12:19,877 INFO  SysUtils - Execute command: [/tmp/rdisk/2412/src/gradlew, -b, /tmp/rdisk/2412/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-05-11 10:12:45,143 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:compileDebugNdk UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72300Library
+:library:prepareComAndroidSupportSupportV42300Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72300Library
+:demo:prepareComAndroidSupportSupportV42300Library
+:demo:prepareComKyleduoSwitchbuttonLibrary129Library
+:demo:prepareSrcLibraryUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJavaNote: /tmp/rdisk/2412/src/demo/src/main/java/com/fenjuly/toggleexpandlayout/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJavaNote: /tmp/rdisk/2412/src/demo/src/main/java/com/fenjuly/toggleexpandlayout/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:lintVitalRelease
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.825 secs
+
+2018-05-11 10:12:45,195 INFO  FullProcessService - Found APK file: /tmp/rdisk/2412/src/demo/build/outputs/apk/demo-release-unsigned.apk

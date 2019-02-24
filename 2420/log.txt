@@ -1,0 +1,147 @@
+2018-05-16 03:48:46,917 INFO  DownloadService - Downloading "https://github.com/SpongeBobSun/mCalendarView/archive/master.zip", attempt 3
+2018-05-16 03:48:48,469 INFO  DownloadService - Downloaded https://github.com/SpongeBobSun/mCalendarView/archive/master.zip, attempt 3
+2018-05-16 03:48:48,469 INFO  DownloadService - Size of file "/tmp/rdisk/2420/master.zip": 3 MB
+2018-05-16 03:48:48,469 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-16 03:48:48,470 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2420/master.zip: true
+2018-05-16 03:48:48,470 DEBUG ZipUtil - Extracting '/tmp/rdisk/2420/master.zip' into '/tmp/rdisk/2420/src'.
+2018-05-16 03:48:48,522 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-05-16 03:48:48,522 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2420/src]
+2018-05-16 03:48:48,527 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2420/src/.git/
+
+2018-05-16 03:48:48,530 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2420/src/mCalendarView-master/gradlew
+2018-05-16 03:48:48,534 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2420/src/mCalendarView-master/app/build.gradle /tmp/rdisk/2420/src/mCalendarView-master/mcalendarview/build.gradle /tmp/rdisk/2420/src/mCalendarView-master/build.gradle
+2018-05-16 03:48:48,536 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2420/src/mCalendarView-master/settings.gradle /tmp/rdisk/2420/src/mCalendarView-master/mcalendarview/build.gradle /tmp/rdisk/2420/src/mCalendarView-master/build.gradle /tmp/rdisk/2420/src/mCalendarView-master/app/build.gradle
+2018-05-16 03:48:48,537 INFO  ProjectBuildService - Remote scripts: none
+2018-05-16 03:48:48,537 INFO  ProjectFixService - Fixing project...
+2018-05-16 03:48:48,544 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2420/src/mCalendarView-master/app/local.properties
+2018-05-16 03:48:48,544 INFO  ProjectFixService - Build info for "/tmp/rdisk/2420/src/mCalendarView-master/app/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-05-16 03:48:48,544 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2420/src/mCalendarView-master/mcalendarview/local.properties
+2018-05-16 03:48:48,545 INFO  ProjectFixService - Build info for "/tmp/rdisk/2420/src/mCalendarView-master/mcalendarview/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-05-16 03:48:48,545 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2420/src/mCalendarView-master/local.properties
+2018-05-16 03:48:48,545 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-05-16 03:48:48,545 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-05-16 03:48:48,546 INFO  ProjectFixService - Build info for "/tmp/rdisk/2420/src/mCalendarView-master/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=16,targetSdkVersion=24]
+2018-05-16 03:48:48,546 INFO  ProjectFixService - Project was maybe fixed
+2018-05-16 03:48:48,546 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-16 03:48:48,547 INFO  SysUtils - Execute command: [/tmp/rdisk/2420/src/mCalendarView-master/gradlew, -b, /tmp/rdisk/2420/src/mCalendarView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-16 03:48:57,254 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-05-16 03:48:57,254 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-16 03:48:57,255 INFO  SysUtils - Execute command: [/tmp/rdisk/2420/src/mCalendarView-master/gradlew, -b, /tmp/rdisk/2420/src/mCalendarView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-16 03:49:22,717 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:mcalendarview:preBuild UP-TO-DATE
+:mcalendarview:preReleaseBuild UP-TO-DATE
+:mcalendarview:checkReleaseManifest
+:mcalendarview:preDebugAndroidTestBuild UP-TO-DATE
+:mcalendarview:preDebugBuild UP-TO-DATE
+:mcalendarview:preDebugUnitTestBuild UP-TO-DATE
+:mcalendarview:preReleaseUnitTestBuild UP-TO-DATE
+:mcalendarview:prepareComAndroidSupportAnimatedVectorDrawable2400Library
+:mcalendarview:prepareComAndroidSupportAppcompatV72400Library
+:mcalendarview:prepareComAndroidSupportSupportV42400Library
+:mcalendarview:prepareComAndroidSupportSupportVectorDrawable2400Library
+:mcalendarview:prepareReleaseDependencies
+:mcalendarview:compileReleaseAidl
+:mcalendarview:compileReleaseNdk UP-TO-DATE
+:mcalendarview:compileLint
+:mcalendarview:copyReleaseLint UP-TO-DATE
+:mcalendarview:compileReleaseRenderscript
+:mcalendarview:generateReleaseBuildConfig
+:mcalendarview:generateReleaseResValues
+:mcalendarview:generateReleaseResources
+:mcalendarview:mergeReleaseResources
+:mcalendarview:processReleaseManifest
+:mcalendarview:processReleaseResources
+:mcalendarview:generateReleaseSources
+:mcalendarview:incrementalReleaseJavaCompilationSafeguard
+:mcalendarview:compileReleaseJavaWithJavac
+:mcalendarview:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2420/src/mCalendarView-master/mcalendarview/src/main/java/sun/bob/mcalendarview/views/DefaultCellView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:mcalendarview:extractReleaseAnnotations
+:mcalendarview:mergeReleaseShaders
+:mcalendarview:compileReleaseShaders
+:mcalendarview:generateReleaseAssets
+:mcalendarview:mergeReleaseAssets
+:mcalendarview:mergeReleaseProguardFiles
+:mcalendarview:packageReleaseRenderscript UP-TO-DATE
+:mcalendarview:packageReleaseResources
+:mcalendarview:processReleaseJavaRes UP-TO-DATE
+:mcalendarview:transformResourcesWithMergeJavaResForRelease
+:mcalendarview:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mcalendarview:mergeReleaseJniLibFolders
+:mcalendarview:transformNative_libsWithMergeJniLibsForRelease
+:mcalendarview:transformNative_libsWithSyncJniLibsForRelease
+:mcalendarview:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library
+:app:prepareComAndroidSupportAppcompatV72400Library
+:app:prepareComAndroidSupportSupportV42400Library
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library
+:app:prepareSunBobMcalendarview100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.875 secs
+
+2018-05-16 03:49:22,801 INFO  FullProcessService - Found APK file: /tmp/rdisk/2420/src/mCalendarView-master/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,584 @@
+2018-04-02 13:00:01,013 INFO  DownloadService - Downloading "https://github.com/architjn/Auro/archive/master.zip", attempt 3
+2018-04-02 13:00:03,422 INFO  DownloadService - Downloaded https://github.com/architjn/Auro/archive/master.zip, attempt 3
+2018-04-02 13:00:03,422 INFO  DownloadService - Size of file "/tmp/rdisk/2325/master.zip": 2 MB
+2018-04-02 13:00:03,422 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:00:03,423 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2325/master.zip: true
+2018-04-02 13:00:03,423 DEBUG ZipUtil - Extracting '/tmp/rdisk/2325/master.zip' into '/tmp/rdisk/2325/src'.
+2018-04-02 13:00:03,500 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-02 13:00:03,500 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2325/src]
+2018-04-02 13:00:03,509 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2325/src/.git/
+
+2018-04-02 13:00:03,531 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2325/src/Auro-master/gradlew
+2018-04-02 13:00:03,540 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2325/src/Auro-master/app/build.gradle /tmp/rdisk/2325/src/Auro-master/searchview/build.gradle /tmp/rdisk/2325/src/Auro-master/build.gradle
+2018-04-02 13:00:03,548 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2325/src/Auro-master/settings.gradle /tmp/rdisk/2325/src/Auro-master/searchview/build.gradle /tmp/rdisk/2325/src/Auro-master/build.gradle /tmp/rdisk/2325/src/Auro-master/app/build.gradle
+2018-04-02 13:00:03,549 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:00:03,549 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:00:03,568 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2325/src/Auro-master/app/local.properties
+2018-04-02 13:00:03,570 INFO  ProjectFixService - Build info for "/tmp/rdisk/2325/src/Auro-master/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=21,targetSdkVersion=23]
+2018-04-02 13:00:03,571 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2325/src/Auro-master/searchview/local.properties
+2018-04-02 13:00:03,574 INFO  ProjectFixService - Build info for "/tmp/rdisk/2325/src/Auro-master/searchview/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 13:00:03,574 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2325/src/Auro-master/local.properties
+2018-04-02 13:00:03,575 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.9-bin.zip
+2018-04-02 13:00:03,576 INFO  ProjectFixService - Build info for "/tmp/rdisk/2325/src/Auro-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 13:00:03,577 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:00:03,577 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:00:03,577 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:00:24,403 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-02 13:00:24,403 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 13:00:24,403 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 13:00:37,712 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 13:00:37,712 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:searchview:preBuild UP-TO-DATE
+:searchview:preReleaseBuild UP-TO-DATE
+:searchview:compileReleaseNdk UP-TO-DATE
+:searchview:compileLint
+:searchview:copyReleaseLint UP-TO-DATE
+:searchview:checkReleaseManifest
+:searchview:preDebugAndroidTestBuild UP-TO-DATE
+:searchview:preDebugBuild UP-TO-DATE
+:searchview:preDebugUnitTestBuild UP-TO-DATE
+:searchview:preReleaseUnitTestBuild UP-TO-DATE
+:searchview:prepareComAndroidSupportCardviewV72600Alpha1Library
+:searchview:prepareComAndroidSupportRecyclerviewV72600Alpha1Library
+:searchview:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:searchview:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:searchview:prepareReleaseDependencies
+:searchview:compileReleaseAidl
+:searchview:compileReleaseRenderscript
+:searchview:generateReleaseBuildConfig
+:searchview:generateReleaseAssets UP-TO-DATE
+:searchview:mergeReleaseAssets
+:searchview:generateReleaseResValues
+:searchview:generateReleaseResources
+:searchview:mergeReleaseResources
+:searchview:processReleaseManifest
+:searchview:processReleaseResources
+:searchview:generateReleaseSources
+:searchview:compileReleaseJavaWithJavacNote: /tmp/rdisk/2325/src/Auro-master/searchview/src/main/java/com/lapism/searchview/SearchLinearLayoutManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:searchview:extractReleaseAnnotations
+:searchview:mergeReleaseProguardFiles
+:searchview:packageReleaseRenderscript UP-TO-DATE
+:searchview:packageReleaseResources
+:searchview:processReleaseJavaRes UP-TO-DATE
+:searchview:transformResourcesWithMergeJavaResForRelease
+:searchview:transformClassesAndResourcesWithSyncLibJarsForRelease
+:searchview:mergeReleaseJniLibFolders
+:searchview:transformNative_libsWithMergeJniLibsForRelease
+:searchview:transformNative_libsWithSyncJniLibsForRelease
+:searchview:bundleRelease
+:app:prepareAuroMasterSearchviewUnspecifiedLibrary
+:app:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:app:prepareComAndroidSupportAppcompatV72320Library
+:app:prepareComAndroidSupportCardviewV72600Alpha1Library
+:app:prepareComAndroidSupportDesign2311Library
+:app:prepareComAndroidSupportPaletteV72311Library
+:app:prepareComAndroidSupportRecyclerviewV72600Alpha1Library
+:app:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:app:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:app:prepareComAndroidSupportSupportV42320Library
+:app:prepareComAndroidSupportSupportVectorDrawable2320Library
+:app:prepareComCocoswBottomsheet131Library
+:app:prepareComCrashlyticsSdkAndroidAnswers136Library
+:app:prepareComCrashlyticsSdkAndroidBeta114Library
+:app:prepareComCrashlyticsSdkAndroidCrashlytics255Library
+:app:prepareComCrashlyticsSdkAndroidCrashlyticsCore238Library
+:app:prepareComGithubAfollestadAsync021Library
+:app:prepareComGithubAfollestadMaterialDialogsCore0852Library
+:app:prepareIoFabricSdkAndroidFabric1310Library
+:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary114Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:processDebugManifest
+:app:fabricGenerateResourcesDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugResources/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/album_list_item.xml:46:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/artist_list_item.xml:60:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/fragment_now_playing.xml:41:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/player_large.xml:104:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/playlist_dialog_item.xml:48:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/playlist_list_item.xml:54:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/songs_list_item.xml:53:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:148)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:925)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:139)
+	... 68 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 70 more
+
+
+BUILD FAILED
+
+Total time: 12.866 secs
+
+2018-04-02 13:00:37,771 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:00:37,772 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/searchview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:00:45,712 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 13:00:45,713 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 13:00:45,713 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 13:00:45,713 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/searchview/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 13:01:01,889 INFO  SysUtils - Configuration on demand is an incubating feature.
+:searchview:preBuild UP-TO-DATE
+:searchview:preDebugBuild UP-TO-DATE
+:searchview:compileDebugNdk UP-TO-DATE
+:searchview:compileLint
+:searchview:copyDebugLint UP-TO-DATE
+:searchview:checkDebugManifest
+:searchview:preDebugAndroidTestBuild UP-TO-DATE
+:searchview:preDebugUnitTestBuild UP-TO-DATE
+:searchview:preReleaseBuild UP-TO-DATE
+:searchview:preReleaseUnitTestBuild UP-TO-DATE
+:searchview:prepareComAndroidSupportCardviewV72600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportRecyclerviewV72600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:searchview:prepareDebugDependencies
+:searchview:compileDebugAidl
+:searchview:compileDebugRenderscript
+:searchview:generateDebugBuildConfig
+:searchview:generateDebugAssets UP-TO-DATE
+:searchview:mergeDebugAssets
+:searchview:generateDebugResValues
+:searchview:generateDebugResources
+:searchview:mergeDebugResources
+:searchview:processDebugManifest
+:searchview:processDebugResources
+:searchview:generateDebugSources
+:searchview:compileDebugJavaWithJavacNote: /tmp/rdisk/2325/src/Auro-master/searchview/src/main/java/com/lapism/searchview/SearchLinearLayoutManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:searchview:extractDebugAnnotations
+:searchview:mergeDebugProguardFiles
+:searchview:packageDebugRenderscript UP-TO-DATE
+:searchview:packageDebugResources
+:searchview:processDebugJavaRes UP-TO-DATE
+:searchview:transformResourcesWithMergeJavaResForDebug
+:searchview:transformClassesAndResourcesWithSyncLibJarsForDebug
+:searchview:mergeDebugJniLibFolders
+:searchview:transformNative_libsWithMergeJniLibsForDebug
+:searchview:transformNative_libsWithSyncJniLibsForDebug
+:searchview:bundleDebug
+:searchview:compileDebugSources
+:searchview:assembleDebug
+:searchview:compileReleaseNdk UP-TO-DATE
+:searchview:copyReleaseLint UP-TO-DATE
+:searchview:checkReleaseManifest
+:searchview:prepareReleaseDependencies
+:searchview:compileReleaseAidl UP-TO-DATE
+:searchview:compileReleaseRenderscript UP-TO-DATE
+:searchview:generateReleaseBuildConfig UP-TO-DATE
+:searchview:generateReleaseAssets UP-TO-DATE
+:searchview:mergeReleaseAssets UP-TO-DATE
+:searchview:generateReleaseResValues UP-TO-DATE
+:searchview:generateReleaseResources UP-TO-DATE
+:searchview:mergeReleaseResources UP-TO-DATE
+:searchview:processReleaseManifest UP-TO-DATE
+:searchview:processReleaseResources UP-TO-DATE
+:searchview:generateReleaseSources UP-TO-DATE
+:searchview:compileReleaseJavaWithJavac UP-TO-DATE
+:searchview:extractReleaseAnnotations UP-TO-DATE
+:searchview:mergeReleaseProguardFiles UP-TO-DATE
+:searchview:packageReleaseRenderscript UP-TO-DATE
+:searchview:packageReleaseResources UP-TO-DATE
+:searchview:processReleaseJavaRes UP-TO-DATE
+:searchview:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:searchview:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:searchview:mergeReleaseJniLibFolders UP-TO-DATE
+:searchview:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:searchview:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:searchview:bundleRelease UP-TO-DATE
+:searchview:compileReleaseSources UP-TO-DATE
+:searchview:assembleRelease UP-TO-DATE
+:searchview:assemble
+:searchview:lint
+:searchview:prepareDebugUnitTestDependencies
+:searchview:compileDebugUnitTestJavaWithJavac
+:searchview:processDebugUnitTestJavaRes UP-TO-DATE
+:searchview:compileDebugUnitTestSources
+:searchview:mockableAndroidJar
+:searchview:assembleDebugUnitTest
+:searchview:testDebugUnitTest
+:searchview:prepareReleaseUnitTestDependencies
+:searchview:compileReleaseUnitTestJavaWithJavac
+:searchview:processReleaseUnitTestJavaRes UP-TO-DATE
+:searchview:compileReleaseUnitTestSources
+:searchview:assembleReleaseUnitTest
+:searchview:testReleaseUnitTest
+:searchview:test
+:searchview:check
+:searchview:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.739 secs
+
+2018-04-02 13:01:01,950 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:01:01,951 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:01:09,137 INFO  ProjectTaskService - Detected possible tasks: 82
+2018-04-02 13:01:09,137 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 13:01:09,137 INFO  SysUtils - Execute command: [/tmp/rdisk/2325/src/Auro-master/gradlew, -b, /tmp/rdisk/2325/src/Auro-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 13:01:17,644 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 13:01:17,644 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:searchview:preBuild UP-TO-DATE
+:searchview:preReleaseBuild UP-TO-DATE
+:searchview:compileReleaseNdk UP-TO-DATE
+:searchview:compileLint
+:searchview:copyReleaseLint UP-TO-DATE
+:searchview:checkReleaseManifest
+:searchview:preDebugAndroidTestBuild UP-TO-DATE
+:searchview:preDebugBuild UP-TO-DATE
+:searchview:preDebugUnitTestBuild UP-TO-DATE
+:searchview:preReleaseUnitTestBuild UP-TO-DATE
+:searchview:prepareComAndroidSupportCardviewV72600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportRecyclerviewV72600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:searchview:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:searchview:prepareReleaseDependencies
+:searchview:compileReleaseAidl UP-TO-DATE
+:searchview:compileReleaseRenderscript UP-TO-DATE
+:searchview:generateReleaseBuildConfig UP-TO-DATE
+:searchview:generateReleaseAssets UP-TO-DATE
+:searchview:mergeReleaseAssets UP-TO-DATE
+:searchview:generateReleaseResValues UP-TO-DATE
+:searchview:generateReleaseResources UP-TO-DATE
+:searchview:mergeReleaseResources UP-TO-DATE
+:searchview:processReleaseManifest UP-TO-DATE
+:searchview:processReleaseResources UP-TO-DATE
+:searchview:generateReleaseSources UP-TO-DATE
+:searchview:compileReleaseJavaWithJavac UP-TO-DATE
+:searchview:extractReleaseAnnotations UP-TO-DATE
+:searchview:mergeReleaseProguardFiles UP-TO-DATE
+:searchview:packageReleaseRenderscript UP-TO-DATE
+:searchview:packageReleaseResources UP-TO-DATE
+:searchview:processReleaseJavaRes UP-TO-DATE
+:searchview:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:searchview:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:searchview:mergeReleaseJniLibFolders UP-TO-DATE
+:searchview:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:searchview:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:searchview:bundleRelease UP-TO-DATE
+:app:prepareAuroMasterSearchviewUnspecifiedLibrary UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2320Library UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:app:prepareComAndroidSupportCardviewV72600Alpha1Library UP-TO-DATE
+:app:prepareComAndroidSupportDesign2311Library UP-TO-DATE
+:app:prepareComAndroidSupportPaletteV72311Library UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72600Alpha1Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCompat2600Alpha1Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUi2600Alpha1Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportVectorDrawable2320Library UP-TO-DATE
+:app:prepareComCocoswBottomsheet131Library UP-TO-DATE
+:app:prepareComCrashlyticsSdkAndroidAnswers136Library UP-TO-DATE
+:app:prepareComCrashlyticsSdkAndroidBeta114Library UP-TO-DATE
+:app:prepareComCrashlyticsSdkAndroidCrashlytics255Library UP-TO-DATE
+:app:prepareComCrashlyticsSdkAndroidCrashlyticsCore238Library UP-TO-DATE
+:app:prepareComGithubAfollestadAsync021Library UP-TO-DATE
+:app:prepareComGithubAfollestadMaterialDialogsCore0852Library UP-TO-DATE
+:app:prepareIoFabricSdkAndroidFabric1310Library UP-TO-DATE
+:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary114Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:fabricGenerateResourcesDebug
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugResources/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/album_list_item.xml:46:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/artist_list_item.xml:60:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/fragment_now_playing.xml:41:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/player_large.xml:104:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/playlist_dialog_item.xml:48:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/playlist_list_item.xml:54:26-71: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+/tmp/rdisk/2325/src/Auro-master/app/src/main/res/layout/songs_list_item.xml:53:22-67: AAPT: No resource found that matches the given name (at 'src' with value '@drawable/abc_ic_menu_moreoverflow_mtrl_alpha').
+    
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:processDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:66)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:148)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.processResources(AndroidBuilder.java:925)
+	at com.android.build.gradle.tasks.ProcessAndroidResources.doFullTaskAction(ProcessAndroidResources.java:139)
+	... 68 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/root/Applications/android-sdk/build-tools/23.0.2/aapt'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:367)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 70 more
+
+
+BUILD FAILED
+
+Total time: 8.089 secs
+
+2018-04-02 13:01:17,704 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:01:17,763 ERROR FullProcessService - Could not find generated or existed APK file

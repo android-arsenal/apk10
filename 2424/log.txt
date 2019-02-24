@@ -1,0 +1,120 @@
+2018-05-11 10:01:28,977 INFO  DownloadService - Downloading "https://github.com/pyricau/frenchtoast/archive/master.zip", attempt 3
+2018-05-11 10:02:29,647 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 10:02:30,482 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 10:02:30,482 INFO  DownloadService - Downloading "https://github.com/pyricau/frenchtoast/archive/master.zip", attempt 3
+2018-05-11 10:03:32,029 DEBUG FullProcessService - Repository https://github.com/pyricau/frenchtoast available: true
+2018-05-11 10:03:32,029 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 10:03:32,029 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pyricau/frenchtoast, /tmp/rdisk/2424/src]
+2018-05-11 10:03:35,712 INFO  SysUtils - 
+2018-05-11 10:03:35,724 INFO  GitService - Deleted "/tmp/rdisk/2424/src/.git": true
+2018-05-11 10:03:35,726 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 10:03:35,726 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2424/src]
+2018-05-11 10:03:35,731 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2424/src/.git/
+
+2018-05-11 10:03:35,733 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2424/src/gradlew
+2018-05-11 10:03:35,735 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2424/src/frenchtoast-sample/build.gradle /tmp/rdisk/2424/src/frenchtoast/build.gradle /tmp/rdisk/2424/src/build.gradle
+2018-05-11 10:03:35,737 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2424/src/settings.gradle /tmp/rdisk/2424/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2424/src/gradle/checkstyle.gradle /tmp/rdisk/2424/src/frenchtoast/build.gradle /tmp/rdisk/2424/src/frenchtoast-sample/build.gradle /tmp/rdisk/2424/src/build.gradle
+2018-05-11 10:03:35,737 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 10:03:35,737 INFO  ProjectFixService - Fixing project...
+2018-05-11 10:03:35,743 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2424/src/frenchtoast-sample/local.properties
+2018-05-11 10:03:35,745 INFO  ProjectFixService - Build info for "/tmp/rdisk/2424/src/frenchtoast-sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 10:03:35,746 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2424/src/frenchtoast-sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 10:03:35,746 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2424/src/frenchtoast/local.properties
+2018-05-11 10:03:35,749 INFO  ProjectFixService - Build info for "/tmp/rdisk/2424/src/frenchtoast/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 10:03:35,749 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2424/src/frenchtoast/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 10:03:35,749 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2424/src/local.properties
+2018-05-11 10:03:35,750 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 10:03:35,750 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 10:03:35,751 INFO  ProjectFixService - Build info for "/tmp/rdisk/2424/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 10:03:35,751 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2424/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 10:03:35,751 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 10:03:35,751 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 10:03:35,752 INFO  SysUtils - Execute command: [/tmp/rdisk/2424/src/gradlew, -b, /tmp/rdisk/2424/src/frenchtoast-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 10:03:43,554 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-11 10:03:43,555 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-11 10:03:43,555 INFO  SysUtils - Execute command: [/tmp/rdisk/2424/src/gradlew, -b, /tmp/rdisk/2424/src/frenchtoast-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-11 10:03:56,232 INFO  SysUtils - Configuration on demand is an incubating feature.
+:frenchtoast:compileLint
+:frenchtoast:copyReleaseLint UP-TO-DATE
+:frenchtoast:preBuild UP-TO-DATE
+:frenchtoast:preReleaseBuild UP-TO-DATE
+:frenchtoast:checkReleaseManifest
+:frenchtoast:prepareReleaseDependencies
+:frenchtoast:compileReleaseAidl
+:frenchtoast:compileReleaseRenderscript
+:frenchtoast:generateReleaseBuildConfig
+:frenchtoast:generateReleaseAssets UP-TO-DATE
+:frenchtoast:mergeReleaseAssets
+:frenchtoast:generateReleaseResValues
+:frenchtoast:generateReleaseResources
+:frenchtoast:packageReleaseResources
+:frenchtoast:processReleaseManifest
+:frenchtoast:processReleaseResources
+:frenchtoast:generateReleaseSources
+:frenchtoast:processReleaseJavaRes UP-TO-DATE
+:frenchtoast:compileReleaseJava
+:frenchtoast:extractReleaseAnnotations
+:frenchtoast:mergeReleaseProguardFiles
+:frenchtoast:packageReleaseJar
+:frenchtoast:compileReleaseNdk UP-TO-DATE
+:frenchtoast:packageReleaseJniLibs UP-TO-DATE
+:frenchtoast:packageReleaseLocalJar UP-TO-DATE
+:frenchtoast:packageReleaseRenderscript UP-TO-DATE
+:frenchtoast:bundleRelease
+:frenchtoast-sample:preBuild UP-TO-DATE
+:frenchtoast-sample:preDebugBuild UP-TO-DATE
+:frenchtoast-sample:checkDebugManifest
+:frenchtoast-sample:preReleaseBuild UP-TO-DATE
+:frenchtoast-sample:prepareInfoPiwaiFrenchtoastFrenchtoast10Library
+:frenchtoast-sample:prepareDebugDependencies
+:frenchtoast-sample:compileDebugAidl
+:frenchtoast-sample:compileDebugRenderscript
+:frenchtoast-sample:generateDebugBuildConfig
+:frenchtoast-sample:generateDebugAssets UP-TO-DATE
+:frenchtoast-sample:mergeDebugAssets
+:frenchtoast-sample:generateDebugResValues
+:frenchtoast-sample:generateDebugResources
+:frenchtoast-sample:mergeDebugResources
+:frenchtoast-sample:processDebugManifest
+:frenchtoast-sample:processDebugResources
+:frenchtoast-sample:generateDebugSources
+:frenchtoast-sample:processDebugJavaRes UP-TO-DATE
+:frenchtoast-sample:compileDebugJava
+:frenchtoast-sample:compileDebugNdk UP-TO-DATE
+:frenchtoast-sample:compileDebugSources
+:frenchtoast-sample:preDexDebug
+:frenchtoast-sample:dexDebug
+:frenchtoast-sample:validateDebugSigning
+:frenchtoast-sample:packageDebug
+:frenchtoast-sample:zipalignDebug
+:frenchtoast-sample:assembleDebug
+:frenchtoast-sample:checkReleaseManifest
+:frenchtoast-sample:prepareReleaseDependencies
+:frenchtoast-sample:compileReleaseAidl
+:frenchtoast-sample:compileReleaseRenderscript
+:frenchtoast-sample:generateReleaseBuildConfig
+:frenchtoast-sample:generateReleaseAssets UP-TO-DATE
+:frenchtoast-sample:mergeReleaseAssets
+:frenchtoast-sample:generateReleaseResValues
+:frenchtoast-sample:generateReleaseResources
+:frenchtoast-sample:mergeReleaseResources
+:frenchtoast-sample:processReleaseManifest
+:frenchtoast-sample:processReleaseResources
+:frenchtoast-sample:generateReleaseSources
+:frenchtoast-sample:processReleaseJavaRes UP-TO-DATE
+:frenchtoast-sample:compileReleaseJava
+:frenchtoast-sample:compileReleaseNdk UP-TO-DATE
+:frenchtoast-sample:compileReleaseSources
+:frenchtoast-sample:lintVitalRelease
+:frenchtoast-sample:preDexRelease
+:frenchtoast-sample:dexRelease
+:frenchtoast-sample:packageRelease
+:frenchtoast-sample:assembleRelease
+:frenchtoast-sample:assemble
+:frenchtoast-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.258 secs
+
+2018-05-11 10:03:56,240 INFO  FullProcessService - Found APK file: /tmp/rdisk/2424/src/frenchtoast-sample/build/outputs/apk/frenchtoast-sample-release-unsigned.apk

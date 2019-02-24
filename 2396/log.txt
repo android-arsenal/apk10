@@ -1,0 +1,92 @@
+2018-04-02 06:15:14,473 INFO  DownloadService - Downloading "https://github.com/wedcel/DragExpandGrid/archive/master.zip", attempt 3
+2018-04-02 06:16:15,152 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 06:16:15,948 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 06:16:15,948 INFO  DownloadService - Downloading "https://github.com/wedcel/DragExpandGrid/archive/master.zip", attempt 3
+2018-04-02 06:17:17,189 DEBUG FullProcessService - Repository https://github.com/wedcel/DragExpandGrid available: true
+2018-04-02 06:17:17,189 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 06:17:17,189 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/wedcel/DragExpandGrid, /tmp/rdisk/2396/src]
+2018-04-02 06:17:21,266 INFO  SysUtils - 
+2018-04-02 06:17:21,282 INFO  GitService - Deleted "/tmp/rdisk/2396/src/.git": true
+2018-04-02 06:17:21,284 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-02 06:17:21,284 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2396/src]
+2018-04-02 06:17:21,294 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2396/src/.git/
+
+2018-04-02 06:17:21,297 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2396/src/gradlew
+2018-04-02 06:17:21,299 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2396/src/app/build.gradle /tmp/rdisk/2396/src/build.gradle
+2018-04-02 06:17:21,301 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2396/src/settings.gradle /tmp/rdisk/2396/src/build.gradle /tmp/rdisk/2396/src/app/build.gradle
+2018-04-02 06:17:21,301 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 06:17:21,302 INFO  ProjectFixService - Fixing project...
+2018-04-02 06:17:21,307 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2396/src/app/local.properties
+2018-04-02 06:17:21,307 INFO  ProjectFixService - Build info for "/tmp/rdisk/2396/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 06:17:21,307 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2396/src/local.properties
+2018-04-02 06:17:21,308 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 06:17:21,308 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 06:17:21,309 INFO  ProjectFixService - Build info for "/tmp/rdisk/2396/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 06:17:21,309 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 06:17:21,309 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:17:21,309 INFO  SysUtils - Execute command: [/tmp/rdisk/2396/src/gradlew, -b, /tmp/rdisk/2396/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:17:28,972 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 06:17:28,973 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 06:17:28,973 INFO  SysUtils - Execute command: [/tmp/rdisk/2396/src/gradlew, -b, /tmp/rdisk/2396/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 06:17:51,015 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.622 secs
+
+2018-04-02 06:17:51,051 INFO  FullProcessService - Found APK file: /tmp/rdisk/2396/src/app/build/outputs/apk/app-debug.apk

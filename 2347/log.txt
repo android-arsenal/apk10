@@ -1,0 +1,239 @@
+2018-04-02 09:56:59,534 INFO  DownloadService - Downloading "https://github.com/himanshu-soni/QuantumFlux/archive/master.zip", attempt 3
+2018-04-02 09:56:59,968 INFO  DownloadService - Downloaded https://github.com/himanshu-soni/QuantumFlux/archive/master.zip, attempt 3
+2018-04-02 09:56:59,968 INFO  DownloadService - Size of file "/tmp/rdisk/2347/master.zip": 186 KB
+2018-04-02 09:56:59,968 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 09:56:59,969 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2347/master.zip: true
+2018-04-02 09:56:59,969 DEBUG ZipUtil - Extracting '/tmp/rdisk/2347/master.zip' into '/tmp/rdisk/2347/src'.
+2018-04-02 09:56:59,990 INFO  FullProcessService - Size of directory with sources: 358 KB
+2018-04-02 09:56:59,990 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2347/src]
+2018-04-02 09:56:59,994 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2347/src/.git/
+
+2018-04-02 09:56:59,999 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2347/src/QuantumFlux-master/gradlew
+2018-04-02 09:57:00,004 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2347/src/QuantumFlux-master/app/build.gradle /tmp/rdisk/2347/src/QuantumFlux-master/quantum-flux/build.gradle /tmp/rdisk/2347/src/QuantumFlux-master/build.gradle
+2018-04-02 09:57:00,008 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2347/src/QuantumFlux-master/settings.gradle /tmp/rdisk/2347/src/QuantumFlux-master/quantum-flux/build.gradle /tmp/rdisk/2347/src/QuantumFlux-master/build.gradle /tmp/rdisk/2347/src/QuantumFlux-master/app/build.gradle
+2018-04-02 09:57:00,008 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/himanshu-soni/QuantityView/master/bintray.gradle", attempt 3
+2018-04-02 09:58:00,009 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/himanshu-soni/QuantityView/master/bintray.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 09:58:00,009 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/himanshu-soni/QuantityView/master/install.gradle", attempt 3
+2018-04-02 09:59:00,011 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/himanshu-soni/QuantityView/master/install.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 09:59:00,011 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 09:59:00,011 INFO  ProjectFixService - Fixing project...
+2018-04-02 09:59:00,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2347/src/QuantumFlux-master/app/local.properties
+2018-04-02 09:59:00,025 INFO  ProjectFixService - Build info for "/tmp/rdisk/2347/src/QuantumFlux-master/app/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=12,targetSdkVersion=24]
+2018-04-02 09:59:00,026 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2347/src/QuantumFlux-master/quantum-flux/local.properties
+2018-04-02 09:59:00,026 INFO  ProjectFixService - Build info for "/tmp/rdisk/2347/src/QuantumFlux-master/quantum-flux/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=12,targetSdkVersion=24]
+2018-04-02 09:59:00,026 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2347/src/QuantumFlux-master/local.properties
+2018-04-02 09:59:00,027 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 09:59:00,027 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 09:59:00,028 INFO  ProjectFixService - Build info for "/tmp/rdisk/2347/src/QuantumFlux-master/build.gradle": [buildToolsVersion=24.0.1,compileSdkVersion=24,minSdkVersion=12,targetSdkVersion=24]
+2018-04-02 09:59:00,028 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 09:59:00,028 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 09:59:00,028 INFO  SysUtils - Execute command: [/tmp/rdisk/2347/src/QuantumFlux-master/gradlew, -b, /tmp/rdisk/2347/src/QuantumFlux-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 09:59:12,610 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-02 09:59:12,610 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 09:59:12,610 INFO  SysUtils - Execute command: [/tmp/rdisk/2347/src/QuantumFlux-master/gradlew, -b, /tmp/rdisk/2347/src/QuantumFlux-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 09:59:48,345 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:quantum-flux:preBuild UP-TO-DATE
+:quantum-flux:preReleaseBuild UP-TO-DATE
+:quantum-flux:compileReleaseNdk UP-TO-DATE
+:quantum-flux:compileLint
+:quantum-flux:copyReleaseLint UP-TO-DATE
+:quantum-flux:checkReleaseManifest
+:quantum-flux:preDebugAndroidTestBuild UP-TO-DATE
+:quantum-flux:preDebugBuild UP-TO-DATE
+:quantum-flux:preDebugUnitTestBuild UP-TO-DATE
+:quantum-flux:preReleaseUnitTestBuild UP-TO-DATE
+:quantum-flux:prepareComAndroidSupportSupportCompat2420Library
+:quantum-flux:prepareComAndroidSupportSupportCoreUi2420Library
+:quantum-flux:prepareComAndroidSupportSupportCoreUtils2420Library
+:quantum-flux:prepareComAndroidSupportSupportFragment2420Library
+:quantum-flux:prepareComAndroidSupportSupportMediaCompat2420Library
+:quantum-flux:prepareComAndroidSupportSupportV42420Library
+:quantum-flux:prepareReleaseDependencies
+:quantum-flux:compileReleaseAidl
+:quantum-flux:compileReleaseRenderscript
+:quantum-flux:generateReleaseBuildConfig
+:quantum-flux:mergeReleaseShaders
+:quantum-flux:compileReleaseShaders
+:quantum-flux:generateReleaseAssets
+:quantum-flux:mergeReleaseAssets
+:quantum-flux:generateReleaseResValues
+:quantum-flux:generateReleaseResources
+:quantum-flux:mergeReleaseResources
+:quantum-flux:processReleaseManifest
+:quantum-flux:processReleaseResources
+:quantum-flux:generateReleaseSources
+:quantum-flux:incrementalReleaseJavaCompilationSafeguard
+:quantum-flux:compileReleaseJavaWithJavac
+:quantum-flux:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2347/src/QuantumFlux-master/quantum-flux/src/main/java/me/himanshusoni/quantumflux/model/util/QuantumFluxBatchDispatcher.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:quantum-flux:extractReleaseAnnotations
+:quantum-flux:mergeReleaseProguardFiles
+:quantum-flux:packageReleaseRenderscript UP-TO-DATE
+:quantum-flux:packageReleaseResources
+:quantum-flux:processReleaseJavaRes UP-TO-DATE
+:quantum-flux:transformResourcesWithMergeJavaResForRelease
+:quantum-flux:transformClassesAndResourcesWithSyncLibJarsForRelease
+:quantum-flux:mergeReleaseJniLibFolders
+:quantum-flux:transformNative_libsWithMergeJniLibsForRelease
+:quantum-flux:transformNative_libsWithSyncJniLibsForRelease
+:quantum-flux:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2420Library
+:app:prepareComAndroidSupportAppcompatV72420Library
+:app:prepareComAndroidSupportSupportCompat2420Library
+:app:prepareComAndroidSupportSupportCoreUi2420Library
+:app:prepareComAndroidSupportSupportCoreUtils2420Library
+:app:prepareComAndroidSupportSupportFragment2420Library
+:app:prepareComAndroidSupportSupportMediaCompat2420Library
+:app:prepareComAndroidSupportSupportV42420Library
+:app:prepareComAndroidSupportSupportVectorDrawable2420Library
+:app:prepareMeHimanshusoniQuantumFlux093Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2347/src/QuantumFlux-master/app/src/main/java/me/himanshusoni/quantumflux/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2347/src/QuantumFlux-master/app/src/main/java/me/himanshusoni/quantumflux/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 35.247 secs
+
+2018-04-02 09:59:48,407 INFO  FullProcessService - Found APK file: /tmp/rdisk/2347/src/QuantumFlux-master/app/build/outputs/apk/app-debug.apk

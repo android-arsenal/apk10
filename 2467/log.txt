@@ -1,0 +1,385 @@
+2018-05-11 09:40:42,172 INFO  DownloadService - Downloading "https://github.com/Karumi/Dividers/archive/master.zip", attempt 3
+2018-05-11 09:41:42,860 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 09:41:43,614 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 09:41:43,615 INFO  DownloadService - Downloading "https://github.com/Karumi/Dividers/archive/master.zip", attempt 3
+2018-05-11 09:42:45,012 DEBUG FullProcessService - Repository https://github.com/Karumi/Dividers available: true
+2018-05-11 09:42:45,013 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 09:42:45,013 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Karumi/Dividers, /tmp/rdisk/2467/src]
+2018-05-11 09:42:48,489 INFO  SysUtils - 
+2018-05-11 09:42:48,495 INFO  GitService - Deleted "/tmp/rdisk/2467/src/.git": true
+2018-05-11 09:42:48,499 INFO  FullProcessService - Size of directory with sources: 8 MB
+2018-05-11 09:42:48,499 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2467/src]
+2018-05-11 09:42:48,510 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2467/src/.git/
+
+2018-05-11 09:42:48,514 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2467/src/gradlew
+2018-05-11 09:42:48,517 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2467/src/dividers/build.gradle /tmp/rdisk/2467/src/sample/build.gradle /tmp/rdisk/2467/src/build.gradle
+2018-05-11 09:42:48,520 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2467/src/settings.gradle /tmp/rdisk/2467/src/sample/build.gradle /tmp/rdisk/2467/src/dividers/build.gradle /tmp/rdisk/2467/src/build.gradle
+2018-05-11 09:42:48,520 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-05-11 09:43:48,855 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 09:43:48,855 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 09:43:48,855 INFO  ProjectFixService - Fixing project...
+2018-05-11 09:43:48,863 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2467/src/dividers/local.properties
+2018-05-11 09:43:48,863 INFO  ProjectFixService - Build info for "/tmp/rdisk/2467/src/dividers/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 09:43:48,863 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2467/src/dividers/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 09:43:48,864 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2467/src/sample/local.properties
+2018-05-11 09:43:48,864 INFO  ProjectFixService - Build info for "/tmp/rdisk/2467/src/sample/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 09:43:48,865 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2467/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 09:43:48,865 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2467/src/local.properties
+2018-05-11 09:43:48,865 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-11 09:43:48,866 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-11 09:43:48,866 INFO  ProjectFixService - Build info for "/tmp/rdisk/2467/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-05-11 09:43:48,867 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 09:43:48,867 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 09:43:48,867 INFO  SysUtils - Execute command: [/tmp/rdisk/2467/src/gradlew, -b, /tmp/rdisk/2467/src/dividers/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 09:43:59,505 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-11 09:43:59,506 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-11 09:43:59,506 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-11 09:43:59,506 INFO  SysUtils - Execute command: [/tmp/rdisk/2467/src/gradlew, -b, /tmp/rdisk/2467/src/dividers/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-11 09:44:24,184 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dividers:androidJavadocs/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/PositionAdapter.java:19: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.GridLayoutManager;
+                                ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/PositionAdapter.java:20: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/PositionAdapter.java:27: error: package RecyclerView does not exist
+  private final RecyclerView.LayoutManager layoutManager;
+                            ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/PositionAdapter.java:30: error: package RecyclerView does not exist
+  public PositionAdapter(RecyclerView.LayoutManager layoutManager, int offset) {
+                                     ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/Area.java:20: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerItemDecoration.java:20: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerItemDecoration.java:31: error: package RecyclerView does not exist
+public class DividerItemDecoration extends RecyclerView.ItemDecoration {
+                                                       ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerItemDecoration.java:55: error: cannot find symbol
+  @Override public void onDrawOver(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
+                                                  ^
+  symbol:   class RecyclerView
+  location: class DividerItemDecoration
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerItemDecoration.java:55: error: package RecyclerView does not exist
+  @Override public void onDrawOver(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
+                                                                                   ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/selector/Selector.java:31: warning: no @param for position
+  boolean isPositionSelected(Position position);
+          ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/selector/Selector.java:31: warning: no @return
+  boolean isPositionSelected(Position position);
+          ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/selector/Selector.java:36: warning: no @param for position
+  EnumSet<Direction> getDirectionsByPosition(Position position);
+                     ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/selector/Selector.java:36: warning: no @return
+  EnumSet<Direction> getDirectionsByPosition(Position position);
+                     ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:33: warning: no @return
+  public static DividerBuilder get() {
+                               ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:40: warning: no @return
+  public static DividerBuilder fromEmpty() {
+                               ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:47: warning: no @param for drawable
+  public static DividerBuilder from(Drawable drawable) {
+                               ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:47: warning: no @return
+  public static DividerBuilder from(Drawable drawable) {
+                               ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:56: warning: no @param for drawable
+  public DividerBuilder with(Drawable drawable) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:56: warning: no @return
+  public DividerBuilder with(Drawable drawable) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:66: warning: no @param for drawable
+  public DividerBuilder with(Drawable drawable, Direction direction) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:66: warning: no @param for direction
+  public DividerBuilder with(Drawable drawable, Direction direction) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:66: warning: no @return
+  public DividerBuilder with(Drawable drawable, Direction direction) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:74: warning: no @param for drawable
+  public DividerBuilder with(Drawable drawable, EnumSet<Direction> directions) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:74: warning: no @param for directions
+  public DividerBuilder with(Drawable drawable, EnumSet<Direction> directions) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:74: warning: no @return
+  public DividerBuilder with(Drawable drawable, EnumSet<Direction> directions) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:84: warning: no @return
+  public DividerBuilder erase() {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:91: warning: no @param for direction
+  public DividerBuilder erase(Direction direction) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:91: warning: no @return
+  public DividerBuilder erase(Direction direction) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:98: warning: no @param for directions
+  public DividerBuilder erase(EnumSet<Direction> directions) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:98: warning: no @return
+  public DividerBuilder erase(EnumSet<Direction> directions) {
+                        ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/DividerBuilder.java:105: warning: no @return
+  public Divider build() {
+                 ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:42: warning: no @param for layers
+  public static LayersBuilder with(Layer... layers) {
+                              ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:42: warning: no @return
+  public static LayersBuilder with(Layer... layers) {
+                              ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:49: warning: no @param for layers
+  public static LayersBuilder from(Collection<Layer> layers) {
+                              ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:49: warning: no @return
+  public static LayersBuilder from(Collection<Layer> layers) {
+                              ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:56: warning: no @param for layers
+  public LayersBuilder add(Layer... layers) {
+                       ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:56: warning: no @return
+  public LayersBuilder add(Layer... layers) {
+                       ^
+/tmp/rdisk/2467/src/dividers/src/main/java/com/karumi/dividers/LayersBuilder.java:64: warning: no @return
+  public Collection<Layer> build() {
+                           ^
+
+38 warnings
+:dividers:androidJavadocsJar
+:dividers:androidSourcesJar
+:dividers:compileLint
+:dividers:copyDebugLint UP-TO-DATE
+:dividers:preBuild UP-TO-DATE
+:dividers:preDebugBuild UP-TO-DATE
+:dividers:checkDebugManifest
+:dividers:preDebugAndroidTestBuild UP-TO-DATE
+:dividers:preDebugUnitTestBuild UP-TO-DATE
+:dividers:preReleaseBuild UP-TO-DATE
+:dividers:preReleaseUnitTestBuild UP-TO-DATE
+:dividers:prepareComAndroidSupportRecyclerviewV72300Library
+:dividers:prepareComAndroidSupportSupportV42300Library
+:dividers:prepareDebugDependencies
+:dividers:compileDebugAidl
+:dividers:compileDebugRenderscript
+:dividers:generateDebugBuildConfig
+:dividers:generateDebugAssets UP-TO-DATE
+:dividers:mergeDebugAssets
+:dividers:generateDebugResValues
+:dividers:generateDebugResources
+:dividers:mergeDebugResources
+:dividers:processDebugManifest
+:dividers:processDebugResources
+:dividers:generateDebugSources
+:dividers:processDebugJavaRes UP-TO-DATE
+:dividers:compileDebugJavaWithJavac
+:dividers:extractDebugAnnotations
+:dividers:mergeDebugProguardFiles
+:dividers:packageDebugJar
+:dividers:compileDebugNdk UP-TO-DATE
+:dividers:packageDebugJniLibs UP-TO-DATE
+:dividers:packageDebugLocalJar UP-TO-DATE
+:dividers:packageDebugRenderscript UP-TO-DATE
+:dividers:packageDebugResources
+:dividers:bundleDebug
+:dividers:compileDebugSources
+:dividers:assembleDebug
+:dividers:copyReleaseLint UP-TO-DATE
+:dividers:checkReleaseManifest
+:dividers:prepareReleaseDependencies
+:dividers:compileReleaseAidl
+:dividers:compileReleaseRenderscript
+:dividers:generateReleaseBuildConfig
+:dividers:generateReleaseAssets UP-TO-DATE
+:dividers:mergeReleaseAssets
+:dividers:generateReleaseResValues
+:dividers:generateReleaseResources
+:dividers:mergeReleaseResources
+:dividers:processReleaseManifest
+:dividers:processReleaseResources
+:dividers:generateReleaseSources
+:dividers:processReleaseJavaRes UP-TO-DATE
+:dividers:compileReleaseJavaWithJavac
+:dividers:extractReleaseAnnotations
+:dividers:mergeReleaseProguardFiles
+:dividers:packageReleaseJar
+:dividers:compileReleaseNdk UP-TO-DATE
+:dividers:packageReleaseJniLibs UP-TO-DATE
+:dividers:packageReleaseLocalJar UP-TO-DATE
+:dividers:packageReleaseRenderscript UP-TO-DATE
+:dividers:packageReleaseResources
+:dividers:bundleRelease
+:dividers:compileReleaseSources
+:dividers:assembleRelease
+:dividers:signArchives SKIPPED
+:dividers:assemble
+:dividers:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/2467/src/dividers/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2467/src/dividers/build/outputs/lint-results.xml
+:dividers:prepareDebugUnitTestDependencies
+:dividers:processDebugUnitTestJavaRes UP-TO-DATE
+:dividers:compileDebugUnitTestJavaWithJavac
+:dividers:compileDebugUnitTestSources
+:dividers:mockableAndroidJar
+:dividers:assembleDebugUnitTest
+:dividers:testDebugUnitTest
+:dividers:prepareReleaseUnitTestDependencies
+:dividers:processReleaseUnitTestJavaRes UP-TO-DATE
+:dividers:compileReleaseUnitTestJavaWithJavac
+:dividers:compileReleaseUnitTestSources
+:dividers:assembleReleaseUnitTest
+:dividers:testReleaseUnitTest
+:dividers:test
+:dividers:check
+:dividers:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.255 secs
+
+2018-05-11 09:44:24,196 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 09:44:24,196 INFO  SysUtils - Execute command: [/tmp/rdisk/2467/src/gradlew, -b, /tmp/rdisk/2467/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 09:44:32,624 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 09:44:32,624 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll checkstyle test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 09:44:32,624 INFO  SysUtils - Execute command: [/tmp/rdisk/2467/src/gradlew, -b, /tmp/rdisk/2467/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, checkstyle, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 09:44:59,756 INFO  SysUtils - Configuration on demand is an incubating feature.
+:dividers:compileLint
+:dividers:copyReleaseLint UP-TO-DATE
+:dividers:preBuild UP-TO-DATE
+:dividers:preReleaseBuild UP-TO-DATE
+:dividers:checkReleaseManifest
+:dividers:preDebugAndroidTestBuild UP-TO-DATE
+:dividers:preDebugBuild UP-TO-DATE
+:dividers:preDebugUnitTestBuild UP-TO-DATE
+:dividers:preReleaseUnitTestBuild UP-TO-DATE
+:dividers:prepareComAndroidSupportRecyclerviewV72300Library UP-TO-DATE
+:dividers:prepareComAndroidSupportSupportV42300Library UP-TO-DATE
+:dividers:prepareReleaseDependencies
+:dividers:compileReleaseAidl UP-TO-DATE
+:dividers:compileReleaseRenderscript UP-TO-DATE
+:dividers:generateReleaseBuildConfig UP-TO-DATE
+:dividers:generateReleaseAssets UP-TO-DATE
+:dividers:mergeReleaseAssets UP-TO-DATE
+:dividers:generateReleaseResValues UP-TO-DATE
+:dividers:generateReleaseResources UP-TO-DATE
+:dividers:mergeReleaseResources UP-TO-DATE
+:dividers:processReleaseManifest UP-TO-DATE
+:dividers:processReleaseResources UP-TO-DATE
+:dividers:generateReleaseSources UP-TO-DATE
+:dividers:processReleaseJavaRes UP-TO-DATE
+:dividers:compileReleaseJavaWithJavac UP-TO-DATE
+:dividers:extractReleaseAnnotations UP-TO-DATE
+:dividers:mergeReleaseProguardFiles UP-TO-DATE
+:dividers:packageReleaseJar UP-TO-DATE
+:dividers:compileReleaseNdk UP-TO-DATE
+:dividers:packageReleaseJniLibs UP-TO-DATE
+:dividers:packageReleaseLocalJar UP-TO-DATE
+:dividers:packageReleaseRenderscript UP-TO-DATE
+:dividers:packageReleaseResources UP-TO-DATE
+:dividers:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72300Library
+:sample:prepareComAndroidSupportRecyclerviewV72300Library
+:sample:prepareComAndroidSupportSupportV42300Library
+:sample:prepareSrcDividersUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.704 secs
+
+2018-05-11 09:44:59,801 INFO  FullProcessService - Found APK file: /tmp/rdisk/2467/src/sample/build/outputs/apk/sample-release-unsigned.apk

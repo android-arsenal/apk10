@@ -1,0 +1,59 @@
+2018-04-08 12:45:28,717 INFO  DownloadService - Downloading "https://github.com/artem-zinnatullin/AutoJackson/archive/master.zip", attempt 3
+2018-04-08 12:45:34,884 INFO  DownloadService - Downloaded https://github.com/artem-zinnatullin/AutoJackson/archive/master.zip, attempt 3
+2018-04-08 12:45:34,884 INFO  DownloadService - Size of file "/tmp/rdisk/2354/master.zip": 62 KB
+2018-04-08 12:45:34,884 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-08 12:45:34,885 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2354/master.zip: true
+2018-04-08 12:45:34,885 DEBUG ZipUtil - Extracting '/tmp/rdisk/2354/master.zip' into '/tmp/rdisk/2354/src'.
+2018-04-08 12:45:34,888 INFO  FullProcessService - Size of directory with sources: 77 KB
+2018-04-08 12:45:34,888 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2354/src]
+2018-04-08 12:45:34,897 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2354/src/.git/
+
+2018-04-08 12:45:34,899 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2354/src/AutoJackson-master/gradlew
+2018-04-08 12:45:34,900 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2354/src/AutoJackson-master/build.gradle /tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle
+2018-04-08 12:45:34,902 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2354/src/AutoJackson-master/settings.gradle /tmp/rdisk/2354/src/AutoJackson-master/build.gradle /tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle
+2018-04-08 12:45:34,902 INFO  ProjectBuildService - Remote scripts: none
+2018-04-08 12:45:34,902 INFO  ProjectFixService - Fixing project...
+2018-04-08 12:45:34,905 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2354/src/AutoJackson-master/local.properties
+2018-04-08 12:45:34,905 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.6-bin.zip
+2018-04-08 12:45:34,906 INFO  ProjectFixService - Build info for "/tmp/rdisk/2354/src/AutoJackson-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 12:45:34,906 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2354/src/AutoJackson-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 12:45:34,907 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/local.properties
+2018-04-08 12:45:34,908 INFO  ProjectFixService - Build info for "/tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-08 12:45:34,908 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-08 12:45:34,908 INFO  ProjectFixService - Project was maybe fixed
+2018-04-08 12:45:34,908 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 12:45:34,908 INFO  SysUtils - Execute command: [/tmp/rdisk/2354/src/AutoJackson-master/gradlew, -b, /tmp/rdisk/2354/src/AutoJackson-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 12:45:39,274 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-08 12:45:39,275 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-08 12:45:39,275 INFO  SysUtils - Execute command: [/tmp/rdisk/2354/src/AutoJackson-master/gradlew, -b, /tmp/rdisk/2354/src/AutoJackson-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-08 12:45:44,706 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-jackson-example:compileJava
+:auto-jackson-example:processResources UP-TO-DATE
+:auto-jackson-example:classes
+:auto-jackson-example:jar
+:auto-jackson-example:assemble
+:auto-jackson-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.988 secs
+
+2018-04-08 12:45:44,708 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-08 12:45:44,708 INFO  SysUtils - Execute command: [/tmp/rdisk/2354/src/AutoJackson-master/gradlew, -b, /tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-08 12:45:48,712 INFO  ProjectTaskService - Detected possible tasks: 37
+2018-04-08 12:45:48,712 INFO  ProjectTaskService - Excluded tasks (3): test check javadoc
+2018-04-08 12:45:48,712 INFO  SysUtils - Execute command: [/tmp/rdisk/2354/src/AutoJackson-master/gradlew, -b, /tmp/rdisk/2354/src/AutoJackson-master/auto-jackson-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, test, -x, check, -x, javadoc, build]
+2018-04-08 12:45:52,885 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-jackson-example:compileJava UP-TO-DATE
+:auto-jackson-example:processResources UP-TO-DATE
+:auto-jackson-example:classes UP-TO-DATE
+:auto-jackson-example:jar UP-TO-DATE
+:auto-jackson-example:assemble UP-TO-DATE
+:auto-jackson-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.755 secs
+
+2018-04-08 12:45:52,887 ERROR FullProcessService - Project build has not produced APK file
+2018-04-08 12:45:52,889 ERROR FullProcessService - Could not find generated or existed APK file

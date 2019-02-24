@@ -1,0 +1,170 @@
+2018-04-02 13:18:07,918 INFO  DownloadService - Downloading "https://github.com/HendrixString/Android-PdfMyXml/archive/master.zip", attempt 3
+2018-04-02 13:18:09,883 INFO  DownloadService - Downloaded https://github.com/HendrixString/Android-PdfMyXml/archive/master.zip, attempt 3
+2018-04-02 13:18:09,883 INFO  DownloadService - Size of file "/tmp/rdisk/2297/master.zip": 320 KB
+2018-04-02 13:18:09,883 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:18:09,883 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2297/master.zip: true
+2018-04-02 13:18:09,883 DEBUG ZipUtil - Extracting '/tmp/rdisk/2297/master.zip' into '/tmp/rdisk/2297/src'.
+2018-04-02 13:18:09,891 INFO  FullProcessService - Size of directory with sources: 390 KB
+2018-04-02 13:18:09,891 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2297/src]
+2018-04-02 13:18:09,897 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2297/src/.git/
+
+2018-04-02 13:18:09,898 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2297/src/Android-PdfMyXml-master/gradlew
+2018-04-02 13:18:09,900 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/build.gradle /tmp/rdisk/2297/src/Android-PdfMyXml-master/build.gradle
+2018-04-02 13:18:09,901 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2297/src/Android-PdfMyXml-master/settings.gradle /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/build.gradle /tmp/rdisk/2297/src/Android-PdfMyXml-master/build.gradle
+2018-04-02 13:18:09,902 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:18:09,902 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:18:09,905 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/local.properties
+2018-04-02 13:18:09,906 INFO  ProjectFixService - Build info for "/tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 13:18:09,906 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2297/src/Android-PdfMyXml-master/local.properties
+2018-04-02 13:18:09,906 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.11-all.zip
+2018-04-02 13:18:09,907 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.11-bin.zip)
+2018-04-02 13:18:09,908 INFO  ProjectFixService - Build info for "/tmp/rdisk/2297/src/Android-PdfMyXml-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 13:18:09,908 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:18:09,908 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:18:09,908 INFO  SysUtils - Execute command: [/tmp/rdisk/2297/src/Android-PdfMyXml-master/gradlew, -b, /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:18:17,273 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 13:18:17,273 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 13:18:17,274 INFO  SysUtils - Execute command: [/tmp/rdisk/2297/src/Android-PdfMyXml-master/gradlew, -b, /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 13:18:24,486 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:compileDebugNdk UP-TO-DATE
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugRenderscript
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:lib:compileDebugAidl
+:lib:generateDebugBuildConfig
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:compileDebugJavaWithJavacNote: /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/src/main/java/com/hendrix/pdfmyxml/utils/BitmapUtils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForDebug
+:lib:transformClassesAndResourcesWithSyncLibJarsForDebug
+:lib:mergeDebugJniLibFolders
+:lib:transformNative_libsWithMergeJniLibsForDebug
+:lib:transformNative_libsWithSyncJniLibsForDebug
+:lib:bundleDebug
+:lib:compileDebugSources
+:lib:assembleDebug
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseRenderscript
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:compileReleaseAidl
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJavaWithJavacNote: /tmp/rdisk/2297/src/Android-PdfMyXml-master/lib/src/main/java/com/hendrix/pdfmyxml/utils/BitmapUtils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:mergeReleaseJniLibFolders
+:lib:transformNative_libsWithMergeJniLibsForRelease
+:lib:transformNative_libsWithSyncJniLibsForRelease
+:lib:bundleRelease
+:lib:compileReleaseSources
+:lib:assembleRelease
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.76 secs
+
+2018-04-02 13:18:24,494 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:18:24,494 INFO  SysUtils - Execute command: [/tmp/rdisk/2297/src/Android-PdfMyXml-master/gradlew, -b, /tmp/rdisk/2297/src/Android-PdfMyXml-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:18:30,414 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 13:18:30,415 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 13:18:30,415 INFO  SysUtils - Execute command: [/tmp/rdisk/2297/src/Android-PdfMyXml-master/gradlew, -b, /tmp/rdisk/2297/src/Android-PdfMyXml-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 13:18:36,372 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:compileDebugNdk UP-TO-DATE
+:lib:compileLint
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugRenderscript UP-TO-DATE
+:lib:generateDebugResValues UP-TO-DATE
+:lib:generateDebugResources UP-TO-DATE
+:lib:packageDebugResources UP-TO-DATE
+:lib:compileDebugAidl UP-TO-DATE
+:lib:generateDebugBuildConfig UP-TO-DATE
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets UP-TO-DATE
+:lib:processDebugManifest UP-TO-DATE
+:lib:processDebugResources UP-TO-DATE
+:lib:generateDebugSources UP-TO-DATE
+:lib:compileDebugJavaWithJavac UP-TO-DATE
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:lib:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:lib:mergeDebugJniLibFolders UP-TO-DATE
+:lib:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:lib:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:lib:bundleDebug UP-TO-DATE
+:lib:compileDebugSources UP-TO-DATE
+:lib:assembleDebug UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseRenderscript UP-TO-DATE
+:lib:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResources UP-TO-DATE
+:lib:packageReleaseResources UP-TO-DATE
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets UP-TO-DATE
+:lib:processReleaseManifest UP-TO-DATE
+:lib:processReleaseResources UP-TO-DATE
+:lib:generateReleaseSources UP-TO-DATE
+:lib:compileReleaseJavaWithJavac UP-TO-DATE
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:lib:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:lib:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:lib:bundleRelease UP-TO-DATE
+:lib:compileReleaseSources UP-TO-DATE
+:lib:assembleRelease UP-TO-DATE
+:lib:assemble UP-TO-DATE
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.517 secs
+
+2018-04-02 13:18:36,378 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:18:36,384 ERROR FullProcessService - Could not find generated or existed APK file

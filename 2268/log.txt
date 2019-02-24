@@ -1,0 +1,109 @@
+2018-04-02 14:19:04,082 INFO  DownloadService - Downloading "https://github.com/jenzz/Java-PojoBuilder/archive/master.zip", attempt 3
+2018-04-02 14:20:04,929 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:20:06,745 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:20:06,745 INFO  DownloadService - Downloading "https://github.com/jenzz/Java-PojoBuilder/archive/master.zip", attempt 3
+2018-04-02 14:21:08,109 DEBUG FullProcessService - Repository https://github.com/jenzz/Java-PojoBuilder available: true
+2018-04-02 14:21:08,109 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:21:08,109 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jenzz/Java-PojoBuilder, /tmp/rdisk/2268/src]
+2018-04-02 14:21:10,252 INFO  SysUtils - 
+2018-04-02 14:21:10,266 INFO  GitService - Deleted "/tmp/rdisk/2268/src/.git": true
+2018-04-02 14:21:10,268 INFO  FullProcessService - Size of directory with sources: 101 KB
+2018-04-02 14:21:10,268 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2268/src]
+2018-04-02 14:21:10,273 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2268/src/.git/
+
+2018-04-02 14:21:10,275 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2268/src/gradlew
+2018-04-02 14:21:10,278 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2268/src/sample/build.gradle /tmp/rdisk/2268/src/build.gradle /tmp/rdisk/2268/src/api/build.gradle /tmp/rdisk/2268/src/processor/build.gradle
+2018-04-02 14:21:10,280 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2268/src/settings.gradle /tmp/rdisk/2268/src/sample/build.gradle /tmp/rdisk/2268/src/processor/build.gradle /tmp/rdisk/2268/src/build.gradle /tmp/rdisk/2268/src/api/build.gradle
+2018-04-02 14:21:10,281 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:21:10,281 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:21:10,287 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2268/src/sample/local.properties
+2018-04-02 14:21:10,287 INFO  ProjectFixService - Build info for "/tmp/rdisk/2268/src/sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 14:21:10,287 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2268/src/local.properties
+2018-04-02 14:21:10,287 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 14:21:10,288 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 14:21:10,289 INFO  ProjectFixService - Build info for "/tmp/rdisk/2268/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 14:21:10,289 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2268/src/api/local.properties
+2018-04-02 14:21:10,290 INFO  ProjectFixService - Build info for "/tmp/rdisk/2268/src/api/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 14:21:10,290 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2268/src/processor/local.properties
+2018-04-02 14:21:10,291 INFO  ProjectFixService - Build info for "/tmp/rdisk/2268/src/processor/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 14:21:10,291 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:21:10,291 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:21:10,291 INFO  SysUtils - Execute command: [/tmp/rdisk/2268/src/gradlew, -b, /tmp/rdisk/2268/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:21:19,761 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-02 14:21:19,761 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-02 14:21:19,761 INFO  SysUtils - Execute command: [/tmp/rdisk/2268/src/gradlew, -b, /tmp/rdisk/2268/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-02 14:21:43,149 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:compileDebugNdk UP-TO-DATE
+:api:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:api:processResources UP-TO-DATE
+:api:classes
+:api:jar
+:api:javadocJar
+:api:sourcesJar
+:processor:compileJava
+:processor:processResources UP-TO-DATE
+:processor:classes
+:processor:jar
+:processor:javadocJar
+:processor:sourcesJar
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72200Library
+:sample:prepareComAndroidSupportSupportV42200Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources/tmp/rdisk/2268/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJava
+:sample:preDexDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources/tmp/rdisk/2268/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJava
+:sample:lintVitalRelease
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:preDexRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.97 secs
+
+2018-04-02 14:21:43,182 INFO  FullProcessService - Found APK file: /tmp/rdisk/2268/src/sample/build/outputs/apk/sample-release-unsigned.apk

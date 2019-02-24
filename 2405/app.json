@@ -1,0 +1,39 @@
+{
+  "meta" : {
+    "packageName" : "com.bugtags.demo",
+    "label" : "Bugtags-Demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2.6",
+    "versionCode" : 21,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.SYSTEM_ALERT_WINDOW", "android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION", "android.permission.INTERNET", "android.permission.ACCESS_WIFI_STATE", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.READ_LOGS", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ {
+      "name" : "android.hardware.location.gps",
+      "required" : false
+    }, {
+      "name" : "android.hardware.location.network",
+      "required" : false
+    } ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACmklEQVR42u2Yz08TQRTH+VusvyNqJGq8eRESlcQEDl5NNFEPajz4IzEm4k0O3tBwsYUKaAhF0KhIjIgVjKCiiQQtKhqo1lCgIFicN895rWV/dbdrsNNunG8y6Saz3f1+Zue9eTMlJUpK/04rrjH0QlMACkABKID/HGD/XcCRKY7ROcQL/eAtgFV+ht/ncUlctL23wDsAG4MsZVqvww+LDGBtgOGuNoZVtwH3iNHddN3Yf/+ThjAhppG5vyAANDWO9wD2jnNMMuMIk93hOMfaQcAtTWnAU72AF58BbmvRnrHSn27SAfZ1iqCMmydGds0kEc+GrVPm3FPAxCLirGjn+0AewLFHYBnxXBqe5Fga1J6xXXwFpuOn6x03JAAc6ALDi92aL2s2PqciBJb7drdDfgG2ChPxBeNL6fO/inHX5mtEDBzsBvSJ6/CE9r++KEefP89fIPCWW8xX3wHc0MiwP8pdmae7Ps5gKgGsEYF9RKTTo6JRkOc1Bmj+/vhlNBiK8KV+M4Sd+YwOdUteB2iksunqaytELvOkm++4XIC6Ift5boYoa3I2j3/WCKkAre+dU48eIpd5UvwnygVoizgDfJlFvKKDIPPjc/b3T8sGqH+TO1WefgIpCCoX6sSvXXYiRaYlA5zoAVd5vvMDx5cx++yUUceo5Bggk4vgLs/bZSe9aECkV6Pto0YTA9+0+iZbwGYgaMF6MKb1xsTmZl1DAcrpna0M502L2fOvHC8N2Gcbip2uMWPvmXABt5QUqMvRPbGx8RV6U+804k6ijc/6xiI5laACbHLBnXEqvykeVgeK7Fhls9jXXn4B+DmR3Xgima55ykMeOBeiAKc6/+TjdHlc2QHLGnF1MqcAFIACUAAKQAF4AkBJ6e/1G99QSddyKM/mAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1043,
+  "locales" : [ "", "zh_CN", "zh_TW" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"21\" android:versionName=\"1.2.6\" package=\"com.bugtags.demo\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />\n\t<uses-feature android:name=\"android.hardware.location.gps\" android:required=\"false\" />\n\t<uses-feature android:name=\"android.hardware.location.network\" android:required=\"false\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_LOGS\" />\n\t<android:uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:label=\"Bugtags-Demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.bugtags.demo.MyApplication\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.bugtags.demo.MainActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" android:windowSoftInputMode=\"0x20\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.bugtags.demo.CustomActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" android:windowSoftInputMode=\"0x20\" />\n\t\t<activity android:name=\"com.bugtags.demo.ConfigActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" android:windowSoftInputMode=\"0x20\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".MainActivity\" />\n\t\t</activity>\n\t\t<activity android:name=\"com.bugtags.demo.FeedbackActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" android:windowSoftInputMode=\"0x20\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".MainActivity\" />\n\t\t</activity>\n\t\t<activity android:name=\"com.bugtags.demo.FunctionsActivity\" android:screenOrientation=\"portrait\" android:configChanges=\"0x4a0\" android:windowSoftInputMode=\"0x20\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".MainActivity\" />\n\t\t</activity>\n\t\t<receiver android:name=\"com.bugtags.demo.AnrReceiver\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"com.bugtags.anr.broadcast\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t\t<service android:name=\"com.bugtags.demo.AnrService\" />\n\t\t<service android:name=\"com.bugtags.demo.StandAloneProcessService\" android:enabled=\"true\" android:exported=\"false\" android:process=\":ab\" />\n\t\t<activity android:theme=\"@android:style/Theme.Translucent.NoTitleBar.Fullscreen\" android:name=\"com.bugtags.library.BugtagsActivity\" android:configChanges=\"0x4a0\" />\n\t\t<service android:name=\"com.bugtags.library.BugtagsService\" />\n\t\t<receiver android:name=\"com.bugtags.library.BugtagsReceiver\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" />\n\t\t\t</intent-filter>\n\t\t</receiver>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1167816,
+  "crc32" : 2131294165,
+  "sha256" : "916441495a88a90090b5bc328d115d30e7ee78f45c5c93f3eea9d09ce8cffd54",
+  "buildTime" : 1522648216000
+}

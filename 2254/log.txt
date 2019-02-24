@@ -1,0 +1,169 @@
+2018-04-02 14:58:37,940 INFO  DownloadService - Downloading "https://github.com/yshrsmz/rxrealm/archive/master.zip", attempt 3
+2018-04-02 14:59:38,558 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:59:39,243 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:59:39,243 INFO  DownloadService - Downloading "https://github.com/yshrsmz/rxrealm/archive/master.zip", attempt 3
+2018-04-02 15:00:40,548 DEBUG FullProcessService - Repository https://github.com/yshrsmz/rxrealm available: true
+2018-04-02 15:00:40,548 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 15:00:40,548 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yshrsmz/rxrealm, /tmp/rdisk/2254/src]
+2018-04-02 15:00:42,398 INFO  SysUtils - 
+2018-04-02 15:00:42,407 INFO  GitService - Deleted "/tmp/rdisk/2254/src/.git": true
+2018-04-02 15:00:42,408 INFO  FullProcessService - Size of directory with sources: 95 KB
+2018-04-02 15:00:42,408 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2254/src]
+2018-04-02 15:00:42,424 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2254/src/.git/
+
+2018-04-02 15:00:42,426 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2254/src/gradlew
+2018-04-02 15:00:42,427 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2254/src/rxrealm/build.gradle /tmp/rdisk/2254/src/build.gradle
+2018-04-02 15:00:42,429 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2254/src/settings.gradle /tmp/rdisk/2254/src/rxrealm/gradle-mvn-push.gradle /tmp/rdisk/2254/src/rxrealm/build.gradle /tmp/rdisk/2254/src/build.gradle
+2018-04-02 15:00:42,429 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 15:00:42,429 INFO  ProjectFixService - Fixing project...
+2018-04-02 15:00:42,434 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2254/src/rxrealm/local.properties
+2018-04-02 15:00:42,435 INFO  ProjectFixService - Build info for "/tmp/rdisk/2254/src/rxrealm/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 15:00:42,435 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2254/src/local.properties
+2018-04-02 15:00:42,435 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 15:00:42,435 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 15:00:42,438 INFO  ProjectFixService - Build info for "/tmp/rdisk/2254/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 15:00:42,438 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 15:00:42,438 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:00:42,438 INFO  SysUtils - Execute command: [/tmp/rdisk/2254/src/gradlew, -b, /tmp/rdisk/2254/src/rxrealm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:00:54,684 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 15:00:54,684 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 15:00:54,684 INFO  SysUtils - Execute command: [/tmp/rdisk/2254/src/gradlew, -b, /tmp/rdisk/2254/src/rxrealm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 15:01:03,747 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rxrealm:androidJavadocs
+:rxrealm:androidJavadocsJar
+:rxrealm:androidSourcesJar
+:rxrealm:compileLint
+:rxrealm:copyDebugLint UP-TO-DATE
+:rxrealm:mergeDebugProguardFiles
+:rxrealm:preBuild UP-TO-DATE
+:rxrealm:preDebugBuild UP-TO-DATE
+:rxrealm:checkDebugManifest
+:rxrealm:prepareDebugDependencies
+:rxrealm:compileDebugAidl
+:rxrealm:compileDebugRenderscript
+:rxrealm:generateDebugBuildConfig
+:rxrealm:generateDebugAssets UP-TO-DATE
+:rxrealm:mergeDebugAssets
+:rxrealm:generateDebugResValues
+:rxrealm:generateDebugResources
+:rxrealm:packageDebugResources
+:rxrealm:processDebugManifest
+:rxrealm:processDebugResources
+:rxrealm:generateDebugSources
+:rxrealm:processDebugJavaRes UP-TO-DATE
+:rxrealm:compileDebugJava
+:rxrealm:packageDebugJar
+:rxrealm:compileDebugNdk UP-TO-DATE
+:rxrealm:packageDebugJniLibs UP-TO-DATE
+:rxrealm:packageDebugLocalJar UP-TO-DATE
+:rxrealm:packageDebugRenderscript UP-TO-DATE
+:rxrealm:bundleDebug
+:rxrealm:compileDebugSources
+:rxrealm:assembleDebug
+:rxrealm:copyReleaseLint UP-TO-DATE
+:rxrealm:mergeReleaseProguardFiles
+:rxrealm:preReleaseBuild UP-TO-DATE
+:rxrealm:checkReleaseManifest
+:rxrealm:prepareReleaseDependencies
+:rxrealm:compileReleaseAidl
+:rxrealm:compileReleaseRenderscript
+:rxrealm:generateReleaseBuildConfig
+:rxrealm:generateReleaseAssets UP-TO-DATE
+:rxrealm:mergeReleaseAssets
+:rxrealm:generateReleaseResValues
+:rxrealm:generateReleaseResources
+:rxrealm:packageReleaseResources
+:rxrealm:processReleaseManifest
+:rxrealm:processReleaseResources
+:rxrealm:generateReleaseSources
+:rxrealm:processReleaseJavaRes UP-TO-DATE
+:rxrealm:compileReleaseJava
+:rxrealm:packageReleaseJar
+:rxrealm:compileReleaseNdk UP-TO-DATE
+:rxrealm:packageReleaseJniLibs UP-TO-DATE
+:rxrealm:packageReleaseLocalJar UP-TO-DATE
+:rxrealm:packageReleaseRenderscript UP-TO-DATE
+:rxrealm:bundleRelease
+:rxrealm:compileReleaseSources
+:rxrealm:assembleRelease
+:rxrealm:signArchives SKIPPED
+:rxrealm:assemble
+:rxrealm:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.638 secs
+
+2018-04-02 15:01:03,753 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 15:01:03,753 INFO  SysUtils - Execute command: [/tmp/rdisk/2254/src/gradlew, -b, /tmp/rdisk/2254/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 15:01:10,191 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 15:01:10,191 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 15:01:10,191 INFO  SysUtils - Execute command: [/tmp/rdisk/2254/src/gradlew, -b, /tmp/rdisk/2254/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 15:01:16,920 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rxrealm:androidJavadocs UP-TO-DATE
+:rxrealm:androidJavadocsJar UP-TO-DATE
+:rxrealm:androidSourcesJar UP-TO-DATE
+:rxrealm:compileLint
+:rxrealm:copyDebugLint UP-TO-DATE
+:rxrealm:mergeDebugProguardFiles UP-TO-DATE
+:rxrealm:preBuild UP-TO-DATE
+:rxrealm:preDebugBuild UP-TO-DATE
+:rxrealm:checkDebugManifest
+:rxrealm:prepareDebugDependencies
+:rxrealm:compileDebugAidl UP-TO-DATE
+:rxrealm:compileDebugRenderscript UP-TO-DATE
+:rxrealm:generateDebugBuildConfig UP-TO-DATE
+:rxrealm:generateDebugAssets UP-TO-DATE
+:rxrealm:mergeDebugAssets UP-TO-DATE
+:rxrealm:generateDebugResValues UP-TO-DATE
+:rxrealm:generateDebugResources UP-TO-DATE
+:rxrealm:packageDebugResources UP-TO-DATE
+:rxrealm:processDebugManifest UP-TO-DATE
+:rxrealm:processDebugResources UP-TO-DATE
+:rxrealm:generateDebugSources UP-TO-DATE
+:rxrealm:processDebugJavaRes UP-TO-DATE
+:rxrealm:compileDebugJava UP-TO-DATE
+:rxrealm:packageDebugJar UP-TO-DATE
+:rxrealm:compileDebugNdk UP-TO-DATE
+:rxrealm:packageDebugJniLibs UP-TO-DATE
+:rxrealm:packageDebugLocalJar UP-TO-DATE
+:rxrealm:packageDebugRenderscript UP-TO-DATE
+:rxrealm:bundleDebug UP-TO-DATE
+:rxrealm:compileDebugSources UP-TO-DATE
+:rxrealm:assembleDebug UP-TO-DATE
+:rxrealm:copyReleaseLint UP-TO-DATE
+:rxrealm:mergeReleaseProguardFiles UP-TO-DATE
+:rxrealm:preReleaseBuild UP-TO-DATE
+:rxrealm:checkReleaseManifest
+:rxrealm:prepareReleaseDependencies
+:rxrealm:compileReleaseAidl UP-TO-DATE
+:rxrealm:compileReleaseRenderscript UP-TO-DATE
+:rxrealm:generateReleaseBuildConfig UP-TO-DATE
+:rxrealm:generateReleaseAssets UP-TO-DATE
+:rxrealm:mergeReleaseAssets UP-TO-DATE
+:rxrealm:generateReleaseResValues UP-TO-DATE
+:rxrealm:generateReleaseResources UP-TO-DATE
+:rxrealm:packageReleaseResources UP-TO-DATE
+:rxrealm:processReleaseManifest UP-TO-DATE
+:rxrealm:processReleaseResources UP-TO-DATE
+:rxrealm:generateReleaseSources UP-TO-DATE
+:rxrealm:processReleaseJavaRes UP-TO-DATE
+:rxrealm:compileReleaseJava UP-TO-DATE
+:rxrealm:packageReleaseJar UP-TO-DATE
+:rxrealm:compileReleaseNdk UP-TO-DATE
+:rxrealm:packageReleaseJniLibs UP-TO-DATE
+:rxrealm:packageReleaseLocalJar UP-TO-DATE
+:rxrealm:packageReleaseRenderscript UP-TO-DATE
+:rxrealm:bundleRelease UP-TO-DATE
+:rxrealm:compileReleaseSources UP-TO-DATE
+:rxrealm:assembleRelease UP-TO-DATE
+:rxrealm:signArchives SKIPPED
+:rxrealm:assemble UP-TO-DATE
+:rxrealm:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.108 secs
+
+2018-04-02 15:01:16,926 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 15:01:16,931 ERROR FullProcessService - Could not find generated or existed APK file

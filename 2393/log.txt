@@ -1,0 +1,602 @@
+2018-04-02 06:24:22,126 INFO  DownloadService - Downloading "https://github.com/smanikandan14/ThinDownloadManager/archive/master.zip", attempt 3
+2018-04-02 06:25:22,633 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 06:25:23,305 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 06:25:23,305 INFO  DownloadService - Downloading "https://github.com/smanikandan14/ThinDownloadManager/archive/master.zip", attempt 3
+2018-04-02 06:26:24,582 DEBUG FullProcessService - Repository https://github.com/smanikandan14/ThinDownloadManager available: true
+2018-04-02 06:26:24,582 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 06:26:24,582 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/smanikandan14/ThinDownloadManager, /tmp/rdisk/2393/src]
+2018-04-02 06:26:26,272 INFO  SysUtils - 
+2018-04-02 06:26:26,285 INFO  GitService - Deleted "/tmp/rdisk/2393/src/.git": true
+2018-04-02 06:26:26,287 INFO  FullProcessService - Size of directory with sources: 275 KB
+2018-04-02 06:26:26,287 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2393/src]
+2018-04-02 06:26:26,297 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2393/src/.git/
+
+2018-04-02 06:26:26,299 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2393/src/gradlew
+2018-04-02 06:26:26,301 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2393/src/ThinDownloadManager/build.gradle /tmp/rdisk/2393/src/ThinDownloadManagerTestApp/build.gradle /tmp/rdisk/2393/src/build.gradle
+2018-04-02 06:26:26,303 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2393/src/settings.gradle /tmp/rdisk/2393/src/maven_push.gradle /tmp/rdisk/2393/src/build.gradle /tmp/rdisk/2393/src/ThinDownloadManagerTestApp/build.gradle /tmp/rdisk/2393/src/ThinDownloadManager/build.gradle
+2018-04-02 06:26:26,303 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 06:26:26,303 INFO  ProjectFixService - Fixing project...
+2018-04-02 06:26:26,309 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2393/src/ThinDownloadManager/local.properties
+2018-04-02 06:26:26,310 INFO  ProjectFixService - Build info for "/tmp/rdisk/2393/src/ThinDownloadManager/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=9,targetSdkVersion=26]
+2018-04-02 06:26:26,310 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2393/src/ThinDownloadManagerTestApp/local.properties
+2018-04-02 06:26:26,310 INFO  ProjectFixService - Build info for "/tmp/rdisk/2393/src/ThinDownloadManagerTestApp/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=9,targetSdkVersion=26]
+2018-04-02 06:26:26,310 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2393/src/local.properties
+2018-04-02 06:26:26,310 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-02 06:26:26,311 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-02 06:26:26,313 INFO  ProjectFixService - Build info for "/tmp/rdisk/2393/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=9,targetSdkVersion=26]
+2018-04-02 06:26:26,313 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 06:26:26,313 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:26:26,313 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/ThinDownloadManager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:26:35,007 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 06:26:35,007 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 06:26:35,008 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/ThinDownloadManager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 06:26:47,501 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:ThinDownloadManager:androidJavadocs/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/ThinDownloadManager.java:3: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:3: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:4: error: package android.os does not exist
+import android.os.Looper;
+                 ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/ThinDownloadManager.java:46: error: cannot find symbol
+    public ThinDownloadManager(Handler callbackHandler) throws InvalidParameterException {
+                               ^
+  symbol:   class Handler
+  location: class ThinDownloadManager
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:3: error: package android.net does not exist
+import android.net.Uri;
+                  ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadDispatcher.java:3: error: package android.os does not exist
+import android.os.Process;
+                 ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadDispatcher.java:7: error: package org.apache.http.conn does not exist
+import org.apache.http.conn.ConnectTimeoutException;
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadDispatcher.java:24: error: package android.content does not exist
+import static android.content.ContentValues.TAG;
+                             ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadDispatcher.java:24: error: static import only from classes and interfaces
+import static android.content.ContentValues.TAG;
+^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:116: error: cannot find symbol
+	public DownloadRequestQueue(Handler callbackHandler) throws InvalidParameterException {
+	                            ^
+  symbol:   class Handler
+  location: class DownloadRequestQueue
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:290: error: cannot find symbol
+	private void initialize(Handler callbackHandler) {
+	                        ^
+  symbol:   class Handler
+  location: class DownloadRequestQueue
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:299: error: cannot find symbol
+	private void initialize(Handler callbackHandler, int threadPoolSize) {
+	                        ^
+  symbol:   class Handler
+  location: class DownloadRequestQueue
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:41: error: cannot find symbol
+    private Uri mUri;
+            ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:50: error: cannot find symbol
+    private Uri mDestinationURI;
+            ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:74: error: cannot find symbol
+    public DownloadRequest(Uri uri) {
+                           ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:202: error: cannot find symbol
+    public Uri getUri() {
+           ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:206: error: cannot find symbol
+    public DownloadRequest setUri(Uri mUri) {
+                                  ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:211: error: cannot find symbol
+    public Uri getDestinationURI() {
+           ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:215: error: cannot find symbol
+    public DownloadRequest setDestinationURI(Uri destinationURI) {
+                                             ^
+  symbol:   class Uri
+  location: class DownloadRequest
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:45: error: cannot find symbol
+		public CallBackDelivery(final Handler handler) {
+		                              ^
+  symbol:   class Handler
+  location: class DownloadRequestQueue.CallBackDelivery
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DefaultRetryPolicy.java:76: warning: no @return
+    protected boolean hasAttemptRemaining() {
+                      ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/RetryPolicy.java:11: warning: no @return
+    public int getCurrentTimeout();
+               ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/RetryPolicy.java:16: warning: no @return
+    public int getCurrentRetryCount();
+               ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/RetryPolicy.java:21: warning: no @return
+    public float getBackOffMultiplier();
+                 ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:91: warning: no @return
+    public Priority getPriority() {
+                    ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:98: warning: no description for @param
+     * @param priority
+       ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:109: warning: no description for @param
+     * @param key
+       ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:110: warning: no description for @param
+     * @param value
+       ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:112: warning: no @return
+    public DownloadRequest addCustomHeader(String key, String value) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:168: warning: no @param for downloadListener
+    public DownloadRequest setDownloadListener(DownloadStatusListener downloadListener) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:168: warning: no @return
+    public DownloadRequest setDownloadListener(DownloadStatusListener downloadListener) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:188: warning: no @return
+    public DownloadRequest setStatusListener(DownloadStatusListenerV1 downloadStatusListenerV1) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:242: warning: no @param for deleteOnFailure
+    public DownloadRequest setDeleteDestinationFileOnFailure(boolean deleteOnFailure) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:242: warning: no @return
+    public DownloadRequest setDeleteDestinationFileOnFailure(boolean deleteOnFailure) {
+                           ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequest.java:259: warning: no @return
+    public boolean isCancelled() {
+                   ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:114: warning: no description for @param
+	 * @param callbackHandler
+	   ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/DownloadRequestQueue.java:107: warning: no @param for threadPoolSize
+	public DownloadRequestQueue(int threadPoolSize) {
+	       ^
+/tmp/rdisk/2393/src/ThinDownloadManager/src/main/java/com/thin/downloadmanager/ThinDownloadManager.java:72: warning: no description for @throws
+     * @throws IllegalArgumentException
+       ^
+
+38 warnings
+:ThinDownloadManager:androidJavadocsJar
+:ThinDownloadManager:androidSourcesJar
+:ThinDownloadManager:preBuild UP-TO-DATE
+:ThinDownloadManager:preDebugBuild UP-TO-DATE
+:ThinDownloadManager:compileDebugAidl
+:ThinDownloadManager:compileDebugNdk NO-SOURCE
+:ThinDownloadManager:compileDebugRenderscript
+:ThinDownloadManager:checkDebugManifest
+:ThinDownloadManager:generateDebugBuildConfig
+:ThinDownloadManager:prepareLintJar
+:ThinDownloadManager:generateDebugResValues
+:ThinDownloadManager:generateDebugResources
+:ThinDownloadManager:packageDebugResources
+:ThinDownloadManager:platformAttrExtractor
+:ThinDownloadManager:processDebugManifest
+:ThinDownloadManager:javaPreCompileDebug
+:ThinDownloadManager:mergeDebugShaders
+:ThinDownloadManager:compileDebugShaders
+:ThinDownloadManager:generateDebugAssets
+:ThinDownloadManager:mergeDebugAssets
+:ThinDownloadManager:mergeDebugConsumerProguardFiles
+:ThinDownloadManager:packageDebugRenderscript NO-SOURCE
+:ThinDownloadManager:processDebugJavaRes NO-SOURCE
+:ThinDownloadManager:mergeDebugJniLibFolders
+:ThinDownloadManager:transformNativeLibsWithMergeJniLibsForDebug
+:ThinDownloadManager:transformNativeLibsWithStripDebugSymbolForDebug
+:ThinDownloadManager:transformNativeLibsWithSyncJniLibsForDebug
+:ThinDownloadManager:preReleaseBuild UP-TO-DATE
+:ThinDownloadManager:compileReleaseAidl
+:ThinDownloadManager:compileReleaseNdk NO-SOURCE
+:ThinDownloadManager:compileReleaseRenderscript
+:ThinDownloadManager:checkReleaseManifest
+:ThinDownloadManager:generateReleaseBuildConfig
+:ThinDownloadManager:generateReleaseResValues
+:ThinDownloadManager:generateReleaseResources
+:ThinDownloadManager:packageReleaseResources
+:ThinDownloadManager:processReleaseManifest
+:ThinDownloadManager:javaPreCompileRelease
+:ThinDownloadManager:mergeReleaseShaders
+:ThinDownloadManager:compileReleaseShaders
+:ThinDownloadManager:generateReleaseAssets
+:ThinDownloadManager:mergeReleaseAssets
+:ThinDownloadManager:mergeReleaseConsumerProguardFiles
+:ThinDownloadManager:packageReleaseRenderscript NO-SOURCE
+:ThinDownloadManager:processReleaseJavaRes NO-SOURCE
+:ThinDownloadManager:mergeReleaseJniLibFolders
+:ThinDownloadManager:transformNativeLibsWithMergeJniLibsForRelease
+:ThinDownloadManager:transformNativeLibsWithStripDebugSymbolForRelease
+:ThinDownloadManager:transformNativeLibsWithSyncJniLibsForRelease
+:ThinDownloadManager:mergeReleaseResources
+:ThinDownloadManager:verifyReleaseResources
+:ThinDownloadManager:processDebugResources
+:ThinDownloadManager:generateDebugSources
+:ThinDownloadManager:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ThinDownloadManager:extractDebugAnnotations
+:ThinDownloadManager:transformResourcesWithMergeJavaResForDebug
+:ThinDownloadManager:transformClassesAndResourcesWithSyncLibJarsForDebug
+:ThinDownloadManager:bundleDebug
+:ThinDownloadManager:compileDebugSources
+:ThinDownloadManager:assembleDebug
+:ThinDownloadManager:processReleaseResources
+:ThinDownloadManager:generateReleaseSources
+:ThinDownloadManager:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ThinDownloadManager:extractReleaseAnnotations
+:ThinDownloadManager:transformResourcesWithMergeJavaResForRelease
+:ThinDownloadManager:transformClassesAndResourcesWithSyncLibJarsForRelease
+:ThinDownloadManager:bundleRelease
+:ThinDownloadManager:compileReleaseSources
+:ThinDownloadManager:assembleRelease
+:ThinDownloadManager:signArchives SKIPPED
+:ThinDownloadManager:assemble
+:ThinDownloadManager:build
+
+BUILD SUCCESSFUL in 12s
+51 actionable tasks: 51 executed
+
+2018-04-02 06:26:47,512 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:26:47,512 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/ThinDownloadManagerTestApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:26:54,899 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 06:26:54,899 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 06:26:54,899 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/ThinDownloadManagerTestApp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 06:27:07,253 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 06:27:07,253 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':ThinDownloadManagerTestApp' is deprecated. Use 'implementation' instead.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:ThinDownloadManager:preBuild UP-TO-DATE
+:ThinDownloadManager:preDebugBuild UP-TO-DATE
+:ThinDownloadManager:compileDebugAidl UP-TO-DATE
+:ThinDownloadManager:compileDebugRenderscript UP-TO-DATE
+:ThinDownloadManager:checkDebugManifest UP-TO-DATE
+:ThinDownloadManager:generateDebugBuildConfig UP-TO-DATE
+:ThinDownloadManager:prepareLintJar UP-TO-DATE
+:ThinDownloadManager:generateDebugResValues UP-TO-DATE
+:ThinDownloadManager:generateDebugResources UP-TO-DATE
+:ThinDownloadManager:packageDebugResources UP-TO-DATE
+:ThinDownloadManager:platformAttrExtractor UP-TO-DATE
+:ThinDownloadManager:processDebugManifest UP-TO-DATE
+:ThinDownloadManager:processDebugResources UP-TO-DATE
+:ThinDownloadManager:generateDebugSources UP-TO-DATE
+:ThinDownloadManager:javaPreCompileDebug UP-TO-DATE
+:ThinDownloadManager:compileDebugJavaWithJavac UP-TO-DATE
+:ThinDownloadManager:processDebugJavaRes NO-SOURCE
+:ThinDownloadManager:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:ThinDownloadManagerTestApp:preBuild UP-TO-DATE
+:ThinDownloadManagerTestApp:preDebugBuild
+:ThinDownloadManagerTestApp:compileDebugAidl
+:ThinDownloadManager:packageDebugRenderscript NO-SOURCE
+:ThinDownloadManagerTestApp:compileDebugRenderscript
+:ThinDownloadManagerTestApp:checkDebugManifest
+:ThinDownloadManagerTestApp:generateDebugBuildConfig
+:ThinDownloadManagerTestApp:prepareLintJar
+:ThinDownloadManagerTestApp:generateDebugResValues
+:ThinDownloadManagerTestApp:generateDebugResources
+:ThinDownloadManagerTestApp:mergeDebugResources
+:ThinDownloadManagerTestApp:createDebugCompatibleScreenManifests
+:ThinDownloadManagerTestApp:processDebugManifest/tmp/rdisk/2393/src/ThinDownloadManagerTestApp/src/main/AndroidManifest.xml Error:
+	uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+	Suggestion: use a compatible library with a minSdk of at most 9,
+		or increase this project's minSdk version to at least 14,
+		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+
+
+See http://g.co/androidstudio/manifest-merger for more information about the manifest merger.
+
+:ThinDownloadManagerTestApp:processDebugManifest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ThinDownloadManagerTestApp:processDebugManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+  	Suggestion: use a compatible library with a minSdk of at most 9,
+  		or increase this project's minSdk version to at least 14,
+  		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':ThinDownloadManagerTestApp:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:63)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:124)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:105)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: java.lang.RuntimeException: Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+	Suggestion: use a compatible library with a minSdk of at most 9,
+		or increase this project's minSdk version to at least 14,
+		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+	at com.android.builder.core.AndroidBuilder.mergeManifestsForApplication(AndroidBuilder.java:509)
+	at com.android.build.gradle.tasks.MergeManifests.doFullTaskAction(MergeManifests.java:150)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:109)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:173)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:121)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:122)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:111)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 27 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 11s
+23 actionable tasks: 11 executed, 12 up-to-date
+
+2018-04-02 06:27:07,277 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:27:07,277 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:27:15,552 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-04-02 06:27:15,552 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 06:27:15,552 INFO  SysUtils - Execute command: [/tmp/rdisk/2393/src/gradlew, -b, /tmp/rdisk/2393/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 06:27:25,253 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 06:27:25,253 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Configuration 'compile' in project ':ThinDownloadManagerTestApp' is deprecated. Use 'implementation' instead.
+:ThinDownloadManager:androidJavadocs UP-TO-DATE
+:ThinDownloadManager:androidJavadocsJar UP-TO-DATE
+:ThinDownloadManager:androidSourcesJar UP-TO-DATE
+:ThinDownloadManager:preBuild UP-TO-DATE
+:ThinDownloadManager:preDebugBuild UP-TO-DATE
+:ThinDownloadManager:compileDebugAidl UP-TO-DATE
+:ThinDownloadManager:compileDebugNdk NO-SOURCE
+:ThinDownloadManager:compileDebugRenderscript UP-TO-DATE
+:ThinDownloadManager:checkDebugManifest UP-TO-DATE
+:ThinDownloadManager:generateDebugBuildConfig UP-TO-DATE
+:ThinDownloadManager:prepareLintJar UP-TO-DATE
+:ThinDownloadManager:generateDebugResValues UP-TO-DATE
+:ThinDownloadManager:generateDebugResources UP-TO-DATE
+:ThinDownloadManager:packageDebugResources UP-TO-DATE
+:ThinDownloadManager:platformAttrExtractor UP-TO-DATE
+:ThinDownloadManager:processDebugManifest UP-TO-DATE
+:ThinDownloadManager:processDebugResources UP-TO-DATE
+:ThinDownloadManager:generateDebugSources UP-TO-DATE
+:ThinDownloadManager:javaPreCompileDebug UP-TO-DATE
+:ThinDownloadManager:compileDebugJavaWithJavac UP-TO-DATE
+:ThinDownloadManager:extractDebugAnnotations UP-TO-DATE
+:ThinDownloadManager:mergeDebugShaders UP-TO-DATE
+:ThinDownloadManager:compileDebugShaders UP-TO-DATE
+:ThinDownloadManager:generateDebugAssets UP-TO-DATE
+:ThinDownloadManager:mergeDebugAssets UP-TO-DATE
+:ThinDownloadManager:mergeDebugConsumerProguardFiles UP-TO-DATE
+:ThinDownloadManager:packageDebugRenderscript NO-SOURCE
+:ThinDownloadManager:processDebugJavaRes NO-SOURCE
+:ThinDownloadManager:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:ThinDownloadManager:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:ThinDownloadManager:mergeDebugJniLibFolders UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:ThinDownloadManager:bundleDebug UP-TO-DATE
+:ThinDownloadManager:compileDebugSources UP-TO-DATE
+:ThinDownloadManager:assembleDebug UP-TO-DATE
+:ThinDownloadManager:preReleaseBuild UP-TO-DATE
+:ThinDownloadManager:compileReleaseAidl UP-TO-DATE
+:ThinDownloadManager:compileReleaseNdk NO-SOURCE
+:ThinDownloadManager:compileReleaseRenderscript UP-TO-DATE
+:ThinDownloadManager:checkReleaseManifest UP-TO-DATE
+:ThinDownloadManager:generateReleaseBuildConfig UP-TO-DATE
+:ThinDownloadManager:generateReleaseResValues UP-TO-DATE
+:ThinDownloadManager:generateReleaseResources UP-TO-DATE
+:ThinDownloadManager:packageReleaseResources UP-TO-DATE
+:ThinDownloadManager:processReleaseManifest UP-TO-DATE
+:ThinDownloadManager:processReleaseResources UP-TO-DATE
+:ThinDownloadManager:generateReleaseSources UP-TO-DATE
+:ThinDownloadManager:javaPreCompileRelease UP-TO-DATE
+:ThinDownloadManager:compileReleaseJavaWithJavac UP-TO-DATE
+:ThinDownloadManager:extractReleaseAnnotations UP-TO-DATE
+:ThinDownloadManager:mergeReleaseShaders UP-TO-DATE
+:ThinDownloadManager:compileReleaseShaders UP-TO-DATE
+:ThinDownloadManager:generateReleaseAssets UP-TO-DATE
+:ThinDownloadManager:mergeReleaseAssets UP-TO-DATE
+:ThinDownloadManager:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:ThinDownloadManager:packageReleaseRenderscript NO-SOURCE
+:ThinDownloadManager:processReleaseJavaRes NO-SOURCE
+:ThinDownloadManager:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:ThinDownloadManager:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:ThinDownloadManager:mergeReleaseJniLibFolders UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:ThinDownloadManager:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:ThinDownloadManager:bundleRelease UP-TO-DATE
+:ThinDownloadManager:compileReleaseSources UP-TO-DATE
+:ThinDownloadManager:mergeReleaseResources UP-TO-DATE
+:ThinDownloadManager:verifyReleaseResources UP-TO-DATE
+:ThinDownloadManager:assembleRelease UP-TO-DATE
+:ThinDownloadManager:signArchives SKIPPED
+:ThinDownloadManager:assemble UP-TO-DATE
+:ThinDownloadManager:build
+:ThinDownloadManager:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:ThinDownloadManagerTestApp:preBuild UP-TO-DATE
+:ThinDownloadManagerTestApp:preDebugBuild UP-TO-DATE
+:ThinDownloadManagerTestApp:compileDebugAidl UP-TO-DATE
+:ThinDownloadManagerTestApp:compileDebugRenderscript UP-TO-DATE
+:ThinDownloadManagerTestApp:checkDebugManifest UP-TO-DATE
+:ThinDownloadManagerTestApp:generateDebugBuildConfig UP-TO-DATE
+:ThinDownloadManagerTestApp:prepareLintJar UP-TO-DATE
+:ThinDownloadManagerTestApp:generateDebugResValues UP-TO-DATE
+:ThinDownloadManagerTestApp:generateDebugResources UP-TO-DATE
+:ThinDownloadManagerTestApp:mergeDebugResources UP-TO-DATE
+:ThinDownloadManagerTestApp:createDebugCompatibleScreenManifests UP-TO-DATE
+:ThinDownloadManagerTestApp:processDebugManifest/tmp/rdisk/2393/src/ThinDownloadManagerTestApp/src/main/AndroidManifest.xml Error:
+	uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+	Suggestion: use a compatible library with a minSdk of at most 9,
+		or increase this project's minSdk version to at least 14,
+		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+
+
+See http://g.co/androidstudio/manifest-merger for more information about the manifest merger.
+
+:ThinDownloadManagerTestApp:processDebugManifest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ThinDownloadManagerTestApp:processDebugManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+  	Suggestion: use a compatible library with a minSdk of at most 9,
+  		or increase this project's minSdk version to at least 14,
+  		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':ThinDownloadManagerTestApp:processDebugManifest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:63)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:124)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:105)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:625)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:580)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:99)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: java.lang.RuntimeException: Manifest merger failed : uses-sdk:minSdkVersion 9 cannot be smaller than version 14 declared in library [com.android.support:appcompat-v7:26.1.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6324e4c874b4a83eccef9b702f97756d/AndroidManifest.xml as the library might be using APIs not available in 9
+	Suggestion: use a compatible library with a minSdk of at most 9,
+		or increase this project's minSdk version to at least 14,
+		or use tools:overrideLibrary="android.support.v7.appcompat" to force usage (may lead to runtime failures)
+	at com.android.builder.core.AndroidBuilder.mergeManifestsForApplication(AndroidBuilder.java:509)
+	at com.android.build.gradle.tasks.MergeManifests.doFullTaskAction(MergeManifests.java:150)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:109)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$IncrementalTaskAction.doExecute(DefaultTaskClassInfoStore.java:173)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:121)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:122)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:197)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:107)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:111)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 27 more
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 8s
+62 actionable tasks: 1 executed, 61 up-to-date
+
+2018-04-02 06:27:25,277 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 06:27:25,299 ERROR FullProcessService - Could not find generated or existed APK file

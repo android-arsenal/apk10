@@ -1,0 +1,197 @@
+2018-04-02 10:10:32,819 INFO  DownloadService - Downloading "https://github.com/EverythingMe/easy-content-providers/archive/master.zip", attempt 3
+2018-04-02 10:10:33,333 INFO  DownloadService - Downloaded https://github.com/EverythingMe/easy-content-providers/archive/master.zip, attempt 3
+2018-04-02 10:10:33,333 INFO  DownloadService - Size of file "/tmp/rdisk/2334/master.zip": 176 KB
+2018-04-02 10:10:33,333 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 10:10:33,334 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2334/master.zip: true
+2018-04-02 10:10:33,334 DEBUG ZipUtil - Extracting '/tmp/rdisk/2334/master.zip' into '/tmp/rdisk/2334/src'.
+2018-04-02 10:10:33,354 INFO  FullProcessService - Size of directory with sources: 283 KB
+2018-04-02 10:10:33,354 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2334/src]
+2018-04-02 10:10:33,359 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2334/src/.git/
+
+2018-04-02 10:10:33,363 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2334/src/easy-content-providers-master/gradlew
+2018-04-02 10:10:33,368 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2334/src/easy-content-providers-master/app/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-android/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-core/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-stetho/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/build.gradle
+2018-04-02 10:10:33,373 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2334/src/easy-content-providers-master/settings.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-stetho/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-core/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/providers-android/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/build.gradle /tmp/rdisk/2334/src/easy-content-providers-master/app/build.gradle
+2018-04-02 10:10:33,373 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-02 10:11:33,375 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 10:11:33,375 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-02 10:12:33,376 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 10:12:33,376 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 10:12:33,376 INFO  ProjectFixService - Fixing project...
+2018-04-02 10:12:33,387 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2334/src/easy-content-providers-master/app/local.properties
+2018-04-02 10:12:33,387 INFO  ProjectFixService - Build info for "/tmp/rdisk/2334/src/easy-content-providers-master/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 10:12:33,387 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2334/src/easy-content-providers-master/providers-android/local.properties
+2018-04-02 10:12:33,388 INFO  ProjectFixService - Build info for "/tmp/rdisk/2334/src/easy-content-providers-master/providers-android/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 10:12:33,388 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2334/src/easy-content-providers-master/providers-core/local.properties
+2018-04-02 10:12:33,388 INFO  ProjectFixService - Build info for "/tmp/rdisk/2334/src/easy-content-providers-master/providers-core/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 10:12:33,388 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2334/src/easy-content-providers-master/providers-stetho/local.properties
+2018-04-02 10:12:33,389 INFO  ProjectFixService - Build info for "/tmp/rdisk/2334/src/easy-content-providers-master/providers-stetho/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 10:12:33,389 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2334/src/easy-content-providers-master/local.properties
+2018-04-02 10:12:33,389 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 10:12:33,389 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 10:12:33,390 INFO  ProjectFixService - Build info for "/tmp/rdisk/2334/src/easy-content-providers-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 10:12:33,390 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 10:12:33,390 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 10:12:33,390 INFO  SysUtils - Execute command: [/tmp/rdisk/2334/src/easy-content-providers-master/gradlew, -b, /tmp/rdisk/2334/src/easy-content-providers-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 10:12:42,100 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 10:12:42,100 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 10:12:42,100 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 10:12:42,100 INFO  SysUtils - Execute command: [/tmp/rdisk/2334/src/easy-content-providers-master/gradlew, -b, /tmp/rdisk/2334/src/easy-content-providers-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 10:13:20,486 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportDesign2220Library
+:app:prepareComAndroidSupportRecyclerviewV72200Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareMeEverythingProvidersAndroid101Library
+:app:prepareMeEverythingProvidersCore100Library
+:app:prepareMeEverythingProvidersStetho101Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant debug: 10 issues found
+Ran lint on variant release: 10 issues found
+Wrote HTML report to file:/tmp/rdisk/2334/src/easy-content-providers-master/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2334/src/easy-content-providers-master/app/build/outputs/lint-results.xml
+:app:preCompileDebugUnitTestJava
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJava UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebug
+:app:preCompileReleaseUnitTestJava
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJava UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testRelease
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.959 secs
+
+2018-04-02 10:13:20,530 INFO  FullProcessService - Found APK file: /tmp/rdisk/2334/src/easy-content-providers-master/app/build/outputs/apk/app-debug.apk

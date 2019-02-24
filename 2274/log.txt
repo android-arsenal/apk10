@@ -1,0 +1,245 @@
+2018-04-02 14:02:37,373 INFO  DownloadService - Downloading "https://github.com/amphiaraus/Android-RatioLayout/archive/master.zip", attempt 3
+2018-04-02 14:03:38,123 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:03:38,935 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:03:38,935 INFO  DownloadService - Downloading "https://github.com/amphiaraus/Android-RatioLayout/archive/master.zip", attempt 3
+2018-04-02 14:04:40,452 DEBUG FullProcessService - Repository https://github.com/amphiaraus/Android-RatioLayout available: true
+2018-04-02 14:04:40,452 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:04:40,452 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/amphiaraus/Android-RatioLayout, /tmp/rdisk/2274/src]
+2018-04-02 14:04:42,092 INFO  SysUtils - 
+2018-04-02 14:04:42,096 INFO  GitService - Deleted "/tmp/rdisk/2274/src/.git": true
+2018-04-02 14:04:42,099 INFO  FullProcessService - Size of directory with sources: 315 KB
+2018-04-02 14:04:42,100 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2274/src]
+2018-04-02 14:04:42,108 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2274/src/.git/
+
+2018-04-02 14:04:42,111 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2274/src/gradlew
+2018-04-02 14:04:42,114 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2274/src/library/build.gradle /tmp/rdisk/2274/src/simple/build.gradle /tmp/rdisk/2274/src/build.gradle
+2018-04-02 14:04:42,117 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2274/src/simple/build.gradle /tmp/rdisk/2274/src/settings.gradle /tmp/rdisk/2274/src/library/build.gradle /tmp/rdisk/2274/src/gradle-mvn-push.gradle /tmp/rdisk/2274/src/build.gradle
+2018-04-02 14:04:42,117 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:04:42,117 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:04:42,125 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2274/src/library/local.properties
+2018-04-02 14:04:42,125 INFO  ProjectFixService - Build info for "/tmp/rdisk/2274/src/library/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-02 14:04:42,125 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2274/src/simple/local.properties
+2018-04-02 14:04:42,126 INFO  ProjectFixService - Build info for "/tmp/rdisk/2274/src/simple/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=25,minSdkVersion=19,targetSdkVersion=25]
+2018-04-02 14:04:42,126 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2274/src/local.properties
+2018-04-02 14:04:42,126 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-02 14:04:42,126 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-02 14:04:42,127 INFO  ProjectFixService - Build info for "/tmp/rdisk/2274/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=25,minSdkVersion=19,targetSdkVersion=25]
+2018-04-02 14:04:42,127 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:04:42,127 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:04:42,127 INFO  SysUtils - Execute command: [/tmp/rdisk/2274/src/gradlew, -b, /tmp/rdisk/2274/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:04:52,176 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 14:04:52,176 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 14:04:52,176 INFO  SysUtils - Execute command: [/tmp/rdisk/2274/src/gradlew, -b, /tmp/rdisk/2274/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 14:05:08,210 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl
+:library:compileDebugNdk NO-SOURCE
+:library:compileDebugRenderscript
+:library:checkDebugManifest
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:platformAttrExtractor
+:library:processDebugManifest
+:library:javaPreCompileDebug
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugConsumerProguardFiles
+:library:packageDebugRenderscript NO-SOURCE
+:library:processDebugJavaRes NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl
+:library:compileReleaseNdk NO-SOURCE
+:library:compileReleaseRenderscript
+:library:checkReleaseManifest
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:javaPreCompileRelease
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseConsumerProguardFiles
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:mergeReleaseResources
+:library:verifyReleaseResources
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/2274/src/library/src/main/java/net/soulwolf/widget/ratiolayout/widget/RatioAbsoluteLayout.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractDebugAnnotations
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/2274/src/library/src/main/java/net/soulwolf/widget/ratiolayout/widget/RatioAbsoluteLayout.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL in 15s
+48 actionable tasks: 48 executed
+
+2018-04-02 14:05:08,222 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:05:08,222 INFO  SysUtils - Execute command: [/tmp/rdisk/2274/src/gradlew, -b, /tmp/rdisk/2274/src/simple/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:05:15,889 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 14:05:15,889 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 14:05:15,889 INFO  SysUtils - Execute command: [/tmp/rdisk/2274/src/gradlew, -b, /tmp/rdisk/2274/src/simple/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 14:05:51,249 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:simple:preBuild UP-TO-DATE
+:simple:preDebugBuild
+:simple:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:simple:compileDebugRenderscript
+:simple:checkDebugManifest
+:simple:generateDebugBuildConfig
+:simple:prepareLintJar
+:simple:generateDebugResValues
+:simple:generateDebugResources
+:simple:mergeDebugResources
+:simple:createDebugCompatibleScreenManifests
+:simple:processDebugManifest
+:simple:splitsDiscoveryTaskDebug
+:simple:processDebugResources
+:simple:generateDebugSources
+:simple:javaPreCompileDebug
+:simple:compileDebugJavaWithJavac
+:simple:compileDebugNdk NO-SOURCE
+:simple:compileDebugSources
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:simple:mergeDebugShaders
+:simple:compileDebugShaders
+:simple:generateDebugAssets
+:simple:mergeDebugAssets
+:simple:transformClassesWithDexBuilderForDebug
+:simple:transformDexArchiveWithExternalLibsDexMergerForDebug
+:simple:transformDexArchiveWithDexMergerForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:simple:mergeDebugJniLibFolders
+:simple:transformNativeLibsWithMergeJniLibsForDebug
+:simple:transformNativeLibsWithStripDebugSymbolForDebug
+:simple:processDebugJavaRes NO-SOURCE
+:simple:transformResourcesWithMergeJavaResForDebug
+:simple:validateSigningDebug
+:simple:packageDebug
+:simple:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:simple:preReleaseBuild
+:simple:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:simple:compileReleaseRenderscript
+:simple:checkReleaseManifest
+:simple:generateReleaseBuildConfig
+:simple:generateReleaseResValues
+:simple:generateReleaseResources
+:simple:mergeReleaseResources
+:simple:createReleaseCompatibleScreenManifests
+:simple:processReleaseManifest
+:simple:splitsDiscoveryTaskRelease
+:simple:processReleaseResources
+:simple:generateReleaseSources
+:simple:javaPreCompileRelease
+:simple:compileReleaseJavaWithJavac
+:simple:compileReleaseNdk NO-SOURCE
+:simple:compileReleaseSources
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:simple:mergeReleaseShaders
+:simple:compileReleaseShaders
+:simple:generateReleaseAssets
+:simple:mergeReleaseAssets
+:simple:transformClassesWithPreDexForRelease
+:simple:transformDexWithDexForRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:simple:mergeReleaseJniLibFolders
+:simple:transformNativeLibsWithMergeJniLibsForRelease
+:simple:transformNativeLibsWithStripDebugSymbolForRelease
+:simple:processReleaseJavaRes NO-SOURCE
+:simple:transformResourcesWithMergeJavaResForRelease
+:simple:packageRelease
+:simple:lintVitalRelease
+:simple:assembleRelease
+:simple:assemble
+:simple:build
+
+BUILD SUCCESSFUL in 34s
+88 actionable tasks: 54 executed, 34 up-to-date
+
+2018-04-02 14:05:51,298 INFO  FullProcessService - Found APK file: /tmp/rdisk/2274/src/simple/build/outputs/apk/release/simple-release-unsigned.apk

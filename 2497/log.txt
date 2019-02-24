@@ -1,0 +1,23 @@
+2018-05-11 09:35:44,859 INFO  DownloadService - Downloading "https://github.com/inloop/sqlite-viewer/archive/master.zip", attempt 3
+2018-05-11 09:35:51,036 INFO  DownloadService - Downloading "https://github.com/inloop/sqlite-viewer/archive/master.zip", attempt 2
+2018-05-11 09:35:56,668 INFO  DownloadService - Downloading "https://github.com/inloop/sqlite-viewer/archive/master.zip", attempt 1
+2018-05-11 09:36:56,886 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 09:36:57,886 INFO  GithubDownloadService - Default branch of this repository: gh-pages
+2018-05-11 09:36:57,886 INFO  DownloadService - Downloading "https://github.com/inloop/sqlite-viewer/archive/gh-pages.zip", attempt 3
+2018-05-11 09:37:59,239 DEBUG FullProcessService - Repository https://github.com/inloop/sqlite-viewer available: true
+2018-05-11 09:37:59,239 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 09:37:59,240 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/inloop/sqlite-viewer, /tmp/rdisk/2497/src]
+2018-05-11 09:38:02,571 INFO  SysUtils - 
+2018-05-11 09:38:02,581 INFO  GitService - Deleted "/tmp/rdisk/2497/src/.git": true
+2018-05-11 09:38:02,583 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-11 09:38:02,583 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2497/src]
+2018-05-11 09:38:02,594 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2497/src/.git/
+
+2018-05-11 09:38:02,597 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-05-11 09:38:02,597 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-05-11 09:38:02,598 INFO  ProjectBuildService - Build script(s): none
+2018-05-11 09:38:02,599 INFO  ProjectBuildService - All script(s): none
+2018-05-11 09:38:02,599 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 09:38:02,599 ERROR FullProcessService - Project is not correct Gradle project
+2018-05-11 09:38:02,599 ERROR FullProcessService - Project build has not produced APK file
+2018-05-11 09:38:02,600 ERROR FullProcessService - Could not find generated or existed APK file

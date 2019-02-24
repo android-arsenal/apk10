@@ -1,0 +1,146 @@
+2018-04-02 13:12:03,434 INFO  DownloadService - Downloading "https://github.com/rharter/auto-value-moshi/archive/master.zip", attempt 3
+2018-04-02 13:12:03,841 INFO  DownloadService - Downloaded https://github.com/rharter/auto-value-moshi/archive/master.zip, attempt 3
+2018-04-02 13:12:03,842 INFO  DownloadService - Size of file "/tmp/rdisk/2309/master.zip": 102 KB
+2018-04-02 13:12:03,842 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:12:03,842 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2309/master.zip: true
+2018-04-02 13:12:03,842 DEBUG ZipUtil - Extracting '/tmp/rdisk/2309/master.zip' into '/tmp/rdisk/2309/src'.
+2018-04-02 13:12:03,852 INFO  FullProcessService - Size of directory with sources: 260 KB
+2018-04-02 13:12:03,852 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2309/src]
+2018-04-02 13:12:03,862 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2309/src/.git/
+
+2018-04-02 13:12:03,865 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2309/src/auto-value-moshi-master/gradlew
+2018-04-02 13:12:03,868 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle
+2018-04-02 13:12:03,870 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2309/src/auto-value-moshi-master/settings.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/dependencies.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle
+2018-04-02 13:12:03,871 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:12:03,871 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:12:03,881 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2309/src/auto-value-moshi-master/local.properties
+2018-04-02 13:12:03,882 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.2.1-all.zip
+2018-04-02 13:12:03,882 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.2.1-bin.zip)
+2018-04-02 13:12:03,887 INFO  ProjectFixService - Build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:12:03,887 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:12:03,887 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/local.properties
+2018-04-02 13:12:03,892 INFO  ProjectFixService - Build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:12:03,892 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:12:03,893 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/local.properties
+2018-04-02 13:12:03,898 INFO  ProjectFixService - Build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:12:03,898 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:12:03,898 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/local.properties
+2018-04-02 13:12:03,903 INFO  ProjectFixService - Build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:12:03,903 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:12:03,904 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:12:03,904 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:12:03,904 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:12:11,628 INFO  ProjectTaskService - Detected possible tasks: 52
+2018-04-02 13:12:11,628 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:12:11,628 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:12:19,224 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-moshi-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:auto-value-moshi-annotations:processResources UP-TO-DATE
+:auto-value-moshi-annotations:classes
+:auto-value-moshi-annotations:jar
+:auto-value-moshi:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:auto-value-moshi:processResources UP-TO-DATE
+:auto-value-moshi:classes
+:auto-value-moshi:jar
+:auto-value-moshi:javadocJar
+:auto-value-moshi:sourcesJar
+:auto-value-moshi:signArchives SKIPPED
+:auto-value-moshi:assemble
+:auto-value-moshi:build
+:auto-value-moshi-annotations:javadocJar
+:auto-value-moshi-annotations:sourcesJar
+:auto-value-moshi-annotations:signArchives SKIPPED
+:auto-value-moshi-annotations:assemble
+:auto-value-moshi-annotations:build
+:auto-value-moshi-tests:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+/tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/src/main/java/com/ryanharter/auto/value/moshi/test/StandardObject.java:55: warning: An @AutoValue property that is a primitive array returns the original array, which can therefore be modified by the caller. If this OK, you can suppress this warning with @SuppressWarnings("mutable"). Otherwise, you should replace the property with an immutable type, perhaps a simple wrapper around the original array.
+  public abstract int[] anArray();
+                        ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:auto-value-moshi-tests:processResources UP-TO-DATE
+:auto-value-moshi-tests:classes
+:auto-value-moshi-tests:jar
+:auto-value-moshi-tests:assemble
+:auto-value-moshi-tests:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.455 secs
+
+2018-04-02 13:12:19,230 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:12:19,231 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:12:24,637 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-02 13:12:24,637 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:12:24,637 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:12:29,981 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-moshi-annotations:compileJava UP-TO-DATE
+:auto-value-moshi-annotations:processResources UP-TO-DATE
+:auto-value-moshi-annotations:classes UP-TO-DATE
+:auto-value-moshi-annotations:jar UP-TO-DATE
+:auto-value-moshi-annotations:javadocJar UP-TO-DATE
+:auto-value-moshi-annotations:sourcesJar UP-TO-DATE
+:auto-value-moshi-annotations:signArchives SKIPPED
+:auto-value-moshi-annotations:assemble UP-TO-DATE
+:auto-value-moshi-annotations:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.114 secs
+
+2018-04-02 13:12:29,988 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:12:29,988 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:12:35,373 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-04-02 13:12:35,373 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:12:35,373 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi-tests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:12:40,900 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-moshi-annotations:compileJava UP-TO-DATE
+:auto-value-moshi-annotations:processResources UP-TO-DATE
+:auto-value-moshi-annotations:classes UP-TO-DATE
+:auto-value-moshi-annotations:jar UP-TO-DATE
+:auto-value-moshi:compileJava UP-TO-DATE
+:auto-value-moshi:processResources UP-TO-DATE
+:auto-value-moshi:classes UP-TO-DATE
+:auto-value-moshi:jar UP-TO-DATE
+:auto-value-moshi-tests:compileJava UP-TO-DATE
+:auto-value-moshi-tests:processResources UP-TO-DATE
+:auto-value-moshi-tests:classes UP-TO-DATE
+:auto-value-moshi-tests:jar UP-TO-DATE
+:auto-value-moshi-tests:assemble UP-TO-DATE
+:auto-value-moshi-tests:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.371 secs
+
+2018-04-02 13:12:40,906 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:12:40,907 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:12:46,177 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-02 13:12:46,177 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:12:46,177 INFO  SysUtils - Execute command: [/tmp/rdisk/2309/src/auto-value-moshi-master/gradlew, -b, /tmp/rdisk/2309/src/auto-value-moshi-master/auto-value-moshi/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:12:51,347 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-moshi-annotations:compileJava UP-TO-DATE
+:auto-value-moshi-annotations:processResources UP-TO-DATE
+:auto-value-moshi-annotations:classes UP-TO-DATE
+:auto-value-moshi-annotations:jar UP-TO-DATE
+:auto-value-moshi:compileJava UP-TO-DATE
+:auto-value-moshi:processResources UP-TO-DATE
+:auto-value-moshi:classes UP-TO-DATE
+:auto-value-moshi:jar UP-TO-DATE
+:auto-value-moshi:javadocJar UP-TO-DATE
+:auto-value-moshi:sourcesJar UP-TO-DATE
+:auto-value-moshi:signArchives SKIPPED
+:auto-value-moshi:assemble UP-TO-DATE
+:auto-value-moshi:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.065 secs
+
+2018-04-02 13:12:51,353 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:12:51,358 ERROR FullProcessService - Could not find generated or existed APK file

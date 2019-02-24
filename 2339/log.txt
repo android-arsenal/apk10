@@ -1,0 +1,117 @@
+2018-04-02 10:06:19,654 INFO  DownloadService - Downloading "https://github.com/Kyson/WhorlView/archive/master.zip", attempt 3
+2018-04-02 10:06:20,067 INFO  DownloadService - Downloaded https://github.com/Kyson/WhorlView/archive/master.zip, attempt 3
+2018-04-02 10:06:20,068 INFO  DownloadService - Size of file "/tmp/rdisk/2339/master.zip": 442 KB
+2018-04-02 10:06:20,068 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 10:06:20,371 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2339/master.zip: true
+2018-04-02 10:06:20,371 DEBUG ZipUtil - Extracting '/tmp/rdisk/2339/master.zip' into '/tmp/rdisk/2339/src'.
+2018-04-02 10:06:20,383 INFO  FullProcessService - Size of directory with sources: 619 KB
+2018-04-02 10:06:20,383 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2339/src]
+2018-04-02 10:06:20,390 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2339/src/.git/
+
+2018-04-02 10:06:20,392 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2339/src/WhorlView-master/gradlew
+2018-04-02 10:06:20,400 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2339/src/WhorlView-master/app/build.gradle /tmp/rdisk/2339/src/WhorlView-master/whorlviewlibrary/build.gradle /tmp/rdisk/2339/src/WhorlView-master/build.gradle
+2018-04-02 10:06:20,402 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2339/src/WhorlView-master/whorlviewlibrary/build.gradle /tmp/rdisk/2339/src/WhorlView-master/settings.gradle /tmp/rdisk/2339/src/WhorlView-master/build.gradle /tmp/rdisk/2339/src/WhorlView-master/app/build.gradle
+2018-04-02 10:06:20,402 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 10:06:20,402 INFO  ProjectFixService - Fixing project...
+2018-04-02 10:06:20,411 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2339/src/WhorlView-master/app/local.properties
+2018-04-02 10:06:20,411 INFO  ProjectFixService - Build info for "/tmp/rdisk/2339/src/WhorlView-master/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 10:06:20,412 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2339/src/WhorlView-master/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 10:06:20,416 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2339/src/WhorlView-master/whorlviewlibrary/local.properties
+2018-04-02 10:06:20,417 INFO  ProjectFixService - Build info for "/tmp/rdisk/2339/src/WhorlView-master/whorlviewlibrary/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 10:06:20,417 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2339/src/WhorlView-master/whorlviewlibrary/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 10:06:20,420 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2339/src/WhorlView-master/local.properties
+2018-04-02 10:06:20,421 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-02 10:06:20,421 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-02 10:06:20,422 INFO  ProjectFixService - Build info for "/tmp/rdisk/2339/src/WhorlView-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 10:06:20,424 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 10:06:20,424 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 10:06:20,424 INFO  SysUtils - Execute command: [/tmp/rdisk/2339/src/WhorlView-master/gradlew, -b, /tmp/rdisk/2339/src/WhorlView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 10:06:28,656 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 10:06:28,656 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 10:06:28,656 INFO  SysUtils - Execute command: [/tmp/rdisk/2339/src/WhorlView-master/gradlew, -b, /tmp/rdisk/2339/src/WhorlView-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 10:06:50,641 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:whorlviewlibrary:compileLint
+:whorlviewlibrary:copyReleaseLint UP-TO-DATE
+:whorlviewlibrary:mergeReleaseProguardFiles
+:whorlviewlibrary:preBuild UP-TO-DATE
+:whorlviewlibrary:preReleaseBuild UP-TO-DATE
+:whorlviewlibrary:checkReleaseManifest
+:whorlviewlibrary:prepareReleaseDependencies
+:whorlviewlibrary:compileReleaseAidl
+:whorlviewlibrary:compileReleaseRenderscript
+:whorlviewlibrary:generateReleaseBuildConfig
+:whorlviewlibrary:generateReleaseAssets UP-TO-DATE
+:whorlviewlibrary:mergeReleaseAssets
+:whorlviewlibrary:generateReleaseResValues
+:whorlviewlibrary:generateReleaseResources
+:whorlviewlibrary:packageReleaseResources
+:whorlviewlibrary:processReleaseManifest
+:whorlviewlibrary:processReleaseResources
+:whorlviewlibrary:generateReleaseSources
+:whorlviewlibrary:processReleaseJavaRes UP-TO-DATE
+:whorlviewlibrary:compileReleaseJava
+:whorlviewlibrary:packageReleaseJar
+:whorlviewlibrary:compileReleaseNdk UP-TO-DATE
+:whorlviewlibrary:packageReleaseJniLibs UP-TO-DATE
+:whorlviewlibrary:packageReleaseLocalJar UP-TO-DATE
+:whorlviewlibrary:packageReleaseRenderscript UP-TO-DATE
+:whorlviewlibrary:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareComTtWhorlviewlibrary103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.558 secs
+
+2018-04-02 10:06:50,677 INFO  FullProcessService - Found APK file: /tmp/rdisk/2339/src/WhorlView-master/app/build/outputs/apk/app-debug.apk

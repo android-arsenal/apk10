@@ -1,0 +1,22 @@
+2018-04-02 07:05:17,579 INFO  DownloadService - Downloading "https://github.com/jcmore2/ImageProcessingLib/archive/master.zip", attempt 3
+2018-04-02 07:06:18,189 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 07:06:19,020 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 07:06:19,020 INFO  DownloadService - Downloading "https://github.com/jcmore2/ImageProcessingLib/archive/master.zip", attempt 3
+2018-04-02 07:07:20,297 DEBUG FullProcessService - Repository https://github.com/jcmore2/ImageProcessingLib available: true
+2018-04-02 07:07:20,297 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 07:07:20,297 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jcmore2/ImageProcessingLib, /tmp/rdisk/2380/src]
+2018-04-02 07:07:23,092 INFO  SysUtils - 
+2018-04-02 07:07:23,098 INFO  GitService - Deleted "/tmp/rdisk/2380/src/.git": true
+2018-04-02 07:07:23,103 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-02 07:07:23,103 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2380/src]
+2018-04-02 07:07:23,110 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2380/src/.git/
+
+2018-04-02 07:07:23,114 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-02 07:07:23,114 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-02 07:07:23,118 INFO  ProjectBuildService - Build script(s): none
+2018-04-02 07:07:23,122 INFO  ProjectBuildService - All script(s): none
+2018-04-02 07:07:23,122 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 07:07:23,122 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-02 07:07:23,122 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 07:07:23,126 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/2380/src/TestImageProcessingLib/bin/TestImageProcessingLibrary.apk
+2018-04-02 07:07:23,126 INFO  FullProcessService - Found APK file: /tmp/rdisk/2380/src/TestImageProcessingLib/bin/TestImageProcessingLibrary.apk

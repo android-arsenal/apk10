@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.support.android.designlibdemo",
+    "label" : "Cheesesquare",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAJAUlEQVRoQ+1aa1AUVxb+ugcY3k8RfICviEEUgyIIxigaC3W1MKbcSiSpBDDBR9bouq55GB9Zt9ykCuOqcXVjVIyyMWtiygjiahYMPoiPUlFBCGoiiEQFBBzmxUxv3Z6+M7dnhoFBrGDV9p+ZabrP/b5zvnPuuffC4Qm/uCccPx4XAf7AsR9WX75+6w/EQcMHhW964fnnVgMwdrXDHguBjzZ+1rdJUFw1CEZfAtiF45t8OEPU8kVvVD8JBBQ53x1ZW3K96h0WbPSgsL/NmZG8AoChK0mYI5D7cUGo8rbHjoby5omCEUpxEME0lCBIX2T37MCQnhNcAIEzqUUQyBACOPKpk95hzFErHRmD4zlNUJTPMW24em7K+8//St6lBFwOzy/6ru5i8xQzLDN4Fii9abln5sZypDc7A9TOuxb/mQwGj/LNnZGdNBNAKyXguffZw/WCQbDyfPcDL4lAm3ElJRBACyXgtych74FcNt0UvBTVjKsp/gAaKQH/PQl5DRbNd2/wBGdGaUoAgAcWAmPyGkxJ92jgfcI9MeTFfggY7AtXLwX0KgPqyxtR8fUtNN1SSYnNjNEBzctw0QjYI/Ao4HsM9cfYD0fAr7+33SrZqjGgPPdn3Nhfg7qyRlrepE87RYHKgXUqda4gIKNspjwCX8SbIiCzKKsstiWQlr7hcwfjmcwIcBzQXKtC5ZFbuHulDtomPZS+rugZFYinpvSHT6gn1A1afP9eMe6fauo0ePKiAwLOlUoCPmZeBIytRpzZegWXdl9Dq9Zgrs80qgo3BWJeexqj5w+DYATyFhWhjpKQSdfiNZsSzUikDQLOgSeymZo9FoLBiPxlJ3GzoFqc/GhiWQPgwGHAxL5IzkqE7qEeX83Kh/E+z+Rdx8ATu3Ov2Ugo1yShDsqGPJfy9XhR88WbS3B++1VwHAeljxu0jVoLKMmeh587NE06CEYBsW8ORfyiaJTuv47CVWfhwXvJBnbkefo3+wScAE+qzQsHktB8R4WclFxRNjO2TEBYQiiOrz2Hq/srzc6Imj0Y41eMQtXpWhx6sxAKpQKpudPhHqBE9qSD0DzQwpP3lFcoJmEt7YYlS20JxEkRsJf1bD8kGY5dEomhrwzEhewynFp/EbyCQ3rhLCh93VB64AYKVv4ojkZkk7QmDpGzBkLbpMOOZ7+BYBCQsDQGMelP4/DiE7h59Lb4rDvnIU9sRvOyCkkkVG4tIYlAR3ubyVvi0Su+B44sO4Hr/6kSB+4bH4KwxF64tKcCql9bRPDEnneIB6JfiUDVyVpUn64VaQ2aEobkrLE4s/Eyzm0rNU9A7pwpEuyEZA2e/NkugY6CJwamZSeix7AAHMwsQHVxrY3mKXgxCjIEphTvkxCClO1JuPB5GU5nXZJh9qCRsJ5YGYnbENg92l4S21YlqkI2ApVHTBGgBaA98MTqU1PCxWp0ZmMJzm0tNTtAbLuJnHh3eVdg1dnaJ+BESzya5MCrg3BhVylOrb8EXsEjaXUcXD1dzJnGyWZTDnq1HgUrz0FoJTkQjZj0SOS/fdIsQQqeOkPJu9tMdtS4LYFYNonb9jydfX3DvDBj33NQN2iwd0YuDFoDoucMwbh3R1pKhdW3or+ex+WcSpBJLTVvmqkKJZmqkDV4+qqSk0hY2WqTgHll1IHFSOyKSES9OAg/birB+X+aZBCdOhhj3h4hi4S+pRXFG0pwee9PIozYzEjESfNAwQdn2wRPA2iOBEPCLgFnwBNbZCae9OlouHm74sjSU7jxfbWYsB5B7ggfGwqPYE+03FPj1ok70NSb1pMDkvogeYNpJv5yZj5aajUWWKzTmO8kp9x401qrTQlljzpkMxPThx2tV3sk+mDqhnHgeODsliu4uOuaKCfaUBAcBIDYC6VFIHaB1Au9VYSqH0hJlS4H4OkjLAmbCIgEOiAbsdjIBhMQlOiLyevGwN1fieYaFSrzq3D3ah00jTq4+ynRMyoAg6f2g3cvT2gatDi6vNhp8GKrC8CNcxM/bQmMlCLAhKndnQJmMcIHGzF6wXBETO8ntgrWF1kPVBz6GWc2X+mwbMw2JPDkN6Hhyrm1T8AZ8HSgFoMKSn8l+sT1ROAAsiJzEbXecKMZt8/cdVht2OgTybUFnt6fX/F7+YImm4lAZ8DTYLQYVaLmxYvuE0mSa6tUOgue2J9XMds+gUcBT6ditVH9WMET39gl0BXgqeM1xhab9sAUFTbJGKV0QDastGwI7HzmILMmpgpgewuZKuQ/7K0jIIBEgpMBZrRNJ3tBsEhOzFLLM+zOsywvwGHBT1Y5sD3mW4mAc8tKh6VXADRETmJHaoFj6Xo7B55YWljxkjwHJs+ZaxMBm1rYjW4czdn+fwK/aTxsI/BSRi14Tt4x/aYQHQxuFLRHv/w8lN0b9Zszf8k39xqbJ3ZXzCyuYD+f/+b845NZ7O6059gJE4b2GzIi6059wxhA6pi6HRtB1yswoPiX8ktLTxYWlrLnA2QdSHZlyaEB2WUyd2MDIyK8p6W+katWq31pyewb7LtvzZ8Wf9yFp478uo1b/1hZcy+Vzn480HzswJ7f3ayoaGb8SPp0ssVdD+Ahe0JDniEkSK/qyhw98du+2Le4vOb+B0aDATqdluxr6lXVFdN27/iMbCXouyhIri+npQ0PiRiZr9WoXWlHMKx/74/eSn+VdRSZpMiYZHXUSrtTRxiUf8/+KremvnGSqUUQoOSFs39ZnDld8oJopAsuEvHAVZu2H1LrjXE6rUYMRO8gv+PLM19LBqBtawzH58QhIV7vvLu2FuDMm/5h/l6bF77+8ntSCO0sgTpFh+Dw/nTXv9ZWPVAtIo5qbdUTj6my/ryQVBsiF7uXYwKBgb7L3l/3i0KhIOdRMBoNDytOHx/37b9zyhx5pVMUAOXM2XMiIxLGF/G8wpuQ0Ot0jeuXLwwHIB0m2Fpu76Te55Ntuz6sanyYzgkc39vPc+fSeWlrSP3t6gNrqXD4Z23duaqmsSVN4ARjmJ/3jiWZr68EwCayjEV7BMimTBAAP+ktcjZUB4DZSuikv+2/5vR47RHgmcpEhqQVoMv/aUPi4/R4/wNIHhV8uFLdrwAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 2651,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.support.android.designlibdemo\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"27\" />\n\t<application android:theme=\"resourceId:0x7f0e0120\" android:label=\"Cheesesquare\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.support.android.designlibdemo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.support.android.designlibdemo.CheeseDetailActivity\" android:parentActivityName=\"com.support.android.designlibdemo.MainActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".MainActivity\" />\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 3420363,
+  "crc32" : 1542421136,
+  "sha256" : "f43d4762038e2a509d93ac5dd64bb87f27b37cd7c5d0211bfa0e3c620957f4ee",
+  "buildTime" : 1522953173000
+}

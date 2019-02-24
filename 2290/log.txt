@@ -1,0 +1,262 @@
+2018-05-11 10:45:11,881 INFO  DownloadService - Downloading "https://github.com/pwittchen/ReactiveNetwork/archive/master.zip", attempt 3
+2018-05-11 10:46:12,436 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 10:46:13,101 INFO  GithubDownloadService - Default branch of this repository: RxJava2.x
+2018-05-11 10:46:13,101 INFO  DownloadService - Downloading "https://github.com/pwittchen/ReactiveNetwork/archive/RxJava2.x.zip", attempt 3
+2018-05-11 10:47:14,548 DEBUG FullProcessService - Repository https://github.com/pwittchen/ReactiveNetwork available: true
+2018-05-11 10:47:14,548 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 10:47:14,548 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pwittchen/ReactiveNetwork, /tmp/rdisk/2290/src]
+2018-05-11 10:47:16,314 INFO  SysUtils - 
+2018-05-11 10:47:16,320 INFO  GitService - Deleted "/tmp/rdisk/2290/src/.git": true
+2018-05-11 10:47:16,324 INFO  FullProcessService - Size of directory with sources: 327 KB
+2018-05-11 10:47:16,324 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2290/src]
+2018-05-11 10:47:16,329 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2290/src/.git/
+
+2018-05-11 10:47:16,333 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2290/src/gradlew
+2018-05-11 10:47:16,337 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2290/src/app-kotlin/build.gradle /tmp/rdisk/2290/src/app/build.gradle /tmp/rdisk/2290/src/library/build.gradle /tmp/rdisk/2290/src/build.gradle
+2018-05-11 10:47:16,340 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2290/src/settings.gradle /tmp/rdisk/2290/src/maven_push.gradle /tmp/rdisk/2290/src/library/build.gradle /tmp/rdisk/2290/src/config/quality.gradle /tmp/rdisk/2290/src/build.gradle /tmp/rdisk/2290/src/app/build.gradle /tmp/rdisk/2290/src/app-kotlin/build.gradle
+2018-05-11 10:47:16,341 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 10:47:16,341 INFO  ProjectFixService - Fixing project...
+2018-05-11 10:47:16,357 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2290/src/app-kotlin/local.properties
+2018-05-11 10:47:16,361 INFO  ProjectFixService - Build info for "/tmp/rdisk/2290/src/app-kotlin/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 10:47:16,361 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2290/src/app-kotlin/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 10:47:16,362 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2290/src/app/local.properties
+2018-05-11 10:47:16,366 INFO  ProjectFixService - Build info for "/tmp/rdisk/2290/src/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 10:47:16,366 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2290/src/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 10:47:16,366 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2290/src/library/local.properties
+2018-05-11 10:47:16,370 INFO  ProjectFixService - Build info for "/tmp/rdisk/2290/src/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 10:47:16,370 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2290/src/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 10:47:16,370 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2290/src/local.properties
+2018-05-11 10:47:16,370 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4.1-all.zip
+2018-05-11 10:47:16,371 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4.1-bin.zip)
+2018-05-11 10:47:16,372 INFO  ProjectFixService - Build info for "/tmp/rdisk/2290/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=<null>]
+2018-05-11 10:47:16,372 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2290/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-11 10:47:16,372 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 10:47:16,372 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 10:47:16,372 INFO  SysUtils - Execute command: [/tmp/rdisk/2290/src/gradlew, -b, /tmp/rdisk/2290/src/app-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 10:47:28,634 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-05-11 10:47:28,634 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 10:47:28,635 INFO  SysUtils - Execute command: [/tmp/rdisk/2290/src/gradlew, -b, /tmp/rdisk/2290/src/app-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 10:48:42,046 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app-kotlin:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:app-kotlin:preDebugBuild
+:library:compileDebugAidl
+:app-kotlin:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:app-kotlin:compileDebugRenderscript
+:app-kotlin:checkDebugManifest
+:app-kotlin:generateDebugBuildConfig
+:app-kotlin:mainApkListPersistenceDebug
+:app-kotlin:generateDebugResValues
+:app-kotlin:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:app-kotlin:mergeDebugResources
+:app-kotlin:createDebugCompatibleScreenManifests
+:app-kotlin:processDebugManifest
+:app-kotlin:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:app-kotlin:prepareLintJar
+:app-kotlin:compileDebugNdk NO-SOURCE
+:app-kotlin:mergeDebugShaders
+:app-kotlin:compileDebugShaders
+:app-kotlin:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:packageDebugAssets
+:app-kotlin:mergeDebugAssets
+:app-kotlin:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:app-kotlin:processDebugJavaRes NO-SOURCE
+:app-kotlin:validateSigningDebug
+:app-kotlin:extractProguardFiles
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:app-kotlin:preReleaseBuild
+:library:compileReleaseAidl
+:app-kotlin:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:app-kotlin:compileReleaseRenderscript
+:app-kotlin:checkReleaseManifest
+:app-kotlin:generateReleaseBuildConfig
+:app-kotlin:mainApkListPersistenceRelease
+:app-kotlin:generateReleaseResValues
+:app-kotlin:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:app-kotlin:mergeReleaseResources
+:app-kotlin:createReleaseCompatibleScreenManifests
+:library:generateDebugRFile
+:app-kotlin:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavac
+:library:transformClassesWithJacocoForDebug
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app-kotlin:compileDebugKotlin
+:app-kotlin:generateDebugSources
+:app-kotlin:javaPreCompileDebug
+:app-kotlin:compileDebugJavaWithJavac
+:app-kotlin:compileDebugSources
+:app-kotlin:transformClassesWithDexBuilderForDebug
+:app-kotlin:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app-kotlin:transformDexArchiveWithDexMergerForDebug
+:app-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:app-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:app-kotlin:transformResourcesWithMergeJavaResForDebug
+:app-kotlin:packageDebug
+:app-kotlin:assembleDebug
+:app-kotlin:processReleaseManifest
+:app-kotlin:splitsDiscoveryTaskRelease
+:library:generateReleaseRFile
+:app-kotlin:processReleaseResources
+:library:generateReleaseBuildConfig
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app-kotlin:compileReleaseKotlin
+:app-kotlin:generateReleaseSources
+:app-kotlin:javaPreCompileRelease
+:app-kotlin:compileReleaseJavaWithJavac
+:app-kotlin:compileReleaseNdk NO-SOURCE
+:app-kotlin:compileReleaseSources
+:app-kotlin:lintVitalRelease
+:app-kotlin:mergeReleaseShaders
+:app-kotlin:compileReleaseShaders
+:app-kotlin:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:packageReleaseAssets
+:app-kotlin:mergeReleaseAssets
+:app-kotlin:processReleaseJavaRes NO-SOURCE
+:app-kotlin:transformResourcesWithMergeJavaResForRelease
+:library:mergeReleaseConsumerProguardFiles
+:app-kotlin:transformClassesAndResourcesWithProguardForRelease
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+thread-pool size=4
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.31/153dcd9ed9db246a7e36f4d7609e2a9f4718c674/kotlin-stdlib-1.2.31.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f202f1874d66a266155ee00a45bdd1e4/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/c064f0f97138077b2603f076c28693d6/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.12/975d34a9f14da5b0aecffa603501e9716aae5aa4/rxjava-2.1.12.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/60008d34e9110d9c991396f31f999707/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/44a8181a8c51cc23e6c8949091b7a8db/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/9b54afff134ee69135dce7d272495a1a/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bf3a0c47e6a800c7564a33acc70eb8d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/5f51dd1cea5660c41c58adfb6a4f86d7/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/43399c9df55b13fdaf42fd83c91d75e9/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ec638b216854866ab688b5e105b25394/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5675d45b0091795a805a2a86328bc4f2/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a847a0d592f4f787a525c68a717f9749/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/72b6eeacd06b8007a9cf2105a6c21f5f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2290/src/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2290/src/app-kotlin/build/intermediates/classes/release] (filtered)
+Reading program directory [/tmp/rdisk/2290/src/app-kotlin/build/tmp/kotlin-classes/release] (filtered)
+Reading program jar [/tmp/rdisk/2290/src/app-kotlin/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: kotlin.internal.PlatformImplementationsKt: can't find dynamically referenced class kotlin.internal.jdk8.JDK8PlatformImplementations
+Note: kotlin.internal.PlatformImplementationsKt: can't find dynamically referenced class kotlin.internal.JRE8PlatformImplementations
+Note: kotlin.internal.PlatformImplementationsKt: can't find dynamically referenced class kotlin.internal.jdk7.JDK7PlatformImplementations
+Note: kotlin.internal.PlatformImplementationsKt: can't find dynamically referenced class kotlin.internal.JRE7PlatformImplementations
+Note: kotlin.jvm.internal.Reflection: can't find dynamically referenced class kotlin.reflect.jvm.internal.ReflectionFactoryImpl
+Note: there were 5 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1097
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2290/src/app-kotlin/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 3597
+  Final number of program classes:    627
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2290/src/app-kotlin/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2290/src/app-kotlin/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.31/153dcd9ed9db246a7e36f4d7609e2a9f4718c674/kotlin-stdlib-1.2.31.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f202f1874d66a266155ee00a45bdd1e4/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/c064f0f97138077b2603f076c28693d6/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.12/975d34a9f14da5b0aecffa603501e9716aae5aa4/rxjava-2.1.12.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/60008d34e9110d9c991396f31f999707/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/44a8181a8c51cc23e6c8949091b7a8db/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/9b54afff134ee69135dce7d272495a1a/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bf3a0c47e6a800c7564a33acc70eb8d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/5f51dd1cea5660c41c58adfb6a4f86d7/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/43399c9df55b13fdaf42fd83c91d75e9/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ec638b216854866ab688b5e105b25394/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5675d45b0091795a805a2a86328bc4f2/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a847a0d592f4f787a525c68a717f9749/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/72b6eeacd06b8007a9cf2105a6c21f5f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2290/src/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2290/src/app-kotlin/build/intermediates/classes/release] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2290/src/app-kotlin/build/tmp/kotlin-classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2290/src/app-kotlin/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2290/src/app-kotlin/build/outputs/mapping/release/dump.txt]...
+:app-kotlin:transformClassesWithDexBuilderForRelease
+:app-kotlin:transformDexArchiveWithDexMergerForRelease
+:app-kotlin:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:app-kotlin:transformNativeLibsWithMergeJniLibsForRelease
+:app-kotlin:transformNativeLibsWithStripDebugSymbolForRelease
+:app-kotlin:packageRelease
+:app-kotlin:assembleRelease
+:app-kotlin:assemble
+:app-kotlin:build
+
+BUILD SUCCESSFUL in 1m 12s
+96 actionable tasks: 96 executed
+
+2018-05-11 10:48:42,099 INFO  FullProcessService - Found APK file: /tmp/rdisk/2290/src/app-kotlin/build/outputs/apk/release/app-kotlin-release-unsigned.apk

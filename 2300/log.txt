@@ -1,0 +1,206 @@
+2018-03-17 20:40:16,386 INFO  DownloadService - Downloading "https://github.com/ParsePlatform/Parse-SDK-Android/archive/master.zip", attempt 3
+2018-03-17 20:41:17,242 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-03-17 20:41:18,521 INFO  GithubDownloadService - Default branch of this repository: master
+2018-03-17 20:41:18,521 INFO  DownloadService - Downloading "https://github.com/ParsePlatform/Parse-SDK-Android/archive/master.zip", attempt 3
+2018-03-17 20:42:20,498 DEBUG FullProcessService - Repository https://github.com/ParsePlatform/Parse-SDK-Android available: true
+2018-03-17 20:42:20,498 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-03-17 20:42:20,498 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ParsePlatform/Parse-SDK-Android, /tmp/1521319216381-0/src]
+2018-03-17 20:42:22,485 INFO  SysUtils - 
+2018-03-17 20:42:22,492 INFO  GitService - Deleted "/tmp/1521319216381-0/src/.git": true
+2018-03-17 20:42:22,498 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-03-17 20:42:22,498 INFO  SysUtils - Execute command: [git, init, /tmp/1521319216381-0/src]
+2018-03-17 20:42:22,505 INFO  SysUtils - Initialized empty Git repository in /tmp/1521319216381-0/src/.git/
+
+2018-03-17 20:42:22,511 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/1521319216381-0/src/gradlew
+2018-03-17 20:42:22,517 INFO  ProjectBuildService - Build script(s): /tmp/1521319216381-0/src/Parse/build.gradle /tmp/1521319216381-0/src/build.gradle
+2018-03-17 20:42:22,521 INFO  ProjectBuildService - All script(s): /tmp/1521319216381-0/src/build.gradle /tmp/1521319216381-0/src/Parse/build.gradle /tmp/1521319216381-0/src/settings.gradle
+2018-03-17 20:42:22,522 INFO  ProjectBuildService - Remote scripts: none
+2018-03-17 20:42:22,522 INFO  ProjectFixService - Fixing project...
+2018-03-17 20:42:22,531 INFO  LocalPropertiesFixService - Created fake /tmp/1521319216381-0/src/Parse/local.properties
+2018-03-17 20:42:22,535 INFO  ProjectFixService - Build info for "/tmp/1521319216381-0/src/Parse/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-03-17 20:42:22,536 INFO  LocalPropertiesFixService - Created fake /tmp/1521319216381-0/src/local.properties
+2018-03-17 20:42:22,537 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-03-17 20:42:22,537 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-03-17 20:42:22,537 INFO  ProjectFixService - Build info for "/tmp/1521319216381-0/src/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-03-17 20:42:22,538 INFO  ProjectFixService - Project was maybe fixed
+2018-03-17 20:42:22,538 INFO  ProjectTaskService - Detecting possible tasks...
+2018-03-17 20:42:22,539 INFO  SysUtils - Execute command: [/tmp/1521319216381-0/src/gradlew, -b, /tmp/1521319216381-0/src/Parse/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-03-17 20:42:33,783 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-03-17 20:42:33,783 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-03-17 20:42:33,783 INFO  SysUtils - Execute command: [/tmp/1521319216381-0/src/gradlew, -b, /tmp/1521319216381-0/src/Parse/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-03-17 20:43:01,943 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Parse:androidSourcesJar
+:Parse:preBuild UP-TO-DATE
+:Parse:preDebugBuild UP-TO-DATE
+:Parse:compileDebugAidl
+:Parse:compileDebugNdk NO-SOURCE
+:Parse:compileDebugRenderscript
+:Parse:checkDebugManifest
+:Parse:generateDebugBuildConfig
+:Parse:prepareLintJar
+:Parse:generateDebugResValues
+:Parse:generateDebugResources
+:Parse:packageDebugResources
+:Parse:platformAttrExtractor
+:Parse:processDebugManifest
+:Parse:javaPreCompileDebug
+:Parse:mergeDebugShaders
+:Parse:compileDebugShaders
+:Parse:generateDebugAssets
+:Parse:mergeDebugAssets
+:Parse:mergeDebugConsumerProguardFiles
+:Parse:packageDebugRenderscript NO-SOURCE
+:Parse:processDebugJavaRes NO-SOURCE
+:Parse:mergeDebugJniLibFolders
+:Parse:transformNativeLibsWithMergeJniLibsForDebug
+:Parse:transformNativeLibsWithStripDebugSymbolForDebug
+:Parse:transformNativeLibsWithSyncJniLibsForDebug
+:Parse:preReleaseBuild UP-TO-DATE
+:Parse:compileReleaseAidl
+:Parse:compileReleaseNdk NO-SOURCE
+:Parse:compileReleaseRenderscript
+:Parse:checkReleaseManifest
+:Parse:generateReleaseBuildConfig
+:Parse:generateReleaseResValues
+:Parse:generateReleaseResources
+:Parse:packageReleaseResources
+:Parse:processReleaseManifest
+:Parse:javaPreCompileRelease
+:Parse:mergeReleaseShaders
+:Parse:compileReleaseShaders
+:Parse:generateReleaseAssets
+:Parse:mergeReleaseAssets
+:Parse:mergeReleaseConsumerProguardFiles
+:Parse:packageReleaseRenderscript NO-SOURCE
+:Parse:processReleaseJavaRes NO-SOURCE
+:Parse:mergeReleaseJniLibFolders
+:Parse:transformNativeLibsWithMergeJniLibsForRelease
+:Parse:transformNativeLibsWithStripDebugSymbolForRelease
+:Parse:transformNativeLibsWithSyncJniLibsForRelease
+:Parse:mergeReleaseResources
+:Parse:verifyReleaseResources
+:Parse:processDebugResources
+:Parse:generateDebugSources
+:Parse:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:Parse:extractDebugAnnotations
+:Parse:transformClassesWithJacocoForDebug
+:Parse:transformResourcesWithMergeJavaResForDebug
+:Parse:transformClassesAndResourcesWithSyncLibJarsForDebug
+:Parse:bundleDebug
+:Parse:compileDebugSources
+:Parse:assembleDebug
+:Parse:processReleaseResources
+:Parse:generateReleaseSources
+:Parse:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:Parse:extractReleaseAnnotations
+:Parse:transformResourcesWithMergeJavaResForRelease
+:Parse:transformClassesAndResourcesWithSyncLibJarsForRelease
+:Parse:bundleRelease
+:Parse:compileReleaseSources
+:Parse:assembleRelease
+:Parse:javadocReleasejavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/1521319216381-0/src/Parse/src/main/java/com/parse/ParseQuery.java:1895: warning - @param argument "value" is not a parameter name.
+
+2 warnings
+:Parse:javadocJarRelease
+:Parse:signArchives SKIPPED
+:Parse:assemble
+:Parse:build
+
+BUILD SUCCESSFUL in 27s
+52 actionable tasks: 52 executed
+
+2018-03-17 20:43:01,980 INFO  ProjectTaskService - Detecting possible tasks...
+2018-03-17 20:43:01,981 INFO  SysUtils - Execute command: [/tmp/1521319216381-0/src/gradlew, -b, /tmp/1521319216381-0/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-03-17 20:43:10,916 INFO  ProjectTaskService - Detected possible tasks: 80
+2018-03-17 20:43:10,916 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-03-17 20:43:10,917 INFO  SysUtils - Execute command: [/tmp/1521319216381-0/src/gradlew, -b, /tmp/1521319216381-0/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-03-17 20:43:21,353 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Parse:androidSourcesJar UP-TO-DATE
+:Parse:preBuild UP-TO-DATE
+:Parse:preDebugBuild UP-TO-DATE
+:Parse:compileDebugAidl UP-TO-DATE
+:Parse:compileDebugNdk NO-SOURCE
+:Parse:compileDebugRenderscript UP-TO-DATE
+:Parse:checkDebugManifest UP-TO-DATE
+:Parse:generateDebugBuildConfig UP-TO-DATE
+:Parse:prepareLintJar UP-TO-DATE
+:Parse:generateDebugResValues UP-TO-DATE
+:Parse:generateDebugResources UP-TO-DATE
+:Parse:packageDebugResources UP-TO-DATE
+:Parse:platformAttrExtractor UP-TO-DATE
+:Parse:processDebugManifest UP-TO-DATE
+:Parse:processDebugResources UP-TO-DATE
+:Parse:generateDebugSources UP-TO-DATE
+:Parse:javaPreCompileDebug UP-TO-DATE
+:Parse:compileDebugJavaWithJavac UP-TO-DATE
+:Parse:extractDebugAnnotations UP-TO-DATE
+:Parse:mergeDebugShaders UP-TO-DATE
+:Parse:compileDebugShaders UP-TO-DATE
+:Parse:generateDebugAssets UP-TO-DATE
+:Parse:mergeDebugAssets UP-TO-DATE
+:Parse:mergeDebugConsumerProguardFiles UP-TO-DATE
+:Parse:packageDebugRenderscript NO-SOURCE
+:Parse:transformClassesWithJacocoForDebug UP-TO-DATE
+:Parse:processDebugJavaRes NO-SOURCE
+:Parse:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:Parse:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:Parse:mergeDebugJniLibFolders UP-TO-DATE
+:Parse:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:Parse:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:Parse:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:Parse:bundleDebug UP-TO-DATE
+:Parse:compileDebugSources UP-TO-DATE
+:Parse:assembleDebug UP-TO-DATE
+:Parse:preReleaseBuild UP-TO-DATE
+:Parse:compileReleaseAidl UP-TO-DATE
+:Parse:compileReleaseNdk NO-SOURCE
+:Parse:compileReleaseRenderscript UP-TO-DATE
+:Parse:checkReleaseManifest UP-TO-DATE
+:Parse:generateReleaseBuildConfig UP-TO-DATE
+:Parse:generateReleaseResValues UP-TO-DATE
+:Parse:generateReleaseResources UP-TO-DATE
+:Parse:packageReleaseResources UP-TO-DATE
+:Parse:processReleaseManifest UP-TO-DATE
+:Parse:processReleaseResources UP-TO-DATE
+:Parse:generateReleaseSources UP-TO-DATE
+:Parse:javaPreCompileRelease UP-TO-DATE
+:Parse:compileReleaseJavaWithJavac UP-TO-DATE
+:Parse:extractReleaseAnnotations UP-TO-DATE
+:Parse:mergeReleaseShaders UP-TO-DATE
+:Parse:compileReleaseShaders UP-TO-DATE
+:Parse:generateReleaseAssets UP-TO-DATE
+:Parse:mergeReleaseAssets UP-TO-DATE
+:Parse:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:Parse:packageReleaseRenderscript NO-SOURCE
+:Parse:processReleaseJavaRes NO-SOURCE
+:Parse:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:Parse:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:Parse:mergeReleaseJniLibFolders UP-TO-DATE
+:Parse:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:Parse:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:Parse:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:Parse:bundleRelease UP-TO-DATE
+:Parse:compileReleaseSources UP-TO-DATE
+:Parse:mergeReleaseResources UP-TO-DATE
+:Parse:verifyReleaseResources UP-TO-DATE
+:Parse:assembleRelease UP-TO-DATE
+:Parse:javadocRelease UP-TO-DATE
+:Parse:javadocJarRelease UP-TO-DATE
+:Parse:signArchives SKIPPED
+:Parse:assemble UP-TO-DATE
+:Parse:build
+
+BUILD SUCCESSFUL in 9s
+52 actionable tasks: 52 up-to-date
+
+2018-03-17 20:43:21,391 ERROR FullProcessService - Project build has not produced APK file
+2018-03-17 20:43:21,427 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,225 @@
+2018-04-02 04:49:06,562 INFO  DownloadService - Downloading "https://github.com/vlonjatg/AppTour/archive/master.zip", attempt 3
+2018-04-02 04:50:07,028 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 04:50:07,702 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 04:50:07,702 INFO  DownloadService - Downloading "https://github.com/vlonjatg/AppTour/archive/master.zip", attempt 3
+2018-04-02 04:51:08,902 DEBUG FullProcessService - Repository https://github.com/vlonjatg/AppTour available: true
+2018-04-02 04:51:08,902 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 04:51:08,903 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vlonjatg/AppTour, /tmp/rdisk/2428/src]
+2018-04-02 04:51:10,340 INFO  SysUtils - 
+2018-04-02 04:51:10,345 INFO  GitService - Deleted "/tmp/rdisk/2428/src/.git": true
+2018-04-02 04:51:10,348 INFO  FullProcessService - Size of directory with sources: 160 KB
+2018-04-02 04:51:10,349 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2428/src]
+2018-04-02 04:51:10,358 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2428/src/.git/
+
+2018-04-02 04:51:10,361 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2428/src/gradlew
+2018-04-02 04:51:10,364 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2428/src/apptour-library/build.gradle /tmp/rdisk/2428/src/sample/build.gradle /tmp/rdisk/2428/src/build.gradle
+2018-04-02 04:51:10,367 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2428/src/settings.gradle /tmp/rdisk/2428/src/sample/build.gradle /tmp/rdisk/2428/src/build.gradle /tmp/rdisk/2428/src/apptour-library/build.gradle
+2018-04-02 04:51:10,367 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 04:51:10,367 INFO  ProjectFixService - Fixing project...
+2018-04-02 04:51:10,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2428/src/apptour-library/local.properties
+2018-04-02 04:51:10,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/2428/src/apptour-library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-02 04:51:10,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2428/src/sample/local.properties
+2018-04-02 04:51:10,375 INFO  ProjectFixService - Build info for "/tmp/rdisk/2428/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-02 04:51:10,375 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2428/src/local.properties
+2018-04-02 04:51:10,375 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 04:51:10,375 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 04:51:10,376 INFO  ProjectFixService - Build info for "/tmp/rdisk/2428/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-02 04:51:10,376 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 04:51:10,376 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 04:51:10,376 INFO  SysUtils - Execute command: [/tmp/rdisk/2428/src/gradlew, -b, /tmp/rdisk/2428/src/apptour-library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 04:51:18,801 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 04:51:18,801 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 04:51:18,802 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 04:51:18,802 INFO  SysUtils - Execute command: [/tmp/rdisk/2428/src/gradlew, -b, /tmp/rdisk/2428/src/apptour-library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 04:51:38,945 INFO  SysUtils - Configuration on demand is an incubating feature.
+:apptour-library:compileLint
+:apptour-library:copyDebugLint UP-TO-DATE
+:apptour-library:preBuild UP-TO-DATE
+:apptour-library:preDebugBuild UP-TO-DATE
+:apptour-library:checkDebugManifest
+:apptour-library:preDebugAndroidTestBuild UP-TO-DATE
+:apptour-library:preDebugUnitTestBuild UP-TO-DATE
+:apptour-library:preReleaseBuild UP-TO-DATE
+:apptour-library:preReleaseUnitTestBuild UP-TO-DATE
+:apptour-library:prepareComAndroidSupportAppcompatV72310Library
+:apptour-library:prepareComAndroidSupportSupportV42310Library
+:apptour-library:prepareComMalinskiyMaterialicons102Library
+:apptour-library:prepareDebugDependencies
+:apptour-library:compileDebugAidl
+:apptour-library:compileDebugRenderscript
+:apptour-library:generateDebugBuildConfig
+:apptour-library:generateDebugAssets UP-TO-DATE
+:apptour-library:mergeDebugAssets
+:apptour-library:generateDebugResValues
+:apptour-library:generateDebugResources
+:apptour-library:mergeDebugResources
+:apptour-library:processDebugManifest
+:apptour-library:processDebugResources
+:apptour-library:generateDebugSources
+:apptour-library:processDebugJavaRes UP-TO-DATE
+:apptour-library:compileDebugJavaWithJavac
+:apptour-library:extractDebugAnnotations
+:apptour-library:mergeDebugProguardFiles
+:apptour-library:packageDebugJar
+:apptour-library:compileDebugNdk UP-TO-DATE
+:apptour-library:packageDebugJniLibs UP-TO-DATE
+:apptour-library:packageDebugLocalJar UP-TO-DATE
+:apptour-library:packageDebugRenderscript UP-TO-DATE
+:apptour-library:packageDebugResources
+:apptour-library:bundleDebug
+:apptour-library:compileDebugSources
+:apptour-library:assembleDebug
+:apptour-library:copyReleaseLint UP-TO-DATE
+:apptour-library:checkReleaseManifest
+:apptour-library:prepareReleaseDependencies
+:apptour-library:compileReleaseAidl
+:apptour-library:compileReleaseRenderscript
+:apptour-library:generateReleaseBuildConfig
+:apptour-library:generateReleaseAssets UP-TO-DATE
+:apptour-library:mergeReleaseAssets
+:apptour-library:generateReleaseResValues
+:apptour-library:generateReleaseResources
+:apptour-library:mergeReleaseResources
+:apptour-library:processReleaseManifest
+:apptour-library:processReleaseResources
+:apptour-library:generateReleaseSources
+:apptour-library:processReleaseJavaRes UP-TO-DATE
+:apptour-library:compileReleaseJavaWithJavac
+:apptour-library:extractReleaseAnnotations
+:apptour-library:mergeReleaseProguardFiles
+:apptour-library:packageReleaseJar
+:apptour-library:compileReleaseNdk UP-TO-DATE
+:apptour-library:packageReleaseJniLibs UP-TO-DATE
+:apptour-library:packageReleaseLocalJar UP-TO-DATE
+:apptour-library:packageReleaseRenderscript UP-TO-DATE
+:apptour-library:packageReleaseResources
+:apptour-library:bundleRelease
+:apptour-library:compileReleaseSources
+:apptour-library:assembleRelease
+:apptour-library:assemble
+:apptour-library:lint
+Ran lint on variant debug: 22 issues found
+Ran lint on variant release: 22 issues found
+Wrote HTML report to file:/tmp/rdisk/2428/src/apptour-library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2428/src/apptour-library/build/outputs/lint-results.xml
+:apptour-library:prepareDebugUnitTestDependencies
+:apptour-library:processDebugUnitTestJavaRes UP-TO-DATE
+:apptour-library:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:apptour-library:compileDebugUnitTestSources UP-TO-DATE
+:apptour-library:mockableAndroidJar
+:apptour-library:assembleDebugUnitTest
+:apptour-library:testDebugUnitTest
+:apptour-library:prepareReleaseUnitTestDependencies
+:apptour-library:processReleaseUnitTestJavaRes UP-TO-DATE
+:apptour-library:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:apptour-library:compileReleaseUnitTestSources UP-TO-DATE
+:apptour-library:assembleReleaseUnitTest
+:apptour-library:testReleaseUnitTest
+:apptour-library:test
+:apptour-library:check
+:apptour-library:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.703 secs
+
+2018-04-02 04:51:38,985 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 04:51:38,985 INFO  SysUtils - Execute command: [/tmp/rdisk/2428/src/gradlew, -b, /tmp/rdisk/2428/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 04:51:45,439 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 04:51:45,439 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 04:51:45,439 INFO  SysUtils - Execute command: [/tmp/rdisk/2428/src/gradlew, -b, /tmp/rdisk/2428/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 04:52:06,886 INFO  SysUtils - Configuration on demand is an incubating feature.
+:apptour-library:compileLint
+:apptour-library:copyReleaseLint UP-TO-DATE
+:apptour-library:preBuild UP-TO-DATE
+:apptour-library:preReleaseBuild UP-TO-DATE
+:apptour-library:checkReleaseManifest
+:apptour-library:preDebugAndroidTestBuild UP-TO-DATE
+:apptour-library:preDebugBuild UP-TO-DATE
+:apptour-library:preDebugUnitTestBuild UP-TO-DATE
+:apptour-library:preReleaseUnitTestBuild UP-TO-DATE
+:apptour-library:prepareComAndroidSupportAppcompatV72310Library UP-TO-DATE
+:apptour-library:prepareComAndroidSupportSupportV42310Library UP-TO-DATE
+:apptour-library:prepareComMalinskiyMaterialicons102Library UP-TO-DATE
+:apptour-library:prepareReleaseDependencies
+:apptour-library:compileReleaseAidl UP-TO-DATE
+:apptour-library:compileReleaseRenderscript UP-TO-DATE
+:apptour-library:generateReleaseBuildConfig UP-TO-DATE
+:apptour-library:generateReleaseAssets UP-TO-DATE
+:apptour-library:mergeReleaseAssets UP-TO-DATE
+:apptour-library:generateReleaseResValues UP-TO-DATE
+:apptour-library:generateReleaseResources UP-TO-DATE
+:apptour-library:mergeReleaseResources UP-TO-DATE
+:apptour-library:processReleaseManifest UP-TO-DATE
+:apptour-library:processReleaseResources UP-TO-DATE
+:apptour-library:generateReleaseSources UP-TO-DATE
+:apptour-library:processReleaseJavaRes UP-TO-DATE
+:apptour-library:compileReleaseJavaWithJavac UP-TO-DATE
+:apptour-library:extractReleaseAnnotations UP-TO-DATE
+:apptour-library:mergeReleaseProguardFiles UP-TO-DATE
+:apptour-library:packageReleaseJar UP-TO-DATE
+:apptour-library:compileReleaseNdk UP-TO-DATE
+:apptour-library:packageReleaseJniLibs UP-TO-DATE
+:apptour-library:packageReleaseLocalJar UP-TO-DATE
+:apptour-library:packageReleaseRenderscript UP-TO-DATE
+:apptour-library:packageReleaseResources UP-TO-DATE
+:apptour-library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72310Library
+:sample:prepareComAndroidSupportSupportV42310Library
+:sample:prepareComMalinskiyMaterialicons102Library
+:sample:prepareSrcApptourLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.025 secs
+
+2018-04-02 04:52:06,968 INFO  FullProcessService - Found APK file: /tmp/rdisk/2428/src/sample/build/outputs/apk/sample-release-unsigned.apk

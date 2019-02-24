@@ -1,0 +1,51 @@
+2018-04-02 13:34:34,924 INFO  DownloadService - Downloading "https://github.com/vcaen/AndroidAutoHideHeader/archive/master.zip", attempt 3
+2018-04-02 13:35:35,591 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 13:35:36,454 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 13:35:36,454 INFO  DownloadService - Downloading "https://github.com/vcaen/AndroidAutoHideHeader/archive/master.zip", attempt 3
+2018-04-02 13:36:37,717 DEBUG FullProcessService - Repository https://github.com/vcaen/AndroidAutoHideHeader available: true
+2018-04-02 13:36:37,717 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 13:36:37,717 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vcaen/AndroidAutoHideHeader, /tmp/rdisk/2285/src]
+2018-04-02 13:36:40,924 INFO  SysUtils - 
+2018-04-02 13:36:40,940 INFO  GitService - Deleted "/tmp/rdisk/2285/src/.git": true
+2018-04-02 13:36:40,942 INFO  FullProcessService - Size of directory with sources: 14 MB
+2018-04-02 13:36:40,942 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2285/src]
+2018-04-02 13:36:40,947 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2285/src/.git/
+
+2018-04-02 13:36:40,950 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2285/src/gradlew
+2018-04-02 13:36:40,953 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2285/src/androidautohideheader/build.gradle /tmp/rdisk/2285/src/app/build.gradle /tmp/rdisk/2285/src/build.gradle
+2018-04-02 13:36:40,955 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2285/src/settings.gradle /tmp/rdisk/2285/src/build.gradle /tmp/rdisk/2285/src/app/build.gradle /tmp/rdisk/2285/src/androidautohideheader/build.gradle
+2018-04-02 13:36:40,956 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-02 13:36:41,294 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-02 13:36:41,294 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-02 13:36:41,461 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-02 13:36:41,462 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-02 13:36:41,462 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:36:41,469 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2285/src/androidautohideheader/local.properties
+2018-04-02 13:36:41,469 INFO  ProjectFixService - Build info for "/tmp/rdisk/2285/src/androidautohideheader/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 13:36:41,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2285/src/app/local.properties
+2018-04-02 13:36:41,470 INFO  ProjectFixService - Build info for "/tmp/rdisk/2285/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=22,targetSdkVersion=22]
+2018-04-02 13:36:41,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2285/src/local.properties
+2018-04-02 13:36:41,471 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 13:36:41,471 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 13:36:41,472 INFO  ProjectFixService - Build info for "/tmp/rdisk/2285/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=22,targetSdkVersion=22]
+2018-04-02 13:36:41,472 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:36:41,472 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:36:41,472 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/androidautohideheader/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:36:41,738 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-02 13:36:41,738 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-02 13:36:41,739 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/androidautohideheader/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-02 13:36:41,743 INFO  SysUtils - 
+2018-04-02 13:36:41,745 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:36:41,746 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:36:41,759 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-02 13:36:41,759 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-02 13:36:41,759 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-02 13:36:41,768 INFO  SysUtils - 
+2018-04-02 13:36:41,770 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:36:41,770 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:36:41,777 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-02 13:36:41,777 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-02 13:36:41,778 INFO  SysUtils - Execute command: [/tmp/rdisk/2285/src/gradlew, -b, /tmp/rdisk/2285/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-02 13:36:41,782 INFO  SysUtils - 
+2018-04-02 13:36:41,785 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:36:41,787 ERROR FullProcessService - Could not find generated or existed APK file

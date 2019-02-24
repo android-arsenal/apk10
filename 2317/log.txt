@@ -1,0 +1,159 @@
+2018-05-11 10:29:24,194 INFO  DownloadService - Downloading "https://github.com/f2prateek/rx-preferences/archive/master.zip", attempt 3
+2018-05-11 10:30:24,828 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-11 10:30:25,716 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-11 10:30:25,717 INFO  DownloadService - Downloading "https://github.com/f2prateek/rx-preferences/archive/master.zip", attempt 3
+2018-05-11 10:31:27,079 DEBUG FullProcessService - Repository https://github.com/f2prateek/rx-preferences available: true
+2018-05-11 10:31:27,080 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-11 10:31:27,080 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/f2prateek/rx-preferences, /tmp/rdisk/2317/src]
+2018-05-11 10:31:28,724 INFO  SysUtils - 
+2018-05-11 10:31:28,736 INFO  GitService - Deleted "/tmp/rdisk/2317/src/.git": true
+2018-05-11 10:31:28,738 INFO  FullProcessService - Size of directory with sources: 134 KB
+2018-05-11 10:31:28,738 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2317/src]
+2018-05-11 10:31:28,749 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2317/src/.git/
+
+2018-05-11 10:31:28,751 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2317/src/gradlew
+2018-05-11 10:31:28,753 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2317/src/rx-preferences-sample/build.gradle /tmp/rdisk/2317/src/rx-preferences/build.gradle /tmp/rdisk/2317/src/build.gradle
+2018-05-11 10:31:28,755 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2317/src/settings.gradle /tmp/rdisk/2317/src/rx-preferences/build.gradle /tmp/rdisk/2317/src/rx-preferences-sample/build.gradle /tmp/rdisk/2317/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2317/src/build.gradle
+2018-05-11 10:31:28,755 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 10:31:28,755 INFO  ProjectFixService - Fixing project...
+2018-05-11 10:31:28,762 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2317/src/rx-preferences-sample/local.properties
+2018-05-11 10:31:28,765 INFO  ProjectFixService - Build info for "/tmp/rdisk/2317/src/rx-preferences-sample/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 10:31:28,765 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2317/src/rx-preferences/local.properties
+2018-05-11 10:31:28,767 INFO  ProjectFixService - Build info for "/tmp/rdisk/2317/src/rx-preferences/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 10:31:28,768 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2317/src/local.properties
+2018-05-11 10:31:28,768 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.4.1-all.zip
+2018-05-11 10:31:28,768 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.4.1-bin.zip)
+2018-05-11 10:31:28,768 INFO  ProjectFixService - Build info for "/tmp/rdisk/2317/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-05-11 10:31:28,769 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 10:31:28,769 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 10:31:28,769 INFO  SysUtils - Execute command: [/tmp/rdisk/2317/src/gradlew, -b, /tmp/rdisk/2317/src/rx-preferences-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 10:31:39,544 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-11 10:31:39,544 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 10:31:39,544 INFO  SysUtils - Execute command: [/tmp/rdisk/2317/src/gradlew, -b, /tmp/rdisk/2317/src/rx-preferences-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 10:32:12,328 INFO  SysUtils - Configuration on demand is an incubating feature.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+:rx-preferences:preBuild UP-TO-DATE
+:rx-preferences:preReleaseBuild UP-TO-DATE
+:rx-preferences:checkReleaseManifest
+:rx-preferences:prepareReleaseDependencies
+:rx-preferences:compileReleaseAidl
+:rx-preferences:compileReleaseNdk NO-SOURCE
+:rx-preferences:compileLint
+:rx-preferences:copyReleaseLint NO-SOURCE
+:rx-preferences:compileReleaseRenderscript
+:rx-preferences:generateReleaseBuildConfig
+:rx-preferences:generateReleaseResValues
+:rx-preferences:generateReleaseResources
+:rx-preferences:packageReleaseResources
+:rx-preferences:processReleaseManifest
+:rx-preferences:processReleaseResources
+:rx-preferences:generateReleaseSources
+:rx-preferences:incrementalReleaseJavaCompilationSafeguard
+:rx-preferences:javaPreCompileRelease
+:rx-preferences:compileReleaseJavaWithJavac
+:rx-preferences:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_core/2.3.1/error_prone_core-2.3.1.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotation/2.3.1/error_prone_annotation-2.3.1.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_type_annotations/2.3.1/error_prone_type_annotations-2.3.1.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_check_api/2.3.1/error_prone_check_api-2.3.1.pom
+Download https://repo1.maven.org/maven2/org/checkerframework/dataflow/2.5.0/dataflow-2.5.0.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom
+Download https://repo1.maven.org/maven2/org/checkerframework/javacutil/2.5.0/javacutil-2.5.0.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_core/2.3.1/error_prone_core-2.3.1.jar
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotation/2.3.1/error_prone_annotation-2.3.1.jar
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_type_annotations/2.3.1/error_prone_type_annotations-2.3.1.jar
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_check_api/2.3.1/error_prone_check_api-2.3.1.jar
+Download https://repo1.maven.org/maven2/org/checkerframework/dataflow/2.5.0/dataflow-2.5.0.jar
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.jar
+Download https://repo1.maven.org/maven2/org/checkerframework/javacutil/2.5.0/javacutil-2.5.0.jar
+:rx-preferences:extractReleaseAnnotations
+:rx-preferences:mergeReleaseShaders
+:rx-preferences:compileReleaseShaders
+:rx-preferences:generateReleaseAssets
+:rx-preferences:mergeReleaseAssets
+:rx-preferences:mergeReleaseProguardFiles
+:rx-preferences:packageReleaseRenderscript NO-SOURCE
+:rx-preferences:processReleaseJavaRes NO-SOURCE
+:rx-preferences:transformResourcesWithMergeJavaResForRelease
+:rx-preferences:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rx-preferences:mergeReleaseJniLibFolders
+:rx-preferences:transformNativeLibsWithMergeJniLibsForRelease
+:rx-preferences:transformNativeLibsWithStripDebugSymbolForRelease
+:rx-preferences:transformNativeLibsWithSyncJniLibsForRelease
+:rx-preferences:bundleRelease
+:rx-preferences-sample:preBuild UP-TO-DATE
+:rx-preferences-sample:preDebugBuild UP-TO-DATE
+:rx-preferences-sample:checkDebugManifest
+:rx-preferences-sample:preReleaseBuild UP-TO-DATE
+:rx-preferences-sample:prepareComJakewhartonButterknife840Library
+:rx-preferences-sample:prepareComJakewhartonRxbindingRxbinding030Library
+:rx-preferences-sample:prepareIoReactivexRxjava2Rxandroid201Library
+:rx-preferences-sample:prepareDebugDependencies
+:rx-preferences-sample:compileDebugAidl
+:rx-preferences-sample:compileDebugRenderscript
+:rx-preferences-sample:generateDebugBuildConfig
+:rx-preferences-sample:generateDebugResValues
+:rx-preferences-sample:generateDebugResources
+:rx-preferences-sample:mergeDebugResources
+:rx-preferences-sample:processDebugManifest
+:rx-preferences-sample:processDebugResources
+:rx-preferences-sample:generateDebugSources
+:rx-preferences-sample:incrementalDebugJavaCompilationSafeguard
+:rx-preferences-sample:javaPreCompileDebug
+:rx-preferences-sample:compileDebugJavaWithJavac
+:rx-preferences-sample:compileDebugNdk NO-SOURCE
+:rx-preferences-sample:compileDebugSources
+:rx-preferences-sample:mergeDebugShaders
+:rx-preferences-sample:compileDebugShaders
+:rx-preferences-sample:generateDebugAssets
+:rx-preferences-sample:mergeDebugAssets
+:rx-preferences-sample:transformClassesWithRetrolambdaForDebug
+:rx-preferences-sample:transformClassesWithDexForDebug
+:rx-preferences-sample:mergeDebugJniLibFolders
+:rx-preferences-sample:transformNativeLibsWithMergeJniLibsForDebug
+:rx-preferences-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:rx-preferences-sample:processDebugJavaRes NO-SOURCE
+:rx-preferences-sample:transformResourcesWithMergeJavaResForDebug
+:rx-preferences-sample:validateSigningDebug
+:rx-preferences-sample:packageDebug
+:rx-preferences-sample:assembleDebug
+:rx-preferences-sample:checkReleaseManifest
+:rx-preferences-sample:prepareReleaseDependencies
+:rx-preferences-sample:compileReleaseAidl
+:rx-preferences-sample:compileReleaseRenderscript
+:rx-preferences-sample:generateReleaseBuildConfig
+:rx-preferences-sample:generateReleaseResValues
+:rx-preferences-sample:generateReleaseResources
+:rx-preferences-sample:mergeReleaseResources
+:rx-preferences-sample:processReleaseManifest
+:rx-preferences-sample:processReleaseResources
+:rx-preferences-sample:generateReleaseSources
+:rx-preferences-sample:incrementalReleaseJavaCompilationSafeguard
+:rx-preferences-sample:javaPreCompileRelease
+:rx-preferences-sample:compileReleaseJavaWithJavac
+:rx-preferences-sample:compileReleaseNdk NO-SOURCE
+:rx-preferences-sample:compileReleaseSources
+:rx-preferences-sample:lintVitalRelease
+:rx-preferences-sample:mergeReleaseShaders
+:rx-preferences-sample:compileReleaseShaders
+:rx-preferences-sample:generateReleaseAssets
+:rx-preferences-sample:mergeReleaseAssets
+:rx-preferences-sample:transformClassesWithRetrolambdaForRelease
+:rx-preferences-sample:transformClassesWithDexForRelease
+:rx-preferences-sample:mergeReleaseJniLibFolders
+:rx-preferences-sample:transformNativeLibsWithMergeJniLibsForRelease
+:rx-preferences-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:rx-preferences-sample:processReleaseJavaRes NO-SOURCE
+:rx-preferences-sample:transformResourcesWithMergeJavaResForRelease
+:rx-preferences-sample:packageRelease
+:rx-preferences-sample:assembleRelease
+:rx-preferences-sample:assemble
+:rx-preferences-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 32.435 secs
+
+2018-05-11 10:32:12,344 INFO  FullProcessService - Found APK file: /tmp/rdisk/2317/src/rx-preferences-sample/build/outputs/apk/rx-preferences-sample-release-unsigned.apk

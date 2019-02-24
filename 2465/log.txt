@@ -1,0 +1,47 @@
+2018-04-02 04:21:12,322 INFO  DownloadService - Downloading "https://github.com/Fewlaps/quitnow-email-suggester/archive/master.zip", attempt 3
+2018-04-02 04:22:12,795 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 04:22:13,460 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 04:22:13,460 INFO  DownloadService - Downloading "https://github.com/Fewlaps/quitnow-email-suggester/archive/master.zip", attempt 3
+2018-04-02 04:23:14,658 DEBUG FullProcessService - Repository https://github.com/Fewlaps/quitnow-email-suggester available: true
+2018-04-02 04:23:14,658 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 04:23:14,658 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Fewlaps/quitnow-email-suggester, /tmp/rdisk/2465/src]
+2018-04-02 04:23:16,026 INFO  SysUtils - 
+2018-04-02 04:23:16,035 INFO  GitService - Deleted "/tmp/rdisk/2465/src/.git": true
+2018-04-02 04:23:16,036 INFO  FullProcessService - Size of directory with sources: 106 KB
+2018-04-02 04:23:16,036 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2465/src]
+2018-04-02 04:23:16,041 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2465/src/.git/
+
+2018-04-02 04:23:16,043 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2465/src/gradlew
+2018-04-02 04:23:16,044 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2465/src/build.gradle
+2018-04-02 04:23:16,046 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2465/src/settings.gradle /tmp/rdisk/2465/src/build.gradle
+2018-04-02 04:23:16,046 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 04:23:16,046 INFO  ProjectFixService - Fixing project...
+2018-04-02 04:23:16,050 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2465/src/local.properties
+2018-04-02 04:23:16,050 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-04-02 04:23:16,050 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-04-02 04:23:16,051 INFO  ProjectFixService - Build info for "/tmp/rdisk/2465/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 04:23:16,051 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2465/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 04:23:16,051 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 04:23:16,052 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 04:23:16,052 INFO  SysUtils - Execute command: [/tmp/rdisk/2465/src/gradlew, -b, /tmp/rdisk/2465/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 04:23:21,907 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-02 04:23:21,907 INFO  ProjectTaskService - Excluded tasks (5): coveralls javadoc cobertura test check
+2018-04-02 04:23:21,907 INFO  SysUtils - Execute command: [/tmp/rdisk/2465/src/gradlew, -b, /tmp/rdisk/2465/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, cobertura, -x, test, -x, check, build]
+2018-04-02 04:23:27,125 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: /tmp/rdisk/2465/src/src/main/java/com/fewlaps/quitnowemailsuggester/repository/Repository.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.8 secs
+
+2018-04-02 04:23:27,127 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 04:23:27,130 ERROR FullProcessService - Could not find generated or existed APK file

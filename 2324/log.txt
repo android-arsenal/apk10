@@ -1,0 +1,176 @@
+2018-05-20 23:00:20,390 INFO  DownloadService - Downloading "https://github.com/rockerhieu/rv-adapter-states/archive/master.zip", attempt 3
+2018-05-20 23:01:21,087 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:01:21,934 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:01:21,934 INFO  DownloadService - Downloading "https://github.com/rockerhieu/rv-adapter-states/archive/master.zip", attempt 3
+2018-05-20 23:02:23,382 DEBUG FullProcessService - Repository https://github.com/rockerhieu/rv-adapter-states available: true
+2018-05-20 23:02:23,382 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:02:23,382 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rockerhieu/rv-adapter-states, /tmp/rdisk/2324/src]
+2018-05-20 23:02:25,118 INFO  SysUtils - 
+2018-05-20 23:02:25,130 INFO  GitService - Deleted "/tmp/rdisk/2324/src/.git": true
+2018-05-20 23:02:25,132 INFO  FullProcessService - Size of directory with sources: 116 KB
+2018-05-20 23:02:25,132 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2324/src]
+2018-05-20 23:02:25,142 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2324/src/.git/
+
+2018-05-20 23:02:25,144 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2324/src/gradlew
+2018-05-20 23:02:25,146 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2324/src/example/build.gradle /tmp/rdisk/2324/src/library/build.gradle /tmp/rdisk/2324/src/build.gradle
+2018-05-20 23:02:25,148 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2324/src/settings.gradle /tmp/rdisk/2324/src/library/gradle-mvn-push.gradle /tmp/rdisk/2324/src/library/build.gradle /tmp/rdisk/2324/src/example/build.gradle /tmp/rdisk/2324/src/build.gradle
+2018-05-20 23:02:25,148 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:02:25,148 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:02:25,155 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2324/src/example/local.properties
+2018-05-20 23:02:25,155 INFO  ProjectFixService - Build info for "/tmp/rdisk/2324/src/example/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 23:02:25,156 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2324/src/library/local.properties
+2018-05-20 23:02:25,156 INFO  ProjectFixService - Build info for "/tmp/rdisk/2324/src/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-05-20 23:02:25,156 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2324/src/local.properties
+2018-05-20 23:02:25,156 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-20 23:02:25,156 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-20 23:02:25,158 INFO  ProjectFixService - Build info for "/tmp/rdisk/2324/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-05-20 23:02:25,158 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:02:25,158 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:02:25,158 INFO  SysUtils - Execute command: [/tmp/rdisk/2324/src/gradlew, -b, /tmp/rdisk/2324/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:02:33,976 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-20 23:02:33,976 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 23:02:33,976 INFO  SysUtils - Execute command: [/tmp/rdisk/2324/src/gradlew, -b, /tmp/rdisk/2324/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 23:03:18,922 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:example:preDebugBuild
+Download https://jcenter.bintray.com/com/rockerhieu/rv-adapter/1.2/rv-adapter-1.2.aar
+:library:compileDebugAidl
+:example:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:example:compileDebugRenderscript
+:example:checkDebugManifest
+:example:generateDebugBuildConfig
+:example:prepareLintJar
+:example:mainApkListPersistenceDebug
+:example:generateDebugResValues
+:example:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:example:mergeDebugResources
+:example:createDebugCompatibleScreenManifests
+:example:processDebugManifest
+:example:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:example:compileDebugNdk NO-SOURCE
+:example:mergeDebugShaders
+:example:compileDebugShaders
+:example:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:packageDebugAssets
+:example:mergeDebugAssets
+:example:extractTryWithResourcesSupportJarDebug
+:example:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:example:processDebugJavaRes NO-SOURCE
+:example:validateSigningDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:example:preReleaseBuild
+:library:compileReleaseAidl
+:example:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:example:compileReleaseRenderscript
+:example:checkReleaseManifest
+:example:generateReleaseBuildConfig
+:example:mainApkListPersistenceRelease
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:example:mergeReleaseResources
+:example:createReleaseCompatibleScreenManifests
+:library:generateDebugRFile
+:example:processDebugResources
+:example:generateDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/2324/src/library/src/main/java/com/rockerhieu/rvadapter/states/StatesRecyclerViewAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:example:javaPreCompileDebug
+:example:compileDebugJavaWithJavacNote: /tmp/rdisk/2324/src/example/src/main/java/com/rockerhieu/rvadapter/states/example/decorator/DividerItemDecoration.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example:compileDebugSources
+:example:transformClassesWithStackFramesFixerForDebug
+:example:transformClassesWithDesugarForDebug
+:example:transformClassesWithDexBuilderForDebug
+:example:transformDexArchiveWithExternalLibsDexMergerForDebug
+:example:transformDexArchiveWithDexMergerForDebug
+:example:transformNativeLibsWithMergeJniLibsForDebug
+:example:transformNativeLibsWithStripDebugSymbolForDebug
+:example:transformResourcesWithMergeJavaResForDebug
+:example:packageDebug
+:example:assembleDebug
+:example:processReleaseManifest
+:example:splitsDiscoveryTaskRelease
+:library:generateReleaseRFile
+:example:processReleaseResources
+:example:generateReleaseSources
+:library:generateReleaseBuildConfig
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/2324/src/library/src/main/java/com/rockerhieu/rvadapter/states/StatesRecyclerViewAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:example:javaPreCompileRelease
+:example:compileReleaseJavaWithJavacNote: /tmp/rdisk/2324/src/example/src/main/java/com/rockerhieu/rvadapter/states/example/decorator/DividerItemDecoration.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:example:compileReleaseNdk NO-SOURCE
+:example:compileReleaseSources
+:example:lintVitalRelease
+:example:mergeReleaseShaders
+:example:compileReleaseShaders
+:example:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:packageReleaseAssets
+:example:mergeReleaseAssets
+:example:extractTryWithResourcesSupportJarRelease
+:example:transformClassesWithStackFramesFixerForRelease
+:example:transformClassesWithDesugarForRelease
+:example:transformClassesWithDexBuilderForRelease
+:example:transformDexArchiveWithExternalLibsDexMergerForRelease
+:example:transformDexArchiveWithDexMergerForRelease
+:example:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:example:transformNativeLibsWithMergeJniLibsForRelease
+:example:transformNativeLibsWithStripDebugSymbolForRelease
+:example:processReleaseJavaRes NO-SOURCE
+:example:transformResourcesWithMergeJavaResForRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL in 44s
+97 actionable tasks: 97 executed
+
+2018-05-20 23:03:18,982 INFO  FullProcessService - Found APK file: /tmp/rdisk/2324/src/example/build/outputs/apk/release/example-release-unsigned.apk

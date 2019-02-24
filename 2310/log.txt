@@ -1,0 +1,107 @@
+2018-04-02 13:11:33,145 INFO  DownloadService - Downloading "https://github.com/rharter/auto-value-parcel/archive/master.zip", attempt 3
+2018-04-02 13:11:33,547 INFO  DownloadService - Downloaded https://github.com/rharter/auto-value-parcel/archive/master.zip, attempt 3
+2018-04-02 13:11:33,547 INFO  DownloadService - Size of file "/tmp/rdisk/2310/master.zip": 90 KB
+2018-04-02 13:11:33,547 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:11:33,548 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2310/master.zip: true
+2018-04-02 13:11:33,548 DEBUG ZipUtil - Extracting '/tmp/rdisk/2310/master.zip' into '/tmp/rdisk/2310/src'.
+2018-04-02 13:11:33,557 INFO  FullProcessService - Size of directory with sources: 202 KB
+2018-04-02 13:11:33,557 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2310/src]
+2018-04-02 13:11:33,567 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2310/src/.git/
+
+2018-04-02 13:11:33,570 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2310/src/auto-value-parcel-master/gradlew
+2018-04-02 13:11:33,573 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle
+2018-04-02 13:11:33,575 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2310/src/auto-value-parcel-master/settings.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/gradle/gradle-mvn-push.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle /tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle
+2018-04-02 13:11:33,575 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:11:33,576 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:11:33,588 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2310/src/auto-value-parcel-master/local.properties
+2018-04-02 13:11:33,588 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.13-all.zip
+2018-04-02 13:11:33,589 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.13-bin.zip)
+2018-04-02 13:11:33,593 INFO  ProjectFixService - Build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:11:33,593 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:11:33,594 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2310/src/auto-value-parcel-master/adapter/local.properties
+2018-04-02 13:11:33,599 INFO  ProjectFixService - Build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:11:33,599 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:11:33,600 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/local.properties
+2018-04-02 13:11:33,604 INFO  ProjectFixService - Build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 13:11:33,604 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 13:11:33,605 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:11:33,605 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:11:33,605 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:11:38,467 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-04-02 13:11:38,467 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:11:38,468 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:11:45,354 INFO  SysUtils - Configuration on demand is an incubating feature.
+:adapter:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:adapter:processResources UP-TO-DATE
+:adapter:classes
+:adapter:jar
+:adapter:javadocJar
+:adapter:sourcesJar
+:adapter:signArchives SKIPPED
+:adapter:assemble
+:adapter:build
+:auto-value-parcel:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/src/main/java/com/ryanharter/auto/value/parcel/AutoValueParcelExtension.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:auto-value-parcel:processResources UP-TO-DATE
+:auto-value-parcel:classes
+:auto-value-parcel:jar
+:auto-value-parcel:javadocJar
+:auto-value-parcel:sourcesJar
+:auto-value-parcel:signArchives SKIPPED
+:auto-value-parcel:assemble
+:auto-value-parcel:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.455 secs
+
+2018-04-02 13:11:45,358 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:11:45,359 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:11:49,696 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-04-02 13:11:49,696 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:11:49,696 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/adapter/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:11:54,229 INFO  SysUtils - Configuration on demand is an incubating feature.
+:adapter:compileJava UP-TO-DATE
+:adapter:processResources UP-TO-DATE
+:adapter:classes UP-TO-DATE
+:adapter:jar UP-TO-DATE
+:adapter:javadocJar UP-TO-DATE
+:adapter:sourcesJar UP-TO-DATE
+:adapter:signArchives SKIPPED
+:adapter:assemble UP-TO-DATE
+:adapter:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.105 secs
+
+2018-04-02 13:11:54,233 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:11:54,233 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:11:58,716 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-04-02 13:11:58,716 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 13:11:58,716 INFO  SysUtils - Execute command: [/tmp/rdisk/2310/src/auto-value-parcel-master/gradlew, -b, /tmp/rdisk/2310/src/auto-value-parcel-master/auto-value-parcel/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 13:12:03,406 INFO  SysUtils - Configuration on demand is an incubating feature.
+:adapter:compileJava UP-TO-DATE
+:adapter:processResources UP-TO-DATE
+:adapter:classes UP-TO-DATE
+:adapter:jar UP-TO-DATE
+:auto-value-parcel:compileJava UP-TO-DATE
+:auto-value-parcel:processResources UP-TO-DATE
+:auto-value-parcel:classes UP-TO-DATE
+:auto-value-parcel:jar UP-TO-DATE
+:auto-value-parcel:javadocJar UP-TO-DATE
+:auto-value-parcel:sourcesJar UP-TO-DATE
+:auto-value-parcel:signArchives SKIPPED
+:auto-value-parcel:assemble UP-TO-DATE
+:auto-value-parcel:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.272 secs
+
+2018-04-02 13:12:03,410 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 13:12:03,414 ERROR FullProcessService - Could not find generated or existed APK file

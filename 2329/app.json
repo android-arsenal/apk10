@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.hookedonplay.decoviewsample",
+    "label" : "DecoView Sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2",
+    "versionCode" : 10,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1691,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"10\" android:versionName=\"1.2\" package=\"com.hookedonplay.decoviewsample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f09008a\" android:label=\"DecoView Sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:label=\"DecoView Sample\" android:name=\"com.hookedonplay.decoviewsample.DecoViewSampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1497207,
+  "crc32" : 2015136507,
+  "sha256" : "c43254b92c8ccb56713891ea94910287b00c14f92ee58c32cc02f8defbd24987",
+  "buildTime" : 1522664209000
+}

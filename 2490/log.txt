@@ -1,0 +1,498 @@
+2018-04-02 03:02:59,538 INFO  DownloadService - Downloading "https://github.com/einmalfel/Earl/archive/master.zip", attempt 3
+2018-04-02 03:03:59,988 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:04:00,638 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:04:00,639 INFO  DownloadService - Downloading "https://github.com/einmalfel/Earl/archive/master.zip", attempt 3
+2018-04-02 03:05:01,906 DEBUG FullProcessService - Repository https://github.com/einmalfel/Earl available: true
+2018-04-02 03:05:01,906 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:05:01,906 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/einmalfel/Earl, /tmp/rdisk/2490/src]
+2018-04-02 03:05:06,980 INFO  SysUtils - 
+2018-04-02 03:05:06,984 INFO  GitService - Deleted "/tmp/rdisk/2490/src/.git": true
+2018-04-02 03:05:06,987 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-02 03:05:06,987 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2490/src]
+2018-04-02 03:05:06,990 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2490/src/.git/
+
+2018-04-02 03:05:06,993 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2490/src/gradlew
+2018-04-02 03:05:06,995 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2490/src/earl/build.gradle /tmp/rdisk/2490/src/build.gradle
+2018-04-02 03:05:06,997 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2490/src/settings.gradle /tmp/rdisk/2490/src/earl/build.gradle /tmp/rdisk/2490/src/build.gradle
+2018-04-02 03:05:06,998 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:05:06,998 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:05:07,003 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2490/src/earl/local.properties
+2018-04-02 03:05:07,003 INFO  ProjectFixService - Build info for "/tmp/rdisk/2490/src/earl/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=25]
+2018-04-02 03:05:07,003 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2490/src/local.properties
+2018-04-02 03:05:07,004 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 03:05:07,004 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 03:05:07,005 INFO  ProjectFixService - Build info for "/tmp/rdisk/2490/src/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=8,targetSdkVersion=25]
+2018-04-02 03:05:07,005 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:05:07,005 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:05:07,005 INFO  SysUtils - Execute command: [/tmp/rdisk/2490/src/gradlew, -b, /tmp/rdisk/2490/src/earl/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:05:16,074 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 03:05:16,074 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 03:05:16,074 INFO  SysUtils - Execute command: [/tmp/rdisk/2490/src/gradlew, -b, /tmp/rdisk/2490/src/earl/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 03:05:30,555 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:earl:preBuild UP-TO-DATE
+:earl:preDebugBuild UP-TO-DATE
+:earl:checkDebugManifest
+:earl:prepareDebugDependencies
+:earl:compileDebugAidl
+:earl:compileDebugNdk UP-TO-DATE
+:earl:compileLint
+:earl:copyDebugLint UP-TO-DATE
+:earl:compileDebugRenderscript
+:earl:generateDebugBuildConfig
+:earl:generateDebugResValues
+:earl:generateDebugResources
+:earl:packageDebugResources
+:earl:processDebugManifest
+:earl:processDebugResources
+:earl:generateDebugSources
+:earl:incrementalDebugJavaCompilationSafeguard
+:earl:compileDebugJavaWithJavac
+:earl:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:earl:extractDebugAnnotations
+:earl:mergeDebugShaders
+:earl:compileDebugShaders
+:earl:generateDebugAssets
+:earl:mergeDebugAssets
+:earl:mergeDebugProguardFiles
+:earl:packageDebugRenderscript UP-TO-DATE
+:earl:processDebugJavaRes UP-TO-DATE
+:earl:transformResourcesWithMergeJavaResForDebug
+:earl:transformClassesAndResourcesWithSyncLibJarsForDebug
+:earl:mergeDebugJniLibFolders
+:earl:transformNative_libsWithMergeJniLibsForDebug
+:earl:transformNative_libsWithSyncJniLibsForDebug
+:earl:bundleDebug
+:earl:compileDebugSources
+:earl:assembleDebug
+:earl:preReleaseBuild UP-TO-DATE
+:earl:checkReleaseManifest
+:earl:prepareReleaseDependencies
+:earl:compileReleaseAidl
+:earl:compileReleaseNdk UP-TO-DATE
+:earl:copyReleaseLint UP-TO-DATE
+:earl:compileReleaseRenderscript
+:earl:generateReleaseBuildConfig
+:earl:generateReleaseResValues
+:earl:generateReleaseResources
+:earl:packageReleaseResources
+:earl:processReleaseManifest
+:earl:processReleaseResources
+:earl:generateReleaseSources
+:earl:incrementalReleaseJavaCompilationSafeguard
+:earl:compileReleaseJavaWithJavac
+:earl:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:earl:extractReleaseAnnotations
+:earl:mergeReleaseShaders
+:earl:compileReleaseShaders
+:earl:generateReleaseAssets
+:earl:mergeReleaseAssets
+:earl:mergeReleaseProguardFiles
+:earl:packageReleaseRenderscript UP-TO-DATE
+:earl:processReleaseJavaRes UP-TO-DATE
+:earl:transformResourcesWithMergeJavaResForRelease
+:earl:transformClassesAndResourcesWithSyncLibJarsForRelease
+:earl:mergeReleaseJniLibFolders
+:earl:transformNative_libsWithMergeJniLibsForRelease
+:earl:transformNative_libsWithSyncJniLibsForRelease
+:earl:bundleRelease
+:earl:compileReleaseSources
+:earl:assembleRelease
+:earl:generateJavadocs/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Utils.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Utils.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSTextInput.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSSource.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSItem.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSItem.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Item.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Item.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSCategory.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSCategory.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSEnclosure.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Enclosure.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Enclosure.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSGuid.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSGuid.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesItem.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesItem.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaItem.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCommon.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCommon.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Content.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Content.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaGroup.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaContent.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaContent.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaRating.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaRating.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaTitle.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaTitle.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaThumbnail.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaThumbnail.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCategory.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCategory.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaHash.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaHash.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPlayer.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPlayer.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCredit.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCredit.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCopyright.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCopyright.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaText.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaText.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaRestriction.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaRestriction.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCommunity.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaCommunity.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaEmbed.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaEmbed.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaStatus.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaStatus.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPrice.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPrice.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaLicense.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaLicense.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaSubTitle.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaSubTitle.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPeerLink.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaPeerLink.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaLocation.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaLocation.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaRights.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaScene.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/MediaScene.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSImage.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSImage.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSFeed.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSFeed.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Feed.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Feed.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSCloud.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/RSSCloud.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesFeed.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesFeed.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesCategory.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesOwner.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/ItunesOwner.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/EarlParser.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/EarlParser.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomText.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomText.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomCommonAttributes.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomCommonAttributes.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomPerson.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomPerson.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomLink.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomLink.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomGenerator.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomGenerator.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomFeed.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomFeed.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomDate.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomDate.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomCategory.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomCategory.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomEntry.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomEntry.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomContent.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/AtomContent.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2490/src/earl/src/main/java/com/einmalfel/earl/Utils.java:67: error: cannot find symbol
+  static Date parseDate(@NonNull String dateString) {
+                         ^
+  symbol:   class NonNull
+  location: class Utils
+
+100 warnings
+:earl:generateJavadocsJar
+:earl:generateSourcesJar
+:earl:assemble
+:earl:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.958 secs
+
+2018-04-02 03:05:30,567 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:05:30,567 INFO  SysUtils - Execute command: [/tmp/rdisk/2490/src/gradlew, -b, /tmp/rdisk/2490/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:05:38,796 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 03:05:38,796 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 03:05:38,796 INFO  SysUtils - Execute command: [/tmp/rdisk/2490/src/gradlew, -b, /tmp/rdisk/2490/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 03:05:46,946 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:earl:preBuild UP-TO-DATE
+:earl:preDebugBuild UP-TO-DATE
+:earl:checkDebugManifest
+:earl:prepareDebugDependencies
+:earl:compileDebugAidl UP-TO-DATE
+:earl:compileDebugNdk UP-TO-DATE
+:earl:compileLint UP-TO-DATE
+:earl:copyDebugLint UP-TO-DATE
+:earl:compileDebugRenderscript UP-TO-DATE
+:earl:generateDebugBuildConfig UP-TO-DATE
+:earl:generateDebugResValues UP-TO-DATE
+:earl:generateDebugResources UP-TO-DATE
+:earl:packageDebugResources UP-TO-DATE
+:earl:processDebugManifest UP-TO-DATE
+:earl:processDebugResources UP-TO-DATE
+:earl:generateDebugSources UP-TO-DATE
+:earl:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:earl:compileDebugJavaWithJavac UP-TO-DATE
+:earl:extractDebugAnnotations UP-TO-DATE
+:earl:mergeDebugShaders UP-TO-DATE
+:earl:compileDebugShaders UP-TO-DATE
+:earl:generateDebugAssets UP-TO-DATE
+:earl:mergeDebugAssets UP-TO-DATE
+:earl:mergeDebugProguardFiles UP-TO-DATE
+:earl:packageDebugRenderscript UP-TO-DATE
+:earl:processDebugJavaRes UP-TO-DATE
+:earl:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:earl:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:earl:mergeDebugJniLibFolders UP-TO-DATE
+:earl:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:earl:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:earl:bundleDebug UP-TO-DATE
+:earl:compileDebugSources UP-TO-DATE
+:earl:assembleDebug UP-TO-DATE
+:earl:preReleaseBuild UP-TO-DATE
+:earl:checkReleaseManifest
+:earl:prepareReleaseDependencies
+:earl:compileReleaseAidl UP-TO-DATE
+:earl:compileReleaseNdk UP-TO-DATE
+:earl:copyReleaseLint UP-TO-DATE
+:earl:compileReleaseRenderscript UP-TO-DATE
+:earl:generateReleaseBuildConfig UP-TO-DATE
+:earl:generateReleaseResValues UP-TO-DATE
+:earl:generateReleaseResources UP-TO-DATE
+:earl:packageReleaseResources UP-TO-DATE
+:earl:processReleaseManifest UP-TO-DATE
+:earl:processReleaseResources UP-TO-DATE
+:earl:generateReleaseSources UP-TO-DATE
+:earl:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:earl:compileReleaseJavaWithJavac UP-TO-DATE
+:earl:extractReleaseAnnotations UP-TO-DATE
+:earl:mergeReleaseShaders UP-TO-DATE
+:earl:compileReleaseShaders UP-TO-DATE
+:earl:generateReleaseAssets UP-TO-DATE
+:earl:mergeReleaseAssets UP-TO-DATE
+:earl:mergeReleaseProguardFiles UP-TO-DATE
+:earl:packageReleaseRenderscript UP-TO-DATE
+:earl:processReleaseJavaRes UP-TO-DATE
+:earl:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:earl:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:earl:mergeReleaseJniLibFolders UP-TO-DATE
+:earl:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:earl:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:earl:bundleRelease UP-TO-DATE
+:earl:compileReleaseSources UP-TO-DATE
+:earl:assembleRelease UP-TO-DATE
+:earl:generateJavadocs UP-TO-DATE
+:earl:generateJavadocsJar UP-TO-DATE
+:earl:generateSourcesJar UP-TO-DATE
+:earl:assemble UP-TO-DATE
+:earl:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.62 secs
+
+2018-04-02 03:05:46,957 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 03:05:46,966 ERROR FullProcessService - Could not find generated or existed APK file

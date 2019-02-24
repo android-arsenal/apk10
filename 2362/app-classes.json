@@ -1,0 +1,6 @@
+{
+  "com.taobao.android.dexposed" : [ "BuildConfig", "ClassUtils", "DeviceCheck", "DexposedBridge", "DexposedBridge$1", "DexposedBridge$AdditionalHookInfo", "DexposedBridge$CopyOnWriteSortedSet", "XC_MethodHook", "XC_MethodHook$MethodHookParam", "XC_MethodHook$Unhook", "XC_MethodHook$XC_MethodKeepHook", "XC_MethodReplacement", "XC_MethodReplacement$1", "XC_MethodReplacement$2", "XC_MethodReplacement$XC_MethodKeepReplacement", "XposedHelpers", "XposedHelpers$ClassNotFoundError", "XposedHelpers$InvocationTargetError" ],
+  "com.taobao.android.dexposed.callbacks" : [ "IXUnhook", "XCallback", "XCallback$Param", "XCallback$Param$SerializeWrapper" ],
+  "com.taobao.dexposed" : [ "BuildConfig", "ChoreographerHook", "ChoreographerHook$1", "DexposedSampleApplication", "MainActivity", "MainActivity$1", "MainActivity$2", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style" ],
+  "com.taobao.patch" : [ "IPatch", "PatchCallback", "PatchMain", "PatchParam", "PatchResult", "ReadWriteSet" ]
+}

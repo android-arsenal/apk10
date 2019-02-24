@@ -1,0 +1,317 @@
+2018-04-02 03:05:46,999 INFO  DownloadService - Downloading "https://github.com/greenfrvr/rubber-loader/archive/master.zip", attempt 3
+2018-04-02 03:06:47,558 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:06:48,246 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:06:48,247 INFO  DownloadService - Downloading "https://github.com/greenfrvr/rubber-loader/archive/master.zip", attempt 3
+2018-04-02 03:07:50,282 DEBUG FullProcessService - Repository https://github.com/greenfrvr/rubber-loader available: true
+2018-04-02 03:07:50,282 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:07:50,282 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/greenfrvr/rubber-loader, /tmp/rdisk/2489/src]
+2018-04-02 03:07:52,090 INFO  SysUtils - 
+2018-04-02 03:07:52,096 INFO  GitService - Deleted "/tmp/rdisk/2489/src/.git": true
+2018-04-02 03:07:52,099 INFO  FullProcessService - Size of directory with sources: 444 KB
+2018-04-02 03:07:52,099 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2489/src]
+2018-04-02 03:07:52,103 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2489/src/.git/
+
+2018-04-02 03:07:52,107 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2489/src/gradlew
+2018-04-02 03:07:52,110 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2489/src/rubber-loader/build.gradle /tmp/rdisk/2489/src/sample/build.gradle /tmp/rdisk/2489/src/build.gradle
+2018-04-02 03:07:52,113 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2489/src/settings.gradle /tmp/rdisk/2489/src/sample/build.gradle /tmp/rdisk/2489/src/rubber-loader/install.gradle /tmp/rdisk/2489/src/rubber-loader/build.gradle /tmp/rdisk/2489/src/rubber-loader/bintray.gradle /tmp/rdisk/2489/src/build.gradle
+2018-04-02 03:07:52,113 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:07:52,113 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:07:52,120 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2489/src/rubber-loader/local.properties
+2018-04-02 03:07:52,121 INFO  ProjectFixService - Build info for "/tmp/rdisk/2489/src/rubber-loader/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:07:52,121 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2489/src/sample/local.properties
+2018-04-02 03:07:52,121 INFO  ProjectFixService - Build info for "/tmp/rdisk/2489/src/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:07:52,121 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2489/src/local.properties
+2018-04-02 03:07:52,121 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 03:07:52,122 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 03:07:52,122 INFO  ProjectFixService - Build info for "/tmp/rdisk/2489/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:07:52,122 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:07:52,122 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:07:52,123 INFO  SysUtils - Execute command: [/tmp/rdisk/2489/src/gradlew, -b, /tmp/rdisk/2489/src/rubber-loader/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:08:02,741 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 03:08:02,741 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 03:08:02,741 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 03:08:02,741 INFO  SysUtils - Execute command: [/tmp/rdisk/2489/src/gradlew, -b, /tmp/rdisk/2489/src/rubber-loader/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 03:08:27,038 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rubber-loader:compileLint
+:rubber-loader:copyDebugLint UP-TO-DATE
+:rubber-loader:preBuild UP-TO-DATE
+:rubber-loader:preDebugBuild UP-TO-DATE
+:rubber-loader:checkDebugManifest
+:rubber-loader:preDebugAndroidTestBuild UP-TO-DATE
+:rubber-loader:preDebugUnitTestBuild UP-TO-DATE
+:rubber-loader:preReleaseBuild UP-TO-DATE
+:rubber-loader:preReleaseUnitTestBuild UP-TO-DATE
+:rubber-loader:prepareComAndroidSupportAppcompatV72311Library
+:rubber-loader:prepareComAndroidSupportSupportV42311Library
+:rubber-loader:prepareDebugDependencies
+:rubber-loader:compileDebugAidl
+:rubber-loader:compileDebugRenderscript
+:rubber-loader:generateDebugBuildConfig
+:rubber-loader:generateDebugAssets UP-TO-DATE
+:rubber-loader:mergeDebugAssets
+:rubber-loader:generateDebugResValues
+:rubber-loader:generateDebugResources
+:rubber-loader:mergeDebugResources
+:rubber-loader:processDebugManifest
+:rubber-loader:processDebugResources
+:rubber-loader:generateDebugSources
+:rubber-loader:processDebugJavaRes UP-TO-DATE
+:rubber-loader:compileDebugJavaWithJavac
+:rubber-loader:extractDebugAnnotations
+:rubber-loader:mergeDebugProguardFiles
+:rubber-loader:packageDebugJar
+:rubber-loader:compileDebugNdk UP-TO-DATE
+:rubber-loader:packageDebugJniLibs UP-TO-DATE
+:rubber-loader:packageDebugLocalJar UP-TO-DATE
+:rubber-loader:packageDebugRenderscript UP-TO-DATE
+:rubber-loader:packageDebugResources
+:rubber-loader:bundleDebug
+:rubber-loader:compileDebugSources
+:rubber-loader:assembleDebug
+:rubber-loader:copyReleaseLint UP-TO-DATE
+:rubber-loader:checkReleaseManifest
+:rubber-loader:prepareReleaseDependencies
+:rubber-loader:compileReleaseAidl
+:rubber-loader:compileReleaseRenderscript
+:rubber-loader:generateReleaseBuildConfig
+:rubber-loader:generateReleaseAssets UP-TO-DATE
+:rubber-loader:mergeReleaseAssets
+:rubber-loader:generateReleaseResValues
+:rubber-loader:generateReleaseResources
+:rubber-loader:mergeReleaseResources
+:rubber-loader:processReleaseManifest
+:rubber-loader:processReleaseResources
+:rubber-loader:generateReleaseSources
+:rubber-loader:processReleaseJavaRes UP-TO-DATE
+:rubber-loader:compileReleaseJavaWithJavac
+:rubber-loader:extractReleaseAnnotations
+:rubber-loader:mergeReleaseProguardFiles
+:rubber-loader:packageReleaseJar
+:rubber-loader:compileReleaseNdk UP-TO-DATE
+:rubber-loader:packageReleaseJniLibs UP-TO-DATE
+:rubber-loader:packageReleaseLocalJar UP-TO-DATE
+:rubber-loader:packageReleaseRenderscript UP-TO-DATE
+:rubber-loader:packageReleaseResources
+:rubber-loader:bundleRelease
+:rubber-loader:compileReleaseSources
+:rubber-loader:assembleRelease
+:rubber-loader:javadoc/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:14: error: package android.support.annotation does not exist
+import android.support.annotation.ColorRes;
+                                 ^
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:15: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:16: error: package android.support.v4.content does not exist
+import android.support.v4.content.ContextCompat;
+                                 ^
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:30: error: cannot find symbol
+    @IntDef({EXTRA_TINY, TINY, SMALL, NORMAL, MEDIUM, LARGE})
+     ^
+  symbol:   class IntDef
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:42: error: cannot find symbol
+    @IntDef({MODE_NORMAL, MODE_EQUAL, MODE_CENTERED})
+     ^
+  symbol:   class IntDef
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:51: error: cannot find symbol
+    @IntDef({RIPPLE_NONE, RIPPLE_NORMAL, RIPPLE_REVERSE, RIPPLE_CYCLE})
+     ^
+  symbol:   class IntDef
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:123: error: cannot find symbol
+    public void setPalette(@ColorInt int primeColor, @ColorInt int extraColor) {
+                            ^
+  symbol:   class ColorInt
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:123: error: cannot find symbol
+    public void setPalette(@ColorInt int primeColor, @ColorInt int extraColor) {
+                                                      ^
+  symbol:   class ColorInt
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:136: error: cannot find symbol
+    public void setPaletteRes(@ColorRes int primeId, @ColorRes int extraId) {
+                               ^
+  symbol:   class ColorRes
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:136: error: cannot find symbol
+    public void setPaletteRes(@ColorRes int primeId, @ColorRes int extraId) {
+                                                      ^
+  symbol:   class ColorRes
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:169: error: cannot find symbol
+    public void setRippleColor(@ColorInt int color) {
+                                ^
+  symbol:   class ColorInt
+  location: class RubberLoaderView
+/tmp/rdisk/2489/src/rubber-loader/src/main/java/com/greenfrvr/rubberloader/RubberLoaderView.java:179: error: cannot find symbol
+    public void setRippleRes(@ColorRes int colorId) {
+                              ^
+  symbol:   class ColorRes
+  location: class RubberLoaderView
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorRes not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+40 warnings
+:rubber-loader:javadocJar
+:rubber-loader:sourcesJar
+:rubber-loader:assemble
+:rubber-loader:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2489/src/rubber-loader/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2489/src/rubber-loader/build/outputs/lint-results.xml
+:rubber-loader:prepareDebugUnitTestDependencies
+:rubber-loader:processDebugUnitTestJavaRes UP-TO-DATE
+:rubber-loader:compileDebugUnitTestJavaWithJavac
+:rubber-loader:compileDebugUnitTestSources
+:rubber-loader:mockableAndroidJar
+:rubber-loader:assembleDebugUnitTest
+:rubber-loader:testDebugUnitTest
+:rubber-loader:prepareReleaseUnitTestDependencies
+:rubber-loader:processReleaseUnitTestJavaRes UP-TO-DATE
+:rubber-loader:compileReleaseUnitTestJavaWithJavac
+:rubber-loader:compileReleaseUnitTestSources
+:rubber-loader:assembleReleaseUnitTest
+:rubber-loader:testReleaseUnitTest
+:rubber-loader:test
+:rubber-loader:check
+:rubber-loader:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.887 secs
+
+2018-04-02 03:08:27,076 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:08:27,077 INFO  SysUtils - Execute command: [/tmp/rdisk/2489/src/gradlew, -b, /tmp/rdisk/2489/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:08:34,591 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-02 03:08:34,591 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 03:08:34,592 INFO  SysUtils - Execute command: [/tmp/rdisk/2489/src/gradlew, -b, /tmp/rdisk/2489/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 03:09:03,256 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rubber-loader:compileLint
+:rubber-loader:copyReleaseLint UP-TO-DATE
+:rubber-loader:preBuild UP-TO-DATE
+:rubber-loader:preReleaseBuild UP-TO-DATE
+:rubber-loader:checkReleaseManifest
+:rubber-loader:preDebugAndroidTestBuild UP-TO-DATE
+:rubber-loader:preDebugBuild UP-TO-DATE
+:rubber-loader:preDebugUnitTestBuild UP-TO-DATE
+:rubber-loader:preReleaseUnitTestBuild UP-TO-DATE
+:rubber-loader:prepareComAndroidSupportAppcompatV72311Library UP-TO-DATE
+:rubber-loader:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:rubber-loader:prepareReleaseDependencies
+:rubber-loader:compileReleaseAidl UP-TO-DATE
+:rubber-loader:compileReleaseRenderscript UP-TO-DATE
+:rubber-loader:generateReleaseBuildConfig UP-TO-DATE
+:rubber-loader:generateReleaseAssets UP-TO-DATE
+:rubber-loader:mergeReleaseAssets UP-TO-DATE
+:rubber-loader:generateReleaseResValues UP-TO-DATE
+:rubber-loader:generateReleaseResources UP-TO-DATE
+:rubber-loader:mergeReleaseResources UP-TO-DATE
+:rubber-loader:processReleaseManifest UP-TO-DATE
+:rubber-loader:processReleaseResources UP-TO-DATE
+:rubber-loader:generateReleaseSources UP-TO-DATE
+:rubber-loader:processReleaseJavaRes UP-TO-DATE
+:rubber-loader:compileReleaseJavaWithJavac UP-TO-DATE
+:rubber-loader:extractReleaseAnnotations UP-TO-DATE
+:rubber-loader:mergeReleaseProguardFiles UP-TO-DATE
+:rubber-loader:packageReleaseJar UP-TO-DATE
+:rubber-loader:compileReleaseNdk UP-TO-DATE
+:rubber-loader:packageReleaseJniLibs UP-TO-DATE
+:rubber-loader:packageReleaseLocalJar UP-TO-DATE
+:rubber-loader:packageReleaseRenderscript UP-TO-DATE
+:rubber-loader:packageReleaseResources UP-TO-DATE
+:rubber-loader:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72311Library
+:sample:prepareComAndroidSupportSupportV42311Library
+:sample:prepareComCrashlyticsSdkAndroidAnswers132Library
+:sample:prepareComCrashlyticsSdkAndroidBeta113Library
+:sample:prepareComCrashlyticsSdkAndroidCrashlytics252Library
+:sample:prepareComCrashlyticsSdkAndroidCrashlyticsCore235Library
+:sample:prepareComGithubGreenfrvrRubberLoader112Library
+:sample:prepareIoFabricSdkAndroidFabric136Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:processDebugManifest
+:sample:fabricGenerateResourcesDebug
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:processReleaseManifest
+:sample:fabricGenerateResourcesRelease
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.21 secs
+
+2018-04-02 03:09:03,331 INFO  FullProcessService - Found APK file: /tmp/rdisk/2489/src/sample/build/outputs/apk/sample-release-unsigned.apk

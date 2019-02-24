@@ -1,0 +1,1009 @@
+2018-04-02 06:53:03,264 INFO  DownloadService - Downloading "https://github.com/asifmujteba/EasyVolley/archive/master.zip", attempt 3
+2018-04-02 06:54:03,738 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 06:54:04,466 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 06:54:04,466 INFO  DownloadService - Downloading "https://github.com/asifmujteba/EasyVolley/archive/master.zip", attempt 3
+2018-04-02 06:55:05,896 DEBUG FullProcessService - Repository https://github.com/asifmujteba/EasyVolley available: true
+2018-04-02 06:55:05,896 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 06:55:05,896 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/asifmujteba/EasyVolley, /tmp/rdisk/2382/src]
+2018-04-02 06:55:09,530 INFO  SysUtils - 
+2018-04-02 06:55:09,535 INFO  GitService - Deleted "/tmp/rdisk/2382/src/.git": true
+2018-04-02 06:55:09,538 INFO  FullProcessService - Size of directory with sources: 450 KB
+2018-04-02 06:55:09,539 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2382/src]
+2018-04-02 06:55:09,543 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2382/src/.git/
+
+2018-04-02 06:55:09,546 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2382/src/gradlew
+2018-04-02 06:55:09,550 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2382/src/easyvolley/build.gradle /tmp/rdisk/2382/src/sample/build.gradle /tmp/rdisk/2382/src/build.gradle
+2018-04-02 06:55:09,553 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2382/src/settings.gradle /tmp/rdisk/2382/src/sample/build.gradle /tmp/rdisk/2382/src/easyvolley/build.gradle /tmp/rdisk/2382/src/build.gradle
+2018-04-02 06:55:09,553 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-02 06:56:09,555 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 06:56:09,555 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-02 06:57:09,556 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 06:57:09,556 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 06:57:09,556 INFO  ProjectFixService - Fixing project...
+2018-04-02 06:57:09,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2382/src/easyvolley/local.properties
+2018-04-02 06:57:09,564 INFO  ProjectFixService - Build info for "/tmp/rdisk/2382/src/easyvolley/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 06:57:09,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2382/src/sample/local.properties
+2018-04-02 06:57:09,565 INFO  ProjectFixService - Build info for "/tmp/rdisk/2382/src/sample/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 06:57:09,565 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2382/src/local.properties
+2018-04-02 06:57:09,565 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 06:57:09,565 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 06:57:09,566 INFO  ProjectFixService - Build info for "/tmp/rdisk/2382/src/build.gradle": [buildToolsVersion=21.1.1,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 06:57:09,566 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 06:57:09,566 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:57:09,566 INFO  SysUtils - Execute command: [/tmp/rdisk/2382/src/gradlew, -b, /tmp/rdisk/2382/src/easyvolley/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:57:19,795 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 06:57:19,795 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 06:57:19,796 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 06:57:19,796 INFO  SysUtils - Execute command: [/tmp/rdisk/2382/src/gradlew, -b, /tmp/rdisk/2382/src/easyvolley/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 06:57:33,791 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 06:57:33,791 INFO  SysUtils - Configuration on demand is an incubating feature.
+:easyvolley:compileLint
+:easyvolley:copyDebugLint UP-TO-DATE
+:easyvolley:mergeDebugProguardFiles
+:easyvolley:preBuild UP-TO-DATE
+:easyvolley:preDebugBuild UP-TO-DATE
+:easyvolley:checkDebugManifest
+:easyvolley:prepareDebugDependencies
+:easyvolley:compileDebugAidl
+:easyvolley:compileDebugRenderscript
+:easyvolley:generateDebugBuildConfig
+:easyvolley:generateDebugAssets UP-TO-DATE
+:easyvolley:mergeDebugAssets
+:easyvolley:generateDebugResValues
+:easyvolley:generateDebugResources
+:easyvolley:packageDebugResources
+:easyvolley:processDebugManifest
+:easyvolley:processDebugResources
+:easyvolley:generateDebugSources
+:easyvolley:processDebugJavaRes UP-TO-DATE
+:easyvolley:compileDebugJavaWithJavacNote: /tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:easyvolley:packageDebugJar
+:easyvolley:compileDebugNdk UP-TO-DATE
+:easyvolley:packageDebugJniLibs UP-TO-DATE
+:easyvolley:packageDebugLocalJar UP-TO-DATE
+:easyvolley:packageDebugRenderscript UP-TO-DATE
+:easyvolley:bundleDebug
+:easyvolley:compileDebugSources
+:easyvolley:assembleDebug
+:easyvolley:copyReleaseLint UP-TO-DATE
+:easyvolley:mergeReleaseProguardFiles
+:easyvolley:preReleaseBuild UP-TO-DATE
+:easyvolley:checkReleaseManifest
+:easyvolley:prepareReleaseDependencies
+:easyvolley:compileReleaseAidl
+:easyvolley:compileReleaseRenderscript
+:easyvolley:generateReleaseBuildConfig
+:easyvolley:generateReleaseAssets UP-TO-DATE
+:easyvolley:mergeReleaseAssets
+:easyvolley:generateReleaseResValues
+:easyvolley:generateReleaseResources
+:easyvolley:packageReleaseResources
+:easyvolley:processReleaseManifest
+:easyvolley:processReleaseResources
+:easyvolley:generateReleaseSources
+:easyvolley:processReleaseJavaRes UP-TO-DATE
+:easyvolley:compileReleaseJavaWithJavacNote: /tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:easyvolley:packageReleaseJar
+:easyvolley:compileReleaseNdk UP-TO-DATE
+:easyvolley:packageReleaseJniLibs UP-TO-DATE
+:easyvolley:packageReleaseLocalJar UP-TO-DATE
+:easyvolley:packageReleaseRenderscript UP-TO-DATE
+:easyvolley:bundleRelease
+:easyvolley:compileReleaseSources
+:easyvolley:assembleRelease
+:easyvolley:javadoc/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/EasyVolley.java:6: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HurlStack;
+                                 ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/EasyVolley.java:7: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.Volley;
+                                 ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequestQueue.java:3: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequestQueue.java:4: error: package com.android.volley does not exist
+import com.android.volley.RequestQueue;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:3: error: package com.android.volley does not exist
+import com.android.volley.DefaultRetryPolicy;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:4: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:5: error: package com.android.volley does not exist
+import com.android.volley.Response;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequestQueue.java:16: error: cannot find symbol
+    private RequestQueue mRequestQueue;
+            ^
+  symbol:   class RequestQueue
+  location: class ASFRequestQueue
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequestQueue.java:19: error: cannot find symbol
+    protected ASFRequestQueue(RequestQueue mRequestQueue) {
+                              ^
+  symbol:   class RequestQueue
+  location: class ASFRequestQueue
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequestQueue.java:24: error: cannot find symbol
+    protected void add(Request request) {
+                       ^
+  symbol:   class Request
+  location: class ASFRequestQueue
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:174: error: cannot find symbol
+    protected abstract Request getRequest();
+                       ^
+  symbol:   class Request
+  location: class ASFRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:175: error: package Response does not exist
+    protected abstract Response.Listener<T> getResponseListener();
+                               ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFRequest.java:176: error: package Response does not exist
+    protected abstract Response.ErrorListener getErorListener();
+                               ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:7: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:8: error: package com.android.volley does not exist
+import com.android.volley.Response;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:9: error: package com.android.volley does not exist
+import com.android.volley.VolleyError;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:3: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:4: error: package com.android.volley does not exist
+import com.android.volley.Response;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:5: error: package com.android.volley does not exist
+import com.android.volley.VolleyError;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:6: error: package com.google.gson does not exist
+import com.google.gson.JsonObject;
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:11: error: cannot find symbol
+public class ASFJsonObjectRequest extends ASFRequest<JsonObject> {
+                                                     ^
+  symbol: class JsonObject
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:22: error: package com.android.volley.toolbox does not exist
+    private com.android.volley.toolbox.ImageRequest mRequest;
+                                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:28: error: package Response does not exist
+    private Response.Listener<Bitmap> mResponseListener = new Response.Listener<Bitmap>() {
+                    ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:41: error: package Response does not exist
+    private Response.ErrorListener mErrorListener = new Response.ErrorListener() {
+                    ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:54: error: cannot find symbol
+    protected Request getRequest() {
+              ^
+  symbol:   class Request
+  location: class ASFBitmapRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:64: error: package Response does not exist
+    protected Response.Listener<Bitmap> getResponseListener() {
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFBitmapRequest.java:69: error: package Response does not exist
+    protected Response.ErrorListener getErorListener() {
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:3: error: package com.android.volley does not exist
+import com.android.volley.Response;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:4: error: package com.google.gson does not exist
+import com.google.gson.JsonObject;
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:3: error: package com.android.volley does not exist
+import com.android.volley.AuthFailureError;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:4: error: package com.android.volley does not exist
+import com.android.volley.NetworkResponse;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:5: error: package com.android.volley does not exist
+import com.android.volley.ParseError;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:6: error: package com.android.volley does not exist
+import com.android.volley.Request;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:7: error: package com.android.volley does not exist
+import com.android.volley.Response;
+                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:8: error: package com.android.volley.toolbox does not exist
+import com.android.volley.toolbox.HttpHeaderParser;
+                                 ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:9: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:10: error: package com.google.gson does not exist
+import com.google.gson.GsonBuilder;
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:11: error: package com.google.gson does not exist
+import com.google.gson.JsonSyntaxException;
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:20: error: cannot find symbol
+public abstract class ASFGsonRequest<T> extends Request<T> {
+                                                ^
+  symbol: class Request
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:11: error: cannot find symbol
+public class ASFGsonObjectRequest extends ASFGsonRequest<JsonObject> {
+                                                         ^
+  symbol: class JsonObject
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:16: error: package Response does not exist
+    private Response.Listener<JsonObject> mResponseListener = new Response.Listener<JsonObject>() {
+                    ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:16: error: cannot find symbol
+    private Response.Listener<JsonObject> mResponseListener = new Response.Listener<JsonObject>() {
+                              ^
+  symbol:   class JsonObject
+  location: class ASFJsonObjectRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:23: error: package Response does not exist
+    private Response.ErrorListener mErrorListener = new Response.ErrorListener() {
+                    ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:35: error: cannot find symbol
+    protected Request getRequest() {
+              ^
+  symbol:   class Request
+  location: class ASFJsonObjectRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:44: error: package Response does not exist
+    protected Response.Listener<JsonObject> getResponseListener() {
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:44: error: cannot find symbol
+    protected Response.Listener<JsonObject> getResponseListener() {
+                                ^
+  symbol:   class JsonObject
+  location: class ASFJsonObjectRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:49: error: package Response does not exist
+    protected Response.ErrorListener getErorListener() {
+                      ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFJsonObjectRequest.java:54: error: cannot find symbol
+    protected ASFCache.ASFEntry createCacheEntry(JsonObject response) {
+                                                 ^
+  symbol:   class JsonObject
+  location: class ASFJsonObjectRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:14: error: package Response does not exist
+    public ASFGsonObjectRequest(int method, String url, Map<String, String> headers, Map<String, String> params, Response.Listener<JsonObject> listener, Response.ErrorListener errorListener) {
+                                                                                                                         ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:14: error: cannot find symbol
+    public ASFGsonObjectRequest(int method, String url, Map<String, String> headers, Map<String, String> params, Response.Listener<JsonObject> listener, Response.ErrorListener errorListener) {
+                                                                                                                                   ^
+  symbol:   class JsonObject
+  location: class ASFGsonObjectRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonObjectRequest.java:14: error: package Response does not exist
+    public ASFGsonObjectRequest(int method, String url, Map<String, String> headers, Map<String, String> params, Response.Listener<JsonObject> listener, Response.ErrorListener errorListener) {
+                                                                                                                                                                 ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:23: error: cannot find symbol
+    private final Gson gson ;
+                  ^
+  symbol:   class Gson
+  location: class ASFGsonRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFGsonRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:27: error: package Response does not exist
+    private final Response.Listener<T> listener;
+                          ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:31: error: package Response does not exist
+                          Response.Listener<T> listener, Response.ErrorListener errorListener) {
+                                  ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:31: error: package Response does not exist
+                          Response.Listener<T> listener, Response.ErrorListener errorListener) {
+                                                                 ^
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:66: error: cannot find symbol
+    protected Map<String, String> getParams() throws AuthFailureError {
+                                                     ^
+  symbol:   class AuthFailureError
+  location: class ASFGsonRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFGsonRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:71: error: cannot find symbol
+    public Map<String, String> getHeaders() throws AuthFailureError {
+                                                   ^
+  symbol:   class AuthFailureError
+  location: class ASFGsonRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFGsonRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:81: error: cannot find symbol
+    protected Response<T> parseNetworkResponse(NetworkResponse response) {
+                                               ^
+  symbol:   class NetworkResponse
+  location: class ASFGsonRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFGsonRequest
+/tmp/rdisk/2382/src/easyvolley/src/main/java/com/github/asifmujteba/easyvolley/ASFGsonRequest.java:81: error: cannot find symbol
+    protected Response<T> parseNetworkResponse(NetworkResponse response) {
+              ^
+  symbol:   class Response
+  location: class ASFGsonRequest<T>
+  where T is a type-variable:
+    T extends Object declared in class ASFGsonRequest
+
+59 warnings
+:easyvolley:javadocJar
+:easyvolley:sourcesJar
+:easyvolley:assemble
+:easyvolley:lint
+Ran lint on variant debug: 3 issues found
+Ran lint on variant release: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/2382/src/easyvolley/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2382/src/easyvolley/build/outputs/lint-results.xml
+:easyvolley:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':easyvolley:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':easyvolley:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint.lintAllVariants(Lint.groovy:136)
+	at com.android.build.gradle.tasks.Lint$lintAllVariants$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:82)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 12.697 secs
+
+2018-04-02 06:57:33,799 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:57:33,800 INFO  SysUtils - Execute command: [/tmp/rdisk/2382/src/gradlew, -b, /tmp/rdisk/2382/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:57:41,048 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 06:57:41,048 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 06:57:41,048 INFO  SysUtils - Execute command: [/tmp/rdisk/2382/src/gradlew, -b, /tmp/rdisk/2382/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 06:58:25,796 INFO  SysUtils - Configuration on demand is an incubating feature.
+:easyvolley:compileLint
+:easyvolley:copyReleaseLint UP-TO-DATE
+:easyvolley:mergeReleaseProguardFiles UP-TO-DATE
+:easyvolley:preBuild UP-TO-DATE
+:easyvolley:preReleaseBuild UP-TO-DATE
+:easyvolley:checkReleaseManifest
+:easyvolley:prepareReleaseDependencies
+:easyvolley:compileReleaseAidl UP-TO-DATE
+:easyvolley:compileReleaseRenderscript UP-TO-DATE
+:easyvolley:generateReleaseBuildConfig UP-TO-DATE
+:easyvolley:generateReleaseAssets UP-TO-DATE
+:easyvolley:mergeReleaseAssets UP-TO-DATE
+:easyvolley:generateReleaseResValues UP-TO-DATE
+:easyvolley:generateReleaseResources UP-TO-DATE
+:easyvolley:packageReleaseResources UP-TO-DATE
+:easyvolley:processReleaseManifest UP-TO-DATE
+:easyvolley:processReleaseResources UP-TO-DATE
+:easyvolley:generateReleaseSources UP-TO-DATE
+:easyvolley:processReleaseJavaRes UP-TO-DATE
+:easyvolley:compileReleaseJavaWithJavac UP-TO-DATE
+:easyvolley:packageReleaseJar UP-TO-DATE
+:easyvolley:compileReleaseNdk UP-TO-DATE
+:easyvolley:packageReleaseJniLibs UP-TO-DATE
+:easyvolley:packageReleaseLocalJar UP-TO-DATE
+:easyvolley:packageReleaseRenderscript UP-TO-DATE
+:easyvolley:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72210Library
+:sample:prepareComAndroidSupportSupportV42210Library
+:sample:prepareComGithubAsifmujtebaEasyvolley097Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavacNote: /tmp/rdisk/2382/src/sample/src/main/java/com/github/asifmujteba/easyvolleysample/UI/base/BaseActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2382/src/sample/src/main/java/com/github/asifmujteba/easyvolleysample/Controllers/ServerController.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebugUnknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$10) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$11) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$4) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$5) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$6) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$7) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$8) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BeanMap$9) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BinaryHeap$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.BoundedFifoBuffer$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.buffer.BoundedFifoBuffer$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.buffer.PriorityBuffer$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.buffer.UnboundedFifoBuffer$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$1$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$2$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$3$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$4$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$4) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$5$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$5) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$6$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.DoubleOrderedMap$6) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.map.ListOrderedMap$KeySetView$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.map.ListOrderedMap$ValuesView$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.ReferenceMap$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.ReferenceMap$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.ReferenceMap$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.SequencedHashMap$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.SequencedHashMap$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.SequencedHashMap$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.collections.UnboundedFifoBuffer$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.impl.LogFactoryImpl$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.impl.LogFactoryImpl$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.impl.LogFactoryImpl$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.impl.SimpleLog$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.impl.WeakHashtable$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$1) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$2) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$3) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$4) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$5) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+Unknown source file : warning: Ignoring InnerClasses attribute for an anonymous inner class
+Unknown source file : (org.parceler.apache.commons.logging.LogFactory$6) that doesn't come with an
+Unknown source file : associated EnclosingMethod attribute. This class was probably produced by a
+Unknown source file : compiler that did not target the modern .class file format. The recommended
+Unknown source file : solution is to recompile the class from source, using an up-to-date compiler
+Unknown source file : and without specifying any "-target" type options. The consequence of ignoring
+Unknown source file : this warning is that reflective operations on this class will incorrectly
+Unknown source file : indicate that it is *not* an inner class.
+
+
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavacNote: /tmp/rdisk/2382/src/sample/src/main/java/com/github/asifmujteba/easyvolleysample/UI/base/BaseActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2382/src/sample/src/main/java/com/github/asifmujteba/easyvolleysample/Controllers/ServerController.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 44.291 secs
+
+2018-04-02 06:58:25,844 INFO  FullProcessService - Found APK file: /tmp/rdisk/2382/src/sample/build/outputs/apk/sample-release-unsigned.apk

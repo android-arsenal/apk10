@@ -1,0 +1,8 @@
+{
+  "com.hikvh.media" : [ "BuildConfig", "R", "R$string" ],
+  "com.hikvh.media.demo" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$mipmap", "R$raw", "R$string" ],
+  "io.kvh.media" : [ "KCacheUtils" ],
+  "io.kvh.media.amr" : [ "AmrDecoder", "AmrEncoder", "AmrEncoder$Mode" ],
+  "io.kvh.media.demo" : [ "AmrFileDecoder", "MainActivity" ],
+  "io.kvh.media.sound" : [ "Codec", "Filer", "Recorder", "SoundMan", "SoundMan$1", "SoundMan$SingletonHolder", "Supporter", "Supporter$AmrConsumer", "Supporter$FileConsumer", "Supporter$OnOffSwitcher", "Supporter$PcmConsumer", "Uploader" ]
+}

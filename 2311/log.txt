@@ -1,0 +1,141 @@
+2018-05-20 23:07:49,411 INFO  DownloadService - Downloading "https://github.com/rharter/auto-value-gson/archive/master.zip", attempt 3
+2018-05-20 23:08:50,026 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:08:50,908 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:08:50,909 INFO  DownloadService - Downloading "https://github.com/rharter/auto-value-gson/archive/master.zip", attempt 3
+2018-05-20 23:09:52,395 DEBUG FullProcessService - Repository https://github.com/rharter/auto-value-gson available: true
+2018-05-20 23:09:52,395 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:09:52,395 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rharter/auto-value-gson, /tmp/rdisk/2311/src]
+2018-05-20 23:09:54,292 INFO  SysUtils - 
+2018-05-20 23:09:54,306 INFO  GitService - Deleted "/tmp/rdisk/2311/src/.git": true
+2018-05-20 23:09:54,309 INFO  FullProcessService - Size of directory with sources: 291 KB
+2018-05-20 23:09:54,309 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2311/src]
+2018-05-20 23:09:54,313 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2311/src/.git/
+
+2018-05-20 23:09:54,316 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2311/src/gradlew
+2018-05-20 23:09:54,318 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2311/src/build.gradle /tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle /tmp/rdisk/2311/src/auto-value-gson/build.gradle /tmp/rdisk/2311/src/example/build.gradle
+2018-05-20 23:09:54,321 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2311/src/settings.gradle /tmp/rdisk/2311/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2311/src/example/build.gradle /tmp/rdisk/2311/src/build.gradle /tmp/rdisk/2311/src/auto-value-gson/build.gradle /tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle
+2018-05-20 23:09:54,331 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:09:54,331 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:09:54,340 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2311/src/local.properties
+2018-05-20 23:09:54,340 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.3.1-all.zip
+2018-05-20 23:09:54,341 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.3.1-bin.zip)
+2018-05-20 23:09:54,345 INFO  ProjectFixService - Build info for "/tmp/rdisk/2311/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:09:54,345 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2311/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:09:54,346 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2311/src/auto-value-gson-annotations/local.properties
+2018-05-20 23:09:54,350 INFO  ProjectFixService - Build info for "/tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:09:54,350 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:09:54,350 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2311/src/auto-value-gson/local.properties
+2018-05-20 23:09:54,354 INFO  ProjectFixService - Build info for "/tmp/rdisk/2311/src/auto-value-gson/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:09:54,354 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2311/src/auto-value-gson/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:09:54,355 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2311/src/example/local.properties
+2018-05-20 23:09:54,359 INFO  ProjectFixService - Build info for "/tmp/rdisk/2311/src/example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 23:09:54,359 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2311/src/example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 23:09:54,359 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:09:54,359 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:09:54,360 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:10:00,694 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-05-20 23:10:00,694 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 23:10:00,694 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 23:10:09,429 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-gson-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: /tmp/rdisk/2311/src/auto-value-gson-annotations/src/main/java/com/ryanharter/auto/value/gson/GenerateTypeAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:auto-value-gson-annotations:processResources NO-SOURCE
+:auto-value-gson-annotations:classes
+:auto-value-gson-annotations:jar
+:auto-value-gson:compileJava
+:auto-value-gson:processResources NO-SOURCE
+:auto-value-gson:classes
+:auto-value-gson:jar
+:auto-value-gson:javadocJar
+:auto-value-gson:sourcesJar
+:auto-value-gson:signArchives SKIPPED
+:auto-value-gson:assemble
+:auto-value-gson:build
+:auto-value-gson-annotations:javadocJar
+:auto-value-gson-annotations:sourcesJar
+:auto-value-gson-annotations:signArchives SKIPPED
+:auto-value-gson-annotations:assemble
+:auto-value-gson-annotations:build
+:example:compileJavaNote: /tmp/rdisk/2311/src/example/src/main/java/com/ryanharter/auto/value/gson/example/WebResponse.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:example:processResources NO-SOURCE
+:example:classes
+:example:jar
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL in 8s
+10 actionable tasks: 10 executed
+
+2018-05-20 23:10:09,434 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:10:09,434 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:10:14,122 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-05-20 23:10:14,122 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 23:10:14,122 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/auto-value-gson-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 23:10:19,125 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-gson-annotations:compileJava UP-TO-DATE
+:auto-value-gson-annotations:processResources NO-SOURCE
+:auto-value-gson-annotations:classes UP-TO-DATE
+:auto-value-gson-annotations:jar UP-TO-DATE
+:auto-value-gson-annotations:javadocJar UP-TO-DATE
+:auto-value-gson-annotations:sourcesJar UP-TO-DATE
+:auto-value-gson-annotations:signArchives SKIPPED
+:auto-value-gson-annotations:assemble UP-TO-DATE
+:auto-value-gson-annotations:build
+
+BUILD SUCCESSFUL in 4s
+4 actionable tasks: 4 up-to-date
+
+2018-05-20 23:10:19,131 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:10:19,131 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/auto-value-gson/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:10:24,078 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-05-20 23:10:24,079 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 23:10:24,079 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/auto-value-gson/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 23:10:29,000 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-gson-annotations:compileJava UP-TO-DATE
+:auto-value-gson-annotations:processResources NO-SOURCE
+:auto-value-gson-annotations:classes UP-TO-DATE
+:auto-value-gson-annotations:jar UP-TO-DATE
+:auto-value-gson:compileJava UP-TO-DATE
+:auto-value-gson:processResources NO-SOURCE
+:auto-value-gson:classes UP-TO-DATE
+:auto-value-gson:jar UP-TO-DATE
+:auto-value-gson:javadocJar UP-TO-DATE
+:auto-value-gson:sourcesJar UP-TO-DATE
+:auto-value-gson:signArchives SKIPPED
+:auto-value-gson:assemble UP-TO-DATE
+:auto-value-gson:build
+
+BUILD SUCCESSFUL in 4s
+6 actionable tasks: 6 up-to-date
+
+2018-05-20 23:10:29,006 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:10:29,006 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:10:33,347 INFO  ProjectTaskService - Detected possible tasks: 43
+2018-05-20 23:10:33,348 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 23:10:33,348 INFO  SysUtils - Execute command: [/tmp/rdisk/2311/src/gradlew, -b, /tmp/rdisk/2311/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 23:10:38,583 INFO  SysUtils - Configuration on demand is an incubating feature.
+:auto-value-gson-annotations:compileJava UP-TO-DATE
+:auto-value-gson-annotations:processResources NO-SOURCE
+:auto-value-gson-annotations:classes UP-TO-DATE
+:auto-value-gson-annotations:jar UP-TO-DATE
+:auto-value-gson:compileJava UP-TO-DATE
+:auto-value-gson:processResources NO-SOURCE
+:auto-value-gson:classes UP-TO-DATE
+:auto-value-gson:jar UP-TO-DATE
+:example:compileJava UP-TO-DATE
+:example:processResources NO-SOURCE
+:example:classes UP-TO-DATE
+:example:jar UP-TO-DATE
+:example:assemble UP-TO-DATE
+:example:build
+
+BUILD SUCCESSFUL in 5s
+6 actionable tasks: 6 up-to-date
+
+2018-05-20 23:10:38,589 ERROR FullProcessService - Project build has not produced APK file
+2018-05-20 23:10:38,594 ERROR FullProcessService - Could not find generated or existed APK file

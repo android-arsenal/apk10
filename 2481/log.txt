@@ -1,0 +1,21 @@
+2018-04-02 03:29:47,278 INFO  DownloadService - Downloading "https://github.com/tzanou/PercentVisibleLayout/archive/master.zip", attempt 3
+2018-04-02 03:30:47,752 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:30:48,421 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:30:48,421 INFO  DownloadService - Downloading "https://github.com/tzanou/PercentVisibleLayout/archive/master.zip", attempt 3
+2018-04-02 03:31:49,700 DEBUG FullProcessService - Repository https://github.com/tzanou/PercentVisibleLayout available: true
+2018-04-02 03:31:49,700 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:31:49,700 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tzanou/PercentVisibleLayout, /tmp/rdisk/2481/src]
+2018-04-02 03:31:51,190 INFO  SysUtils - 
+2018-04-02 03:31:51,194 INFO  GitService - Deleted "/tmp/rdisk/2481/src/.git": true
+2018-04-02 03:31:51,195 INFO  FullProcessService - Size of directory with sources: 9 KB
+2018-04-02 03:31:51,195 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2481/src]
+2018-04-02 03:31:51,199 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2481/src/.git/
+
+2018-04-02 03:31:51,200 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-02 03:31:51,200 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-02 03:31:51,201 INFO  ProjectBuildService - Build script(s): none
+2018-04-02 03:31:51,201 INFO  ProjectBuildService - All script(s): none
+2018-04-02 03:31:51,201 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:31:51,201 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-02 03:31:51,202 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 03:31:51,202 ERROR FullProcessService - Could not find generated or existed APK file

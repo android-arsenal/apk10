@@ -1,0 +1,461 @@
+2018-04-02 07:59:25,904 INFO  DownloadService - Downloading "https://github.com/alibaba/dexposed/archive/master.zip", attempt 3
+2018-04-02 08:00:26,559 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 08:00:27,270 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 08:00:27,270 INFO  DownloadService - Downloading "https://github.com/alibaba/dexposed/archive/master.zip", attempt 3
+2018-04-02 08:01:28,585 DEBUG FullProcessService - Repository https://github.com/alibaba/dexposed available: true
+2018-04-02 08:01:28,585 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 08:01:28,585 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/alibaba/dexposed, /tmp/rdisk/2362/src]
+2018-04-02 08:01:30,474 INFO  SysUtils - 
+2018-04-02 08:01:30,480 INFO  GitService - Deleted "/tmp/rdisk/2362/src/.git": true
+2018-04-02 08:01:30,484 INFO  FullProcessService - Size of directory with sources: 1004 KB
+2018-04-02 08:01:30,484 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2362/src]
+2018-04-02 08:01:30,488 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2362/src/.git/
+
+2018-04-02 08:01:30,492 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2362/src/sample/patchsample/gradlew /tmp/rdisk/2362/src/sample/dexposedexamples/gradlew /tmp/rdisk/2362/src/dexposed/gradlew
+2018-04-02 08:01:30,501 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2362/src/dexposed/build.gradle /tmp/rdisk/2362/src/sample/dexposedexamples/app/build.gradle /tmp/rdisk/2362/src/sample/patchsample/app/build.gradle /tmp/rdisk/2362/src/sample/dexposedexamples/build.gradle /tmp/rdisk/2362/src/sample/patchsample/build.gradle
+2018-04-02 08:01:30,504 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2362/src/sample/patchsample/settings.gradle /tmp/rdisk/2362/src/sample/patchsample/build.gradle /tmp/rdisk/2362/src/sample/patchsample/app/build.gradle /tmp/rdisk/2362/src/sample/dexposedexamples/settings.gradle /tmp/rdisk/2362/src/sample/dexposedexamples/build.gradle /tmp/rdisk/2362/src/sample/dexposedexamples/app/build.gradle /tmp/rdisk/2362/src/dexposed/build.gradle
+2018-04-02 08:01:30,504 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 08:01:30,504 INFO  ProjectFixService - Fixing project...
+2018-04-02 08:01:30,513 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2362/src/dexposed/local.properties
+2018-04-02 08:01:30,513 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 08:01:30,513 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 08:01:30,515 INFO  ProjectFixService - Build info for "/tmp/rdisk/2362/src/dexposed/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 08:01:30,515 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2362/src/sample/dexposedexamples/app/local.properties
+2018-04-02 08:01:30,515 INFO  ProjectFixService - Build info for "/tmp/rdisk/2362/src/sample/dexposedexamples/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 08:01:30,515 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2362/src/sample/patchsample/app/local.properties
+2018-04-02 08:01:30,515 INFO  ProjectFixService - Build info for "/tmp/rdisk/2362/src/sample/patchsample/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 08:01:30,516 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2362/src/sample/dexposedexamples/local.properties
+2018-04-02 08:01:30,516 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 08:01:30,516 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 08:01:30,517 INFO  ProjectFixService - Build info for "/tmp/rdisk/2362/src/sample/dexposedexamples/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 08:01:30,517 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2362/src/sample/patchsample/local.properties
+2018-04-02 08:01:30,517 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 08:01:30,518 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 08:01:30,518 INFO  ProjectFixService - Build info for "/tmp/rdisk/2362/src/sample/patchsample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 08:01:30,518 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 08:01:30,518 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 08:01:30,519 INFO  SysUtils - Execute command: [/tmp/rdisk/2362/src/dexposed/gradlew, -b, /tmp/rdisk/2362/src/dexposed/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 08:01:36,728 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 08:01:36,729 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 08:01:36,729 INFO  SysUtils - Execute command: [/tmp/rdisk/2362/src/dexposed/gradlew, -b, /tmp/rdisk/2362/src/dexposed/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 08:01:46,441 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:packageDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:processDebugJavaRes UP-TO-DATE
+:compileDebugJava
+:packageDebugJar
+:compileDebugNdk UP-TO-DATE
+:packageDebugJniLibs
+:packageDebugLocalJar UP-TO-DATE
+:packageDebugRenderscript UP-TO-DATE
+:bundleDebug
+:compileDebugSources
+:assembleDebug
+:copyReleaseLint UP-TO-DATE
+:mergeReleaseProguardFiles
+:preReleaseBuild UP-TO-DATE
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:packageReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:processReleaseJavaRes UP-TO-DATE
+:compileReleaseJava
+:packageReleaseJar
+:compileReleaseNdk UP-TO-DATE
+:packageReleaseJniLibs
+:packageReleaseLocalJar UP-TO-DATE
+:packageReleaseRenderscript UP-TO-DATE
+:bundleRelease
+:compileReleaseSources
+:assembleRelease
+:javadoc/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/callbacks/XCallback.java:55: warning: no @return
+		public synchronized Bundle getExtra() {
+		                           ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/callbacks/XCallback.java:62: warning: no @param for key
+		public Object getObjectExtra(String key) {
+		              ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/callbacks/XCallback.java:62: warning: no @return
+		public Object getObjectExtra(String key) {
+		              ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/callbacks/XCallback.java:70: warning: no @param for key
+		public void setObjectExtra(String key, Object o) {
+		            ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/callbacks/XCallback.java:70: warning: no @param for o
+		public void setObjectExtra(String key, Object o) {
+		            ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/DexposedBridge.java:100: warning: no description for @param
+	 * @param callback 
+	   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/DexposedBridge.java:102: warning: no @return
+	public static XC_MethodHook.Unhook hookMethod(Member hookMethod, XC_MethodHook callback) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/DexposedBridge.java:277: warning: no @param for context
+	public synchronized static boolean canDexposed(Context context) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/DexposedBridge.java:277: warning: no @return
+	public synchronized static boolean canDexposed(Context context) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:39: warning: no @param for param
+	protected void beforeHookedMethod(MethodHookParam param) throws Throwable {}
+	               ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:39: warning: no @throws for java.lang.Throwable
+	protected void beforeHookedMethod(MethodHookParam param) throws Throwable {}
+	               ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:46: warning: no @param for param
+	protected void afterHookedMethod(MethodHookParam param) throws Throwable  {}
+	               ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:46: warning: no @throws for java.lang.Throwable
+	protected void afterHookedMethod(MethodHookParam param) throws Throwable  {}
+	               ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:62: warning: no @return
+		public Object getResult() {
+		              ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:71: warning: no @param for result
+		public void setResult(Object result) {
+		            ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:78: warning: no @return
+		public Throwable getThrowable() {
+		                 ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:83: warning: no @return
+		public boolean hasThrowable() {
+		               ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:92: warning: no @param for throwable
+		public void setThrowable(Throwable throwable) {
+		            ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:99: warning: no @return
+		public Object getResultOrThrowable() throws Throwable {
+		              ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodHook.java:99: warning: no @throws for java.lang.Throwable
+		public Object getResultOrThrowable() throws Throwable {
+		              ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:46: warning: no @param for param
+	protected abstract Object replaceHookedMethod(MethodHookParam param) throws Throwable;
+	                          ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:46: warning: no @return
+	protected abstract Object replaceHookedMethod(MethodHookParam param) throws Throwable;
+	                          ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:46: warning: no @throws for java.lang.Throwable
+	protected abstract Object replaceHookedMethod(MethodHookParam param) throws Throwable;
+	                          ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:58: warning: no @param for result
+	public static XC_MethodReplacement returnConstant(final Object result) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:58: warning: no @return
+	public static XC_MethodReplacement returnConstant(final Object result) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:65: warning: no @param for priority
+	public static XC_MethodReplacement returnConstant(int priority, final Object result) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:65: warning: no @param for result
+	public static XC_MethodReplacement returnConstant(int priority, final Object result) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XC_MethodReplacement.java:65: warning: no @return
+	public static XC_MethodReplacement returnConstant(int priority, final Object result) {
+	                                   ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:62: warning: no @param for className
+	public static Class<?> findClass(String className, ClassLoader classLoader) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:62: warning: no @param for classLoader
+	public static Class<?> findClass(String className, ClassLoader classLoader) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:62: warning: no @return
+	public static Class<?> findClass(String className, ClassLoader classLoader) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:76: warning: no @param for clazz
+	public static Field findField(Class<?> clazz, String fieldName) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:76: warning: no @param for fieldName
+	public static Field findField(Class<?> clazz, String fieldName) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:76: warning: no @return
+	public static Field findField(Class<?> clazz, String fieldName) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:122: warning: no @param for clazz
+	public static Field findFirstFieldByExactType(Class<?> clazz, Class<?> type) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:122: warning: no @param for type
+	public static Field findFirstFieldByExactType(Class<?> clazz, Class<?> type) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:122: warning: no @return
+	public static Field findFirstFieldByExactType(Class<?> clazz, Class<?> type) {
+	                    ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:145: warning: no @param for clazz
+	public static Method findMethodExact(Class<?> clazz, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:145: warning: no @param for methodName
+	public static Method findMethodExact(Class<?> clazz, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:145: warning: no @param for parameterTypes
+	public static Method findMethodExact(Class<?> clazz, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:145: warning: no @return
+	public static Method findMethodExact(Class<?> clazz, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:189: warning: no @param for className
+	public static Method findMethodExact(String className, ClassLoader classLoader, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:189: warning: no @param for classLoader
+	public static Method findMethodExact(String className, ClassLoader classLoader, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:189: warning: no @param for methodName
+	public static Method findMethodExact(String className, ClassLoader classLoader, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:189: warning: no @param for parameterTypes
+	public static Method findMethodExact(String className, ClassLoader classLoader, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:189: warning: no @return
+	public static Method findMethodExact(String className, ClassLoader classLoader, String methodName, Object... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:202: warning: no @param for clazz
+	public static Method findMethodExact(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:202: warning: no @param for methodName
+	public static Method findMethodExact(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:202: warning: no @param for parameterTypes
+	public static Method findMethodExact(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:202: warning: no @return
+	public static Method findMethodExact(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:234: warning: no @param for clazz
+	public static Method[] findMethodsByExactParameters(Class<?> clazz, Class<?> returnType, Class<?>... parameterTypes) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:234: warning: no @param for returnType
+	public static Method[] findMethodsByExactParameters(Class<?> clazz, Class<?> returnType, Class<?>... parameterTypes) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:234: warning: no @param for parameterTypes
+	public static Method[] findMethodsByExactParameters(Class<?> clazz, Class<?> returnType, Class<?>... parameterTypes) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:234: warning: no @return
+	public static Method[] findMethodsByExactParameters(Class<?> clazz, Class<?> returnType, Class<?>... parameterTypes) {
+	                       ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:266: warning: no @param for clazz
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:266: warning: no @param for methodName
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:266: warning: no @param for parameterTypes
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:266: warning: no @return
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>... parameterTypes) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:327: warning: no @param for clazz
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:327: warning: no @param for methodName
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:327: warning: no @param for args
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:327: warning: no @return
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:339: warning: no @param for clazz
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object[] args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:339: warning: no @param for methodName
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object[] args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:339: warning: no @param for parameterTypes
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object[] args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:339: warning: no @param for args
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object[] args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:339: warning: no @return
+	public static Method findMethodBestMatch(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object[] args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:354: warning: no @param for args
+	public static Class<?>[] getParameterTypes(Object... args) {
+	                         ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:354: warning: no @return
+	public static Class<?>[] getParameterTypes(Object... args) {
+	                         ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:365: warning: no @param for clazzes
+	public static Class<?>[] getClassesAsArray(Class<?>... clazzes) {
+	                         ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:365: warning: no @return
+	public static Class<?>[] getClassesAsArray(Class<?>... clazzes) {
+	                         ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:607: warning: no @param for obj
+	public static Object getSurroundingThis(Object obj) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:607: warning: no @return
+	public static Object getSurroundingThis(Object obj) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:930: warning: no @param for obj
+	public static Object callMethod(Object obj, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:930: warning: no @param for methodName
+	public static Object callMethod(Object obj, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:930: warning: no @param for args
+	public static Object callMethod(Object obj, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:930: warning: no @return
+	public static Object callMethod(Object obj, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:950: warning: no @param for obj
+	public static Object callMethod(Object obj, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:950: warning: no @param for methodName
+	public static Object callMethod(Object obj, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:950: warning: no @param for parameterTypes
+	public static Object callMethod(Object obj, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:950: warning: no @param for args
+	public static Object callMethod(Object obj, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:950: warning: no @return
+	public static Object callMethod(Object obj, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:968: warning: no @param for clazz
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:968: warning: no @param for methodName
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:968: warning: no @param for args
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:968: warning: no @return
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:988: warning: no @param for clazz
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:988: warning: no @param for methodName
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:988: warning: no @param for parameterTypes
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:988: warning: no @param for args
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:988: warning: no @return
+	public static Object callStaticMethod(Class<?> clazz, String methodName, Class<?>[] parameterTypes, Object... args) {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1130: warning: no @param for res
+	public static byte[] assetAsByteArray(Resources res, String path) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1130: warning: no @param for path
+	public static byte[] assetAsByteArray(Resources res, String path) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1130: warning: no @return
+	public static byte[] assetAsByteArray(Resources res, String path) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1130: warning: no @throws for java.io.IOException
+	public static byte[] assetAsByteArray(Resources res, String path) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1147: warning: no @param for file
+	public static String getMD5Sum(String file) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1147: warning: no @return
+	public static String getMD5Sum(String file) throws IOException {
+	                     ^
+/tmp/rdisk/2362/src/dexposed/src/main/java/com/taobao/android/dexposed/XposedHelpers.java:1147: warning: no @throws for java.io.IOException
+	public static String getMD5Sum(String file) throws IOException {
+	                     ^
+
+98 warnings
+:javadocJar
+:sourcesJar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.307 secs
+
+2018-04-02 08:01:46,449 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 08:01:46,449 INFO  SysUtils - Execute command: [/tmp/rdisk/2362/src/sample/dexposedexamples/gradlew, -b, /tmp/rdisk/2362/src/sample/dexposedexamples/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 08:01:52,085 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-02 08:01:52,085 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 08:01:52,085 INFO  SysUtils - Execute command: [/tmp/rdisk/2362/src/sample/dexposedexamples/gradlew, -b, /tmp/rdisk/2362/src/sample/dexposedexamples/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 08:02:02,888 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComTaobaoAndroidDexposed017Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.381 secs
+
+2018-04-02 08:02:02,903 INFO  FullProcessService - Found APK file: /tmp/rdisk/2362/src/sample/dexposedexamples/app/build/outputs/apk/app-debug.apk

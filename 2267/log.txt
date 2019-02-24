@@ -1,0 +1,212 @@
+2018-04-02 14:21:47,372 INFO  DownloadService - Downloading "https://github.com/hotchpotch/android-IconicFontEngine/archive/master.zip", attempt 3
+2018-04-02 14:22:47,968 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:22:48,686 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:22:48,686 INFO  DownloadService - Downloading "https://github.com/hotchpotch/android-IconicFontEngine/archive/master.zip", attempt 3
+2018-04-02 14:23:49,935 DEBUG FullProcessService - Repository https://github.com/hotchpotch/android-IconicFontEngine available: true
+2018-04-02 14:23:49,935 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:23:49,935 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hotchpotch/android-IconicFontEngine, /tmp/rdisk/2267/src]
+2018-04-02 14:23:51,655 INFO  SysUtils - 
+2018-04-02 14:23:51,671 INFO  GitService - Deleted "/tmp/rdisk/2267/src/.git": true
+2018-04-02 14:23:51,674 INFO  FullProcessService - Size of directory with sources: 421 KB
+2018-04-02 14:23:51,674 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2267/src]
+2018-04-02 14:23:51,679 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2267/src/.git/
+
+2018-04-02 14:23:51,682 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2267/src/gradlew
+2018-04-02 14:23:51,684 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2267/src/iconic-font-engine/build.gradle /tmp/rdisk/2267/src/sample_app/build.gradle /tmp/rdisk/2267/src/build.gradle
+2018-04-02 14:23:51,687 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2267/src/settings.gradle /tmp/rdisk/2267/src/sample_app/build.gradle /tmp/rdisk/2267/src/iconic-font-engine/build.gradle /tmp/rdisk/2267/src/build.gradle
+2018-04-02 14:23:51,687 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:23:51,687 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:23:51,694 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2267/src/iconic-font-engine/local.properties
+2018-04-02 14:23:51,694 INFO  ProjectFixService - Build info for "/tmp/rdisk/2267/src/iconic-font-engine/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-02 14:23:51,695 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2267/src/sample_app/local.properties
+2018-04-02 14:23:51,695 INFO  ProjectFixService - Build info for "/tmp/rdisk/2267/src/sample_app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-02 14:23:51,695 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2267/src/local.properties
+2018-04-02 14:23:51,696 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 14:23:51,696 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 14:23:51,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/2267/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-02 14:23:51,697 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:23:51,697 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:23:51,697 INFO  SysUtils - Execute command: [/tmp/rdisk/2267/src/gradlew, -b, /tmp/rdisk/2267/src/iconic-font-engine/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:24:01,104 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-02 14:24:01,104 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-02 14:24:01,104 INFO  SysUtils - Execute command: [/tmp/rdisk/2267/src/gradlew, -b, /tmp/rdisk/2267/src/iconic-font-engine/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-02 14:24:10,774 INFO  SysUtils - Configuration on demand is an incubating feature.
+:iconic-font-engine:compileLint
+:iconic-font-engine:copyDebugLint UP-TO-DATE
+:iconic-font-engine:mergeDebugProguardFiles
+:iconic-font-engine:preBuild UP-TO-DATE
+:iconic-font-engine:preDebugBuild UP-TO-DATE
+:iconic-font-engine:checkDebugManifest
+:iconic-font-engine:prepareDebugDependencies
+:iconic-font-engine:compileDebugAidl
+:iconic-font-engine:compileDebugRenderscript
+:iconic-font-engine:generateDebugBuildConfig
+:iconic-font-engine:generateDebugAssets UP-TO-DATE
+:iconic-font-engine:mergeDebugAssets
+:iconic-font-engine:generateDebugResValues
+:iconic-font-engine:generateDebugResources
+:iconic-font-engine:packageDebugResources
+:iconic-font-engine:processDebugManifest
+:iconic-font-engine:processDebugResources
+:iconic-font-engine:generateDebugSources
+:iconic-font-engine:compileDebugJava
+:iconic-font-engine:processDebugJavaRes UP-TO-DATE
+:iconic-font-engine:packageDebugJar
+:iconic-font-engine:compileDebugNdk UP-TO-DATE
+:iconic-font-engine:packageDebugJniLibs UP-TO-DATE
+:iconic-font-engine:packageDebugLocalJar UP-TO-DATE
+:iconic-font-engine:packageDebugRenderscript UP-TO-DATE
+:iconic-font-engine:bundleDebug
+:iconic-font-engine:assembleDebug
+:iconic-font-engine:copyReleaseLint UP-TO-DATE
+:iconic-font-engine:mergeReleaseProguardFiles
+:iconic-font-engine:preReleaseBuild UP-TO-DATE
+:iconic-font-engine:checkReleaseManifest
+:iconic-font-engine:prepareReleaseDependencies
+:iconic-font-engine:compileReleaseAidl
+:iconic-font-engine:compileReleaseRenderscript
+:iconic-font-engine:generateReleaseBuildConfig
+:iconic-font-engine:generateReleaseAssets UP-TO-DATE
+:iconic-font-engine:mergeReleaseAssets
+:iconic-font-engine:generateReleaseResValues
+:iconic-font-engine:generateReleaseResources
+:iconic-font-engine:packageReleaseResources
+:iconic-font-engine:processReleaseManifest
+:iconic-font-engine:processReleaseResources
+:iconic-font-engine:generateReleaseSources
+:iconic-font-engine:compileReleaseJava
+:iconic-font-engine:processReleaseJavaRes UP-TO-DATE
+:iconic-font-engine:packageReleaseJar
+:iconic-font-engine:compileReleaseNdk UP-TO-DATE
+:iconic-font-engine:packageReleaseJniLibs UP-TO-DATE
+:iconic-font-engine:packageReleaseLocalJar UP-TO-DATE
+:iconic-font-engine:packageReleaseRenderscript UP-TO-DATE
+:iconic-font-engine:bundleRelease
+:iconic-font-engine:assembleRelease
+:iconic-font-engine:javadoc
+:iconic-font-engine:javadocJar
+:iconic-font-engine:sourcesJar
+:iconic-font-engine:assemble
+:iconic-font-engine:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.238 secs
+
+2018-04-02 14:24:10,782 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:24:10,782 INFO  SysUtils - Execute command: [/tmp/rdisk/2267/src/gradlew, -b, /tmp/rdisk/2267/src/sample_app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:24:17,142 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-02 14:24:17,142 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-02 14:24:17,142 INFO  SysUtils - Execute command: [/tmp/rdisk/2267/src/gradlew, -b, /tmp/rdisk/2267/src/sample_app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-02 14:24:40,577 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample_app:preBuild UP-TO-DATE
+:sample_app:preDebugBuild UP-TO-DATE
+:sample_app:compileDebugNdk UP-TO-DATE
+:iconic-font-engine:compileLint
+:iconic-font-engine:copyReleaseLint UP-TO-DATE
+:iconic-font-engine:mergeReleaseProguardFiles UP-TO-DATE
+:iconic-font-engine:preBuild UP-TO-DATE
+:iconic-font-engine:preReleaseBuild UP-TO-DATE
+:iconic-font-engine:checkReleaseManifest
+:iconic-font-engine:prepareReleaseDependencies
+:iconic-font-engine:compileReleaseAidl UP-TO-DATE
+:iconic-font-engine:compileReleaseRenderscript UP-TO-DATE
+:iconic-font-engine:generateReleaseBuildConfig UP-TO-DATE
+:iconic-font-engine:generateReleaseAssets UP-TO-DATE
+:iconic-font-engine:mergeReleaseAssets UP-TO-DATE
+:iconic-font-engine:generateReleaseResValues UP-TO-DATE
+:iconic-font-engine:generateReleaseResources UP-TO-DATE
+:iconic-font-engine:packageReleaseResources UP-TO-DATE
+:iconic-font-engine:processReleaseManifest UP-TO-DATE
+:iconic-font-engine:processReleaseResources UP-TO-DATE
+:iconic-font-engine:generateReleaseSources UP-TO-DATE
+:iconic-font-engine:compileReleaseJava UP-TO-DATE
+:iconic-font-engine:processReleaseJavaRes UP-TO-DATE
+:iconic-font-engine:packageReleaseJar UP-TO-DATE
+:iconic-font-engine:compileReleaseNdk UP-TO-DATE
+:iconic-font-engine:packageReleaseJniLibs UP-TO-DATE
+:iconic-font-engine:packageReleaseLocalJar UP-TO-DATE
+:iconic-font-engine:packageReleaseRenderscript UP-TO-DATE
+:iconic-font-engine:bundleRelease UP-TO-DATE
+:sample_app:checkDebugManifest
+:sample_app:preReleaseBuild UP-TO-DATE
+:sample_app:prepareComAndroidSupportAppcompatV72103Library
+:sample_app:prepareComAndroidSupportSupportV42103Library
+:sample_app:prepareComGithubHotchpotchIconicFontEngine040Library
+:sample_app:prepareDebugDependencies
+:sample_app:compileDebugAidl
+:sample_app:compileDebugRenderscript
+:sample_app:generateDebugBuildConfig
+:sample_app:generateDebugAssets UP-TO-DATE
+:sample_app:mergeDebugAssets
+:sample_app:generateDebugResValues
+:sample_app:generateDebugResources
+:sample_app:mergeDebugResources/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample_app:processDebugManifest
+:sample_app:processDebugResources
+:sample_app:generateDebugSources
+:sample_app:compileDebugJavaNote: /tmp/rdisk/2267/src/sample_app/src/main/java/com/github/hotchpotch/sampleiconicfontengine/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample_app:preDexDebug
+:sample_app:dexDebug
+:sample_app:processDebugJavaRes UP-TO-DATE
+:sample_app:validateDebugSigning
+:sample_app:packageDebug
+:sample_app:zipalignDebug
+:sample_app:assembleDebug
+:sample_app:checkReleaseManifest
+:sample_app:prepareReleaseDependencies
+:sample_app:compileReleaseAidl
+:sample_app:compileReleaseRenderscript
+:sample_app:generateReleaseBuildConfig
+:sample_app:generateReleaseAssets UP-TO-DATE
+:sample_app:mergeReleaseAssets
+:sample_app:generateReleaseResValues
+:sample_app:generateReleaseResources
+:sample_app:mergeReleaseResources/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/tmp/rdisk/2267/src/sample_app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample_app:processReleaseManifest
+:sample_app:processReleaseResources
+:sample_app:generateReleaseSources
+:sample_app:compileReleaseJavaNote: /tmp/rdisk/2267/src/sample_app/src/main/java/com/github/hotchpotch/sampleiconicfontengine/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample_app:lintVitalRelease
+:sample_app:compileReleaseNdk UP-TO-DATE
+:sample_app:preDexRelease
+:sample_app:dexRelease
+:sample_app:processReleaseJavaRes UP-TO-DATE
+:sample_app:packageRelease
+:sample_app:assembleRelease
+:sample_app:assemble
+:sample_app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.017 secs
+
+2018-04-02 14:24:40,615 INFO  FullProcessService - Found APK file: /tmp/rdisk/2267/src/sample_app/build/outputs/apk/sample_app-release-unsigned.apk

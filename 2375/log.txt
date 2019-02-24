@@ -1,0 +1,152 @@
+2018-05-20 22:49:07,865 INFO  DownloadService - Downloading "https://github.com/venmo/tooltip-view/archive/master.zip", attempt 3
+2018-05-20 22:50:08,333 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:50:09,006 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:50:09,006 INFO  DownloadService - Downloading "https://github.com/venmo/tooltip-view/archive/master.zip", attempt 3
+2018-05-20 22:51:10,355 DEBUG FullProcessService - Repository https://github.com/venmo/tooltip-view available: true
+2018-05-20 22:51:10,356 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:51:10,356 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/venmo/tooltip-view, /tmp/rdisk/2375/src]
+2018-05-20 22:51:12,005 INFO  SysUtils - 
+2018-05-20 22:51:12,018 INFO  GitService - Deleted "/tmp/rdisk/2375/src/.git": true
+2018-05-20 22:51:12,020 INFO  FullProcessService - Size of directory with sources: 187 KB
+2018-05-20 22:51:12,020 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2375/src]
+2018-05-20 22:51:12,024 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2375/src/.git/
+
+2018-05-20 22:51:12,027 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2375/src/gradlew
+2018-05-20 22:51:12,029 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2375/src/example/build.gradle /tmp/rdisk/2375/src/library/build.gradle /tmp/rdisk/2375/src/build.gradle
+2018-05-20 22:51:12,031 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2375/src/settings.gradle /tmp/rdisk/2375/src/library/build.gradle /tmp/rdisk/2375/src/example/build.gradle /tmp/rdisk/2375/src/build.gradle
+2018-05-20 22:51:12,031 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-05-20 22:52:12,368 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-20 22:52:12,368 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:52:12,368 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:52:12,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2375/src/example/local.properties
+2018-05-20 22:52:12,374 INFO  ProjectFixService - Build info for "/tmp/rdisk/2375/src/example/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-20 22:52:12,374 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2375/src/library/local.properties
+2018-05-20 22:52:12,375 INFO  ProjectFixService - Build info for "/tmp/rdisk/2375/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-20 22:52:12,375 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2375/src/local.properties
+2018-05-20 22:52:12,377 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-05-20 22:52:12,377 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-05-20 22:52:12,378 INFO  ProjectFixService - Build info for "/tmp/rdisk/2375/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-20 22:52:12,378 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:52:12,378 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:52:12,378 INFO  SysUtils - Execute command: [/tmp/rdisk/2375/src/gradlew, -b, /tmp/rdisk/2375/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:52:22,761 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-05-20 22:52:22,761 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-20 22:52:22,762 INFO  SysUtils - Execute command: [/tmp/rdisk/2375/src/gradlew, -b, /tmp/rdisk/2375/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-20 22:52:35,001 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:example:prepareSrcLibraryUnspecifiedLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:processDebugJavaRes UP-TO-DATE
+:example:compileDebugJava
+:example:compileDebugNdk UP-TO-DATE
+:example:compileDebugSources
+:example:preDexDebug
+:example:dexDebug
+:example:validateDebugSigning
+:example:packageDebug
+:example:zipalignDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseAssets UP-TO-DATE
+:example:mergeReleaseAssets
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:processReleaseJavaRes UP-TO-DATE
+:example:compileReleaseJava
+:example:compileReleaseNdk UP-TO-DATE
+:example:compileReleaseSources
+:example:lintVitalRelease
+:example:preDexRelease
+:example:dexRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.821 secs
+
+2018-05-20 22:52:35,011 INFO  FullProcessService - Found APK file: /tmp/rdisk/2375/src/example/build/outputs/apk/example-release-unsigned.apk

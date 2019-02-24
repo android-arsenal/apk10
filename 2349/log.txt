@@ -1,0 +1,44 @@
+2018-04-02 09:56:30,332 INFO  DownloadService - Downloading "https://github.com/shiraji/create-intent-inspection/archive/master.zip", attempt 3
+2018-04-02 09:56:30,729 INFO  DownloadService - Downloaded https://github.com/shiraji/create-intent-inspection/archive/master.zip, attempt 3
+2018-04-02 09:56:30,729 INFO  DownloadService - Size of file "/tmp/rdisk/2349/master.zip": 160 KB
+2018-04-02 09:56:30,729 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 09:56:30,730 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2349/master.zip: true
+2018-04-02 09:56:30,730 DEBUG ZipUtil - Extracting '/tmp/rdisk/2349/master.zip' into '/tmp/rdisk/2349/src'.
+2018-04-02 09:56:30,735 INFO  FullProcessService - Size of directory with sources: 193 KB
+2018-04-02 09:56:30,735 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2349/src]
+2018-04-02 09:56:30,741 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2349/src/.git/
+
+2018-04-02 09:56:30,742 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2349/src/create-intent-inspection-master/gradlew
+2018-04-02 09:56:30,745 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle
+2018-04-02 09:56:30,747 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2349/src/create-intent-inspection-master/settings.gradle /tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle
+2018-04-02 09:56:30,747 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 09:56:30,747 INFO  ProjectFixService - Fixing project...
+2018-04-02 09:56:30,750 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2349/src/create-intent-inspection-master/local.properties
+2018-04-02 09:56:30,751 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-02 09:56:30,751 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-02 09:56:30,751 INFO  ProjectFixService - Build info for "/tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 09:56:30,751 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 09:56:30,752 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 09:56:30,752 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 09:56:30,752 INFO  SysUtils - Execute command: [/tmp/rdisk/2349/src/create-intent-inspection-master/gradlew, -b, /tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 09:56:36,622 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-04-02 09:56:36,622 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-02 09:56:36,623 INFO  SysUtils - Execute command: [/tmp/rdisk/2349/src/create-intent-inspection-master/gradlew, -b, /tmp/rdisk/2349/src/create-intent-inspection-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-02 09:56:46,320 INFO  SysUtils - Configuration on demand is an incubating feature.
+plugin.xml with 'idea-plugin' root is not found. IntelliJ specific tasks will be unavailable for :create-intent-inspection.
+Cannot find alternate SDK path: /Applications/Android Studio.app/Contents. Default IDEA will be used : /root/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/141.713.2/28c8f29213fc1ad6cea3e96bfda6943f19c08ac9/ideaIC-141.713.2
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.278 secs
+
+2018-04-02 09:56:46,323 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 09:56:46,325 ERROR FullProcessService - Could not find generated or existed APK file

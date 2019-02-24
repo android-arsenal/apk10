@@ -1,0 +1,411 @@
+2018-05-20 23:03:25,904 INFO  DownloadService - Downloading "https://github.com/hotchemi/PermissionsDispatcher/archive/master.zip", attempt 3
+2018-05-20 23:04:26,732 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 23:04:27,890 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 23:04:27,890 INFO  DownloadService - Downloading "https://github.com/hotchemi/PermissionsDispatcher/archive/master.zip", attempt 3
+2018-05-20 23:05:29,874 DEBUG FullProcessService - Repository https://github.com/hotchemi/PermissionsDispatcher available: true
+2018-05-20 23:05:29,874 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 23:05:29,874 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hotchemi/PermissionsDispatcher, /tmp/rdisk/2316/src]
+2018-05-20 23:05:31,665 INFO  SysUtils - 
+2018-05-20 23:05:31,672 INFO  GitService - Deleted "/tmp/rdisk/2316/src/.git": true
+2018-05-20 23:05:31,680 INFO  FullProcessService - Size of directory with sources: 794 KB
+2018-05-20 23:05:31,680 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2316/src]
+2018-05-20 23:05:31,684 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2316/src/.git/
+
+2018-05-20 23:05:31,690 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2316/src/gradlew
+2018-05-20 23:05:31,697 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2316/src/library/build.gradle /tmp/rdisk/2316/src/sample-kotlin/build.gradle /tmp/rdisk/2316/src/sample/build.gradle /tmp/rdisk/2316/src/test-v13/build.gradle /tmp/rdisk/2316/src/test/build.gradle /tmp/rdisk/2316/src/build.gradle /tmp/rdisk/2316/src/annotation/build.gradle /tmp/rdisk/2316/src/buildSrc/build.gradle /tmp/rdisk/2316/src/lint/build.gradle /tmp/rdisk/2316/src/processor/build.gradle
+2018-05-20 23:05:31,703 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2316/src/test/build.gradle /tmp/rdisk/2316/src/test-v13/build.gradle /tmp/rdisk/2316/src/settings.gradle /tmp/rdisk/2316/src/sample/build.gradle /tmp/rdisk/2316/src/sample-kotlin/build.gradle /tmp/rdisk/2316/src/processor/build.gradle /tmp/rdisk/2316/src/lint/build.gradle /tmp/rdisk/2316/src/library/build.gradle /tmp/rdisk/2316/src/gradle/gradle-artifactory-upload.gradle /tmp/rdisk/2316/src/buildSrc/build.gradle /tmp/rdisk/2316/src/build.gradle /tmp/rdisk/2316/src/annotation/build.gradle
+2018-05-20 23:05:31,704 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 23:05:31,704 INFO  ProjectFixService - Fixing project...
+2018-05-20 23:05:31,719 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/library/local.properties
+2018-05-20 23:05:31,723 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,723 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,724 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/sample-kotlin/local.properties
+2018-05-20 23:05:31,728 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/sample-kotlin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,728 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/sample-kotlin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,729 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/sample/local.properties
+2018-05-20 23:05:31,733 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,733 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,733 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/test-v13/local.properties
+2018-05-20 23:05:31,737 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/test-v13/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,737 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/test-v13/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,738 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/test/local.properties
+2018-05-20 23:05:31,742 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,742 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/test/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,742 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/local.properties
+2018-05-20 23:05:31,742 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-20 23:05:31,742 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-20 23:05:31,746 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,746 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,747 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/annotation/local.properties
+2018-05-20 23:05:31,751 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/annotation/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,751 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/annotation/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,751 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/buildSrc/local.properties
+2018-05-20 23:05:31,755 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/buildSrc/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,755 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/buildSrc/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,755 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/lint/local.properties
+2018-05-20 23:05:31,759 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/lint/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,759 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/lint/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,760 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2316/src/processor/local.properties
+2018-05-20 23:05:31,764 INFO  ProjectFixService - Build info for "/tmp/rdisk/2316/src/processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=18,targetSdkVersion=<null>]
+2018-05-20 23:05:31,764 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2316/src/processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=18,targetSdkVersion=27]
+2018-05-20 23:05:31,764 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 23:05:31,764 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:05:31,764 INFO  SysUtils - Execute command: [/tmp/rdisk/2316/src/gradlew, -b, /tmp/rdisk/2316/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:05:53,859 INFO  ProjectTaskService - Detected possible tasks: 92
+2018-05-20 23:05:53,859 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-20 23:05:53,860 INFO  SysUtils - Execute command: [/tmp/rdisk/2316/src/gradlew, -b, /tmp/rdisk/2316/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-20 23:06:30,037 INFO  SysUtils - Configuration on demand is an incubating feature.
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources NO-SOURCE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+[buildinfo] Not using buildInfo properties file for this build.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl
+:annotation:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:annotation:processResources NO-SOURCE
+:annotation:classes
+:annotation:jar
+:library:compileDebugRenderscript
+:library:checkDebugManifest
+:library:generateDebugBuildConfig
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:platformAttrExtractor
+:library:processDebugManifest
+:lint:compileKotlin
+:lint:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:lint:processResources NO-SOURCE
+:library:generateDebugRFile
+:lint:classes
+:lint:jar
+:library:prepareLintJar
+:library:generateDebugSources
+:library:javaPreCompileDebug
+:library:compileDebugJavaWithJavac
+:library:extractDebugAnnotations
+:library:mergeDebugConsumerProguardFiles
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:packageDebugAssets
+:library:packageDebugRenderscript NO-SOURCE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:checkReleaseManifest
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:generateReleaseRFile
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac
+:library:extractReleaseAnnotations
+:library:mergeReleaseConsumerProguardFiles
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:packageReleaseAssets
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:mergeReleaseResources
+:library:verifyReleaseResources
+:library:assembleRelease
+:library:javadoc/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:9: error: package android.support.v13.app does not exist
+import android.support.v13.app.FragmentCompat;
+                              ^
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:10: error: package android.support.v4.app does not exist
+import android.support.v4.app.ActivityCompat;
+                             ^
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:11: error: package android.support.v4.app does not exist
+import android.support.v4.app.AppOpsManagerCompat;
+                             ^
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:12: error: package android.support.v4.content does not exist
+import android.support.v4.content.PermissionChecker;
+                                 ^
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:13: error: package android.support.v4.util does not exist
+import android.support.v4.util.SimpleArrayMap;
+                              ^
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:18: error: cannot find symbol
+    private static final SimpleArrayMap<String, Integer> MIN_SDK_PERMISSIONS;
+                         ^
+  symbol:   class SimpleArrayMap
+  location: class PermissionUtils
+/tmp/rdisk/2316/src/library/src/main/java/permissions/dispatcher/PermissionUtils.java:138: error: package android.support.v4.app does not exist
+    public static boolean shouldShowRequestPermissionRationale(android.support.v4.app.Fragment fragment, String... permissions) {
+                                                                                     ^
+
+7 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL in 35s
+56 actionable tasks: 56 executed
+
+2018-05-20 23:06:30,071 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 23:06:30,071 INFO  SysUtils - Execute command: [/tmp/rdisk/2316/src/gradlew, -b, /tmp/rdisk/2316/src/sample-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 23:06:40,434 INFO  ProjectTaskService - Detected possible tasks: 80
+2018-05-20 23:06:40,434 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 23:06:40,435 INFO  SysUtils - Execute command: [/tmp/rdisk/2316/src/gradlew, -b, /tmp/rdisk/2316/src/sample-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 23:07:41,742 INFO  SysUtils - Configuration on demand is an incubating feature.
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy UP-TO-DATE
+:buildSrc:processResources NO-SOURCE
+:buildSrc:classes UP-TO-DATE
+:buildSrc:jar UP-TO-DATE
+:buildSrc:assemble UP-TO-DATE
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build UP-TO-DATE
+[buildinfo] Not using buildInfo properties file for this build.
+:annotation:compileJava UP-TO-DATE
+:annotation:processResources NO-SOURCE
+:annotation:classes UP-TO-DATE
+:annotation:jar UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:platformAttrExtractor UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:generateDebugRFile UP-TO-DATE
+:lint:compileKotlin
+:lint:compileJava UP-TO-DATE
+:lint:processResources NO-SOURCE
+:lint:classes UP-TO-DATE
+:lint:jar UP-TO-DATE
+:library:prepareLintJar UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:javaPreCompileDebug UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:processDebugJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample-kotlin:preBuild UP-TO-DATE
+:sample-kotlin:preDebugBuild
+:sample-kotlin:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:sample-kotlin:compileDebugRenderscript
+:sample-kotlin:checkDebugManifest
+:sample-kotlin:generateDebugBuildConfig
+:processor:compileKotlin
+w: Runtime JAR files in the classpath should have the same version. These files were found in the classpath:
+    /root/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre7/1.1.51/8b5933578dc55f32cfc1a25f1db6371e4161fb8f/kotlin-stdlib-jre7-1.1.51.jar (version 1.1)
+    /root/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.1.51/222365b4b684bfe35a7676c5ff69b4b414e398fa/kotlin-reflect-1.1.51.jar (version 1.1)
+    /root/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.0/25eb440d6eeb9fc60299121020fe726eb2100d03/kotlin-stdlib-1.2.0.jar (version 1.2)
+w: Consider providing an explicit dependency on kotlin-reflect 1.2 to prevent strange errors
+w: Some runtime JAR files in the classpath have an incompatible version. Consider removing them from the classpath or use '-Xskip-runtime-version-check' to suppress this warning
+:processor:compileJava NO-SOURCE
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:generateReleaseRFile UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:javaPreCompileRelease UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:packageReleaseAssets UP-TO-DATE
+:library:packageReleaseRenderscript NO-SOURCE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:compileReleaseSources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:verifyReleaseResources UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:processor:convertAarsToJar
+:processor:processResources
+:processor:classes
+:processor:jar
+:sample-kotlin:mainApkListPersistenceDebug
+:sample-kotlin:generateDebugResValues
+:sample-kotlin:generateDebugResources
+:sample-kotlin:mergeDebugResources
+:sample-kotlin:createDebugCompatibleScreenManifests
+:sample-kotlin:processDebugManifest
+:sample-kotlin:splitsDiscoveryTaskDebug
+:sample-kotlin:processDebugResources
+:sample-kotlin:kaptGenerateStubsDebugKotlin
+:sample-kotlin:kaptDebugKotlin
+:sample-kotlin:compileDebugKotlin
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (5, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (25, 29): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (26, 33): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (26, 40): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (29, 26): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (30, 30): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (30, 37): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (88, 27): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (89, 31): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (89, 38): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (105, 47): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (105, 54): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (106, 32): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (106, 39): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (4, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (32, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 30): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 37): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 57): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (97, 47): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (99, 17): 'Camera' is deprecated. Deprecated in Java
+:sample-kotlin:prepareLintJar
+:sample-kotlin:generateDebugSources
+:sample-kotlin:javaPreCompileDebug
+:sample-kotlin:compileDebugJavaWithJavac
+:sample-kotlin:compileDebugNdk NO-SOURCE
+:sample-kotlin:compileDebugSources
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:packageDebugAssets UP-TO-DATE
+:sample-kotlin:mergeDebugShaders
+:sample-kotlin:compileDebugShaders
+:sample-kotlin:generateDebugAssets
+:sample-kotlin:mergeDebugAssets
+:sample-kotlin:transformClassesWithDexBuilderForDebug
+:sample-kotlin:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample-kotlin:transformDexArchiveWithDexMergerForDebug
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample-kotlin:mergeDebugJniLibFolders
+:sample-kotlin:transformNativeLibsWithMergeJniLibsForDebug
+:sample-kotlin:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-kotlin:processDebugJavaRes NO-SOURCE
+:sample-kotlin:transformResourcesWithMergeJavaResForDebug
+:sample-kotlin:validateSigningDebug
+:sample-kotlin:packageDebug
+:sample-kotlin:assembleDebug
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample-kotlin:preReleaseBuild
+:sample-kotlin:compileReleaseAidl
+:sample-kotlin:compileReleaseRenderscript
+:sample-kotlin:checkReleaseManifest
+:sample-kotlin:generateReleaseBuildConfig
+:sample-kotlin:mainApkListPersistenceRelease
+:sample-kotlin:generateReleaseResValues
+:sample-kotlin:generateReleaseResources
+:sample-kotlin:mergeReleaseResources
+:sample-kotlin:createReleaseCompatibleScreenManifests
+:sample-kotlin:processReleaseManifest
+:sample-kotlin:splitsDiscoveryTaskRelease
+:sample-kotlin:processReleaseResources
+:sample-kotlin:kaptGenerateStubsReleaseKotlin
+:sample-kotlin:kaptReleaseKotlin
+:sample-kotlin:compileReleaseKotlin
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (5, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (25, 29): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (26, 33): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (26, 40): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (29, 26): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (30, 30): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (30, 37): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (88, 27): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (89, 31): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (89, 38): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (105, 47): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (105, 54): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (106, 32): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreview.kt: (106, 39): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (4, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (32, 25): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 30): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 37): 'CameraInfo' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (51, 57): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (97, 47): 'Camera' is deprecated. Deprecated in Java
+w: /tmp/rdisk/2316/src/sample-kotlin/src/main/kotlin/permissions/dispatcher/samplekotlin/camera/CameraPreviewFragment.kt: (99, 17): 'Camera' is deprecated. Deprecated in Java
+:sample-kotlin:generateReleaseSources
+:sample-kotlin:javaPreCompileRelease
+:sample-kotlin:compileReleaseJavaWithJavac
+:sample-kotlin:compileReleaseNdk NO-SOURCE
+:sample-kotlin:compileReleaseSources
+:sample-kotlin:lintVitalRelease
+:sample-kotlin:mergeReleaseShaders
+:sample-kotlin:compileReleaseShaders
+:sample-kotlin:generateReleaseAssets
+:sample-kotlin:mergeReleaseAssets
+:sample-kotlin:transformClassesWithDexBuilderForRelease
+:sample-kotlin:transformDexArchiveWithExternalLibsDexMergerForRelease
+:sample-kotlin:transformDexArchiveWithDexMergerForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample-kotlin:mergeReleaseJniLibFolders
+:sample-kotlin:transformNativeLibsWithMergeJniLibsForRelease
+:sample-kotlin:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-kotlin:processReleaseJavaRes NO-SOURCE
+:sample-kotlin:transformResourcesWithMergeJavaResForRelease
+:sample-kotlin:packageRelease
+:sample-kotlin:assembleRelease
+:sample-kotlin:assemble
+:sample-kotlin:build
+
+BUILD SUCCESSFUL in 1m 0s
+114 actionable tasks: 68 executed, 46 up-to-date
+
+2018-05-20 23:07:41,833 INFO  FullProcessService - Found APK file: /tmp/rdisk/2316/src/sample-kotlin/build/outputs/apk/release/sample-kotlin-release-unsigned.apk

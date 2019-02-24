@@ -1,0 +1,283 @@
+2018-04-02 07:07:24,516 INFO  DownloadService - Downloading "https://github.com/jcmore2/AppCrash/archive/master.zip", attempt 3
+2018-04-02 07:08:24,971 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 07:08:25,615 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 07:08:25,615 INFO  DownloadService - Downloading "https://github.com/jcmore2/AppCrash/archive/master.zip", attempt 3
+2018-04-02 07:09:26,808 DEBUG FullProcessService - Repository https://github.com/jcmore2/AppCrash available: true
+2018-04-02 07:09:26,808 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 07:09:26,808 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jcmore2/AppCrash, /tmp/rdisk/2379/src]
+2018-04-02 07:09:32,095 INFO  SysUtils - 
+2018-04-02 07:09:32,100 INFO  GitService - Deleted "/tmp/rdisk/2379/src/.git": true
+2018-04-02 07:09:32,103 INFO  FullProcessService - Size of directory with sources: 8 MB
+2018-04-02 07:09:32,103 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2379/src]
+2018-04-02 07:09:32,108 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2379/src/.git/
+
+2018-04-02 07:09:32,111 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2379/src/gradlew
+2018-04-02 07:09:32,114 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2379/src/appcrash/build.gradle /tmp/rdisk/2379/src/appcrashsample/build.gradle /tmp/rdisk/2379/src/build.gradle
+2018-04-02 07:09:32,116 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2379/src/settings.gradle /tmp/rdisk/2379/src/build.gradle /tmp/rdisk/2379/src/appcrashsample/build.gradle /tmp/rdisk/2379/src/appcrash/build.gradle
+2018-04-02 07:09:32,117 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/jcmore2/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-02 07:10:32,118 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/jcmore2/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 07:10:32,118 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/jcmore2/JCenter/master/installv1.gradle", attempt 3
+2018-04-02 07:11:32,119 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/jcmore2/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 07:11:32,119 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 07:11:32,119 INFO  ProjectFixService - Fixing project...
+2018-04-02 07:11:32,128 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2379/src/appcrash/local.properties
+2018-04-02 07:11:32,128 INFO  ProjectFixService - Build info for "/tmp/rdisk/2379/src/appcrash/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=19,minSdkVersion=14,targetSdkVersion=19]
+2018-04-02 07:11:32,128 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2379/src/appcrashsample/local.properties
+2018-04-02 07:11:32,128 INFO  ProjectFixService - Build info for "/tmp/rdisk/2379/src/appcrashsample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 07:11:32,129 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2379/src/local.properties
+2018-04-02 07:11:32,129 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-02 07:11:32,129 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-02 07:11:32,130 INFO  ProjectFixService - Build info for "/tmp/rdisk/2379/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 07:11:32,130 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 07:11:32,130 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:11:32,130 INFO  SysUtils - Execute command: [/tmp/rdisk/2379/src/gradlew, -b, /tmp/rdisk/2379/src/appcrash/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:11:40,028 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 07:11:40,028 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 07:11:40,029 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 07:11:40,029 INFO  SysUtils - Execute command: [/tmp/rdisk/2379/src/gradlew, -b, /tmp/rdisk/2379/src/appcrash/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 07:11:59,176 INFO  SysUtils - Configuration on demand is an incubating feature.
+:appcrash:compileLint
+:appcrash:copyDebugLint UP-TO-DATE
+:appcrash:mergeDebugProguardFiles
+:appcrash:preBuild UP-TO-DATE
+:appcrash:preDebugBuild UP-TO-DATE
+:appcrash:checkDebugManifest
+:appcrash:prepareDebugDependencies
+:appcrash:compileDebugAidl
+:appcrash:compileDebugRenderscript
+:appcrash:generateDebugBuildConfig
+:appcrash:generateDebugAssets UP-TO-DATE
+:appcrash:mergeDebugAssets
+:appcrash:generateDebugResValues
+:appcrash:generateDebugResources
+:appcrash:packageDebugResources
+:appcrash:processDebugManifest
+:appcrash:processDebugResources
+:appcrash:generateDebugSources
+:appcrash:processDebugJavaRes UP-TO-DATE
+:appcrash:compileDebugJava
+:appcrash:packageDebugJar
+:appcrash:compileDebugNdk UP-TO-DATE
+:appcrash:packageDebugJniLibs UP-TO-DATE
+:appcrash:packageDebugLocalJar UP-TO-DATE
+:appcrash:packageDebugRenderscript UP-TO-DATE
+:appcrash:bundleDebug
+:appcrash:compileDebugSources
+:appcrash:assembleDebug
+:appcrash:copyReleaseLint UP-TO-DATE
+:appcrash:mergeReleaseProguardFiles
+:appcrash:preReleaseBuild UP-TO-DATE
+:appcrash:checkReleaseManifest
+:appcrash:prepareReleaseDependencies
+:appcrash:compileReleaseAidl
+:appcrash:compileReleaseRenderscript
+:appcrash:generateReleaseBuildConfig
+:appcrash:generateReleaseAssets UP-TO-DATE
+:appcrash:mergeReleaseAssets
+:appcrash:generateReleaseResValues
+:appcrash:generateReleaseResources
+:appcrash:packageReleaseResources
+:appcrash:processReleaseManifest
+:appcrash:processReleaseResources
+:appcrash:generateReleaseSources
+:appcrash:processReleaseJavaRes UP-TO-DATE
+:appcrash:compileReleaseJava
+:appcrash:packageReleaseJar
+:appcrash:compileReleaseNdk UP-TO-DATE
+:appcrash:packageReleaseJniLibs UP-TO-DATE
+:appcrash:packageReleaseLocalJar UP-TO-DATE
+:appcrash:packageReleaseRenderscript UP-TO-DATE
+:appcrash:bundleRelease
+:appcrash:compileReleaseSources
+:appcrash:assembleRelease
+:appcrash:javadoc
+:appcrash:javadocJar
+:appcrash:sourcesJar
+:appcrash:assemble
+:appcrash:lint
+Ran lint on variant release: 12 issues found
+Ran lint on variant debug: 12 issues found
+Wrote HTML report to file:/tmp/rdisk/2379/src/appcrash/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2379/src/appcrash/build/outputs/lint-results.xml
+:appcrash:preCompileDebugUnitTestJava
+:appcrash:preDebugUnitTestBuild UP-TO-DATE
+:appcrash:prepareDebugUnitTestDependencies
+:appcrash:processDebugUnitTestJavaRes UP-TO-DATE
+:appcrash:compileDebugUnitTestJava UP-TO-DATE
+:appcrash:compileDebugUnitTestSources UP-TO-DATE
+:appcrash:mockableAndroidJar
+:appcrash:assembleDebugUnitTest
+:appcrash:testDebug
+:appcrash:preCompileReleaseUnitTestJava
+:appcrash:preReleaseUnitTestBuild UP-TO-DATE
+:appcrash:prepareReleaseUnitTestDependencies
+:appcrash:processReleaseUnitTestJavaRes UP-TO-DATE
+:appcrash:compileReleaseUnitTestJava UP-TO-DATE
+:appcrash:compileReleaseUnitTestSources UP-TO-DATE
+:appcrash:assembleReleaseUnitTest
+:appcrash:testRelease
+:appcrash:test
+:appcrash:check
+:appcrash:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.736 secs
+
+2018-04-02 07:11:59,186 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:11:59,186 INFO  SysUtils - Execute command: [/tmp/rdisk/2379/src/gradlew, -b, /tmp/rdisk/2379/src/appcrashsample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:12:06,257 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 07:12:06,257 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 07:12:06,257 INFO  SysUtils - Execute command: [/tmp/rdisk/2379/src/gradlew, -b, /tmp/rdisk/2379/src/appcrashsample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 07:12:29,212 INFO  SysUtils - Configuration on demand is an incubating feature.
+:appcrash:compileLint
+:appcrash:copyReleaseLint UP-TO-DATE
+:appcrash:mergeReleaseProguardFiles UP-TO-DATE
+:appcrash:preBuild UP-TO-DATE
+:appcrash:preReleaseBuild UP-TO-DATE
+:appcrash:checkReleaseManifest
+:appcrash:prepareReleaseDependencies
+:appcrash:compileReleaseAidl UP-TO-DATE
+:appcrash:compileReleaseRenderscript UP-TO-DATE
+:appcrash:generateReleaseBuildConfig UP-TO-DATE
+:appcrash:generateReleaseAssets UP-TO-DATE
+:appcrash:mergeReleaseAssets UP-TO-DATE
+:appcrash:generateReleaseResValues UP-TO-DATE
+:appcrash:generateReleaseResources UP-TO-DATE
+:appcrash:packageReleaseResources UP-TO-DATE
+:appcrash:processReleaseManifest UP-TO-DATE
+:appcrash:processReleaseResources UP-TO-DATE
+:appcrash:generateReleaseSources UP-TO-DATE
+:appcrash:processReleaseJavaRes UP-TO-DATE
+:appcrash:compileReleaseJava UP-TO-DATE
+:appcrash:packageReleaseJar UP-TO-DATE
+:appcrash:compileReleaseNdk UP-TO-DATE
+:appcrash:packageReleaseJniLibs UP-TO-DATE
+:appcrash:packageReleaseLocalJar UP-TO-DATE
+:appcrash:packageReleaseRenderscript UP-TO-DATE
+:appcrash:bundleRelease UP-TO-DATE
+:appcrashsample:preBuild UP-TO-DATE
+:appcrashsample:preDebugBuild UP-TO-DATE
+:appcrashsample:checkDebugManifest
+:appcrashsample:preReleaseBuild UP-TO-DATE
+:appcrashsample:prepareComAndroidSupportAppcompatV72221Library
+:appcrashsample:prepareComAndroidSupportSupportV42221Library
+:appcrashsample:prepareComJcmore2AppcrashAppcrash110Library
+:appcrashsample:prepareDebugDependencies
+:appcrashsample:compileDebugAidl
+:appcrashsample:compileDebugRenderscript
+:appcrashsample:generateDebugBuildConfig
+:appcrashsample:generateDebugAssets UP-TO-DATE
+:appcrashsample:mergeDebugAssets
+:appcrashsample:generateDebugResValues
+:appcrashsample:generateDebugResources
+:appcrashsample:mergeDebugResources
+:appcrashsample:processDebugManifest
+:appcrashsample:processDebugResources
+:appcrashsample:generateDebugSources
+:appcrashsample:processDebugJavaRes UP-TO-DATE
+:appcrashsample:compileDebugJava
+:appcrashsample:compileDebugNdk UP-TO-DATE
+:appcrashsample:compileDebugSources
+:appcrashsample:preDexDebug
+:appcrashsample:dexDebug
+:appcrashsample:validateDebugSigning
+:appcrashsample:packageDebug
+:appcrashsample:zipalignDebug
+:appcrashsample:assembleDebug
+:appcrashsample:checkReleaseManifest
+:appcrashsample:prepareReleaseDependencies
+:appcrashsample:compileReleaseAidl
+:appcrashsample:compileReleaseRenderscript
+:appcrashsample:generateReleaseBuildConfig
+:appcrashsample:generateReleaseAssets UP-TO-DATE
+:appcrashsample:mergeReleaseAssets
+:appcrashsample:generateReleaseResValues
+:appcrashsample:generateReleaseResources
+:appcrashsample:mergeReleaseResources
+:appcrashsample:processReleaseManifest
+:appcrashsample:processReleaseResources
+:appcrashsample:generateReleaseSources
+:appcrashsample:processReleaseJavaRes UP-TO-DATE
+:appcrashsample:compileReleaseJava
+:appcrashsample:compileReleaseNdk UP-TO-DATE
+:appcrashsample:compileReleaseSources
+:appcrashsample:lintVitalRelease
+:appcrashsample:preDexRelease
+:appcrashsample:dexRelease
+:appcrashsample:packageRelease
+:appcrashsample:assembleRelease
+:appcrashsample:assemble
+:appcrashsample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.511 secs
+
+2018-04-02 07:12:29,258 INFO  FullProcessService - Found APK file: /tmp/rdisk/2379/src/appcrashsample/build/outputs/apk/appcrashsample-release-unsigned.apk

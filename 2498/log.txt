@@ -1,0 +1,500 @@
+2018-04-02 02:39:41,335 INFO  DownloadService - Downloading "https://github.com/rubengees/Introduction/archive/master.zip", attempt 3
+2018-04-02 02:40:41,775 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 02:40:42,593 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 02:40:42,593 INFO  DownloadService - Downloading "https://github.com/rubengees/Introduction/archive/master.zip", attempt 3
+2018-04-02 02:41:43,844 DEBUG FullProcessService - Repository https://github.com/rubengees/Introduction available: true
+2018-04-02 02:41:43,844 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 02:41:43,845 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rubengees/Introduction, /tmp/rdisk/2498/src]
+2018-04-02 02:41:54,867 INFO  SysUtils - 
+2018-04-02 02:41:54,872 INFO  GitService - Deleted "/tmp/rdisk/2498/src/.git": true
+2018-04-02 02:41:54,875 INFO  FullProcessService - Size of directory with sources: 40 MB
+2018-04-02 02:41:54,876 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2498/src]
+2018-04-02 02:41:54,879 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2498/src/.git/
+
+2018-04-02 02:41:54,883 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2498/src/gradlew
+2018-04-02 02:41:54,886 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2498/src/introduction/build.gradle /tmp/rdisk/2498/src/sample/build.gradle /tmp/rdisk/2498/src/build.gradle
+2018-04-02 02:41:54,888 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2498/src/settings.gradle /tmp/rdisk/2498/src/sample/build.gradle /tmp/rdisk/2498/src/introduction/build.gradle /tmp/rdisk/2498/src/build.gradle
+2018-04-02 02:41:54,889 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 02:41:54,889 INFO  ProjectFixService - Fixing project...
+2018-04-02 02:41:54,895 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2498/src/introduction/local.properties
+2018-04-02 02:41:54,898 INFO  ProjectFixService - Build info for "/tmp/rdisk/2498/src/introduction/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,898 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2498/src/introduction/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,899 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2498/src/sample/local.properties
+2018-04-02 02:41:54,901 INFO  ProjectFixService - Build info for "/tmp/rdisk/2498/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,901 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2498/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,902 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2498/src/local.properties
+2018-04-02 02:41:54,902 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4.1-bin.zip
+2018-04-02 02:41:54,903 INFO  ProjectFixService - Build info for "/tmp/rdisk/2498/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,903 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2498/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-02 02:41:54,905 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 02:41:54,905 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 02:41:54,905 INFO  SysUtils - Execute command: [/tmp/rdisk/2498/src/gradlew, -b, /tmp/rdisk/2498/src/introduction/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 02:42:06,528 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-02 02:42:06,528 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 02:42:06,528 INFO  SysUtils - Execute command: [/tmp/rdisk/2498/src/gradlew, -b, /tmp/rdisk/2498/src/introduction/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 02:42:28,638 INFO  SysUtils - Configuration on demand is an incubating feature.
+:introduction:preBuild UP-TO-DATE
+:introduction:preDebugBuild UP-TO-DATE
+:introduction:compileDebugAidl
+:introduction:compileDebugNdk NO-SOURCE
+:introduction:compileDebugRenderscript
+:introduction:checkDebugManifest
+:introduction:generateDebugBuildConfig
+:introduction:prepareLintJar
+:introduction:generateDebugResValues
+:introduction:generateDebugResources
+:introduction:packageDebugResources
+:introduction:platformAttrExtractor
+:introduction:processDebugManifest
+:introduction:javaPreCompileDebug
+:introduction:processDebugResources
+:introduction:generateDebugSources
+:introduction:compileDebugJavaWithJavac
+:introduction:extractDebugAnnotations
+:introduction:mergeDebugShaders
+:introduction:compileDebugShaders
+:introduction:generateDebugAssets
+:introduction:mergeDebugAssets
+:introduction:mergeDebugConsumerProguardFiles
+:introduction:packageDebugRenderscript NO-SOURCE
+:introduction:processDebugJavaRes NO-SOURCE
+:introduction:transformResourcesWithMergeJavaResForDebug
+:introduction:transformClassesAndResourcesWithSyncLibJarsForDebug
+:introduction:mergeDebugJniLibFolders
+:introduction:transformNativeLibsWithMergeJniLibsForDebug
+:introduction:transformNativeLibsWithStripDebugSymbolForDebug
+:introduction:transformNativeLibsWithSyncJniLibsForDebug
+:introduction:bundleDebug
+:introduction:compileDebugSources
+:introduction:assembleDebug
+:introduction:preReleaseBuild UP-TO-DATE
+:introduction:compileReleaseAidl
+:introduction:compileReleaseNdk NO-SOURCE
+:introduction:compileReleaseRenderscript
+:introduction:checkReleaseManifest
+:introduction:generateReleaseBuildConfig SKIPPED
+:introduction:generateReleaseResValues
+:introduction:generateReleaseResources
+:introduction:packageReleaseResources
+:introduction:processReleaseManifest
+:introduction:processReleaseResources
+:introduction:generateReleaseSources
+:introduction:javaPreCompileRelease
+:introduction:compileReleaseJavaWithJavac
+:introduction:extractReleaseAnnotations
+:introduction:mergeReleaseShaders
+:introduction:compileReleaseShaders
+:introduction:generateReleaseAssets
+:introduction:mergeReleaseAssets
+:introduction:mergeReleaseConsumerProguardFiles
+:introduction:packageReleaseRenderscript NO-SOURCE
+:introduction:processReleaseJavaRes NO-SOURCE
+:introduction:transformResourcesWithMergeJavaResForRelease
+:introduction:transformClassesAndResourcesWithSyncLibJarsForRelease
+:introduction:mergeReleaseJniLibFolders
+:introduction:transformNativeLibsWithMergeJniLibsForRelease
+:introduction:transformNativeLibsWithStripDebugSymbolForRelease
+:introduction:transformNativeLibsWithSyncJniLibsForRelease
+:introduction:bundleRelease
+:introduction:compileReleaseSources
+:introduction:mergeReleaseResources
+:introduction:verifyReleaseResources
+:introduction:assembleRelease
+:introduction:assemble
+:introduction:build
+
+BUILD SUCCESSFUL in 21s
+47 actionable tasks: 47 executed
+
+2018-04-02 02:42:28,676 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 02:42:28,676 INFO  SysUtils - Execute command: [/tmp/rdisk/2498/src/gradlew, -b, /tmp/rdisk/2498/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 02:42:36,604 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 02:42:36,604 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 02:42:36,605 INFO  SysUtils - Execute command: [/tmp/rdisk/2498/src/gradlew, -b, /tmp/rdisk/2498/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 02:44:28,179 INFO  SysUtils - Configuration on demand is an incubating feature.
+:introduction:preBuild UP-TO-DATE
+:introduction:preDebugBuild UP-TO-DATE
+:introduction:compileDebugAidl UP-TO-DATE
+:introduction:compileDebugRenderscript UP-TO-DATE
+:introduction:checkDebugManifest UP-TO-DATE
+:introduction:generateDebugBuildConfig UP-TO-DATE
+:introduction:prepareLintJar UP-TO-DATE
+:introduction:generateDebugResValues UP-TO-DATE
+:introduction:generateDebugResources UP-TO-DATE
+:introduction:packageDebugResources UP-TO-DATE
+:introduction:platformAttrExtractor UP-TO-DATE
+:introduction:processDebugManifest UP-TO-DATE
+:introduction:processDebugResources UP-TO-DATE
+:introduction:generateDebugSources UP-TO-DATE
+:introduction:javaPreCompileDebug UP-TO-DATE
+:introduction:compileDebugJavaWithJavac UP-TO-DATE
+:introduction:processDebugJavaRes NO-SOURCE
+:introduction:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild
+:sample:compileDebugAidl
+:introduction:packageDebugRenderscript NO-SOURCE
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:prepareLintJar
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:introduction:mergeDebugShaders UP-TO-DATE
+:introduction:compileDebugShaders UP-TO-DATE
+:introduction:generateDebugAssets UP-TO-DATE
+:introduction:mergeDebugAssets UP-TO-DATE
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:extractTryWithResourcesSupportJarDebug
+:sample:transformClassesWithStackFramesFixerForDebug
+:sample:transformClassesWithDesugarForDebug
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:introduction:compileDebugNdk NO-SOURCE
+:introduction:mergeDebugJniLibFolders UP-TO-DATE
+:introduction:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:introduction:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:introduction:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:introduction:preReleaseBuild UP-TO-DATE
+:introduction:compileReleaseAidl UP-TO-DATE
+:introduction:compileReleaseRenderscript UP-TO-DATE
+:introduction:checkReleaseManifest UP-TO-DATE
+:introduction:generateReleaseBuildConfig SKIPPED
+:introduction:generateReleaseResValues UP-TO-DATE
+:introduction:generateReleaseResources UP-TO-DATE
+:introduction:packageReleaseResources UP-TO-DATE
+:introduction:processReleaseManifest UP-TO-DATE
+:introduction:processReleaseResources UP-TO-DATE
+:introduction:generateReleaseSources UP-TO-DATE
+:introduction:javaPreCompileRelease UP-TO-DATE
+:introduction:compileReleaseJavaWithJavac UP-TO-DATE
+:introduction:processReleaseJavaRes NO-SOURCE
+:introduction:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample:extractProguardFiles
+:sample:preReleaseBuild
+:sample:compileReleaseAidl
+:introduction:packageReleaseRenderscript NO-SOURCE
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:introduction:mergeReleaseShaders UP-TO-DATE
+:introduction:compileReleaseShaders UP-TO-DATE
+:introduction:generateReleaseAssets UP-TO-DATE
+:introduction:mergeReleaseAssets UP-TO-DATE
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:introduction:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:sample:checkReleaseProguardFiles
+:sample:extractTryWithResourcesSupportJarRelease
+:sample:transformClassesWithStackFramesFixerForRelease
+:sample:transformClassesWithDesugarForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/2.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/3.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/4.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/5.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/6.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/7.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/8.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/9.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/10.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/11.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/12.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/13.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/14.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/15.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/16.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/17.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/18.jar] (filtered)
+Reading program directory [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/1] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/processing-tools/runtime-deps/release/desugar_try_with_resources.jar] (filtered)
+Reading program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1137
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2498/src/sample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 2495
+  Final number of program classes:    1386
+Inlining subroutines...
+Optimizing...
+  Number of finalized classes:                 730
+  Number of unboxed enum classes:              3
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                696
+  Number of staticized methods:                377
+  Number of finalized methods:                 4750
+  Number of removed method parameters:         498
+  Number of inlined constant parameters:       114
+  Number of inlined constant return values:    63
+  Number of inlined short method calls:        1219
+  Number of inlined unique method calls:       1985
+  Number of inlined tail recursion calls:      18
+  Number of merged code blocks:                73
+  Number of variable peephole optimizations:   6297
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      41
+  Number of branch peephole optimizations:     1777
+  Number of string peephole optimizations:     470
+  Number of simplified instructions:           654
+  Number of removed instructions:              3677
+  Number of removed local variables:           280
+  Number of removed exception blocks:          105
+  Number of optimized local variable frames:   2197
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1386
+  Final number of program classes:    1328
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                9
+  Number of staticized methods:                10
+  Number of finalized methods:                 63
+  Number of removed method parameters:         183
+  Number of inlined constant parameters:       113
+  Number of inlined constant return values:    20
+  Number of inlined short method calls:        18
+  Number of inlined unique method calls:       20
+  Number of inlined tail recursion calls:      6
+  Number of merged code blocks:                8
+  Number of variable peephole optimizations:   438
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     46
+  Number of string peephole optimizations:     2
+  Number of simplified instructions:           186
+  Number of removed instructions:              5002
+  Number of removed local variables:           127
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   147
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1328
+  Final number of program classes:    1327
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                1
+  Number of finalized methods:                 3
+  Number of removed method parameters:         69
+  Number of inlined constant parameters:       37
+  Number of inlined constant return values:    20
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       6
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   77
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     12
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           21
+  Number of removed instructions:              641
+  Number of removed local variables:           5
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   18
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1327
+  Final number of program classes:    1327
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 2
+  Number of removed method parameters:         10
+  Number of inlined constant parameters:       8
+  Number of inlined constant return values:    20
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   11
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           4
+  Number of removed instructions:              86
+  Number of removed local variables:           2
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   1
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1327
+  Final number of program classes:    1327
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 0
+  Number of removed method parameters:         2
+  Number of inlined constant parameters:       5
+  Number of inlined constant return values:    20
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   8
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           1
+  Number of removed instructions:              7
+  Number of removed local variables:           0
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   0
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1327
+  Final number of program classes:    1327
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2498/src/sample/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/2.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/3.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/4.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/5.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/6.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/7.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/8.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/9.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/10.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/11.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/12.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/13.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/14.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/15.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/16.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/17.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/18.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/desugar/release/1] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/processing-tools/runtime-deps/release/desugar_try_with_resources.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2498/src/sample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2498/src/sample/build/outputs/mapping/release/dump.txt]...
+:sample:transformClassesWithDexForRelease
+:sample:transformClassesWithShrinkResForRelease
+Removed unused resources: Binary resource data reduced from 1337KB to 1308KB: Removed 2%
+:introduction:compileReleaseNdk NO-SOURCE
+:introduction:mergeReleaseJniLibFolders UP-TO-DATE
+:introduction:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:introduction:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:introduction:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL in 1m 51s
+97 actionable tasks: 63 executed, 34 up-to-date
+Exception in thread "Thread-17" java.lang.NoClassDefFoundError: com/android/utils/PathUtils$1
+	at com.android.utils.PathUtils.deleteIfExists(PathUtils.java:47)
+	at com.android.utils.PathUtils.lambda$addRemovePathHook$0(PathUtils.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.utils.PathUtils$1
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 3 more
+
+2018-04-02 02:44:28,280 INFO  FullProcessService - Found APK file: /tmp/rdisk/2498/src/sample/build/outputs/apk/release/sample-release-unsigned.apk

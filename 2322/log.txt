@@ -1,0 +1,207 @@
+2018-04-02 13:02:39,018 INFO  DownloadService - Downloading "https://github.com/justasm/Bugstick/archive/master.zip", attempt 3
+2018-04-02 13:02:39,679 INFO  DownloadService - Downloaded https://github.com/justasm/Bugstick/archive/master.zip, attempt 3
+2018-04-02 13:02:39,680 INFO  DownloadService - Size of file "/tmp/rdisk/2322/master.zip": 684 KB
+2018-04-02 13:02:39,680 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:02:39,680 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2322/master.zip: true
+2018-04-02 13:02:39,681 DEBUG ZipUtil - Extracting '/tmp/rdisk/2322/master.zip' into '/tmp/rdisk/2322/src'.
+2018-04-02 13:02:39,696 INFO  FullProcessService - Size of directory with sources: 724 KB
+2018-04-02 13:02:39,696 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2322/src]
+2018-04-02 13:02:39,706 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2322/src/.git/
+
+2018-04-02 13:02:39,709 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2322/src/Bugstick-master/gradlew
+2018-04-02 13:02:39,712 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2322/src/Bugstick-master/bugstick/build.gradle /tmp/rdisk/2322/src/Bugstick-master/sample/build.gradle /tmp/rdisk/2322/src/Bugstick-master/build.gradle
+2018-04-02 13:02:39,714 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2322/src/Bugstick-master/settings.gradle /tmp/rdisk/2322/src/Bugstick-master/sample/build.gradle /tmp/rdisk/2322/src/Bugstick-master/build.gradle /tmp/rdisk/2322/src/Bugstick-master/bugstick/build.gradle
+2018-04-02 13:02:39,714 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:02:39,714 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:02:39,721 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2322/src/Bugstick-master/bugstick/local.properties
+2018-04-02 13:02:39,721 INFO  ProjectFixService - Build info for "/tmp/rdisk/2322/src/Bugstick-master/bugstick/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 13:02:39,722 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2322/src/Bugstick-master/sample/local.properties
+2018-04-02 13:02:39,722 INFO  ProjectFixService - Build info for "/tmp/rdisk/2322/src/Bugstick-master/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-02 13:02:39,722 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2322/src/Bugstick-master/local.properties
+2018-04-02 13:02:39,723 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 13:02:39,723 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 13:02:39,725 INFO  ProjectFixService - Build info for "/tmp/rdisk/2322/src/Bugstick-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=23]
+2018-04-02 13:02:39,725 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:02:39,725 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:02:39,725 INFO  SysUtils - Execute command: [/tmp/rdisk/2322/src/Bugstick-master/gradlew, -b, /tmp/rdisk/2322/src/Bugstick-master/bugstick/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:02:46,869 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 13:02:46,869 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 13:02:46,869 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 13:02:46,870 INFO  SysUtils - Execute command: [/tmp/rdisk/2322/src/Bugstick-master/gradlew, -b, /tmp/rdisk/2322/src/Bugstick-master/bugstick/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 13:03:02,859 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bugstick:compileLint
+:bugstick:copyDebugLint UP-TO-DATE
+:bugstick:preBuild UP-TO-DATE
+:bugstick:preDebugBuild UP-TO-DATE
+:bugstick:checkDebugManifest
+:bugstick:prepareDebugDependencies
+:bugstick:compileDebugAidl
+:bugstick:compileDebugRenderscript
+:bugstick:generateDebugBuildConfig
+:bugstick:generateDebugAssets UP-TO-DATE
+:bugstick:mergeDebugAssets
+:bugstick:generateDebugResValues
+:bugstick:generateDebugResources
+:bugstick:packageDebugResources
+:bugstick:processDebugManifest
+:bugstick:processDebugResources
+:bugstick:generateDebugSources
+:bugstick:processDebugJavaRes UP-TO-DATE
+:bugstick:compileDebugJavaWithJavac
+:bugstick:extractDebugAnnotations
+:bugstick:mergeDebugProguardFiles
+:bugstick:packageDebugJar
+:bugstick:compileDebugNdk UP-TO-DATE
+:bugstick:packageDebugJniLibs UP-TO-DATE
+:bugstick:packageDebugLocalJar UP-TO-DATE
+:bugstick:packageDebugRenderscript UP-TO-DATE
+:bugstick:bundleDebug
+:bugstick:compileDebugSources
+:bugstick:assembleDebug
+:bugstick:copyReleaseLint UP-TO-DATE
+:bugstick:preReleaseBuild UP-TO-DATE
+:bugstick:checkReleaseManifest
+:bugstick:prepareReleaseDependencies
+:bugstick:compileReleaseAidl
+:bugstick:compileReleaseRenderscript
+:bugstick:generateReleaseBuildConfig
+:bugstick:generateReleaseAssets UP-TO-DATE
+:bugstick:mergeReleaseAssets
+:bugstick:generateReleaseResValues
+:bugstick:generateReleaseResources
+:bugstick:packageReleaseResources
+:bugstick:processReleaseManifest
+:bugstick:processReleaseResources
+:bugstick:generateReleaseSources
+:bugstick:processReleaseJavaRes UP-TO-DATE
+:bugstick:compileReleaseJavaWithJavac
+:bugstick:extractReleaseAnnotations
+:bugstick:mergeReleaseProguardFiles
+:bugstick:packageReleaseJar
+:bugstick:compileReleaseNdk UP-TO-DATE
+:bugstick:packageReleaseJniLibs UP-TO-DATE
+:bugstick:packageReleaseLocalJar UP-TO-DATE
+:bugstick:packageReleaseRenderscript UP-TO-DATE
+:bugstick:bundleRelease
+:bugstick:compileReleaseSources
+:bugstick:assembleRelease
+:bugstick:assemble
+:bugstick:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/2322/src/Bugstick-master/bugstick/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2322/src/Bugstick-master/bugstick/build/outputs/lint-results.xml
+:bugstick:preDebugUnitTestBuild UP-TO-DATE
+:bugstick:prepareDebugUnitTestDependencies
+:bugstick:processDebugUnitTestJavaRes UP-TO-DATE
+:bugstick:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:bugstick:compileDebugUnitTestSources UP-TO-DATE
+:bugstick:mockableAndroidJar
+:bugstick:assembleDebugUnitTest
+:bugstick:testDebugUnitTest
+:bugstick:preReleaseUnitTestBuild UP-TO-DATE
+:bugstick:prepareReleaseUnitTestDependencies
+:bugstick:processReleaseUnitTestJavaRes UP-TO-DATE
+:bugstick:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:bugstick:compileReleaseUnitTestSources UP-TO-DATE
+:bugstick:assembleReleaseUnitTest
+:bugstick:testReleaseUnitTest
+:bugstick:test
+:bugstick:check
+:bugstick:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.55 secs
+
+2018-04-02 13:03:02,867 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:03:02,867 INFO  SysUtils - Execute command: [/tmp/rdisk/2322/src/Bugstick-master/gradlew, -b, /tmp/rdisk/2322/src/Bugstick-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:03:09,669 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-02 13:03:09,670 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 13:03:09,670 INFO  SysUtils - Execute command: [/tmp/rdisk/2322/src/Bugstick-master/gradlew, -b, /tmp/rdisk/2322/src/Bugstick-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 13:03:30,394 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bugstick:compileLint
+:bugstick:copyReleaseLint UP-TO-DATE
+:bugstick:preBuild UP-TO-DATE
+:bugstick:preReleaseBuild UP-TO-DATE
+:bugstick:checkReleaseManifest
+:bugstick:prepareReleaseDependencies
+:bugstick:compileReleaseAidl UP-TO-DATE
+:bugstick:compileReleaseRenderscript UP-TO-DATE
+:bugstick:generateReleaseBuildConfig UP-TO-DATE
+:bugstick:generateReleaseAssets UP-TO-DATE
+:bugstick:mergeReleaseAssets UP-TO-DATE
+:bugstick:generateReleaseResValues UP-TO-DATE
+:bugstick:generateReleaseResources UP-TO-DATE
+:bugstick:packageReleaseResources UP-TO-DATE
+:bugstick:processReleaseManifest UP-TO-DATE
+:bugstick:processReleaseResources UP-TO-DATE
+:bugstick:generateReleaseSources UP-TO-DATE
+:bugstick:processReleaseJavaRes UP-TO-DATE
+:bugstick:compileReleaseJavaWithJavac UP-TO-DATE
+:bugstick:extractReleaseAnnotations UP-TO-DATE
+:bugstick:mergeReleaseProguardFiles UP-TO-DATE
+:bugstick:packageReleaseJar UP-TO-DATE
+:bugstick:compileReleaseNdk UP-TO-DATE
+:bugstick:packageReleaseJniLibs UP-TO-DATE
+:bugstick:packageReleaseLocalJar UP-TO-DATE
+:bugstick:packageReleaseRenderscript UP-TO-DATE
+:bugstick:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareBugstickMasterBugstickUnspecifiedLibrary
+:sample:prepareComAndroidSupportAppcompatV72301Library
+:sample:prepareComAndroidSupportSupportV42301Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.284 secs
+
+2018-04-02 13:03:30,438 INFO  FullProcessService - Found APK file: /tmp/rdisk/2322/src/Bugstick-master/sample/build/outputs/apk/sample-release-unsigned.apk

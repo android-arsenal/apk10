@@ -1,0 +1,164 @@
+2018-04-02 13:10:04,134 INFO  DownloadService - Downloading "https://github.com/rharter/ViewPager-Android/archive/master.zip", attempt 3
+2018-04-02 13:10:04,594 INFO  DownloadService - Downloaded https://github.com/rharter/ViewPager-Android/archive/master.zip, attempt 3
+2018-04-02 13:10:04,595 INFO  DownloadService - Size of file "/tmp/rdisk/2312/master.zip": 181 KB
+2018-04-02 13:10:04,595 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 13:10:04,595 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2312/master.zip: true
+2018-04-02 13:10:04,595 DEBUG ZipUtil - Extracting '/tmp/rdisk/2312/master.zip' into '/tmp/rdisk/2312/src'.
+2018-04-02 13:10:04,607 INFO  FullProcessService - Size of directory with sources: 298 KB
+2018-04-02 13:10:04,607 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2312/src]
+2018-04-02 13:10:04,611 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2312/src/.git/
+
+2018-04-02 13:10:04,614 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2312/src/ViewPager-Android-master/gradlew
+2018-04-02 13:10:04,617 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle /tmp/rdisk/2312/src/ViewPager-Android-master/build.gradle
+2018-04-02 13:10:04,620 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2312/src/ViewPager-Android-master/settings.gradle /tmp/rdisk/2312/src/ViewPager-Android-master/build.gradle /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle
+2018-04-02 13:10:04,620 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 13:10:04,620 INFO  ProjectFixService - Fixing project...
+2018-04-02 13:10:04,626 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/local.properties
+2018-04-02 13:10:04,627 INFO  ProjectFixService - Build info for "/tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-02 13:10:04,627 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-02 13:10:04,628 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/local.properties
+2018-04-02 13:10:04,628 INFO  ProjectFixService - Build info for "/tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-02 13:10:04,628 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-02 13:10:04,629 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2312/src/ViewPager-Android-master/local.properties
+2018-04-02 13:10:04,630 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.8-all.zip
+2018-04-02 13:10:04,630 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.8-bin.zip)
+2018-04-02 13:10:04,631 INFO  ProjectFixService - Build info for "/tmp/rdisk/2312/src/ViewPager-Android-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2018-04-02 13:10:04,631 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 13:10:04,631 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:10:04,631 INFO  SysUtils - Execute command: [/tmp/rdisk/2312/src/ViewPager-Android-master/gradlew, -b, /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:10:11,999 INFO  ProjectTaskService - Detected possible tasks: 44
+2018-04-02 13:10:12,000 INFO  ProjectTaskService - Excluded tasks (5): deviceCheck lint connectedCheck uninstallAll check
+2018-04-02 13:10:12,000 INFO  SysUtils - Execute command: [/tmp/rdisk/2312/src/ViewPager-Android-master/gradlew, -b, /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, build]
+2018-04-02 13:10:20,792 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:ViewPager:compileLint
+:ViewPager:copyDebugLint UP-TO-DATE
+:ViewPager:mergeDebugProguardFiles
+:ViewPager:packageDebugAidl UP-TO-DATE
+:ViewPager:preBuild UP-TO-DATE
+:ViewPager:preDebugBuild UP-TO-DATE
+:ViewPager:preReleaseBuild UP-TO-DATE
+:ViewPager:preTestBuild UP-TO-DATE
+:ViewPager:prepareComAndroidSupportAppcompatV71800Library
+:ViewPager:prepareDebugDependencies
+:ViewPager:compileDebugAidl
+:ViewPager:compileDebugRenderscript
+:ViewPager:generateDebugBuildConfig
+:ViewPager:mergeDebugAssets
+:ViewPager:mergeDebugResources
+:ViewPager:processDebugManifest
+:ViewPager:processDebugResources
+:ViewPager:generateDebugSources
+:ViewPager:compileDebugNote: /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/src/main/java/com/ryanharter/viewpager/ViewPager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ViewPager:processDebugJavaRes UP-TO-DATE
+:ViewPager:packageDebugJar
+:ViewPager:packageDebugLocalJar UP-TO-DATE
+:ViewPager:packageDebugRenderscript UP-TO-DATE
+:ViewPager:packageDebugResources
+:ViewPager:bundleDebug
+:ViewPager:assembleDebug
+:ViewPager:copyReleaseLint UP-TO-DATE
+:ViewPager:mergeReleaseProguardFiles
+:ViewPager:packageReleaseAidl UP-TO-DATE
+:ViewPager:prepareReleaseDependencies
+:ViewPager:compileReleaseAidl
+:ViewPager:compileReleaseRenderscript
+:ViewPager:generateReleaseBuildConfig
+:ViewPager:mergeReleaseAssets
+:ViewPager:mergeReleaseResources
+:ViewPager:processReleaseManifest
+:ViewPager:processReleaseResources
+:ViewPager:generateReleaseSources
+:ViewPager:compileReleaseNote: /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPager/src/main/java/com/ryanharter/viewpager/ViewPager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ViewPager:processReleaseJavaRes UP-TO-DATE
+:ViewPager:packageReleaseJar
+:ViewPager:packageReleaseLocalJar UP-TO-DATE
+:ViewPager:packageReleaseRenderscript UP-TO-DATE
+:ViewPager:packageReleaseResources
+:ViewPager:bundleRelease
+:ViewPager:assembleRelease
+:ViewPager:assemble
+:ViewPager:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.352 secs
+
+2018-04-02 13:10:20,814 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 13:10:20,814 INFO  SysUtils - Execute command: [/tmp/rdisk/2312/src/ViewPager-Android-master/gradlew, -b, /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 13:10:26,183 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-02 13:10:26,183 INFO  ProjectTaskService - Excluded tasks (8): deviceCheck lint uninstallRelease connectedCheck uninstallAll check installDebug uninstallDebug
+2018-04-02 13:10:26,183 INFO  SysUtils - Execute command: [/tmp/rdisk/2312/src/ViewPager-Android-master/gradlew, -b, /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, installDebug, -x, uninstallDebug, build]
+2018-04-02 13:10:45,417 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:ViewPager:compileLint
+:ViewPager:copyReleaseLint UP-TO-DATE
+:ViewPager:mergeReleaseProguardFiles UP-TO-DATE
+:ViewPager:packageReleaseAidl UP-TO-DATE
+:ViewPager:preBuild UP-TO-DATE
+:ViewPager:preReleaseBuild UP-TO-DATE
+:ViewPager:preDebugBuild UP-TO-DATE
+:ViewPager:preTestBuild UP-TO-DATE
+:ViewPager:prepareComAndroidSupportAppcompatV71800Library UP-TO-DATE
+:ViewPager:prepareReleaseDependencies
+:ViewPager:compileReleaseAidl UP-TO-DATE
+:ViewPager:compileReleaseRenderscript UP-TO-DATE
+:ViewPager:generateReleaseBuildConfig UP-TO-DATE
+:ViewPager:mergeReleaseAssets UP-TO-DATE
+:ViewPager:mergeReleaseResources UP-TO-DATE
+:ViewPager:processReleaseManifest UP-TO-DATE
+:ViewPager:processReleaseResources UP-TO-DATE
+:ViewPager:generateReleaseSources UP-TO-DATE
+:ViewPager:compileRelease UP-TO-DATE
+:ViewPager:processReleaseJavaRes UP-TO-DATE
+:ViewPager:packageReleaseJar UP-TO-DATE
+:ViewPager:packageReleaseLocalJar UP-TO-DATE
+:ViewPager:packageReleaseRenderscript UP-TO-DATE
+:ViewPager:packageReleaseResources UP-TO-DATE
+:ViewPager:bundleRelease UP-TO-DATE
+:ViewPagerSample:preBuild UP-TO-DATE
+:ViewPagerSample:preDebugBuild UP-TO-DATE
+:ViewPagerSample:preReleaseBuild UP-TO-DATE
+:ViewPagerSample:prepareComAndroidSupportAppcompatV71800Library
+:ViewPagerSample:prepareViewPagerAndroidMasterViewPagerUnspecifiedLibrary
+:ViewPagerSample:prepareDebugDependencies
+:ViewPagerSample:compileDebugAidl
+:ViewPagerSample:compileDebugRenderscript
+:ViewPagerSample:generateDebugBuildConfig
+:ViewPagerSample:mergeDebugAssets
+:ViewPagerSample:mergeDebugResources
+:ViewPagerSample:processDebugManifest
+:ViewPagerSample:processDebugResources
+:ViewPagerSample:generateDebugSources
+:ViewPagerSample:compileDebug
+:ViewPagerSample:dexDebug
+:ViewPagerSample:processDebugJavaRes UP-TO-DATE
+:ViewPagerSample:validateDebugSigning
+:ViewPagerSample:packageDebug
+:ViewPagerSample:assembleDebug
+:ViewPagerSample:prepareReleaseDependencies
+:ViewPagerSample:compileReleaseAidl
+:ViewPagerSample:compileReleaseRenderscript
+:ViewPagerSample:generateReleaseBuildConfig
+:ViewPagerSample:mergeReleaseAssets
+:ViewPagerSample:mergeReleaseResources
+:ViewPagerSample:processReleaseManifest
+:ViewPagerSample:processReleaseResources
+:ViewPagerSample:generateReleaseSources
+:ViewPagerSample:compileRelease
+:ViewPagerSample:dexRelease
+:ViewPagerSample:processReleaseJavaRes UP-TO-DATE
+:ViewPagerSample:packageRelease
+:ViewPagerSample:assembleRelease
+:ViewPagerSample:assemble
+:ViewPagerSample:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.814 secs
+
+2018-04-02 13:10:45,456 INFO  FullProcessService - Found APK file: /tmp/rdisk/2312/src/ViewPager-Android-master/ViewPagerSample/build/apk/ViewPagerSample-release-unsigned.apk

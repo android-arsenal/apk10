@@ -1,0 +1,393 @@
+2018-04-02 14:48:23,990 INFO  DownloadService - Downloading "https://github.com/spirosoik/RapidAndroidFramework/archive/master.zip", attempt 3
+2018-04-02 14:49:24,562 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:49:26,070 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:49:26,070 INFO  DownloadService - Downloading "https://github.com/spirosoik/RapidAndroidFramework/archive/master.zip", attempt 3
+2018-04-02 14:50:27,383 DEBUG FullProcessService - Repository https://github.com/spirosoik/RapidAndroidFramework available: true
+2018-04-02 14:50:27,383 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:50:27,383 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/spirosoik/RapidAndroidFramework, /tmp/rdisk/2258/src]
+2018-04-02 14:50:28,986 INFO  SysUtils - 
+2018-04-02 14:50:28,992 INFO  GitService - Deleted "/tmp/rdisk/2258/src/.git": true
+2018-04-02 14:50:28,999 INFO  FullProcessService - Size of directory with sources: 310 KB
+2018-04-02 14:50:28,999 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2258/src]
+2018-04-02 14:50:29,003 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2258/src/.git/
+
+2018-04-02 14:50:29,008 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2258/src/gradlew
+2018-04-02 14:50:29,013 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2258/src/app/build.gradle /tmp/rdisk/2258/src/build.gradle
+2018-04-02 14:50:29,018 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2258/src/settings.gradle /tmp/rdisk/2258/src/scripts/robolectric-support.gradle /tmp/rdisk/2258/src/build.gradle /tmp/rdisk/2258/src/app/build.gradle
+2018-04-02 14:50:29,018 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:50:29,018 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:50:29,029 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2258/src/app/local.properties
+2018-04-02 14:50:29,031 INFO  ProjectFixService - Build info for "/tmp/rdisk/2258/src/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 14:50:29,031 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2258/src/local.properties
+2018-04-02 14:50:29,031 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 14:50:29,031 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 14:50:29,033 INFO  ProjectFixService - Build info for "/tmp/rdisk/2258/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 14:50:29,033 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:50:29,033 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:50:29,033 INFO  SysUtils - Execute command: [/tmp/rdisk/2258/src/gradlew, -b, /tmp/rdisk/2258/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:50:48,259 INFO  ProjectTaskService - Detected possible tasks: 78
+2018-04-02 14:50:48,259 INFO  ProjectTaskService - Excluded tasks (21): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test countDebugDexMethods check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug countReleaseDexMethods
+2018-04-02 14:50:48,259 INFO  SysUtils - Execute command: [/tmp/rdisk/2258/src/gradlew, -b, /tmp/rdisk/2258/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, countDebugDexMethods, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, -x, countReleaseDexMethods, build]
+2018-04-02 14:53:17,566 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:preUatBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72311Library
+:app:prepareComAndroidSupportMediarouterV72220Library
+:app:prepareComAndroidSupportMultidex101Library
+:app:prepareComAndroidSupportRecyclerviewV72311Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareComCrashlyticsSdkAndroidAnswers122Library
+:app:prepareComCrashlyticsSdkAndroidBeta112Library
+:app:prepareComCrashlyticsSdkAndroidCrashlytics232Library
+:app:prepareComCrashlyticsSdkAndroidCrashlyticsCore232Library
+:app:prepareComDigitsSdkAndroidDigits160Library
+:app:prepareComFacebookAndroidFacebookAndroidSdk412Library
+:app:prepareComGoogleAndroidGmsPlayServices830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAds830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAnalytics830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppindexing830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppinvite830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppstate830Library
+:app:prepareComGoogleAndroidGmsPlayServicesAuth830Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase830Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement830Library
+:app:prepareComGoogleAndroidGmsPlayServicesCast830Library
+:app:prepareComGoogleAndroidGmsPlayServicesDrive830Library
+:app:prepareComGoogleAndroidGmsPlayServicesFitness830Library
+:app:prepareComGoogleAndroidGmsPlayServicesGames830Library
+:app:prepareComGoogleAndroidGmsPlayServicesGcm830Library
+:app:prepareComGoogleAndroidGmsPlayServicesIdentity830Library
+:app:prepareComGoogleAndroidGmsPlayServicesLocation830Library
+:app:prepareComGoogleAndroidGmsPlayServicesMaps830Library
+:app:prepareComGoogleAndroidGmsPlayServicesMeasurement830Library
+:app:prepareComGoogleAndroidGmsPlayServicesNearby830Library
+:app:prepareComGoogleAndroidGmsPlayServicesPanorama830Library
+:app:prepareComGoogleAndroidGmsPlayServicesPlus830Library
+:app:prepareComGoogleAndroidGmsPlayServicesSafetynet830Library
+:app:prepareComGoogleAndroidGmsPlayServicesVision830Library
+:app:prepareComGoogleAndroidGmsPlayServicesWallet830Library
+:app:prepareComGoogleAndroidGmsPlayServicesWearable830Library
+:app:prepareComJakewhartonHugoHugoRuntime121Library
+:app:prepareComTwitterSdkAndroidTweetComposer080Library
+:app:prepareComTwitterSdkAndroidTweetUi130Library
+:app:prepareComTwitterSdkAndroidTwitter160Library
+:app:prepareComTwitterSdkAndroidTwitterCore140Library
+:app:prepareIoFabricSdkAndroidFabric134Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:processDebugManifest
+:app:fabricGenerateResourcesDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2258/src/app/src/main/res/drawable/loader.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavacwarning: File for type 'ollie.AdapterHolderImpl' created in the last round will not be subject to annotation processing.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+build config error: skipping missing, empty or corrupt aspectpath entry: /tmp/rdisk/2258/src/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.3.0/jars/classes.jar
+incorrect classpath: /tmp/rdisk/2258/src/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.3.0/jars/classes.jar
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:collectDebugMultiDexComponents
+:app:unzipJacocoAgent
+:app:instrumentDebug
+:app:packageAllDebugClassesForMultiDex
+:app:shrinkDebugMultiDexComponents
+:app:createDebugMainDexClassList
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+Total methods in app-debug.apk: 77958
+Total fields in app-debug.apk:  43615
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2258/src/app/src/main/res/drawable/loader.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavacwarning: File for type 'ollie.AdapterHolderImpl' created in the last round will not be subject to annotation processing.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:collectReleaseMultiDexComponents
+:app:proguardRelease
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find superclass or interface bolts.AppLinkResolver
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find superclass or interface bolts.Continuation
+Warning: com.facebook.appevents.AppEventsLogger: can't find referenced class bolts.AppLinks
+Warning: com.facebook.appevents.AppEventsLogger: can't find referenced class bolts.AppLinks
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLinkResolver
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Continuation
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Continuation
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.messenger.MessengerUtils: can't find referenced class bolts.AppLinks
+Warning: com.facebook.messenger.MessengerUtils: can't find referenced class bolts.AppLinks
+Warning: com.google.android.gms.internal.zzac: can't find referenced class android.net.http.AndroidHttpClient
+Warning: com.google.android.gms.internal.zzac: can't find referenced class android.net.http.AndroidHttpClient
+Warning: com.google.android.gms.internal.zzw: can't find referenced method 'void addHeader(java.lang.String,java.lang.String)' in program class com.google.android.gms.internal.zzw$zza
+Warning: com.google.android.gms.internal.zzw$zza: can't find referenced method 'void setURI(java.net.URI)' in program class com.google.android.gms.internal.zzw$zza
+Warning: okio.DeflaterSink: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: there were 81 unresolved references to classes or interfaces.
+         You may need to add missing library jars or update their versions.
+         If your code works fine without the missing classes, you can suppress
+         the warnings with '-dontwarn' options.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedclass)
+Warning: there were 2 unresolved references to program class members.
+         Your input classes appear to be inconsistent.
+         You may need to recompile the code.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedprogramclassmember)
+Warning: can't write resource [.readme] (Duplicate zip entry [classes.jar:.readme])
+Warning: can't write resource [.readme] (Duplicate zip entry [classes.jar:.readme])
+:app:shrinkReleaseMultiDexComponents
+:app:createReleaseMainDexClassList
+:app:retraceReleaseMainDexClassList
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+Total methods in app-release-unsigned.apk: 29636
+Total fields in app-release-unsigned.apk:  13503
+:app:checkUatManifest
+:app:prepareUatDependencies
+:app:compileUatAidl
+:app:compileUatRenderscript
+:app:generateUatBuildConfig
+:app:generateUatAssets UP-TO-DATE
+:app:mergeUatAssets
+:app:processUatManifest
+:app:fabricGenerateResourcesUat
+:app:generateUatResValues
+:app:generateUatResources
+:app:mergeUatResources
+AAPT: /tmp/rdisk/2258/src/app/src/main/res/drawable/loader.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processUatResources
+:app:generateUatSources
+:app:processUatJavaRes UP-TO-DATE
+:app:compileUatJavaWithJavacwarning: File for type 'ollie.AdapterHolderImpl' created in the last round will not be subject to annotation processing.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:app:compileUatNdk UP-TO-DATE
+:app:compileUatSources
+:app:collectUatMultiDexComponents
+:app:proguardUat
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find superclass or interface bolts.AppLinkResolver
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find superclass or interface bolts.Continuation
+Warning: android.support.v4.app.NotificationCompat$NotificationCompatImplBase: can't find referenced method 'void setLatestEventInfo(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)' in library class android.app.Notification
+Warning: android.support.v4.app.NotificationCompat$NotificationCompatImplGingerbread: can't find referenced method 'void setLatestEventInfo(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)' in library class android.app.Notification
+Warning: android.support.v4.app.NotificationCompatGingerbread: can't find referenced method 'void setLatestEventInfo(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)' in library class android.app.Notification
+Warning: android.support.v7.media.MediaRouter: can't find referenced class android.support.v7.media.MediaRouter$CallbackFlags
+Warning: android.support.v7.media.MediaRouter$RouteInfo: can't find referenced class android.support.v7.media.MediaRouter$RouteInfo$PlaybackVolume
+Warning: android.support.v7.media.MediaRouter$RouteInfo: can't find referenced class android.support.v7.media.MediaRouter$RouteInfo$PlaybackType
+Warning: com.facebook.appevents.AppEventsLogger: can't find referenced class bolts.AppLinks
+Warning: com.facebook.appevents.AppEventsLogger: can't find referenced class bolts.AppLinks
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLinkResolver
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Continuation
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.Continuation
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$1: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.Task$TaskCompletionSource
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink
+Warning: com.facebook.applinks.FacebookAppLinkResolver$2: can't find referenced class bolts.AppLink$Target
+Warning: com.facebook.messenger.MessengerUtils: can't find referenced class bolts.AppLinks
+Warning: com.facebook.messenger.MessengerUtils: can't find referenced class bolts.AppLinks
+Warning: com.google.android.gms.internal.zzac: can't find referenced class android.net.http.AndroidHttpClient
+Warning: com.google.android.gms.internal.zzac: can't find referenced class android.net.http.AndroidHttpClient
+Warning: com.google.android.gms.internal.zzw: can't find referenced method 'void addHeader(java.lang.String,java.lang.String)' in program class com.google.android.gms.internal.zzw$zza
+Warning: com.google.android.gms.internal.zzw$zza: can't find referenced method 'void setURI(java.net.URI)' in program class com.google.android.gms.internal.zzw$zza
+Warning: okio.DeflaterSink: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Files
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class java.nio.file.Path
+Warning: okio.Okio: can't find referenced class java.nio.file.OpenOption
+Warning: okio.Okio: can't find referenced class org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+Warning: there were 84 unresolved references to classes or interfaces.
+         You may need to add missing library jars or update their versions.
+         If your code works fine without the missing classes, you can suppress
+         the warnings with '-dontwarn' options.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedclass)
+Warning: there were 2 unresolved references to program class members.
+         Your input classes appear to be inconsistent.
+         You may need to recompile the code.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedprogramclassmember)
+Warning: there were 3 unresolved references to library class members.
+         You probably need to update the library versions.
+         (http://proguard.sourceforge.net/manual/troubleshooting.html#unresolvedlibraryclassmember)
+Warning: can't write resource [.readme] (Duplicate zip entry [classes.jar:.readme])
+Warning: can't write resource [.readme] (Duplicate zip entry [classes.jar:.readme])
+:app:shrinkUatMultiDexComponents
+:app:createUatMainDexClassList
+:app:retraceUatMainDexClassList
+:app:dexUat
+:app:crashlyticsStoreDeobsUat
+:app:crashlyticsUploadDeobsUat
+:app:packageUat
+:app:assembleUat
+Total methods in app-uat-unsigned.apk: 29360
+Total fields in app-uat-unsigned.apk:  12471
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 28.884 secs
+
+2018-04-02 14:53:17,721 INFO  FullProcessService - Found APK file: /tmp/rdisk/2258/src/app/build/outputs/apk/app-debug.apk

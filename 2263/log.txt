@@ -1,0 +1,152 @@
+2018-04-02 14:34:34,559 INFO  DownloadService - Downloading "https://github.com/konmik/satellite/archive/master.zip", attempt 3
+2018-04-02 14:35:35,171 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:35:35,868 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:35:35,868 INFO  DownloadService - Downloading "https://github.com/konmik/satellite/archive/master.zip", attempt 3
+2018-04-02 14:36:37,122 DEBUG FullProcessService - Repository https://github.com/konmik/satellite available: true
+2018-04-02 14:36:37,122 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:36:37,122 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/konmik/satellite, /tmp/rdisk/2263/src]
+2018-04-02 14:36:38,584 INFO  SysUtils - 
+2018-04-02 14:36:38,589 INFO  GitService - Deleted "/tmp/rdisk/2263/src/.git": true
+2018-04-02 14:36:38,593 INFO  FullProcessService - Size of directory with sources: 206 KB
+2018-04-02 14:36:38,593 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2263/src]
+2018-04-02 14:36:38,598 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2263/src/.git/
+
+2018-04-02 14:36:38,601 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2263/src/gradlew
+2018-04-02 14:36:38,604 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2263/src/example/build.gradle /tmp/rdisk/2263/src/satellite/build.gradle /tmp/rdisk/2263/src/valuemap/build.gradle /tmp/rdisk/2263/src/valuemapbenchmark/build.gradle /tmp/rdisk/2263/src/build.gradle
+2018-04-02 14:36:38,607 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2263/src/valuemapbenchmark/build.gradle /tmp/rdisk/2263/src/valuemap/build.gradle /tmp/rdisk/2263/src/settings.gradle /tmp/rdisk/2263/src/satellite/build.gradle /tmp/rdisk/2263/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2263/src/example/build.gradle /tmp/rdisk/2263/src/build.gradle
+2018-04-02 14:36:38,608 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:36:38,608 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:36:38,618 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2263/src/example/local.properties
+2018-04-02 14:36:38,618 INFO  ProjectFixService - Build info for "/tmp/rdisk/2263/src/example/build.gradle": [buildToolsVersion=23,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 14:36:38,618 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2263/src/example/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 14:36:38,619 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2263/src/satellite/local.properties
+2018-04-02 14:36:38,620 INFO  ProjectFixService - Build info for "/tmp/rdisk/2263/src/satellite/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:36:38,620 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2263/src/valuemap/local.properties
+2018-04-02 14:36:38,621 INFO  ProjectFixService - Build info for "/tmp/rdisk/2263/src/valuemap/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:36:38,621 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2263/src/valuemapbenchmark/local.properties
+2018-04-02 14:36:38,621 INFO  ProjectFixService - Build info for "/tmp/rdisk/2263/src/valuemapbenchmark/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 14:36:38,621 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2263/src/local.properties
+2018-04-02 14:36:38,622 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 14:36:38,622 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 14:36:38,622 INFO  ProjectFixService - Build info for "/tmp/rdisk/2263/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 14:36:38,622 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:36:38,622 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:36:38,623 INFO  SysUtils - Execute command: [/tmp/rdisk/2263/src/gradlew, -b, /tmp/rdisk/2263/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:36:56,272 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 14:36:56,272 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 14:36:56,272 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 14:36:56,272 INFO  SysUtils - Execute command: [/tmp/rdisk/2263/src/gradlew, -b, /tmp/rdisk/2263/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 14:37:34,132 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:satellite:compileLint
+:satellite:copyReleaseLint UP-TO-DATE
+:satellite:preBuild UP-TO-DATE
+:satellite:preReleaseBuild UP-TO-DATE
+:satellite:checkReleaseManifest
+:satellite:prepareReleaseDependencies
+:satellite:compileReleaseAidl
+:satellite:compileReleaseRenderscript
+:satellite:generateReleaseBuildConfig
+:satellite:generateReleaseAssets UP-TO-DATE
+:satellite:mergeReleaseAssets
+:satellite:generateReleaseResValues
+:satellite:generateReleaseResources
+:satellite:packageReleaseResources
+:satellite:processReleaseManifest
+:satellite:processReleaseResources
+:satellite:generateReleaseSources
+:satellite:processReleaseJavaRes UP-TO-DATE
+:satellite:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:satellite:extractReleaseAnnotations
+:satellite:mergeReleaseProguardFiles
+:satellite:packageReleaseJar
+:satellite:compileReleaseNdk UP-TO-DATE
+:satellite:packageReleaseJniLibs UP-TO-DATE
+:satellite:packageReleaseLocalJar UP-TO-DATE
+:satellite:packageReleaseRenderscript UP-TO-DATE
+:satellite:bundleRelease
+:example:prepareComAndroidSupportAppcompatV72221Library
+:example:prepareComAndroidSupportSupportV42221Library
+:example:prepareIoReactivexRxandroid101Library
+:example:prepareSrcSatelliteUnspecifiedLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:processDebugJavaRes UP-TO-DATE
+:example:compileDebugJavaWithJavac
+:example:compileRetrolambdaDebug
+:example:compileDebugNdk UP-TO-DATE
+:example:compileDebugSources
+:example:preDexDebug
+:example:dexDebug
+:example:validateDebugSigning
+:example:packageDebug
+:example:zipalignDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseAssets UP-TO-DATE
+:example:mergeReleaseAssets
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:processReleaseJavaRes UP-TO-DATE
+:example:compileReleaseJavaWithJavac
+:example:compileRetrolambdaRelease
+:example:compileReleaseNdk UP-TO-DATE
+:example:compileReleaseSources
+:example:preDexRelease
+:example:dexRelease
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:compileLint
+:example:lint
+Ran lint on variant release: 19 issues found
+Ran lint on variant debug: 19 issues found
+Wrote HTML report to file:/tmp/rdisk/2263/src/example/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2263/src/example/build/outputs/lint-results.xml
+:example:preDebugUnitTestBuild UP-TO-DATE
+:example:prepareDebugUnitTestDependencies
+:example:processDebugUnitTestJavaRes UP-TO-DATE
+:example:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:example:compileDebugUnitTestSources UP-TO-DATE
+:example:mockableAndroidJar
+:example:assembleDebugUnitTest
+:example:testDebugUnitTest
+:example:preReleaseUnitTestBuild UP-TO-DATE
+:example:prepareReleaseUnitTestDependencies
+:example:processReleaseUnitTestJavaRes UP-TO-DATE
+:example:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:example:compileReleaseUnitTestSources UP-TO-DATE
+:example:assembleReleaseUnitTest
+:example:testReleaseUnitTest
+:example:test
+:example:check
+:example:build
+
+BUILD SUCCESSFUL
+
+Total time: 37.424 secs
+
+2018-04-02 14:37:34,172 INFO  FullProcessService - Found APK file: /tmp/rdisk/2263/src/example/build/outputs/apk/example-release-unsigned.apk

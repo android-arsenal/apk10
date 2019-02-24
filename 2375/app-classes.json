@@ -1,0 +1,5 @@
+{
+  "android.support.annotation" : [ "AnimRes", "AnimatorRes", "AnyRes", "ArrayRes", "AttrRes", "BinderThread", "BoolRes", "CallSuper", "CheckResult", "ColorInt", "ColorRes", "DimenRes", "DrawableRes", "FloatRange", "FractionRes", "IdRes", "IntDef", "IntRange", "IntegerRes", "InterpolatorRes", "Keep", "LayoutRes", "MainThread", "MenuRes", "NonNull", "Nullable", "PluralsRes", "RawRes", "RequiresPermission", "RequiresPermission$Read", "RequiresPermission$Write", "Size", "StringDef", "StringRes", "StyleRes", "StyleableRes", "TransitionRes", "UiThread", "VisibleForTesting", "WorkerThread", "XmlRes" ],
+  "com.venmo.view" : [ "ArrowAlignment", "ArrowAlignmentHelper", "ArrowAlignmentHelper$1", "ArrowLocation", "BottomArrowLocation", "BuildConfig", "R", "R$attr", "R$dimen", "R$id", "R$integer", "R$styleable", "TooltipView", "TopArrowLocation" ],
+  "com.venmo.view.tooltip.example" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$integer", "R$layout", "R$menu", "R$string", "R$style", "R$styleable", "TooltipActivity" ]
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.example.frenchtoast",
+    "label" : null,
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFeElEQVRo3u1abWxTVRh+3nPu7doNNsYsIyPQoYQFBBciDA2BhARRfpgYYhYVEw2JRYMxkxg/8D8iMf7CPxp/aAwSpiSGBAUMCSIRzEjExA0sDDecrOvW727dvffc1x/tytZ27bZs6yA7yU3fnfec3ec55/3qOQXmW2kbFVIysyw2ZhYaE5Ga3AxmwcxirqxyITyUbzAR2Wm5BkAFAC6hhSSIaCAbW14CIwOYuRzAJ8y8G4BW4g2wmPmkEOIdIhrMJpEXnFLqUyHEPuYiCx+6CUT/ATw78uv9V1OftY/n13f9DFSuAKpXFyPxRiQS0QDsy1aI0Q6bXv0aALuZGcxsALABqJzHNhVOv6LUbx+rvu4bufpkUOGMV1mXDqn+3ju5+shthfMHlHnpIxUcCKi87wBsZjaICEKI5y5fvrwkjVHmEBgxp46OjsXMrAMAEcn0GJnzXDwokQxJmeiRC298Kf1+/1j9+RYJc0hqoQ5ZfvOYDAQCY/Xn3pSwLan7r0hn1ykZDAZlnveINAYA0Ht7e2uyTT/Hs6PRKIo6rREGbv2U+dP174/QEt3w+/2pjqAPuNt2T3+rFdIMo7+/P9XR8wsQ7czonde/BtnDCIVChV9rGBjXhCaTH9B5GuBRodlWcPT9DiJCX18f4Pt+7D+zBqH3/wEAGBgYAK5/B/C9V4ihPmjhGym3KkJiogQKt0WrADHW/+3ypRk5XP1k1hoQbFctiFJ98drtWSg0sMuNtNkiHA7PMIGlTYit2QdoToAkkvXPwli6JQPArF6LwdV7AKEDQsdQw8uwFj+amW7WbcVw/bMASUBzYmj9fqjyugxBAIhEIhOCMuUYv/CJ/Qgs3wViC7ZjUQb8SBtc40Vy1UupCOdYeG8viMAgJDa8h+S618GkgfUFY+aOyJFIBFVVVdNEwDYBIzamy12zCIFQHKSSeQGw0EBEIJXMIUhEYOlMmYE9PKpfAFoZmFNjotFoQRLFCVw/Blz9DDDiUBXLABrr34unUh8QFSp8ALahatZheO1e2BXLEIvFxp1TmMCVw0DHcQQ3HYbl3oCRxJxvtadTFrCh3zmH8otvI7nlMOyqVYjH45MkEL4FtH+LwPZvYLuWZDLDTINP+YiEseIZcLkbZW1HkNzxOYQQk8oDwLUvkHjkhRR4zB740bLl3gjoLsiIbwphNNYFa4GnZOAzsaNyJSjWMwUCZVUQRqik4IkIlAyCHZXjOvH4BFY/D2fPeQjYJQMvkgHI8N/gh9ZPYQc8O2DVPIbKa0cg1ODsgx+8C+el92Gs3QuWZVMrJVzbDsIqr0P1hdfg6jo1a+AdvuNwXXgLZsOLsDxPF8wdhWshoWOw4VXEGw9AD7XP2i6IkA/DGz+AtfypoomvaDHndrsB0sbNpDMhTzhrT7QarbL+K3k4nZZyupThdFq/D8ylXRD3C/ipRaEHyYRKBXLehOb6LszJKPRAmtB8IrvfEhnft1FISilyDneFBoI9eyBZgYTMLbOFoELHKgwA3d3dicbGRkVEsG1bERFh+TaWfx2D4/YPqWNATCB6iMlFmIxsxEAD7eBN746ckisikpZlqa6uriEAaG1t5bzH6On7J4fP5/vK4/E067oOZgYRId7zJ/TuMyBlTipKTDY8kl4GVb8LXLkyM84wDLS3t59samrak76xsQsRoM2bNzccPXr0UH19/VZN0yQzMxFRLBYrfqomxHQ5KRMRmaapOjs7f21pafmwra2tI43FHvciI02iDEDtzp07H66rq6uwLCszwTRN0rSZu7gkIh4lC7/fnzh79mwnAD8zD2dfs45zvsrC6/XqSN0RV5b4qfB6vfqEL7pHtxMnTki3213SnxoEAgFubm5WmG9ztP0Py8U9BMDDy6IAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 68,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.example.frenchtoast\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<application android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.example.frenchtoast.ExampleApplication\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"FrenchToast Sample\" android:name=\"com.example.frenchtoast.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 356639,
+  "crc32" : 2289419266,
+  "sha256" : "f5a4d79896a0eff3b4c4329f702866f00b5249a1ac25031eb8917e90a059ee35",
+  "buildTime" : 1526033035000
+}

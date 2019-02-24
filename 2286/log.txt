@@ -1,0 +1,109 @@
+2018-05-22 07:49:18,137 INFO  DownloadService - Downloading "https://github.com/graphhopper/graphhopper/archive/master.zip", attempt 3
+2018-05-22 07:49:22,659 INFO  DownloadService - Downloaded https://github.com/graphhopper/graphhopper/archive/master.zip, attempt 3
+2018-05-22 07:49:22,660 INFO  DownloadService - Size of file "/tmp/rdisk/2286/master.zip": 23 MB
+2018-05-22 07:49:22,660 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-22 07:49:22,662 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2286/master.zip: true
+2018-05-22 07:49:22,662 DEBUG ZipUtil - Extracting '/tmp/rdisk/2286/master.zip' into '/tmp/rdisk/2286/src'.
+2018-05-22 07:49:23,005 INFO  FullProcessService - Size of directory with sources: 37 MB
+2018-05-22 07:49:23,005 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2286/src]
+2018-05-22 07:49:23,011 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2286/src/.git/
+
+2018-05-22 07:49:23,034 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2286/src/graphhopper-master/android/gradlew
+2018-05-22 07:49:23,057 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2286/src/graphhopper-master/android/app/build.gradle /tmp/rdisk/2286/src/graphhopper-master/android/build.gradle
+2018-05-22 07:49:23,081 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2286/src/graphhopper-master/android/settings.gradle /tmp/rdisk/2286/src/graphhopper-master/android/build.gradle /tmp/rdisk/2286/src/graphhopper-master/android/app/build.gradle
+2018-05-22 07:49:23,081 INFO  ProjectBuildService - Remote scripts: none
+2018-05-22 07:49:23,081 INFO  ProjectFixService - Fixing project...
+2018-05-22 07:49:23,129 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2286/src/graphhopper-master/android/app/local.properties
+2018-05-22 07:49:23,130 INFO  ProjectFixService - Build info for "/tmp/rdisk/2286/src/graphhopper-master/android/app/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=22]
+2018-05-22 07:49:23,130 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2286/src/graphhopper-master/android/local.properties
+2018-05-22 07:49:23,131 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-05-22 07:49:23,131 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-05-22 07:49:23,132 INFO  ProjectFixService - Build info for "/tmp/rdisk/2286/src/graphhopper-master/android/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=10,targetSdkVersion=22]
+2018-05-22 07:49:23,133 INFO  ProjectFixService - Project was maybe fixed
+2018-05-22 07:49:23,137 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-22 07:49:23,137 INFO  SysUtils - Execute command: [/tmp/rdisk/2286/src/graphhopper-master/android/gradlew, -b, /tmp/rdisk/2286/src/graphhopper-master/android/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-22 07:49:30,592 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-22 07:49:30,593 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-22 07:49:30,593 INFO  SysUtils - Execute command: [/tmp/rdisk/2286/src/graphhopper-master/android/gradlew, -b, /tmp/rdisk/2286/src/graphhopper-master/android/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-22 07:50:22,517 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:extractProguardFiles
+:app:preDebugBuild
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:app:processDebugResources
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/2286/src/graphhopper-master/android/app/src/main/java/com/graphhopper/android/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2286/src/graphhopper-master/android/app/src/main/java/com/graphhopper/android/GHAsyncTask.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithAndroidGradleClassShrinkerForDebug
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:preReleaseBuild
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/2286/src/graphhopper-master/android/app/src/main/java/com/graphhopper/android/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2286/src/graphhopper-master/android/app/src/main/java/com/graphhopper/android/GHAsyncTask.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithAndroidGradleClassShrinkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 51s
+51 actionable tasks: 51 executed
+
+2018-05-22 07:50:22,695 INFO  FullProcessService - Found APK file: /tmp/rdisk/2286/src/graphhopper-master/android/app/build/outputs/apk/debug/app-debug.apk

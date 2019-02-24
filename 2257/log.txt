@@ -1,0 +1,14 @@
+2018-04-02 14:53:40,362 INFO  DownloadService - Downloading "https://github.com/florent37/BeautifulParallax/archive/master.zip", attempt 3
+2018-04-02 14:54:40,979 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:54:42,052 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:54:42,052 INFO  DownloadService - Downloading "https://github.com/florent37/BeautifulParallax/archive/master.zip", attempt 3
+2018-04-02 14:55:43,510 DEBUG FullProcessService - Repository https://github.com/florent37/BeautifulParallax available: true
+2018-04-02 14:55:43,510 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:55:43,510 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/florent37/BeautifulParallax, /tmp/rdisk/2257/src]
+2018-04-02 14:55:51,164 INFO  SysUtils - 
+2018-04-02 14:55:51,174 INFO  GitService - Deleted "/tmp/rdisk/2257/src/.git": true
+2018-04-02 14:55:51,178 INFO  FullProcessService - Size of directory with sources: 56 MB
+2018-04-02 14:55:51,178 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-02 14:55:51,178 ERROR FullProcessService - Project will not be processed
+2018-04-02 14:55:51,178 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 14:55:51,180 ERROR FullProcessService - Could not find generated or existed APK file

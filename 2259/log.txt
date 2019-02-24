@@ -1,0 +1,173 @@
+2018-04-02 14:45:33,882 INFO  DownloadService - Downloading "https://github.com/GleasonK/pubnub-android-webrtc/archive/master.zip", attempt 3
+2018-04-02 14:46:34,703 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:46:40,814 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:46:40,814 INFO  DownloadService - Downloading "https://github.com/GleasonK/pubnub-android-webrtc/archive/master.zip", attempt 3
+2018-04-02 14:47:42,761 DEBUG FullProcessService - Repository https://github.com/GleasonK/pubnub-android-webrtc available: true
+2018-04-02 14:47:42,761 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:47:42,761 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/GleasonK/pubnub-android-webrtc, /tmp/rdisk/2259/src]
+2018-04-02 14:47:44,387 INFO  SysUtils - 
+2018-04-02 14:47:44,394 INFO  GitService - Deleted "/tmp/rdisk/2259/src/.git": true
+2018-04-02 14:47:44,395 INFO  FullProcessService - Size of directory with sources: 120 KB
+2018-04-02 14:47:44,395 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2259/src]
+2018-04-02 14:47:44,400 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2259/src/.git/
+
+2018-04-02 14:47:44,401 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2259/src/gradlew
+2018-04-02 14:47:44,402 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2259/src/pnwebrtc/build.gradle /tmp/rdisk/2259/src/build.gradle
+2018-04-02 14:47:44,403 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2259/src/settings.gradle /tmp/rdisk/2259/src/pnwebrtc/build.gradle /tmp/rdisk/2259/src/maven_push.gradle /tmp/rdisk/2259/src/build.gradle
+2018-04-02 14:47:44,403 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:47:44,403 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:47:44,408 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2259/src/pnwebrtc/local.properties
+2018-04-02 14:47:44,408 INFO  ProjectFixService - Build info for "/tmp/rdisk/2259/src/pnwebrtc/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 14:47:44,408 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2259/src/local.properties
+2018-04-02 14:47:44,409 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.1-all.zip
+2018-04-02 14:47:44,409 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.1-bin.zip)
+2018-04-02 14:47:44,410 INFO  ProjectFixService - Build info for "/tmp/rdisk/2259/src/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 14:47:44,410 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:47:44,410 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:47:44,410 INFO  SysUtils - Execute command: [/tmp/rdisk/2259/src/gradlew, -b, /tmp/rdisk/2259/src/pnwebrtc/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:48:00,529 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-02 14:48:00,529 INFO  ProjectTaskService - Excluded tasks (9): lintDebug androidJavadocs deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-02 14:48:00,529 INFO  SysUtils - Execute command: [/tmp/rdisk/2259/src/gradlew, -b, /tmp/rdisk/2259/src/pnwebrtc/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 14:48:09,541 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:pnwebrtc:androidJavadocsJar
+:pnwebrtc:androidSourcesJar
+:pnwebrtc:compileLint
+:pnwebrtc:copyDebugLint UP-TO-DATE
+:pnwebrtc:mergeDebugProguardFiles
+:pnwebrtc:preBuild
+:pnwebrtc:preDebugBuild
+:pnwebrtc:checkDebugManifest
+:pnwebrtc:preDebugTestBuild
+:pnwebrtc:preReleaseBuild
+:pnwebrtc:prepareIoPristineLibjingle9694Library
+:pnwebrtc:prepareDebugDependencies
+:pnwebrtc:compileDebugAidl
+:pnwebrtc:compileDebugRenderscript
+:pnwebrtc:generateDebugBuildConfig
+:pnwebrtc:generateDebugAssets UP-TO-DATE
+:pnwebrtc:mergeDebugAssets
+:pnwebrtc:generateDebugResValues
+:pnwebrtc:generateDebugResources
+:pnwebrtc:mergeDebugResources
+:pnwebrtc:processDebugManifest
+:pnwebrtc:processDebugResources
+:pnwebrtc:generateDebugSources
+:pnwebrtc:compileDebugJava
+:pnwebrtc:processDebugJavaRes UP-TO-DATE
+:pnwebrtc:packageDebugJar
+:pnwebrtc:compileDebugNdk
+:pnwebrtc:packageDebugJniLibs UP-TO-DATE
+:pnwebrtc:packageDebugLocalJar UP-TO-DATE
+:pnwebrtc:packageDebugRenderscript UP-TO-DATE
+:pnwebrtc:packageDebugResources
+:pnwebrtc:bundleDebug
+:pnwebrtc:assembleDebug
+:pnwebrtc:copyReleaseLint UP-TO-DATE
+:pnwebrtc:mergeReleaseProguardFiles
+:pnwebrtc:checkReleaseManifest
+:pnwebrtc:prepareReleaseDependencies
+:pnwebrtc:compileReleaseAidl
+:pnwebrtc:compileReleaseRenderscript
+:pnwebrtc:generateReleaseBuildConfig
+:pnwebrtc:generateReleaseAssets UP-TO-DATE
+:pnwebrtc:mergeReleaseAssets
+:pnwebrtc:generateReleaseResValues
+:pnwebrtc:generateReleaseResources
+:pnwebrtc:mergeReleaseResources
+:pnwebrtc:processReleaseManifest
+:pnwebrtc:processReleaseResources
+:pnwebrtc:generateReleaseSources
+:pnwebrtc:compileReleaseJava
+:pnwebrtc:processReleaseJavaRes UP-TO-DATE
+:pnwebrtc:packageReleaseJar
+:pnwebrtc:compileReleaseNdk
+:pnwebrtc:packageReleaseJniLibs UP-TO-DATE
+:pnwebrtc:packageReleaseLocalJar UP-TO-DATE
+:pnwebrtc:packageReleaseRenderscript UP-TO-DATE
+:pnwebrtc:packageReleaseResources
+:pnwebrtc:bundleRelease
+:pnwebrtc:assembleRelease
+:pnwebrtc:signArchives SKIPPED
+:pnwebrtc:assemble
+:pnwebrtc:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.533 secs
+
+2018-04-02 14:48:09,547 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:48:09,547 INFO  SysUtils - Execute command: [/tmp/rdisk/2259/src/gradlew, -b, /tmp/rdisk/2259/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:48:16,453 INFO  ProjectTaskService - Detected possible tasks: 57
+2018-04-02 14:48:16,453 INFO  ProjectTaskService - Excluded tasks (9): lintDebug androidJavadocs deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-02 14:48:16,453 INFO  SysUtils - Execute command: [/tmp/rdisk/2259/src/gradlew, -b, /tmp/rdisk/2259/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 14:48:23,953 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+:pnwebrtc:androidJavadocsJar UP-TO-DATE
+:pnwebrtc:androidSourcesJar UP-TO-DATE
+:pnwebrtc:compileLint
+:pnwebrtc:copyDebugLint UP-TO-DATE
+:pnwebrtc:mergeDebugProguardFiles UP-TO-DATE
+:pnwebrtc:preBuild
+:pnwebrtc:preDebugBuild
+:pnwebrtc:checkDebugManifest
+:pnwebrtc:preDebugTestBuild
+:pnwebrtc:preReleaseBuild
+:pnwebrtc:prepareIoPristineLibjingle9694Library UP-TO-DATE
+:pnwebrtc:prepareDebugDependencies
+:pnwebrtc:compileDebugAidl UP-TO-DATE
+:pnwebrtc:compileDebugRenderscript UP-TO-DATE
+:pnwebrtc:generateDebugBuildConfig UP-TO-DATE
+:pnwebrtc:generateDebugAssets UP-TO-DATE
+:pnwebrtc:mergeDebugAssets UP-TO-DATE
+:pnwebrtc:generateDebugResValues UP-TO-DATE
+:pnwebrtc:generateDebugResources UP-TO-DATE
+:pnwebrtc:mergeDebugResources UP-TO-DATE
+:pnwebrtc:processDebugManifest UP-TO-DATE
+:pnwebrtc:processDebugResources UP-TO-DATE
+:pnwebrtc:generateDebugSources UP-TO-DATE
+:pnwebrtc:compileDebugJava UP-TO-DATE
+:pnwebrtc:processDebugJavaRes UP-TO-DATE
+:pnwebrtc:packageDebugJar UP-TO-DATE
+:pnwebrtc:compileDebugNdk UP-TO-DATE
+:pnwebrtc:packageDebugJniLibs UP-TO-DATE
+:pnwebrtc:packageDebugLocalJar UP-TO-DATE
+:pnwebrtc:packageDebugRenderscript UP-TO-DATE
+:pnwebrtc:packageDebugResources UP-TO-DATE
+:pnwebrtc:bundleDebug UP-TO-DATE
+:pnwebrtc:assembleDebug UP-TO-DATE
+:pnwebrtc:copyReleaseLint UP-TO-DATE
+:pnwebrtc:mergeReleaseProguardFiles UP-TO-DATE
+:pnwebrtc:checkReleaseManifest
+:pnwebrtc:prepareReleaseDependencies
+:pnwebrtc:compileReleaseAidl UP-TO-DATE
+:pnwebrtc:compileReleaseRenderscript UP-TO-DATE
+:pnwebrtc:generateReleaseBuildConfig UP-TO-DATE
+:pnwebrtc:generateReleaseAssets UP-TO-DATE
+:pnwebrtc:mergeReleaseAssets UP-TO-DATE
+:pnwebrtc:generateReleaseResValues UP-TO-DATE
+:pnwebrtc:generateReleaseResources UP-TO-DATE
+:pnwebrtc:mergeReleaseResources UP-TO-DATE
+:pnwebrtc:processReleaseManifest UP-TO-DATE
+:pnwebrtc:processReleaseResources UP-TO-DATE
+:pnwebrtc:generateReleaseSources UP-TO-DATE
+:pnwebrtc:compileReleaseJava UP-TO-DATE
+:pnwebrtc:processReleaseJavaRes UP-TO-DATE
+:pnwebrtc:packageReleaseJar UP-TO-DATE
+:pnwebrtc:compileReleaseNdk UP-TO-DATE
+:pnwebrtc:packageReleaseJniLibs UP-TO-DATE
+:pnwebrtc:packageReleaseLocalJar UP-TO-DATE
+:pnwebrtc:packageReleaseRenderscript UP-TO-DATE
+:pnwebrtc:packageReleaseResources UP-TO-DATE
+:pnwebrtc:bundleRelease UP-TO-DATE
+:pnwebrtc:assembleRelease UP-TO-DATE
+:pnwebrtc:signArchives SKIPPED
+:pnwebrtc:assemble UP-TO-DATE
+:pnwebrtc:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.039 secs
+
+2018-04-02 14:48:23,960 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 14:48:23,965 ERROR FullProcessService - Could not find generated or existed APK file

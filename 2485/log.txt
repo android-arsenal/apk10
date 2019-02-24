@@ -1,0 +1,251 @@
+2018-04-02 03:18:08,862 INFO  DownloadService - Downloading "https://github.com/noties/SharedPreferencesGenerator/archive/master.zip", attempt 3
+2018-04-02 03:19:09,457 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:19:10,153 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:19:10,153 INFO  DownloadService - Downloading "https://github.com/noties/SharedPreferencesGenerator/archive/master.zip", attempt 3
+2018-04-02 03:20:11,366 DEBUG FullProcessService - Repository https://github.com/noties/SharedPreferencesGenerator available: true
+2018-04-02 03:20:11,366 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:20:11,366 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/noties/SharedPreferencesGenerator, /tmp/rdisk/2485/src]
+2018-04-02 03:20:13,048 INFO  SysUtils - 
+2018-04-02 03:20:13,053 INFO  GitService - Deleted "/tmp/rdisk/2485/src/.git": true
+2018-04-02 03:20:13,056 INFO  FullProcessService - Size of directory with sources: 198 KB
+2018-04-02 03:20:13,056 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2485/src]
+2018-04-02 03:20:13,061 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2485/src/.git/
+
+2018-04-02 03:20:13,064 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2485/src/gradlew
+2018-04-02 03:20:13,067 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2485/src/sample/build.gradle /tmp/rdisk/2485/src/spg-library/build.gradle /tmp/rdisk/2485/src/build.gradle /tmp/rdisk/2485/src/spg-annotations/build.gradle /tmp/rdisk/2485/src/spg-processor/build.gradle
+2018-04-02 03:20:13,070 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2485/src/spg-processor/build.gradle /tmp/rdisk/2485/src/spg-library/build.gradle /tmp/rdisk/2485/src/spg-annotations/build.gradle /tmp/rdisk/2485/src/settings.gradle /tmp/rdisk/2485/src/sample/build.gradle /tmp/rdisk/2485/src/gradle_maven_jar_publish.gradle /tmp/rdisk/2485/src/build.gradle
+2018-04-02 03:20:13,070 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-02 03:21:13,072 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 03:21:13,072 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:21:13,072 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:21:13,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2485/src/sample/local.properties
+2018-04-02 03:21:13,098 INFO  ProjectFixService - Build info for "/tmp/rdisk/2485/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 03:21:13,098 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2485/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 03:21:13,099 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2485/src/spg-library/local.properties
+2018-04-02 03:21:13,106 INFO  ProjectFixService - Build info for "/tmp/rdisk/2485/src/spg-library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 03:21:13,106 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2485/src/spg-library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 03:21:13,106 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2485/src/local.properties
+2018-04-02 03:21:13,107 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.5-all.zip
+2018-04-02 03:21:13,107 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.5-bin.zip)
+2018-04-02 03:21:13,114 INFO  ProjectFixService - Build info for "/tmp/rdisk/2485/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 03:21:13,114 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2485/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 03:21:13,114 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2485/src/spg-annotations/local.properties
+2018-04-02 03:21:13,121 INFO  ProjectFixService - Build info for "/tmp/rdisk/2485/src/spg-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 03:21:13,121 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2485/src/spg-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 03:21:13,122 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2485/src/spg-processor/local.properties
+2018-04-02 03:21:13,129 INFO  ProjectFixService - Build info for "/tmp/rdisk/2485/src/spg-processor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 03:21:13,129 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2485/src/spg-processor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 03:21:13,129 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:21:13,129 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:21:13,129 INFO  SysUtils - Execute command: [/tmp/rdisk/2485/src/gradlew, -b, /tmp/rdisk/2485/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:21:25,162 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-02 03:21:25,162 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 03:21:25,162 INFO  SysUtils - Execute command: [/tmp/rdisk/2485/src/gradlew, -b, /tmp/rdisk/2485/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 03:21:43,130 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample:preBuild UP-TO-DATE
+:spg-library:preBuild UP-TO-DATE
+:spg-library:preDebugBuild UP-TO-DATE
+:spg-library:checkDebugManifest
+:spg-library:processDebugManifest
+:sample:preDebugBuild
+:spg-library:compileDebugAidl
+:sample:compileDebugAidl
+:spg-library:packageDebugRenderscript NO-SOURCE
+:sample:compileDebugRenderscript
+:sample:checkDebugManifest
+:sample:generateDebugBuildConfig
+:sample:prepareLintJar
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:spg-library:compileDebugRenderscript
+:spg-library:generateDebugResValues
+:spg-library:generateDebugResources
+:spg-library:packageDebugResources
+:sample:mergeDebugResources
+:sample:createDebugCompatibleScreenManifests
+:sample:processDebugManifest
+:sample:splitsDiscoveryTaskDebug
+:spg-library:platformAttrExtractor
+:spg-library:generateDebugBuildConfig
+:spg-library:prepareLintJar
+:spg-library:javaPreCompileDebug
+:spg-library:processDebugJavaRes NO-SOURCE
+:spg-processor:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+/tmp/rdisk/2485/src/spg-processor/src/main/java/ru/noties/spg/processor/data/SPGPreferenceParser.java:19: warning: NotImplementedException is internal proprietary API and may be removed in a future release
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+                                             ^
+/tmp/rdisk/2485/src/spg-processor/src/main/java/ru/noties/spg/processor/data/SPGPreferenceParser.java:188: warning: NotImplementedException is internal proprietary API and may be removed in a future release
+        throw new NotImplementedException();
+                  ^
+3 warnings
+
+:spg-processor:processResources
+:spg-processor:classes
+:spg-processor:jar
+:sample:compileDebugNdk NO-SOURCE
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:spg-library:mergeDebugShaders
+:spg-library:compileDebugShaders
+:spg-library:generateDebugAssets
+:spg-library:mergeDebugAssets
+:sample:mergeDebugAssets
+:sample:mergeDebugJniLibFolders
+:spg-library:compileDebugNdk NO-SOURCE
+:spg-library:mergeDebugJniLibFolders
+:spg-library:transformNativeLibsWithMergeJniLibsForDebug
+:spg-library:transformNativeLibsWithStripDebugSymbolForDebug
+:spg-library:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:validateSigningDebug
+:spg-library:preReleaseBuild UP-TO-DATE
+:spg-library:checkReleaseManifest
+:spg-library:processReleaseManifest
+:sample:preReleaseBuild
+:spg-library:compileReleaseAidl
+:sample:compileReleaseAidl
+:spg-library:packageReleaseRenderscript NO-SOURCE
+:sample:compileReleaseRenderscript
+:sample:checkReleaseManifest
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:spg-library:compileReleaseRenderscript
+:spg-library:generateReleaseResValues
+:spg-library:generateReleaseResources
+:spg-library:packageReleaseResources
+:sample:mergeReleaseResources
+:sample:createReleaseCompatibleScreenManifests
+:sample:processReleaseManifest
+:sample:splitsDiscoveryTaskRelease
+:spg-library:generateReleaseBuildConfig
+:spg-library:javaPreCompileRelease
+:spg-library:processReleaseJavaRes NO-SOURCE
+:sample:compileReleaseNdk NO-SOURCE
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:spg-library:mergeReleaseShaders
+:spg-library:compileReleaseShaders
+:spg-library:generateReleaseAssets
+:spg-library:mergeReleaseAssets
+:sample:mergeReleaseAssets
+:sample:mergeReleaseJniLibFolders
+:spg-library:compileReleaseNdk NO-SOURCE
+:spg-library:mergeReleaseJniLibFolders
+:spg-library:transformNativeLibsWithMergeJniLibsForRelease
+:spg-library:transformNativeLibsWithStripDebugSymbolForRelease
+:spg-library:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:spg-library:processDebugResources
+:sample:processDebugResources
+:sample:generateDebugSources
+:spg-library:generateDebugSources
+:spg-library:compileDebugJavaWithJavacNote: /tmp/rdisk/2485/src/spg-library/src/main/java/ru/noties/spg/SPGManager.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spg-library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavacNote: Processing @SPGPreference: Simplest
+Note: Processing @SPGPreference: WithDefaults
+Note: Processing @SPGPreference: Evaluation
+Note: Processing @SPGPreference: Serialization
+Note: Processing @SPGPreference: OnUpdate
+Note: Processing @SPGPreference: Entity
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Simplest` to a file: `ru.noties.spg.sample.pref.SimplestPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.WithDefaults` to a file: `ru.noties.spg.sample.pref.WithDefaultsPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Evaluation` to a file: `ru.noties.spg.sample.pref.EvaluationPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Serialization` to a file: `ru.noties.spg.sample.pref.SerializationPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.OnUpdate` to a file: `ru.noties.spg.sample.pref.OnUpdatePreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Entity` to a file: `ru.noties.spg.sample.pref.EntityPreference.java`
+Note: Processing of @SPGPreference took: 24 ms
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugSources
+:sample:transformClassesWithDexBuilderForDebug
+:sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample:transformDexArchiveWithDexMergerForDebug
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:packageDebug
+:sample:assembleDebug
+:spg-library:processReleaseResources
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:spg-library:generateReleaseSources
+:spg-library:compileReleaseJavaWithJavacNote: /tmp/rdisk/2485/src/spg-library/src/main/java/ru/noties/spg/SPGManager.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spg-library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavacNote: Processing @SPGPreference: Simplest
+Note: Processing @SPGPreference: WithDefaults
+Note: Processing @SPGPreference: Evaluation
+Note: Processing @SPGPreference: Serialization
+Note: Processing @SPGPreference: OnUpdate
+Note: Processing @SPGPreference: Entity
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Simplest` to a file: `ru.noties.spg.sample.pref.SimplestPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.WithDefaults` to a file: `ru.noties.spg.sample.pref.WithDefaultsPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Evaluation` to a file: `ru.noties.spg.sample.pref.EvaluationPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Serialization` to a file: `ru.noties.spg.sample.pref.SerializationPreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.OnUpdate` to a file: `ru.noties.spg.sample.pref.OnUpdatePreference.java`
+Note: Writing @SPGPreference: `ru.noties.spg.sample.pref.Preferences.Entity` to a file: `ru.noties.spg.sample.pref.EntityPreference.java`
+Note: Processing of @SPGPreference took: 18 ms
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:transformClassesWithPreDexForRelease
+:sample:transformDexWithDexForRelease
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 17s
+91 actionable tasks: 91 executed
+
+2018-04-02 03:21:43,149 INFO  FullProcessService - Found APK file: /tmp/rdisk/2485/src/sample/build/outputs/apk/release/sample-release-unsigned.apk

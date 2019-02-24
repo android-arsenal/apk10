@@ -1,0 +1,193 @@
+2018-04-02 05:22:09,095 INFO  DownloadService - Downloading "https://github.com/jrejaud/WearSocket/archive/master.zip", attempt 3
+2018-04-02 05:23:09,596 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 05:23:10,274 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 05:23:10,274 INFO  DownloadService - Downloading "https://github.com/jrejaud/WearSocket/archive/master.zip", attempt 3
+2018-04-02 05:24:11,567 DEBUG FullProcessService - Repository https://github.com/jrejaud/WearSocket available: true
+2018-04-02 05:24:11,567 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 05:24:11,567 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jrejaud/WearSocket, /tmp/rdisk/2416/src]
+2018-04-02 05:24:13,019 INFO  SysUtils - 
+2018-04-02 05:24:13,026 INFO  GitService - Deleted "/tmp/rdisk/2416/src/.git": true
+2018-04-02 05:24:13,027 INFO  FullProcessService - Size of directory with sources: 78 KB
+2018-04-02 05:24:13,027 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2416/src]
+2018-04-02 05:24:13,031 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2416/src/.git/
+
+2018-04-02 05:24:13,032 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2416/src/gradlew
+2018-04-02 05:24:13,034 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2416/src/wear-socket/build.gradle /tmp/rdisk/2416/src/build.gradle
+2018-04-02 05:24:13,035 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2416/src/wear-socket/build.gradle /tmp/rdisk/2416/src/settings.gradle /tmp/rdisk/2416/src/build.gradle
+2018-04-02 05:24:13,035 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 05:24:13,035 INFO  ProjectFixService - Fixing project...
+2018-04-02 05:24:13,038 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2416/src/wear-socket/local.properties
+2018-04-02 05:24:13,038 INFO  ProjectFixService - Build info for "/tmp/rdisk/2416/src/wear-socket/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 05:24:13,038 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2416/src/local.properties
+2018-04-02 05:24:13,038 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 05:24:13,039 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 05:24:13,039 INFO  ProjectFixService - Build info for "/tmp/rdisk/2416/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 05:24:13,039 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 05:24:13,039 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 05:24:13,039 INFO  SysUtils - Execute command: [/tmp/rdisk/2416/src/gradlew, -b, /tmp/rdisk/2416/src/wear-socket/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 05:24:21,168 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-02 05:24:21,168 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 05:24:21,168 INFO  SysUtils - Execute command: [/tmp/rdisk/2416/src/gradlew, -b, /tmp/rdisk/2416/src/wear-socket/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 05:24:32,931 INFO  SysUtils - Configuration on demand is an incubating feature.
+:wear-socket:compileLint
+:wear-socket:copyDebugLint UP-TO-DATE
+:wear-socket:preBuild UP-TO-DATE
+:wear-socket:preDebugBuild UP-TO-DATE
+:wear-socket:checkDebugManifest
+:wear-socket:preDebugAndroidTestBuild UP-TO-DATE
+:wear-socket:preDebugUnitTestBuild UP-TO-DATE
+:wear-socket:preReleaseBuild UP-TO-DATE
+:wear-socket:preReleaseUnitTestBuild UP-TO-DATE
+:wear-socket:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:wear-socket:prepareComAndroidSupportAppcompatV72321Library
+:wear-socket:prepareComAndroidSupportRecyclerviewV72100Library
+:wear-socket:prepareComAndroidSupportSupportV42321Library
+:wear-socket:prepareComAndroidSupportSupportVectorDrawable2321Library
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesBase840Library
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesBasement840Library
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesWearable840Library
+:wear-socket:prepareComGoogleAndroidSupportWearable110Library
+:wear-socket:prepareDebugDependencies
+:wear-socket:compileDebugAidl
+:wear-socket:compileDebugRenderscript
+:wear-socket:generateDebugBuildConfig
+:wear-socket:generateDebugAssets UP-TO-DATE
+:wear-socket:mergeDebugAssets
+:wear-socket:generateDebugResValues
+:wear-socket:generateDebugResources
+:wear-socket:mergeDebugResources
+:wear-socket:processDebugManifest
+:wear-socket:processDebugResources
+:wear-socket:generateDebugSources
+:wear-socket:processDebugJavaRes UP-TO-DATE
+:wear-socket:compileDebugJava
+:wear-socket:extractDebugAnnotations
+:wear-socket:mergeDebugProguardFiles
+:wear-socket:packageDebugJar
+:wear-socket:compileDebugNdk UP-TO-DATE
+:wear-socket:packageDebugJniLibs UP-TO-DATE
+:wear-socket:packageDebugLocalJar UP-TO-DATE
+:wear-socket:packageDebugRenderscript UP-TO-DATE
+:wear-socket:packageDebugResources
+:wear-socket:bundleDebug
+:wear-socket:compileDebugSources
+:wear-socket:assembleDebug
+:wear-socket:copyReleaseLint UP-TO-DATE
+:wear-socket:checkReleaseManifest
+:wear-socket:prepareReleaseDependencies
+:wear-socket:compileReleaseAidl
+:wear-socket:compileReleaseRenderscript
+:wear-socket:generateReleaseBuildConfig
+:wear-socket:generateReleaseAssets UP-TO-DATE
+:wear-socket:mergeReleaseAssets
+:wear-socket:generateReleaseResValues
+:wear-socket:generateReleaseResources
+:wear-socket:mergeReleaseResources
+:wear-socket:processReleaseManifest
+:wear-socket:processReleaseResources
+:wear-socket:generateReleaseSources
+:wear-socket:processReleaseJavaRes UP-TO-DATE
+:wear-socket:compileReleaseJava
+:wear-socket:extractReleaseAnnotations
+:wear-socket:mergeReleaseProguardFiles
+:wear-socket:packageReleaseJar
+:wear-socket:compileReleaseNdk UP-TO-DATE
+:wear-socket:packageReleaseJniLibs UP-TO-DATE
+:wear-socket:packageReleaseLocalJar UP-TO-DATE
+:wear-socket:packageReleaseRenderscript UP-TO-DATE
+:wear-socket:packageReleaseResources
+:wear-socket:bundleRelease
+:wear-socket:compileReleaseSources
+:wear-socket:assembleRelease
+:wear-socket:assemble
+:wear-socket:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.302 secs
+
+2018-04-02 05:24:32,991 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 05:24:32,991 INFO  SysUtils - Execute command: [/tmp/rdisk/2416/src/gradlew, -b, /tmp/rdisk/2416/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 05:24:39,268 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-02 05:24:39,268 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 05:24:39,268 INFO  SysUtils - Execute command: [/tmp/rdisk/2416/src/gradlew, -b, /tmp/rdisk/2416/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 05:24:46,032 INFO  SysUtils - Configuration on demand is an incubating feature.
+:wear-socket:compileLint
+:wear-socket:copyDebugLint UP-TO-DATE
+:wear-socket:preBuild UP-TO-DATE
+:wear-socket:preDebugBuild UP-TO-DATE
+:wear-socket:checkDebugManifest
+:wear-socket:preDebugAndroidTestBuild UP-TO-DATE
+:wear-socket:preDebugUnitTestBuild UP-TO-DATE
+:wear-socket:preReleaseBuild UP-TO-DATE
+:wear-socket:preReleaseUnitTestBuild UP-TO-DATE
+:wear-socket:prepareComAndroidSupportAnimatedVectorDrawable2321Library UP-TO-DATE
+:wear-socket:prepareComAndroidSupportAppcompatV72321Library UP-TO-DATE
+:wear-socket:prepareComAndroidSupportRecyclerviewV72100Library UP-TO-DATE
+:wear-socket:prepareComAndroidSupportSupportV42321Library UP-TO-DATE
+:wear-socket:prepareComAndroidSupportSupportVectorDrawable2321Library UP-TO-DATE
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesBase840Library UP-TO-DATE
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesBasement840Library UP-TO-DATE
+:wear-socket:prepareComGoogleAndroidGmsPlayServicesWearable840Library UP-TO-DATE
+:wear-socket:prepareComGoogleAndroidSupportWearable110Library UP-TO-DATE
+:wear-socket:prepareDebugDependencies
+:wear-socket:compileDebugAidl UP-TO-DATE
+:wear-socket:compileDebugRenderscript UP-TO-DATE
+:wear-socket:generateDebugBuildConfig UP-TO-DATE
+:wear-socket:generateDebugAssets UP-TO-DATE
+:wear-socket:mergeDebugAssets UP-TO-DATE
+:wear-socket:generateDebugResValues UP-TO-DATE
+:wear-socket:generateDebugResources UP-TO-DATE
+:wear-socket:mergeDebugResources UP-TO-DATE
+:wear-socket:processDebugManifest UP-TO-DATE
+:wear-socket:processDebugResources UP-TO-DATE
+:wear-socket:generateDebugSources UP-TO-DATE
+:wear-socket:processDebugJavaRes UP-TO-DATE
+:wear-socket:compileDebugJava UP-TO-DATE
+:wear-socket:extractDebugAnnotations UP-TO-DATE
+:wear-socket:mergeDebugProguardFiles UP-TO-DATE
+:wear-socket:packageDebugJar UP-TO-DATE
+:wear-socket:compileDebugNdk UP-TO-DATE
+:wear-socket:packageDebugJniLibs UP-TO-DATE
+:wear-socket:packageDebugLocalJar UP-TO-DATE
+:wear-socket:packageDebugRenderscript UP-TO-DATE
+:wear-socket:packageDebugResources UP-TO-DATE
+:wear-socket:bundleDebug UP-TO-DATE
+:wear-socket:compileDebugSources UP-TO-DATE
+:wear-socket:assembleDebug UP-TO-DATE
+:wear-socket:copyReleaseLint UP-TO-DATE
+:wear-socket:checkReleaseManifest
+:wear-socket:prepareReleaseDependencies
+:wear-socket:compileReleaseAidl UP-TO-DATE
+:wear-socket:compileReleaseRenderscript UP-TO-DATE
+:wear-socket:generateReleaseBuildConfig UP-TO-DATE
+:wear-socket:generateReleaseAssets UP-TO-DATE
+:wear-socket:mergeReleaseAssets UP-TO-DATE
+:wear-socket:generateReleaseResValues UP-TO-DATE
+:wear-socket:generateReleaseResources UP-TO-DATE
+:wear-socket:mergeReleaseResources UP-TO-DATE
+:wear-socket:processReleaseManifest UP-TO-DATE
+:wear-socket:processReleaseResources UP-TO-DATE
+:wear-socket:generateReleaseSources UP-TO-DATE
+:wear-socket:processReleaseJavaRes UP-TO-DATE
+:wear-socket:compileReleaseJava UP-TO-DATE
+:wear-socket:extractReleaseAnnotations UP-TO-DATE
+:wear-socket:mergeReleaseProguardFiles UP-TO-DATE
+:wear-socket:packageReleaseJar UP-TO-DATE
+:wear-socket:compileReleaseNdk UP-TO-DATE
+:wear-socket:packageReleaseJniLibs UP-TO-DATE
+:wear-socket:packageReleaseLocalJar UP-TO-DATE
+:wear-socket:packageReleaseRenderscript UP-TO-DATE
+:wear-socket:packageReleaseResources UP-TO-DATE
+:wear-socket:bundleRelease UP-TO-DATE
+:wear-socket:compileReleaseSources UP-TO-DATE
+:wear-socket:assembleRelease UP-TO-DATE
+:wear-socket:assemble UP-TO-DATE
+:wear-socket:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.338 secs
+
+2018-04-02 05:24:46,091 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 05:24:46,148 ERROR FullProcessService - Could not find generated or existed APK file

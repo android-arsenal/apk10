@@ -1,0 +1,253 @@
+2018-04-02 05:27:27,461 INFO  DownloadService - Downloading "https://github.com/kevinho/opencore-amr-android/archive/master.zip", attempt 3
+2018-04-02 05:28:27,940 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 05:28:28,648 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 05:28:28,648 INFO  DownloadService - Downloading "https://github.com/kevinho/opencore-amr-android/archive/master.zip", attempt 3
+2018-04-02 05:29:29,886 DEBUG FullProcessService - Repository https://github.com/kevinho/opencore-amr-android available: true
+2018-04-02 05:29:29,886 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 05:29:29,886 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/kevinho/opencore-amr-android, /tmp/rdisk/2413/src]
+2018-04-02 05:29:31,967 INFO  SysUtils - 
+2018-04-02 05:29:31,976 INFO  GitService - Deleted "/tmp/rdisk/2413/src/.git": true
+2018-04-02 05:29:31,991 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-04-02 05:29:31,991 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2413/src]
+2018-04-02 05:29:31,995 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2413/src/.git/
+
+2018-04-02 05:29:32,005 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2413/src/Codec/gradlew
+2018-04-02 05:29:32,014 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2413/src/Codec/amr/build.gradle /tmp/rdisk/2413/src/Codec/app/build.gradle /tmp/rdisk/2413/src/Codec/build.gradle
+2018-04-02 05:29:32,023 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2413/src/Codec/settings.gradle /tmp/rdisk/2413/src/Codec/build.gradle /tmp/rdisk/2413/src/Codec/app/build.gradle /tmp/rdisk/2413/src/Codec/amr/build.gradle /tmp/rdisk/2413/src/Codec/amr/bintray.gradle
+2018-04-02 05:29:32,024 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 05:29:32,024 INFO  ProjectFixService - Fixing project...
+2018-04-02 05:29:32,044 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2413/src/Codec/amr/local.properties
+2018-04-02 05:29:32,044 INFO  ProjectFixService - Build info for "/tmp/rdisk/2413/src/Codec/amr/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=19]
+2018-04-02 05:29:32,044 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2413/src/Codec/amr/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=19]
+2018-04-02 05:29:32,045 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2413/src/Codec/app/local.properties
+2018-04-02 05:29:32,045 INFO  ProjectFixService - Build info for "/tmp/rdisk/2413/src/Codec/app/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 05:29:32,045 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2413/src/Codec/local.properties
+2018-04-02 05:29:32,045 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-02 05:29:32,045 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-02 05:29:32,046 INFO  ProjectFixService - Build info for "/tmp/rdisk/2413/src/Codec/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 05:29:32,046 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 05:29:32,046 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 05:29:32,046 INFO  SysUtils - Execute command: [/tmp/rdisk/2413/src/Codec/gradlew, -b, /tmp/rdisk/2413/src/Codec/amr/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 05:29:41,280 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 05:29:41,281 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 05:29:41,281 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 05:29:41,281 INFO  SysUtils - Execute command: [/tmp/rdisk/2413/src/Codec/gradlew, -b, /tmp/rdisk/2413/src/Codec/amr/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 05:29:59,691 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:amr:preBuild UP-TO-DATE
+:amr:preDebugBuild UP-TO-DATE
+:amr:compileDebugNdk UP-TO-DATE
+:amr:compileLint
+:amr:copyDebugLint UP-TO-DATE
+:amr:mergeDebugProguardFiles
+:amr:packageDebugRenderscript UP-TO-DATE
+:amr:checkDebugManifest
+:amr:prepareDebugDependencies
+:amr:compileDebugRenderscript
+:amr:generateDebugResValues
+:amr:generateDebugResources
+:amr:packageDebugResources
+:amr:compileDebugAidl
+:amr:generateDebugBuildConfig
+:amr:mergeDebugShaders
+:amr:compileDebugShaders
+:amr:generateDebugAssets
+:amr:mergeDebugAssets
+:amr:processDebugManifest
+:amr:processDebugResources
+:amr:generateDebugSources
+:amr:incrementalDebugJavaCompilationSafeguard
+:amr:compileDebugJavaWithJavac
+:amr:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:amr:processDebugJavaRes UP-TO-DATE
+:amr:transformResourcesWithMergeJavaResForDebug
+:amr:transformClassesAndResourcesWithSyncLibJarsForDebug
+:amr:mergeDebugJniLibFolders
+:amr:transformNative_libsWithMergeJniLibsForDebug
+:amr:transformNative_libsWithSyncJniLibsForDebug
+:amr:bundleDebug
+:amr:compileDebugSources
+:amr:assembleDebug
+:amr:preReleaseBuild UP-TO-DATE
+:amr:compileReleaseNdk UP-TO-DATE
+:amr:copyReleaseLint UP-TO-DATE
+:amr:mergeReleaseProguardFiles
+:amr:packageReleaseRenderscript UP-TO-DATE
+:amr:checkReleaseManifest
+:amr:prepareReleaseDependencies
+:amr:compileReleaseRenderscript
+:amr:generateReleaseResValues
+:amr:generateReleaseResources
+:amr:packageReleaseResources
+:amr:compileReleaseAidl
+:amr:generateReleaseBuildConfig
+:amr:mergeReleaseShaders
+:amr:compileReleaseShaders
+:amr:generateReleaseAssets
+:amr:mergeReleaseAssets
+:amr:processReleaseManifest
+:amr:processReleaseResources
+:amr:generateReleaseSources
+:amr:incrementalReleaseJavaCompilationSafeguard
+:amr:compileReleaseJavaWithJavac
+:amr:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:amr:processReleaseJavaRes UP-TO-DATE
+:amr:transformResourcesWithMergeJavaResForRelease
+:amr:transformClassesAndResourcesWithSyncLibJarsForRelease
+:amr:mergeReleaseJniLibFolders
+:amr:transformNative_libsWithMergeJniLibsForRelease
+:amr:transformNative_libsWithSyncJniLibsForRelease
+:amr:bundleRelease
+:amr:compileReleaseSources
+:amr:assembleRelease
+:amr:javadoc
+:amr:javadocJar
+:amr:sourcesJar
+:amr:assemble
+:amr:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:///tmp/rdisk/2413/src/Codec/amr/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2413/src/Codec/amr/build/outputs/lint-results-debug.xml
+:amr:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:amr:preDebugUnitTestBuild UP-TO-DATE
+:amr:prepareDebugUnitTestDependencies
+:amr:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:amr:processDebugUnitTestJavaRes UP-TO-DATE
+:amr:compileDebugUnitTestSources UP-TO-DATE
+:amr:mockableAndroidJar
+:amr:assembleDebugUnitTest
+:amr:testDebugUnitTest
+:amr:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:amr:preReleaseUnitTestBuild UP-TO-DATE
+:amr:prepareReleaseUnitTestDependencies
+:amr:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:amr:processReleaseUnitTestJavaRes UP-TO-DATE
+:amr:compileReleaseUnitTestSources UP-TO-DATE
+:amr:assembleReleaseUnitTest
+:amr:testReleaseUnitTest
+:amr:test
+:amr:check
+:amr:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.583 secs
+
+2018-04-02 05:29:59,709 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 05:29:59,709 INFO  SysUtils - Execute command: [/tmp/rdisk/2413/src/Codec/gradlew, -b, /tmp/rdisk/2413/src/Codec/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 05:30:06,939 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-02 05:30:06,940 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 05:30:06,940 INFO  SysUtils - Execute command: [/tmp/rdisk/2413/src/Codec/gradlew, -b, /tmp/rdisk/2413/src/Codec/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 05:30:20,966 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:amr:preBuild UP-TO-DATE
+:amr:preReleaseBuild UP-TO-DATE
+:amr:compileReleaseNdk UP-TO-DATE
+:amr:compileLint
+:amr:copyReleaseLint UP-TO-DATE
+:amr:mergeReleaseProguardFiles UP-TO-DATE
+:amr:packageReleaseRenderscript UP-TO-DATE
+:amr:checkReleaseManifest
+:amr:prepareReleaseDependencies
+:amr:compileReleaseRenderscript UP-TO-DATE
+:amr:generateReleaseResValues UP-TO-DATE
+:amr:generateReleaseResources UP-TO-DATE
+:amr:packageReleaseResources UP-TO-DATE
+:amr:compileReleaseAidl UP-TO-DATE
+:amr:generateReleaseBuildConfig UP-TO-DATE
+:amr:mergeReleaseShaders UP-TO-DATE
+:amr:compileReleaseShaders UP-TO-DATE
+:amr:generateReleaseAssets UP-TO-DATE
+:amr:mergeReleaseAssets UP-TO-DATE
+:amr:processReleaseManifest UP-TO-DATE
+:amr:processReleaseResources UP-TO-DATE
+:amr:generateReleaseSources UP-TO-DATE
+:amr:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:amr:compileReleaseJavaWithJavac UP-TO-DATE
+:amr:processReleaseJavaRes UP-TO-DATE
+:amr:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:amr:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:amr:mergeReleaseJniLibFolders UP-TO-DATE
+:amr:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:amr:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:amr:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareIoKvhAmr111Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2413/src/Codec/app/src/main/java/io/kvh/media/sound/Recorder.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+Running dex in-process requires build tools 23.0.2.
+For faster builds update this project to use the latest build tools.
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2413/src/Codec/app/src/main/java/io/kvh/media/sound/Recorder.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.591 secs
+
+2018-04-02 05:30:20,996 INFO  FullProcessService - Found APK file: /tmp/rdisk/2413/src/Codec/app/build/outputs/apk/app-debug.apk

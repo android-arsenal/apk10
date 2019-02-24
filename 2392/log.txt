@@ -1,0 +1,134 @@
+2018-04-02 06:27:25,359 INFO  DownloadService - Downloading "https://github.com/TippingCanoe/Dewey/archive/master.zip", attempt 3
+2018-04-02 06:28:25,971 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 06:28:26,615 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 06:28:26,615 INFO  DownloadService - Downloading "https://github.com/TippingCanoe/Dewey/archive/master.zip", attempt 3
+2018-04-02 06:29:27,821 DEBUG FullProcessService - Repository https://github.com/TippingCanoe/Dewey available: true
+2018-04-02 06:29:27,821 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 06:29:27,821 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/TippingCanoe/Dewey, /tmp/rdisk/2392/src]
+2018-04-02 06:29:31,579 INFO  SysUtils - 
+2018-04-02 06:29:31,593 INFO  GitService - Deleted "/tmp/rdisk/2392/src/.git": true
+2018-04-02 06:29:31,595 INFO  FullProcessService - Size of directory with sources: 589 KB
+2018-04-02 06:29:31,595 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2392/src]
+2018-04-02 06:29:31,600 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2392/src/.git/
+
+2018-04-02 06:29:31,602 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2392/src/gradlew
+2018-04-02 06:29:31,604 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2392/src/app/build.gradle /tmp/rdisk/2392/src/library/build.gradle /tmp/rdisk/2392/src/build.gradle
+2018-04-02 06:29:31,607 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2392/src/settings.gradle /tmp/rdisk/2392/src/library/build.gradle /tmp/rdisk/2392/src/build.gradle /tmp/rdisk/2392/src/app/build.gradle
+2018-04-02 06:29:31,607 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 06:29:31,607 INFO  ProjectFixService - Fixing project...
+2018-04-02 06:29:31,613 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2392/src/app/local.properties
+2018-04-02 06:29:31,613 INFO  ProjectFixService - Build info for "/tmp/rdisk/2392/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-02 06:29:31,613 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2392/src/library/local.properties
+2018-04-02 06:29:31,613 INFO  ProjectFixService - Build info for "/tmp/rdisk/2392/src/library/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-02 06:29:31,613 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2392/src/local.properties
+2018-04-02 06:29:31,614 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 06:29:31,614 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 06:29:31,615 INFO  ProjectFixService - Build info for "/tmp/rdisk/2392/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-02 06:29:31,615 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 06:29:31,615 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 06:29:31,615 INFO  SysUtils - Execute command: [/tmp/rdisk/2392/src/gradlew, -b, /tmp/rdisk/2392/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 06:29:39,958 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-02 06:29:39,959 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 06:29:39,959 INFO  SysUtils - Execute command: [/tmp/rdisk/2392/src/gradlew, -b, /tmp/rdisk/2392/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 06:30:08,887 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:preDebugBuild
+:library:preDebugTestBuild
+:library:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:library:prepareComAndroidSupportAppcompatV72321Library
+:library:prepareComAndroidSupportRecyclerviewV72321Library
+:library:prepareComAndroidSupportSupportV42321Library
+:library:prepareComAndroidSupportSupportVectorDrawable2321Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2321Library
+:app:prepareComAndroidSupportAppcompatV72321Library
+:app:prepareComAndroidSupportRecyclerviewV72321Library
+:app:prepareComAndroidSupportSupportV42321Library
+:app:prepareComAndroidSupportSupportVectorDrawable2321Library
+:app:prepareSrcLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: /tmp/rdisk/2392/src/app/src/main/java/com/tippingcanoe/dewey/app/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: /tmp/rdisk/2392/src/app/src/main/java/com/tippingcanoe/dewey/app/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.486 secs
+
+2018-04-02 06:30:08,949 INFO  FullProcessService - Found APK file: /tmp/rdisk/2392/src/app/build/outputs/apk/app-debug.apk

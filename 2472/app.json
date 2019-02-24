@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.veinhorn.scrollgalleryview",
+    "label" : "ScrollGalleryView",
+    "icon" : "res/mipmap-ldpi-v4/ic_launcher.png",
+    "versionName" : "1.0.8",
+    "versionCode" : 8,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2258,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"8\" android:versionName=\"1.0.8\" package=\"com.veinhorn.scrollgalleryview\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f0d0005\" android:label=\"ScrollGalleryView\" android:icon=\"res/mipmap-ldpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"ScrollGalleryView\" android:name=\"com.veinhorn.example.MainActivity\" android:screenOrientation=\"portrait\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.veinhorn.scrollgalleryview.VideoPlayerActivity\" />\n\t\t<meta-data android:name=\"android.support.VERSION\" android:value=\"26.1.0\" />\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2892077,
+  "crc32" : 1764449250,
+  "sha256" : "2cb2c3b481c6afdc456e8c192f8ae40217ba850fd832277f21c82ded54c443e7",
+  "buildTime" : 1522641541000
+}

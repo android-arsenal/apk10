@@ -1,0 +1,164 @@
+2018-04-02 14:13:27,698 INFO  DownloadService - Downloading "https://github.com/nuptboyzhb/SuperSwipeRefreshLayout/archive/master.zip", attempt 3
+2018-04-02 14:14:28,379 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 14:14:29,210 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 14:14:29,210 INFO  DownloadService - Downloading "https://github.com/nuptboyzhb/SuperSwipeRefreshLayout/archive/master.zip", attempt 3
+2018-04-02 14:15:30,510 DEBUG FullProcessService - Repository https://github.com/nuptboyzhb/SuperSwipeRefreshLayout available: true
+2018-04-02 14:15:30,510 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 14:15:30,511 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nuptboyzhb/SuperSwipeRefreshLayout, /tmp/rdisk/2270/src]
+2018-04-02 14:15:32,653 INFO  SysUtils - 
+2018-04-02 14:15:32,668 INFO  GitService - Deleted "/tmp/rdisk/2270/src/.git": true
+2018-04-02 14:15:32,671 INFO  FullProcessService - Size of directory with sources: 995 KB
+2018-04-02 14:15:32,671 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2270/src]
+2018-04-02 14:15:32,677 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2270/src/.git/
+
+2018-04-02 14:15:32,680 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/gradlew
+2018-04-02 14:15:32,683 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build.gradle /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/lib/build.gradle /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/build.gradle
+2018-04-02 14:15:32,685 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/settings.gradle /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/lib/build.gradle /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/build.gradle /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build.gradle
+2018-04-02 14:15:32,685 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 14:15:32,685 INFO  ProjectFixService - Fixing project...
+2018-04-02 14:15:32,691 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/local.properties
+2018-04-02 14:15:32,691 INFO  ProjectFixService - Build info for "/tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-02 14:15:32,692 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/lib/local.properties
+2018-04-02 14:15:32,692 INFO  ProjectFixService - Build info for "/tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/lib/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-02 14:15:32,692 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/local.properties
+2018-04-02 14:15:32,693 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 14:15:32,693 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 14:15:32,694 INFO  ProjectFixService - Build info for "/tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-02 14:15:32,694 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 14:15:32,694 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 14:15:32,694 INFO  SysUtils - Execute command: [/tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/gradlew, -b, /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 14:15:44,172 INFO  ProjectTaskService - Detected possible tasks: 71
+2018-04-02 14:15:44,172 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 14:15:44,172 INFO  SysUtils - Execute command: [/tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/gradlew, -b, /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 14:16:11,783 INFO  SysUtils - Configuration on demand is an incubating feature.
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Observed package id 'build-tools;28.0.0-preview' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0-preview')
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:preDebugAndroidTestBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:preDebugUnitTestBuild UP-TO-DATE
+:lib:preReleaseUnitTestBuild UP-TO-DATE
+:lib:prepareComAndroidSupportAnimatedVectorDrawable2501Library
+:lib:prepareComAndroidSupportAppcompatV72501Library
+:lib:prepareComAndroidSupportRecyclerviewV72600Alpha1Library
+:lib:prepareComAndroidSupportSupportCompat2600Alpha1Library
+:lib:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+:lib:prepareComAndroidSupportSupportCoreUtils2501Library
+:lib:prepareComAndroidSupportSupportFragment2501Library
+:lib:prepareComAndroidSupportSupportMediaCompat2501Library
+:lib:prepareComAndroidSupportSupportV42501Library
+:lib:prepareComAndroidSupportSupportVectorDrawable2501Library
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:incrementalReleaseJavaCompilationSafeguard
+:lib:compileReleaseJavaWithJavac
+:lib:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/lib/src/main/java/com/github/nuptboyzhb/lib/SuperSwipeRefreshLayout.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:mergeReleaseAssets
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:mergeReleaseJniLibFolders
+:lib:transformNative_libsWithMergeJniLibsForRelease
+:lib:transformNative_libsWithSyncJniLibsForRelease
+:lib:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2501Library
+:app:prepareComAndroidSupportAppcompatV72501Library
+:app:prepareComAndroidSupportConstraintConstraintLayout100Alpha7Library
+:app:prepareComAndroidSupportRecyclerviewV72501Library
+:app:prepareComAndroidSupportSupportCompat2501Library
+:app:prepareComAndroidSupportSupportCoreUi2501Library
+:app:prepareComAndroidSupportSupportCoreUtils2501Library
+:app:prepareComAndroidSupportSupportFragment2501Library
+:app:prepareComAndroidSupportSupportMediaCompat2501Library
+:app:prepareComAndroidSupportSupportV42501Library
+:app:prepareComAndroidSupportSupportVectorDrawable2501Library
+:app:prepareComGithubNuptboyzhbLibUikitLib100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.991 secs
+
+2018-04-02 14:16:11,859 INFO  FullProcessService - Found APK file: /tmp/rdisk/2270/src/SuperSwipeRefreshLayout-Demo-AS/app/build/outputs/apk/app-debug.apk

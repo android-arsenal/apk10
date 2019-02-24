@@ -1,0 +1,130 @@
+2018-04-02 09:53:35,517 INFO  DownloadService - Downloading "https://github.com/linfaxin/TransitionPlayer/archive/master.zip", attempt 3
+2018-04-02 09:53:36,382 INFO  DownloadService - Downloaded https://github.com/linfaxin/TransitionPlayer/archive/master.zip, attempt 3
+2018-04-02 09:53:36,382 INFO  DownloadService - Size of file "/tmp/rdisk/2357/master.zip": 1 MB
+2018-04-02 09:53:36,382 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-02 09:53:36,382 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2357/master.zip: true
+2018-04-02 09:53:36,383 DEBUG ZipUtil - Extracting '/tmp/rdisk/2357/master.zip' into '/tmp/rdisk/2357/src'.
+2018-04-02 09:53:36,414 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-02 09:53:36,414 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2357/src]
+2018-04-02 09:53:36,419 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2357/src/.git/
+
+2018-04-02 09:53:36,423 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2357/src/TransitionPlayer-master/gradlew
+2018-04-02 09:53:36,426 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2357/src/TransitionPlayer-master/demo/build.gradle /tmp/rdisk/2357/src/TransitionPlayer-master/library/build.gradle /tmp/rdisk/2357/src/TransitionPlayer-master/build.gradle
+2018-04-02 09:53:36,429 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2357/src/TransitionPlayer-master/settings.gradle /tmp/rdisk/2357/src/TransitionPlayer-master/library/build.gradle /tmp/rdisk/2357/src/TransitionPlayer-master/demo/build.gradle /tmp/rdisk/2357/src/TransitionPlayer-master/build.gradle
+2018-04-02 09:53:36,429 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 09:53:36,429 INFO  ProjectFixService - Fixing project...
+2018-04-02 09:53:36,436 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2357/src/TransitionPlayer-master/demo/local.properties
+2018-04-02 09:53:36,436 INFO  ProjectFixService - Build info for "/tmp/rdisk/2357/src/TransitionPlayer-master/demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 09:53:36,437 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2357/src/TransitionPlayer-master/library/local.properties
+2018-04-02 09:53:36,437 INFO  ProjectFixService - Build info for "/tmp/rdisk/2357/src/TransitionPlayer-master/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 09:53:36,437 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2357/src/TransitionPlayer-master/local.properties
+2018-04-02 09:53:36,438 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 09:53:36,438 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 09:53:36,439 INFO  ProjectFixService - Build info for "/tmp/rdisk/2357/src/TransitionPlayer-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 09:53:36,439 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 09:53:36,439 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 09:53:36,439 INFO  SysUtils - Execute command: [/tmp/rdisk/2357/src/TransitionPlayer-master/gradlew, -b, /tmp/rdisk/2357/src/TransitionPlayer-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 09:53:43,271 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 09:53:43,272 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 09:53:43,272 INFO  SysUtils - Execute command: [/tmp/rdisk/2357/src/TransitionPlayer-master/gradlew, -b, /tmp/rdisk/2357/src/TransitionPlayer-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 09:54:11,944 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComGithubAndkulikovTransitionsEverywhere140Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72220Library
+:demo:prepareComAndroidSupportRecyclerviewV72100Library
+:demo:prepareComAndroidSupportSupportV42220Library
+:demo:prepareComDaimajiaSwipelayoutLibrary120Library
+:demo:prepareComGithubAndkulikovTransitionsEverywhere140Library
+:demo:prepareTransitionPlayerMasterLibraryUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:preDexDebug
+:demo:dexDebug
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:preDexRelease
+:demo:dexRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.22 secs
+
+2018-04-02 09:54:11,986 INFO  FullProcessService - Found APK file: /tmp/rdisk/2357/src/TransitionPlayer-master/demo/build/outputs/apk/demo-release-unsigned.apk

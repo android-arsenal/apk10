@@ -1,0 +1,626 @@
+2018-04-02 03:15:05,618 INFO  DownloadService - Downloading "https://github.com/dtx12/AndroidAnimationsActions/archive/master.zip", attempt 3
+2018-04-02 03:16:06,082 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 03:16:06,773 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 03:16:06,773 INFO  DownloadService - Downloading "https://github.com/dtx12/AndroidAnimationsActions/archive/master.zip", attempt 3
+2018-04-02 03:17:08,007 DEBUG FullProcessService - Repository https://github.com/dtx12/AndroidAnimationsActions available: true
+2018-04-02 03:17:08,007 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 03:17:08,007 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/dtx12/AndroidAnimationsActions, /tmp/rdisk/2486/src]
+2018-04-02 03:17:09,641 INFO  SysUtils - 
+2018-04-02 03:17:09,656 INFO  GitService - Deleted "/tmp/rdisk/2486/src/.git": true
+2018-04-02 03:17:09,658 INFO  FullProcessService - Size of directory with sources: 142 KB
+2018-04-02 03:17:09,658 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2486/src]
+2018-04-02 03:17:09,664 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2486/src/.git/
+
+2018-04-02 03:17:09,666 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2486/src/gradlew
+2018-04-02 03:17:09,669 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2486/src/actions/build.gradle /tmp/rdisk/2486/src/demo/build.gradle /tmp/rdisk/2486/src/build.gradle
+2018-04-02 03:17:09,671 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2486/src/settings.gradle /tmp/rdisk/2486/src/demo/build.gradle /tmp/rdisk/2486/src/build.gradle /tmp/rdisk/2486/src/actions/build.gradle
+2018-04-02 03:17:09,671 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 03:17:09,671 INFO  ProjectFixService - Fixing project...
+2018-04-02 03:17:09,677 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2486/src/actions/local.properties
+2018-04-02 03:17:09,678 INFO  ProjectFixService - Build info for "/tmp/rdisk/2486/src/actions/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:17:09,678 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2486/src/demo/local.properties
+2018-04-02 03:17:09,678 INFO  ProjectFixService - Build info for "/tmp/rdisk/2486/src/demo/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:17:09,678 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2486/src/local.properties
+2018-04-02 03:17:09,678 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 03:17:09,679 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 03:17:09,679 INFO  ProjectFixService - Build info for "/tmp/rdisk/2486/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 03:17:09,679 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 03:17:09,680 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:17:09,680 INFO  SysUtils - Execute command: [/tmp/rdisk/2486/src/gradlew, -b, /tmp/rdisk/2486/src/actions/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:17:19,490 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-02 03:17:19,490 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-02 03:17:19,490 INFO  SysUtils - Execute command: [/tmp/rdisk/2486/src/gradlew, -b, /tmp/rdisk/2486/src/actions/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-02 03:17:31,908 INFO  SysUtils - Configuration on demand is an incubating feature.
+:actions:compileLint
+:actions:copyDebugLint UP-TO-DATE
+:actions:preBuild UP-TO-DATE
+:actions:preDebugBuild UP-TO-DATE
+:actions:checkDebugManifest
+:actions:preDebugAndroidTestBuild UP-TO-DATE
+:actions:preReleaseBuild UP-TO-DATE
+:actions:prepareComAndroidSupportAppcompatV72301Library
+:actions:prepareComAndroidSupportSupportV42301Library
+:actions:prepareDebugDependencies
+:actions:compileDebugAidl
+:actions:compileDebugRenderscript
+:actions:generateDebugBuildConfig
+:actions:generateDebugAssets UP-TO-DATE
+:actions:mergeDebugAssets
+:actions:generateDebugResValues
+:actions:generateDebugResources
+:actions:mergeDebugResources
+:actions:processDebugManifest
+:actions:processDebugResources
+:actions:generateDebugSources
+:actions:compileDebugJava
+:actions:extractDebugAnnotations
+:actions:mergeDebugProguardFiles
+:actions:processDebugJavaRes UP-TO-DATE
+:actions:packageDebugJar
+:actions:compileDebugNdk UP-TO-DATE
+:actions:packageDebugJniLibs UP-TO-DATE
+:actions:packageDebugLocalJar UP-TO-DATE
+:actions:packageDebugRenderscript UP-TO-DATE
+:actions:packageDebugResources
+:actions:bundleDebug
+:actions:assembleDebug
+:actions:copyReleaseLint UP-TO-DATE
+:actions:checkReleaseManifest
+:actions:prepareReleaseDependencies
+:actions:compileReleaseAidl
+:actions:compileReleaseRenderscript
+:actions:generateReleaseBuildConfig
+:actions:generateReleaseAssets UP-TO-DATE
+:actions:mergeReleaseAssets
+:actions:generateReleaseResValues
+:actions:generateReleaseResources
+:actions:mergeReleaseResources
+:actions:processReleaseManifest
+:actions:processReleaseResources
+:actions:generateReleaseSources
+:actions:compileReleaseJava
+:actions:extractReleaseAnnotations
+:actions:mergeReleaseProguardFiles
+:actions:processReleaseJavaRes UP-TO-DATE
+:actions:packageReleaseJar
+:actions:compileReleaseNdk UP-TO-DATE
+:actions:packageReleaseJniLibs UP-TO-DATE
+:actions:packageReleaseLocalJar UP-TO-DATE
+:actions:packageReleaseRenderscript UP-TO-DATE
+:actions:packageReleaseResources
+:actions:bundleRelease
+:actions:assembleRelease
+:actions:javadoc/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:31: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:32: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:38: error: cannot find symbol
+    private static void setPropertiesForAnimator(@NonNull Animator animator, float duration, @Nullable Interpolator interpolator) {
+                                                  ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:38: error: cannot find symbol
+    private static void setPropertiesForAnimator(@NonNull Animator animator, float duration, @Nullable Interpolator interpolator) {
+                                                                                              ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:54: error: cannot find symbol
+    public static Animator forever(@NonNull Animator animator) {
+                                    ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:53: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:65: error: cannot find symbol
+    public static Animator repeat(final int count, @NonNull Animator animator) {
+                                                    ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:64: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:78: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:90: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:104: error: cannot find symbol
+    public static Animator color(int from, int to, float duration, @Nullable Interpolator interpolator) {
+                                                                    ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:103: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:118: error: cannot find symbol
+    public static Animator run(@NonNull final Runnable runnable) {
+                                ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:117: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:135: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:146: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:159: error: cannot find symbol
+    public static Animator rotateBy(float rotation, float duration, @Nullable Interpolator interpolator) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:158: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:168: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:179: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:192: error: cannot find symbol
+    public static Animator rotateTo(float rotation, float duration, @Nullable Interpolator interpolator) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:191: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:197: error: cannot find symbol
+    private static Animator rotate(float rotation, float duration, @Nullable Interpolator interpolator, ActionType type) {
+                                                                    ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:196: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:211: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:223: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:237: error: cannot find symbol
+    public static Animator moveBy(float x, float y, float duration, @Nullable Interpolator interpolator) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:236: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:247: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:259: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:273: error: cannot find symbol
+    public static Animator moveTo(float x, float y, float duration, @Nullable Interpolator interpolator) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:272: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:278: error: cannot find symbol
+    private static Animator move(float x, float y, float duration, @Nullable Interpolator interpolator, @NonNull ActionType type) {
+                                                                    ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:278: error: cannot find symbol
+    private static Animator move(float x, float y, float duration, @Nullable Interpolator interpolator, @NonNull ActionType type) {
+                                                                                                         ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:277: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:292: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:304: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:318: error: cannot find symbol
+    public static Animator scaleTo(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator) {
+                                                                                ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:317: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:328: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:353: error: cannot find symbol
+    public static Animator scaleBy(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator) {
+                                                                                ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:352: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:358: error: cannot find symbol
+    private static Animator scale(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator, @NonNull ActionType type) {
+                                                                               ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:358: error: cannot find symbol
+    private static Animator scale(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator, @NonNull ActionType type) {
+                                                                                                                    ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:357: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:369: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:379: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:391: error: cannot find symbol
+    public static Animator fadeOut(float duration, @Nullable Interpolator interpolator) {
+                                                    ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:390: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:398: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:408: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:420: error: cannot find symbol
+    public static Animator fadeIn(float duration, @Nullable Interpolator interpolator) {
+                                                   ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:419: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:429: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:440: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:453: error: cannot find symbol
+    public static Animator alpha(float alpha, float duration, @Nullable Interpolator interpolator) {
+                                                               ^
+  symbol:   class Nullable
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:452: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:466: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:480: error: cannot find symbol
+    public static Animator parallel(@NonNull Animator... animators) {
+                                     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:479: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:492: error: cannot find symbol
+    public static Animator sequence(@NonNull Animator... animators) {
+                                     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:491: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:504: error: cannot find symbol
+    public static void play(@NonNull final Animator animator, @NonNull final View view) {
+                             ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:504: error: cannot find symbol
+    public static void play(@NonNull final Animator animator, @NonNull final View view) {
+                                                               ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:509: error: cannot find symbol
+    private static void prepareActions(@NonNull Animator animator, @NonNull View view) {
+                                        ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:509: error: cannot find symbol
+    private static void prepareActions(@NonNull Animator animator, @NonNull View view) {
+                                                                    ^
+  symbol:   class NonNull
+  location: class Actions
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:54: warning: no @return
+    public static Animator forever(@NonNull Animator animator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:65: warning: no @return
+    public static Animator repeat(final int count, @NonNull Animator animator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:79: warning: no @return
+    public static Animator color(int from, int to) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:91: warning: no @return
+    public static Animator color(int from, int to, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:104: warning: no @return
+    public static Animator color(int from, int to, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:118: warning: no @return
+    public static Animator run(@NonNull final Runnable runnable) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:136: warning: no @return
+    public static Animator rotateBy(float rotation) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:147: warning: no @return
+    public static Animator rotateBy(float rotation, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:159: warning: no @return
+    public static Animator rotateBy(float rotation, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:169: warning: no @return
+    public static Animator rotateTo(float rotation) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:180: warning: no @return
+    public static Animator rotateTo(float rotation, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:192: warning: no @return
+    public static Animator rotateTo(float rotation, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:212: warning: no @return
+    public static Animator moveBy(float x, float y) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:224: warning: no @return
+    public static Animator moveBy(float x, float y, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:237: warning: no @return
+    public static Animator moveBy(float x, float y, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:248: warning: no @return
+    public static Animator moveTo(float x, float y) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:260: warning: no @return
+    public static Animator moveTo(float x, float y, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:273: warning: no @return
+    public static Animator moveTo(float x, float y, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:293: warning: no @return
+    public static Animator scaleTo(float scaleX, float scaleY) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:305: warning: no @return
+    public static Animator scaleTo(float scaleX, float scaleY, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:318: warning: no @return
+    public static Animator scaleTo(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:329: warning: no @return
+    public static Animator scaleBy(float scaleX, float scaleY) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:340: warning: no @return
+    public static Animator scaleBy(float scaleX, float scaleY, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:353: warning: no @return
+    public static Animator scaleBy(float scaleX, float scaleY, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:370: warning: no @return
+    public static Animator fadeOut() {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:380: warning: no @return
+    public static Animator fadeOut(float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:391: warning: no @return
+    public static Animator fadeOut(float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:399: warning: no @return
+    public static Animator fadeIn() {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:409: warning: no @return
+    public static Animator fadeIn(float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:420: warning: no @return
+    public static Animator fadeIn(float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:430: warning: no @return
+    public static Animator alpha(float alpha) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:441: warning: no @return
+    public static Animator alpha(float alpha, float duration) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:453: warning: no @return
+    public static Animator alpha(float alpha, float duration, @Nullable Interpolator interpolator) {
+                           ^
+/tmp/rdisk/2486/src/actions/src/main/java/com/dtx12/android_animations_actions/actions/Actions.java:467: warning: no @return
+    public static Animator delay(float duration) {
+                           ^
+
+100 warnings
+:actions:javadocJar
+:actions:sourcesJar
+:actions:assemble
+:actions:build
+
+BUILD SUCCESSFUL
+
+Total time: 12.004 secs
+
+2018-04-02 03:17:31,943 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 03:17:31,944 INFO  SysUtils - Execute command: [/tmp/rdisk/2486/src/gradlew, -b, /tmp/rdisk/2486/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 03:17:38,581 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-02 03:17:38,581 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-02 03:17:38,581 INFO  SysUtils - Execute command: [/tmp/rdisk/2486/src/gradlew, -b, /tmp/rdisk/2486/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-02 03:18:04,087 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:compileDebugNdk UP-TO-DATE
+:actions:compileLint
+:actions:copyReleaseLint UP-TO-DATE
+:actions:preBuild UP-TO-DATE
+:actions:preReleaseBuild UP-TO-DATE
+:actions:checkReleaseManifest
+:actions:preDebugAndroidTestBuild UP-TO-DATE
+:actions:preDebugBuild UP-TO-DATE
+:actions:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:actions:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:actions:prepareReleaseDependencies
+:actions:compileReleaseAidl UP-TO-DATE
+:actions:compileReleaseRenderscript UP-TO-DATE
+:actions:generateReleaseBuildConfig UP-TO-DATE
+:actions:generateReleaseAssets UP-TO-DATE
+:actions:mergeReleaseAssets UP-TO-DATE
+:actions:generateReleaseResValues UP-TO-DATE
+:actions:generateReleaseResources UP-TO-DATE
+:actions:mergeReleaseResources UP-TO-DATE
+:actions:processReleaseManifest UP-TO-DATE
+:actions:processReleaseResources UP-TO-DATE
+:actions:generateReleaseSources UP-TO-DATE
+:actions:compileReleaseJava UP-TO-DATE
+:actions:extractReleaseAnnotations UP-TO-DATE
+:actions:mergeReleaseProguardFiles UP-TO-DATE
+:actions:processReleaseJavaRes UP-TO-DATE
+:actions:packageReleaseJar UP-TO-DATE
+:actions:compileReleaseNdk UP-TO-DATE
+:actions:packageReleaseJniLibs UP-TO-DATE
+:actions:packageReleaseLocalJar UP-TO-DATE
+:actions:packageReleaseRenderscript UP-TO-DATE
+:actions:packageReleaseResources UP-TO-DATE
+:actions:bundleRelease UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:demo:prepareComAndroidSupportAppcompatV72301Library
+:demo:prepareComAndroidSupportSupportV42301Library
+:demo:prepareComDtx12Actions014Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:compileDebugJava
+:demo:preDexDebug
+:demo:dexDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:compileReleaseJava
+:demo:lintVitalRelease
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:preDexRelease
+:demo:dexRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.089 secs
+
+2018-04-02 03:18:04,153 INFO  FullProcessService - Found APK file: /tmp/rdisk/2486/src/demo/build/outputs/apk/demo-release-unsigned.apk

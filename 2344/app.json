@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "io.gresse.hugo.vumeter",
+    "label" : "VUMeter",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.11",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1634,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"1.0.11\" package=\"io.gresse.hugo.vumeter\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"24\" />\n\t<application android:theme=\"resourceId:0x7f08008e\" android:label=\"VUMeter\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"VUMeter\" android:name=\"io.gresse.hugo.vumeter.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1290165,
+  "crc32" : 2522438480,
+  "sha256" : "563126d62bb9b51047c77a5c20ffd00e0e5c119b87e103ac665a9be9c5a11df8",
+  "buildTime" : 1522663271000
+}

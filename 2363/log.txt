@@ -1,0 +1,535 @@
+2018-04-02 07:56:17,362 INFO  DownloadService - Downloading "https://github.com/promeG/XLog/archive/master.zip", attempt 3
+2018-04-02 07:57:17,963 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 07:57:18,664 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 07:57:18,664 INFO  DownloadService - Downloading "https://github.com/promeG/XLog/archive/master.zip", attempt 3
+2018-04-02 07:58:19,925 DEBUG FullProcessService - Repository https://github.com/promeG/XLog available: true
+2018-04-02 07:58:19,925 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 07:58:19,925 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/promeG/XLog, /tmp/rdisk/2363/src]
+2018-04-02 07:58:21,617 INFO  SysUtils - 
+2018-04-02 07:58:21,623 INFO  GitService - Deleted "/tmp/rdisk/2363/src/.git": true
+2018-04-02 07:58:21,629 INFO  FullProcessService - Size of directory with sources: 487 KB
+2018-04-02 07:58:21,629 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2363/src]
+2018-04-02 07:58:21,634 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2363/src/.git/
+
+2018-04-02 07:58:21,639 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2363/src/gradlew
+2018-04-02 07:58:21,645 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2363/src/xlog-android-idle/build.gradle /tmp/rdisk/2363/src/xlog-android/build.gradle /tmp/rdisk/2363/src/xlog-example/build.gradle /tmp/rdisk/2363/src/build.gradle /tmp/rdisk/2363/src/xlog-base/build.gradle /tmp/rdisk/2363/src/xlog-runtime/build.gradle
+2018-04-02 07:58:21,650 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2363/src/xlog-runtime/build.gradle /tmp/rdisk/2363/src/xlog-example/build.gradle /tmp/rdisk/2363/src/xlog-base/build.gradle /tmp/rdisk/2363/src/xlog-android/build.gradle /tmp/rdisk/2363/src/xlog-android-idle/build.gradle /tmp/rdisk/2363/src/settings.gradle /tmp/rdisk/2363/src/config/quality-java.gradle /tmp/rdisk/2363/src/config/quality-android.gradle /tmp/rdisk/2363/src/build.gradle
+2018-04-02 07:58:21,650 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 07:58:21,650 INFO  ProjectFixService - Fixing project...
+2018-04-02 07:58:21,663 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/xlog-android-idle/local.properties
+2018-04-02 07:58:21,663 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/xlog-android-idle/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 07:58:21,663 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/xlog-android/local.properties
+2018-04-02 07:58:21,664 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/xlog-android/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-02 07:58:21,664 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/xlog-example/local.properties
+2018-04-02 07:58:21,664 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/xlog-example/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 07:58:21,664 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/local.properties
+2018-04-02 07:58:21,664 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 07:58:21,664 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 07:58:21,665 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-02 07:58:21,665 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/xlog-base/local.properties
+2018-04-02 07:58:21,668 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/xlog-base/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 07:58:21,668 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2363/src/xlog-runtime/local.properties
+2018-04-02 07:58:21,669 INFO  ProjectFixService - Build info for "/tmp/rdisk/2363/src/xlog-runtime/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 07:58:21,669 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 07:58:21,669 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:58:21,669 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-android-idle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:58:36,088 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 07:58:36,089 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint findbugs uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease checkstyle test check connectedAndroidTest lintRelease testDebug
+2018-04-02 07:58:36,089 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-android-idle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, findbugs, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, checkstyle, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-02 07:58:44,735 INFO  SysUtils - Configuration on demand is an incubating feature.
+:xlog-android-idle:compileLint
+:xlog-android-idle:copyDebugLint UP-TO-DATE
+:xlog-android-idle:mergeDebugProguardFiles
+:xlog-android-idle:preBuild
+:xlog-android-idle:preDebugBuild
+:xlog-android-idle:checkDebugManifest
+:xlog-android-idle:prepareDebugDependencies
+:xlog-android-idle:compileDebugAidl
+:xlog-android-idle:compileDebugRenderscript
+:xlog-android-idle:generateDebugBuildConfig
+:xlog-android-idle:generateDebugAssets UP-TO-DATE
+:xlog-android-idle:mergeDebugAssets
+:xlog-android-idle:generateDebugResValues
+:xlog-android-idle:generateDebugResources
+:xlog-android-idle:packageDebugResources
+:xlog-android-idle:processDebugManifest
+:xlog-android-idle:processDebugResources
+:xlog-android-idle:generateDebugSources
+:xlog-android-idle:compileDebugJava
+:xlog-android-idle:processDebugJavaRes UP-TO-DATE
+:xlog-android-idle:packageDebugJar
+:xlog-android-idle:compileDebugNdk UP-TO-DATE
+:xlog-android-idle:packageDebugJniLibs UP-TO-DATE
+:xlog-android-idle:packageDebugLocalJar UP-TO-DATE
+:xlog-android-idle:packageDebugRenderscript UP-TO-DATE
+:xlog-android-idle:bundleDebug
+:xlog-android-idle:assembleDebug
+:xlog-android-idle:copyReleaseLint UP-TO-DATE
+:xlog-android-idle:mergeReleaseProguardFiles
+:xlog-android-idle:preReleaseBuild
+:xlog-android-idle:checkReleaseManifest
+:xlog-android-idle:prepareReleaseDependencies
+:xlog-android-idle:compileReleaseAidl
+:xlog-android-idle:compileReleaseRenderscript
+:xlog-android-idle:generateReleaseBuildConfig
+:xlog-android-idle:generateReleaseAssets UP-TO-DATE
+:xlog-android-idle:mergeReleaseAssets
+:xlog-android-idle:generateReleaseResValues
+:xlog-android-idle:generateReleaseResources
+:xlog-android-idle:packageReleaseResources
+:xlog-android-idle:processReleaseManifest
+:xlog-android-idle:processReleaseResources
+:xlog-android-idle:generateReleaseSources
+:xlog-android-idle:compileReleaseJava
+:xlog-android-idle:processReleaseJavaRes UP-TO-DATE
+:xlog-android-idle:packageReleaseJar
+:xlog-android-idle:compileReleaseNdk UP-TO-DATE
+:xlog-android-idle:packageReleaseJniLibs UP-TO-DATE
+:xlog-android-idle:packageReleaseLocalJar UP-TO-DATE
+:xlog-android-idle:packageReleaseRenderscript UP-TO-DATE
+:xlog-android-idle:bundleRelease
+:xlog-android-idle:assembleRelease
+:xlog-android-idle:javadoc
+:xlog-android-idle:javadocJar
+:xlog-android-idle:sourcesJar
+:xlog-android-idle:assemble
+:xlog-android-idle:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.227 secs
+
+2018-04-02 07:58:44,746 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:58:44,746 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:58:52,515 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-02 07:58:52,515 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint findbugs uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease checkstyle test check connectedAndroidTest lintRelease testDebug
+2018-04-02 07:58:52,515 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, findbugs, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, checkstyle, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-02 07:59:03,235 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 07:59:03,235 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Dependency commons-logging:commons-logging:1.1 is ignored for debugUnitTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency org.json:json:20090211 is ignored for debugUnitTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage with jarjar to change the class packages
+WARNING: Dependency commons-logging:commons-logging:1.1 is ignored for releaseUnitTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency org.json:json:20090211 is ignored for releaseUnitTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage with jarjar to change the class packages
+:xlog-android:compileLint
+:xlog-android:copyDebugLint UP-TO-DATE
+:xlog-android:mergeDebugProguardFiles
+:xlog-android:preBuild
+:xlog-android:preDebugBuild
+:xlog-android:checkDebugManifest
+:xlog-android:prepareDebugDependencies
+:xlog-android:compileDebugAidl
+:xlog-android:compileDebugRenderscript
+:xlog-android:generateDebugBuildConfig
+:xlog-android:generateDebugAssets UP-TO-DATE
+:xlog-android:mergeDebugAssets
+:xlog-android:generateDebugResValues
+:xlog-android:generateDebugResources
+:xlog-android:packageDebugResources
+:xlog-android:processDebugManifest
+:xlog-android:processDebugResources
+:xlog-android:generateDebugSources
+:xlog-android:compileDebugJavaNote: /tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:xlog-android:processDebugJavaRes UP-TO-DATE
+:xlog-android:packageDebugJar
+:xlog-android:compileDebugNdk UP-TO-DATE
+:xlog-android:packageDebugJniLibs
+:xlog-android:packageDebugLocalJar
+:xlog-android:packageDebugRenderscript UP-TO-DATE
+:xlog-android:bundleDebug
+:xlog-android:assembleDebug
+:xlog-android:copyReleaseLint UP-TO-DATE
+:xlog-android:mergeReleaseProguardFiles
+:xlog-android:preReleaseBuild
+:xlog-android:checkReleaseManifest
+:xlog-android:prepareReleaseDependencies
+:xlog-android:compileReleaseAidl
+:xlog-android:compileReleaseRenderscript
+:xlog-android:generateReleaseBuildConfig
+:xlog-android:generateReleaseAssets UP-TO-DATE
+:xlog-android:mergeReleaseAssets
+:xlog-android:generateReleaseResValues
+:xlog-android:generateReleaseResources
+:xlog-android:packageReleaseResources
+:xlog-android:processReleaseManifest
+:xlog-android:processReleaseResources
+:xlog-android:generateReleaseSources
+:xlog-android:compileReleaseJavaNote: /tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:xlog-android:processReleaseJavaRes UP-TO-DATE
+:xlog-android:packageReleaseJar
+:xlog-android:compileReleaseNdk UP-TO-DATE
+:xlog-android:packageReleaseJniLibs
+:xlog-android:packageReleaseLocalJar
+:xlog-android:packageReleaseRenderscript UP-TO-DATE
+:xlog-android:bundleRelease
+:xlog-android:assembleRelease
+:xlog-android:javadoc/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:4: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.MethodToLog;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:5: error: package com.taobao.android.dexposed does not exist
+import com.taobao.android.dexposed.XC_MethodHook;
+                                  ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:19: error: cannot find symbol
+public class XLogMethodHook extends XC_MethodHook {
+                                    ^
+  symbol: class XC_MethodHook
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:25: error: cannot find symbol
+    private MethodToLog mMethodToLog;
+            ^
+  symbol:   class MethodToLog
+  location: class XLogMethodHook
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:31: error: cannot find symbol
+    public XLogMethodHook(Member member, MethodToLog methodToLog, long timeThreshold) {
+                                         ^
+  symbol:   class MethodToLog
+  location: class XLogMethodHook
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:38: error: package XC_MethodHook does not exist
+    protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+                                                   ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogMethodHook.java:76: error: cannot find symbol
+    protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                                     ^
+  symbol:   class MethodHookParam
+  location: class XLogMethodHook
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogInitializer.java:3: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogMethod;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogInitializer.java:22: error: cannot find symbol
+    private List<XLogMethod> mXLogMethods;
+                 ^
+  symbol:   class XLogMethod
+  location: class XLogInitializer
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogInitializer.java:25: error: cannot find symbol
+            List<XLogMethod> xLogMethods) {
+                 ^
+  symbol:   class XLogMethod
+  location: class XLogInitializer
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogInitializer.java:32: error: cannot find symbol
+    public List<XLogMethod> getXLogMethods() {
+                ^
+  symbol:   class XLogMethod
+  location: class XLogInitializer
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:4: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.MethodToLog;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:5: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLog;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:6: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogMethod;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:7: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogSetting;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:8: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogUtils;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:9: error: package com.taobao.android.dexposed does not exist
+import com.taobao.android.dexposed.DexposedBridge;
+                                  ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:72: error: cannot find symbol
+            List<XLogMethod> xLogMethods) {
+                 ^
+  symbol:   class XLogMethod
+  location: class XLogConfig
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:122: error: cannot find symbol
+        List<XLogMethod> mXLogMethods = null;
+             ^
+  symbol:   class XLogMethod
+  location: class ConfigBuilder
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:139: error: cannot find symbol
+        public ConfigBuilder logMethods(List<XLogMethod> xLogMethods) {
+                                             ^
+  symbol:   class XLogMethod
+  location: class ConfigBuilder
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:3: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:4: error: package com.google.gson.reflect does not exist
+import com.google.gson.reflect.TypeToken;
+                              ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:6: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.MethodToLog;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:7: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLog;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:8: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogMethod;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:9: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogSetting;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:10: error: package com.promegu.xlog.base does not exist
+import com.promegu.xlog.base.XLogUtils;
+                            ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:11: error: package com.taobao.android.dexposed does not exist
+import com.taobao.android.dexposed.ClassUtils;
+                                  ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:12: error: package com.taobao.android.dexposed does not exist
+import com.taobao.android.dexposed.XposedHelpers;
+                                  ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:110: error: cannot find symbol
+    private static List<Class<?>> getAllXLogClasses(Context context, XLogSetting xLogSetting)
+                                                                     ^
+  symbol:   class XLogSetting
+  location: class MultiDexHelper
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:156: error: cannot find symbol
+    public static XLogSetting getXLogSetting(Context context, String xLogPkgName)
+                  ^
+  symbol:   class XLogSetting
+  location: class MultiDexHelper
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:214: error: cannot find symbol
+            Class<? extends Annotation> annoationClass, XLogSetting xLogSetting,
+                                                        ^
+  symbol:   class XLogSetting
+  location: class MultiDexHelper
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:215: error: cannot find symbol
+            List<XLogMethod> xLogMethods) {
+                 ^
+  symbol:   class XLogMethod
+  location: class MultiDexHelper
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:73: warning: no @throws for android.content.pm.PackageManager.NameNotFoundException
+    public static List<String> getSourcePaths(Context context)
+                               ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/MultiDexHelper.java:73: warning: no @throws for java.io.IOException
+    public static List<String> getSourcePaths(Context context)
+                               ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:26: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2363/src/xlog-android/src/main/java/com/github/promeg/xlog_android/lib/XLogConfig.java:26: warning: empty <p> tag
+ * <p/>
+   ^
+
+1 error
+36 warnings
+:xlog-android:javadoc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':xlog-android:javadoc'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2363/src/xlog-android/build/tmp/javadoc/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':xlog-android:javadoc'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/2363/src/xlog-android/build/tmp/javadoc/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 10.306 secs
+
+2018-04-02 07:59:03,250 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:59:03,250 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:59:10,673 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-02 07:59:10,673 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint findbugs uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease checkstyle test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-02 07:59:10,674 INFO  SysUtils - Execute command: [/tmp/rdisk/2363/src/gradlew, -b, /tmp/rdisk/2363/src/xlog-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, findbugs, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, checkstyle, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-02 07:59:24,959 INFO  SysUtils - Configuration on demand is an incubating feature.
+:xlog-example:preBuild
+:xlog-example:preDebugBuild
+:xlog-example:compileDebugNdk UP-TO-DATE
+:xlog-example:checkDebugManifest
+:xlog-example:prepareComGithubPromegXlogAndroid211Library
+:xlog-example:prepareDebugDependencies
+:xlog-example:compileDebugAidl
+:xlog-example:compileDebugRenderscript
+:xlog-example:generateDebugBuildConfig
+:xlog-example:generateDebugAssets UP-TO-DATE
+:xlog-example:mergeDebugAssets
+:xlog-example:generateDebugResValues
+:xlog-example:generateDebugResources
+:xlog-example:mergeDebugResources
+:xlog-example:processDebugManifest
+:xlog-example:processDebugResources
+:xlog-example:generateDebugSources
+:xlog-example:compileDebugJava
+processing: [errorRaised=false, rootElements=[com.promegu.xloggerexample.SampleCalculator, com.promegu.xloggerexample.SampleApplication, com.promegu.xloggerexample.MainActivity, com.promegu.xloggerexample.BaseCalculator, com.github.promeg.xlog_android.lib.R, com.promegu.xloggerexample.R, com.promegu.xloggerexample.BuildConfig], processingOver=false]
+com.promegu.xloggerexample.MainActivity.Greeter.<init>
+void
+java.lang.String
+name
+com.promegu.xloggerexample.MainActivity.Greeter.sayHello
+java.lang.String
+com.promegu.xloggerexample.MainActivity.Charmer.<init>
+void
+java.lang.String
+name
+com.promegu.xloggerexample.MainActivity.<init>
+void
+com.promegu.xloggerexample.MainActivity.onCreate
+void
+android.os.Bundle
+savedInstanceState
+com.promegu.xloggerexample.MainActivity.onCreateOptionsMenu
+boolean
+android.view.Menu
+menu
+com.promegu.xloggerexample.MainActivity.onOptionsItemSelected
+boolean
+android.view.MenuItem
+item
+com.promegu.xloggerexample.MainActivity.printArgs
+void
+java.lang.String[]
+args
+com.promegu.xloggerexample.MainActivity.xlogLargeCollection
+void
+java.util.Collection
+collection
+com.promegu.xloggerexample.MainActivity.xlogLargeArray
+void
+int[]
+ints
+com.promegu.xloggerexample.MainActivity.fibonacci
+int
+int
+number
+[{"type":1, "className":"com.promegu.xloggerexample.MainActivity.Greeter", "methodName":"<init>", "parameterClasses":["java.lang.String"], "parameterNames":["name"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity.Greeter", "methodName":"sayHello", "parameterClasses":[], "parameterNames":[]},{"type":1, "className":"com.promegu.xloggerexample.MainActivity.Charmer", "methodName":"<init>", "parameterClasses":["java.lang.String"], "parameterNames":["name"]},{"type":1, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"<init>", "parameterClasses":[], "parameterNames":[]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"onCreate", "parameterClasses":["android.os.Bundle"], "parameterNames":["savedInstanceState"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"onCreateOptionsMenu", "parameterClasses":["android.view.Menu"], "parameterNames":["menu"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"onOptionsItemSelected", "parameterClasses":["android.view.MenuItem"], "parameterNames":["item"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"printArgs", "parameterClasses":["java.lang.String[]"], "parameterNames":["args"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"xlogLargeCollection", "parameterClasses":["java.util.Collection"], "parameterNames":["collection"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"xlogLargeArray", "parameterClasses":["int[]"], "parameterNames":["ints"]},{"type":0, "className":"com.promegu.xloggerexample.MainActivity", "methodName":"fibonacci", "parameterClasses":["int"], "parameterNames":["number"]}]
+processing: [errorRaised=false, rootElements=[com.promegu.xlogger.XLoggerMethods_4ec488541879320ca8ede0edb62a4b2d], processingOver=false]
+processing: [errorRaised=false, rootElements=[], processingOver=true]
+:xlog-example:preDexDebug
+:xlog-example:dexDebug
+:xlog-example:processDebugJavaRes UP-TO-DATE
+:xlog-example:validateDebugSigning
+:xlog-example:packageDebug
+:xlog-example:zipalignDebug
+:xlog-example:assembleDebug
+:xlog-example:preReleaseBuild
+:xlog-example:checkReleaseManifest
+:xlog-example:prepareComAndroidSupportMultidex100Library
+:xlog-example:prepareComGithubPromegXlogAndroidIdle211Library
+:xlog-example:prepareReleaseDependencies
+:xlog-example:compileReleaseAidl
+:xlog-example:compileReleaseRenderscript
+:xlog-example:generateReleaseBuildConfig
+:xlog-example:generateReleaseAssets UP-TO-DATE
+:xlog-example:mergeReleaseAssets
+:xlog-example:generateReleaseResValues
+:xlog-example:generateReleaseResources
+:xlog-example:mergeReleaseResources
+:xlog-example:processReleaseManifest
+:xlog-example:processReleaseResources
+:xlog-example:generateReleaseSources
+:xlog-example:compileReleaseJava
+:xlog-example:lintVitalRelease
+:xlog-example:compileReleaseNdk UP-TO-DATE
+:xlog-example:collectReleaseMultiDexComponents
+:xlog-example:packageAllReleaseClassesForMultiDex
+:xlog-example:shrinkReleaseMultiDexComponents
+:xlog-example:createReleaseMainDexClassList
+:xlog-example:dexRelease
+:xlog-example:processReleaseJavaRes UP-TO-DATE
+:xlog-example:packageRelease
+:xlog-example:assembleRelease
+:xlog-example:assemble
+:xlog-example:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.87 secs
+
+2018-04-02 07:59:24,981 INFO  FullProcessService - Found APK file: /tmp/rdisk/2363/src/xlog-example/build/outputs/apk/xlog-example-release-unsigned.apk

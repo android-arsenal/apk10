@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.seanzor.webgl.detect.app",
+    "label" : "WebGL Detect App",
+    "icon" : "res/mipmap-xhdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-xhdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1454,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.github.seanzor.webgl.detect.app\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<application android:theme=\"resourceId:0x7f0800dc\" android:label=\"WebGL Detect App\" android:icon=\"res/mipmap-xhdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"WebGL Detect App\" android:name=\"com.github.seanzor.webgl.detect.app.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1101597,
+  "crc32" : 2990901637,
+  "sha256" : "bb48fa7c8e8d4e8d6caaf4e732e5d17cae9246010b9cd6a7dad74e6b9aeaa71b",
+  "buildTime" : 1522649418000
+}

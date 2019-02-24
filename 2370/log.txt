@@ -1,0 +1,124 @@
+2018-04-02 07:35:45,483 INFO  DownloadService - Downloading "https://github.com/Kyson/BalloonPerformer/archive/master.zip", attempt 3
+2018-04-02 07:36:46,091 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 07:36:46,835 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 07:36:46,835 INFO  DownloadService - Downloading "https://github.com/Kyson/BalloonPerformer/archive/master.zip", attempt 3
+2018-04-02 07:37:48,137 DEBUG FullProcessService - Repository https://github.com/Kyson/BalloonPerformer available: true
+2018-04-02 07:37:48,137 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 07:37:48,137 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Kyson/BalloonPerformer, /tmp/rdisk/2370/src]
+2018-04-02 07:37:50,397 INFO  SysUtils - 
+2018-04-02 07:37:50,403 INFO  GitService - Deleted "/tmp/rdisk/2370/src/.git": true
+2018-04-02 07:37:50,408 INFO  FullProcessService - Size of directory with sources: 880 KB
+2018-04-02 07:37:50,408 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2370/src]
+2018-04-02 07:37:50,412 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2370/src/.git/
+
+2018-04-02 07:37:50,416 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2370/src/gradlew
+2018-04-02 07:37:50,420 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2370/src/app/build.gradle /tmp/rdisk/2370/src/balloonperformerlibrary/build.gradle /tmp/rdisk/2370/src/build.gradle
+2018-04-02 07:37:50,424 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2370/src/settings.gradle /tmp/rdisk/2370/src/build.gradle /tmp/rdisk/2370/src/balloonperformerlibrary/build.gradle /tmp/rdisk/2370/src/app/build.gradle
+2018-04-02 07:37:50,424 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 07:37:50,424 INFO  ProjectFixService - Fixing project...
+2018-04-02 07:37:50,433 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2370/src/app/local.properties
+2018-04-02 07:37:50,433 INFO  ProjectFixService - Build info for "/tmp/rdisk/2370/src/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 07:37:50,433 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2370/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 07:37:50,434 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2370/src/balloonperformerlibrary/local.properties
+2018-04-02 07:37:50,434 INFO  ProjectFixService - Build info for "/tmp/rdisk/2370/src/balloonperformerlibrary/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 07:37:50,434 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2370/src/balloonperformerlibrary/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 07:37:50,435 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2370/src/local.properties
+2018-04-02 07:37:50,435 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-02 07:37:50,435 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-02 07:37:50,437 INFO  ProjectFixService - Build info for "/tmp/rdisk/2370/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=21]
+2018-04-02 07:37:50,437 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 07:37:50,437 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 07:37:50,437 INFO  SysUtils - Execute command: [/tmp/rdisk/2370/src/gradlew, -b, /tmp/rdisk/2370/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 07:37:59,718 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 07:37:59,718 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 07:37:59,718 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 07:37:59,718 INFO  SysUtils - Execute command: [/tmp/rdisk/2370/src/gradlew, -b, /tmp/rdisk/2370/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 07:38:36,557 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComTtBalloonperformerlibrary102Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2370/src/app/src/main/java/com/tt/balloonperformer/PhoneMemoryUtil.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2370/src/app/src/main/java/com/tt/balloonperformer/PhoneMemoryUtil.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease SKIPPED
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant release: 7 issues found
+Ran lint on variant debug: 7 issues found
+Wrote HTML report to file:/tmp/rdisk/2370/src/app/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2370/src/app/build/outputs/lint-results.xml
+:app:preCompileDebugUnitTestJava
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJava UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebug
+:app:preCompileReleaseUnitTestJava
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareReleaseUnitTestDependencies
+:app:processReleaseUnitTestJavaRes UP-TO-DATE
+:app:compileReleaseUnitTestJava UP-TO-DATE
+:app:compileReleaseUnitTestSources UP-TO-DATE
+:app:assembleReleaseUnitTest
+:app:testRelease
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.401 secs
+
+2018-04-02 07:38:36,595 INFO  FullProcessService - Found APK file: /tmp/rdisk/2370/src/app/build/outputs/apk/app-debug.apk

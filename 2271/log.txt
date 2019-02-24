@@ -1,0 +1,126 @@
+2018-05-11 11:20:35,328 INFO  DownloadService - Downloading "https://github.com/zzz40500/AndroidSweetSheet/archive/master.zip", attempt 3
+2018-05-11 11:20:36,237 INFO  DownloadService - Downloaded https://github.com/zzz40500/AndroidSweetSheet/archive/master.zip, attempt 3
+2018-05-11 11:20:36,237 INFO  DownloadService - Size of file "/tmp/rdisk/2271/master.zip": 3 MB
+2018-05-11 11:20:36,237 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 11:20:36,238 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2271/master.zip: true
+2018-05-11 11:20:36,238 DEBUG ZipUtil - Extracting '/tmp/rdisk/2271/master.zip' into '/tmp/rdisk/2271/src'.
+2018-05-11 11:20:36,272 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-05-11 11:20:36,272 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2271/src]
+2018-05-11 11:20:36,278 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2271/src/.git/
+
+2018-05-11 11:20:36,281 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2271/src/AndroidSweetSheet-master/gradlew
+2018-05-11 11:20:36,285 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/sweetsheet/build.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/build.gradle
+2018-05-11 11:20:36,288 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2271/src/AndroidSweetSheet-master/sweetsheet/build.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/settings.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/maven-push.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/build.gradle /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build.gradle
+2018-05-11 11:20:36,289 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 11:20:36,289 INFO  ProjectFixService - Fixing project...
+2018-05-11 11:20:36,302 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/local.properties
+2018-05-11 11:20:36,303 INFO  ProjectFixService - Build info for "/tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-11 11:20:36,303 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2271/src/AndroidSweetSheet-master/sweetsheet/local.properties
+2018-05-11 11:20:36,308 INFO  ProjectFixService - Build info for "/tmp/rdisk/2271/src/AndroidSweetSheet-master/sweetsheet/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-05-11 11:20:36,308 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2271/src/AndroidSweetSheet-master/local.properties
+2018-05-11 11:20:36,308 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-11 11:20:36,309 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-11 11:20:36,310 INFO  ProjectFixService - Build info for "/tmp/rdisk/2271/src/AndroidSweetSheet-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-05-11 11:20:36,310 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 11:20:36,310 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 11:20:36,310 INFO  SysUtils - Execute command: [/tmp/rdisk/2271/src/AndroidSweetSheet-master/gradlew, -b, /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 11:20:43,095 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-05-11 11:20:43,095 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-11 11:20:43,095 INFO  SysUtils - Execute command: [/tmp/rdisk/2271/src/AndroidSweetSheet-master/gradlew, -b, /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-11 11:21:13,391 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration(s) specified but the install task does not exist in project :sweetsheet.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:sweetsheet:compileLint
+:sweetsheet:copyReleaseLint UP-TO-DATE
+:sweetsheet:preBuild UP-TO-DATE
+:sweetsheet:preReleaseBuild UP-TO-DATE
+:sweetsheet:checkReleaseManifest
+:sweetsheet:preDebugAndroidTestBuild UP-TO-DATE
+:sweetsheet:preDebugBuild UP-TO-DATE
+:sweetsheet:preDebugUnitTestBuild UP-TO-DATE
+:sweetsheet:preReleaseUnitTestBuild UP-TO-DATE
+:sweetsheet:prepareComAndroidSupportAppcompatV72220Library
+:sweetsheet:prepareComAndroidSupportRecyclerviewV72220Library
+:sweetsheet:prepareComAndroidSupportSupportV42220Library
+:sweetsheet:prepareReleaseDependencies
+:sweetsheet:compileReleaseAidl
+:sweetsheet:compileReleaseRenderscript
+:sweetsheet:generateReleaseBuildConfig
+:sweetsheet:generateReleaseAssets UP-TO-DATE
+:sweetsheet:mergeReleaseAssets
+:sweetsheet:generateReleaseResValues
+:sweetsheet:generateReleaseResources
+:sweetsheet:mergeReleaseResources
+:sweetsheet:processReleaseManifest
+:sweetsheet:processReleaseResources
+:sweetsheet:generateReleaseSources
+:sweetsheet:processReleaseJavaRes UP-TO-DATE
+:sweetsheet:compileReleaseJava
+:sweetsheet:extractReleaseAnnotations
+:sweetsheet:mergeReleaseProguardFiles
+:sweetsheet:packageReleaseJar
+:sweetsheet:compileReleaseNdk UP-TO-DATE
+:sweetsheet:packageReleaseJniLibs UP-TO-DATE
+:sweetsheet:packageReleaseLocalJar UP-TO-DATE
+:sweetsheet:packageReleaseRenderscript UP-TO-DATE
+:sweetsheet:packageReleaseResources
+:sweetsheet:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportRecyclerviewV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComMingleZzz40500Sweetsheet110Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.861 secs
+
+2018-05-11 11:21:13,451 INFO  FullProcessService - Found APK file: /tmp/rdisk/2271/src/AndroidSweetSheet-master/app/build/outputs/apk/app-debug.apk
